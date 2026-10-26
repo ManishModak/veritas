@@ -1,5 +1,5 @@
 import { resolve } from 'node:path';
-import { CsvSource } from '../src/data/source.ts';
+import { configuredSource } from '../src/data/index.ts';
 import { evidencePack } from '../src/agent/evidence.ts';
 import { runCase, saveRun } from '../src/agent/run.ts';
 
@@ -7,7 +7,7 @@ const [cikText, fyEnd, samplesText = '1', output = 'app/.state/live-run.json'] =
 const cik = Number(cikText);
 if (!cikText || !fyEnd) throw new Error('Usage: npm run live -- CIK YYYY-MM-DD [samples=1] [output]');
 const started = Date.now();
-const run = await runCase(cik, fyEnd, await evidencePack(new CsvSource(),cik,fyEnd), {
+const run = await runCase(cik, fyEnd, await evidencePack(configuredSource(),cik,fyEnd), {
   samples: Number(samplesText), progress: p => console.log(JSON.stringify(p)),
 });
 await saveRun(resolve(output),run);

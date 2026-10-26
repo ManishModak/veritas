@@ -12,10 +12,10 @@ export class CsvSource implements FactsSource {
   constructor(private dataDir = DATA, private generatedDir = GENERATED) {}
   async execute(q: Query): Promise<QueryResult> {
     const dir = q.table.startsWith('mdna_') ? this.generatedDir : this.dataDir;
-    const file = join(dir, `${q.table}.csv`);
+    const file = join(dir, `${q.table==='cohort'?'beneish':q.table}.csv`);
     if (!this.files.has(file)) this.files.set(file, readFile(file, 'utf8').then(parseCsv).catch(e => { this.files.delete(file); throw e; }));
     const rows = selectRows(await this.files.get(file)!, q);
     // Labels and enforcement metadata never cross the data boundary into the agent or memory.
-    return { sql: q.sql, rows: rows.map(({ role, enforcement, ...r }) => r), mode: 'csv', label: 'equivalent SQL (CSV mode)', table: q.table };
+    return { sql: q.sql, rows: rows.map(({ role, enforcement, ...r }) => q.table==='cohort'?{...r,industry:''}:r), mode: 'csv', label: 'equivalent SQL (CSV mode)', table: q.table };
   }
 }

@@ -6,6 +6,7 @@ import { AppRuntime } from '../src/runtime.ts';
 import { appServer } from '../src/server.ts';
 import { recordedCases } from '../src/cases.ts';
 import { INVESTIGATOR, RED_TEAM } from '../src/agent/prompts.ts';
+import { CsvSource } from '../src/data/source.ts';
 
 async function serve(runtime:AppRuntime){
   const server=appServer(runtime);server.listen(0,'127.0.0.1');await once(server,'listening');
@@ -15,7 +16,7 @@ async function serve(runtime:AppRuntime){
 const post=(base:string,url:string,body={})=>fetch(base+url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
 
 test('sample server exposes honest cohort, source-backed drawer, guarded recall, feedback, and explicit errors',{timeout:20000},async()=>{
-  const runtime=await AppRuntime.create({sampleMode:true,persist:false}),server=await serve(runtime),{base}=server;
+  const runtime=await AppRuntime.create({source:new CsvSource(),sampleMode:true,persist:false}),server=await serve(runtime),{base}=server;
   try{
     for(const file of ['/','/app.js','/style.css'])assert.equal((await fetch(base+file)).status,200);
     const cohort=await (await fetch(base+'/api/cases')).json();
@@ -47,7 +48,7 @@ test('sample server exposes honest cohort, source-backed drawer, guarded recall,
 test('live API completes three samples over replayable SSE, serializes jobs, and surfaces provider failure',{timeout:20000},async()=>{
   const run=(await recordedCases()).find(r=>r.cik===1336917&&r.fy_end==='2015-12-31')!,sample=run.samples[0];
   let fail=false,calls=0;
-  const runtime=await AppRuntime.create({sampleMode:false,persist:false,ask:async(system)=>{
+  const runtime=await AppRuntime.create({source:new CsvSource(),sampleMode:false,persist:false,ask:async(system)=>{
     calls++;await delay(10);if(fail)throw new Error('NIM HTTP 503 after 3 attempts');
     return structuredClone(system===INVESTIGATOR?sample.investigator:system===RED_TEAM?sample.red_team:sample.judge) as unknown as Record<string,unknown>;
   }}),server=await serve(runtime),{base}=server,id='1336917_2015-12-31';

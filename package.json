@@ -9,6 +9,8 @@
     "start": "node --import tsx app/src/server.ts",
     "live": "node --import tsx app/scripts/live.ts",
     "test:agent": "node --import tsx --test --test-isolation=none app/test/agent.test.ts",
+    "test:zetaris": "node --import tsx --test --test-isolation=none app/test/zetaris.test.ts",
+    "test:bridge": "node --import tsx --test --test-isolation=none app/test/zetaris.integration.ts",
     "test": "node --import tsx --test --test-isolation=none app/test/*.test.ts",
     "test:parity": "node --import tsx --test --test-isolation=none app/test/parity.test.ts",
     "typecheck": "tsc --noEmit"

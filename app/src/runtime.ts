@@ -7,13 +7,14 @@ import { evidencePack, type EvidencePack } from './agent/evidence.ts';
 import { assertRunGrounded, runCase, saveRun } from './agent/run.ts';
 import type { CaseRun } from './agent/types.ts';
 import type { Ask } from './agent/nim.ts';
-import { CsvSource, type FactsSource } from './data/source.ts';
+import type { FactsSource } from './data/source.ts';
+import { configuredSource } from './data/index.ts';
 import { CaseMemory } from './memory/cases.ts';
 import { WorldEvidenceStore } from './memory/world.ts';
-import { query } from './data/queries.ts';
+import { cohortQuery, query } from './data/queries.ts';
 
 export class HttpError extends Error { constructor(readonly status:number,message:string){super(message);} }
-interface Entry { run:CaseRun; recorded:CaseRun; pack:EvidencePack; filing:FilingIdentity; score:string; flagged:boolean|null }
+interface Entry { run:CaseRun; recorded:CaseRun; pack:EvidencePack; filing:FilingIdentity; score:string; flagged:boolean|null;industry:string }
 export interface RunEvent { type:'started'|'progress'|'completed'|'failed'; [key:string]:unknown }
 export interface Job { id:string; caseId:string; status:'running'|'completed'|'failed'; events:{seq:number;data:RunEvent}[]; listeners:Set<(event:{seq:number;data:RunEvent})=>void>; controller:AbortController }
 export interface RuntimeOptions { source?:FactsSource; sampleMode?:boolean; stateDir?:string; persist?:boolean; ask?:Ask }
@@ -37,13 +38,14 @@ export class AppRuntime {
   }
 
   static async create(options:RuntimeOptions={}):Promise<AppRuntime>{
-    const source=options.source??new CsvSource(),runs=await recordedCases(),filings=await filingCatalogue(source,runs);
+    const source=options.source??configuredSource(),runs=await recordedCases(),filings=await filingCatalogue(source,runs);
+    const industries=(await source.execute(cohortQuery())).rows;
     const entries:Entry[]=[];
     for(const [i,run] of runs.entries()){
       const pack=await evidencePack(source,run.cik,run.fy_end);
       if(JSON.stringify(pack.evidence.map(e=>[e.id,e.kind,e.text,e.source]))!==JSON.stringify(run.evidence.map(e=>[e.id,e.kind,e.text,e.source])))throw new Error(`Source evidence differs from recording ${caseId(run.cik,run.fy_end)}`);
       const b=(await source.execute(query('beneish',run.cik,run.fy_end))).rows[0];
-      entries.push({run,recorded:run,pack,filing:filings[i],score:b.m_score,flagged:b.flagged?b.flagged==='True':null});
+      entries.push({run,recorded:run,pack,filing:filings[i],score:b.m_score,flagged:b.flagged?b.flagged==='True':null,industry:industries.find(r=>Number(r.cik)===run.cik&&r.fy_end===run.fy_end)?.industry??''});
     }
     const cohort=JSON.parse(await readFile(join(ROOT,'data/cohort.json'),'utf8'));
     const roles=new Map<number,'fraud'|'peer'>(cohort.companies.map((c:any)=>[c.cik,c.role]));
@@ -67,7 +69,7 @@ export class AppRuntime {
 
   list(reveal=false){
     const cases=[...this.entries.entries()].map(([id,e])=>({id,cik:e.run.cik,company:e.run.company,fyEnd:e.run.fy_end,split:cohortSplit(id),filed:e.filing.filed,
-      beneish:{score:e.score,flagged:e.flagged},industry:'',industryLabel:'Zetaris only',agreement:e.recorded.agreement,samples:e.recorded.samples.length,resultMode:'recorded',liveAvailable:e.run!==e.recorded,
+      beneish:{score:e.score,flagged:e.flagged},industry:e.industry,industryLabel:this.dataMode==='csv'?'Zetaris only':'No industry match',agreement:e.recorded.agreement,samples:e.recorded.samples.length,resultMode:'recorded',liveAvailable:e.run!==e.recorded,
       topQuestion:e.recorded.samples.flatMap(s=>s.investigator.questions_for_management).find(q=>/pull.forward|Q1 2016/i.test(q))??e.recorded.samples[0].investigator.questions_for_management[0]??'',
       ...(reveal?{role:this.roles.get(e.run.cik)}:{})}));
     const recorded=[...this.entries.values()].map(e=>e.recorded);

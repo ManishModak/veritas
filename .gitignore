@@ -6,3 +6,5 @@ app/vendor/*/node_modules/
 .env
 app/.generated/
 app/.state/
+data/out/mdna_paragraphs.csv
+__pycache__/

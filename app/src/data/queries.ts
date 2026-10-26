@@ -21,7 +21,8 @@ export function selectRows(rows: Row[], q: Query): Row[] {
     if (q.table === 'mdna_paragraphs') return Number(a.para_no) - Number(b.para_no);
     const date = a[dateColumn].localeCompare(b[dateColumn]);
     if (date) return date;
-    if (q.table === 'facts') return CONCEPTS.indexOf(a.concept) - CONCEPTS.indexOf(b.concept);
+    const rank = (concept: string) => { const i = CONCEPTS.indexOf(concept); return i < 0 ? 99 : i; };
+    if (q.table === 'facts') return rank(a.concept) - rank(b.concept);
     if (q.table === 'quarters') return a.q_end.localeCompare(b.q_end);
     return 0;
   });

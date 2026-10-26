@@ -35,6 +35,7 @@ export async function evidencePack(source: FactsSource, cik: number, fyEnd: stri
     source.execute(query('beneish', cik, fyEnd)), source.execute(query('mdna_index', cik, fyEnd)),
     source.execute(query('mdna_paragraphs', cik, fyEnd)),
   ]);
+  if (!facts.rows.length) throw new Error(`Unknown CIK: ${cik}`);
   const ends = [...new Set(facts.rows.map(r => r.fy_end))].sort();
   const yearIndex = ends.indexOf(fyEnd);
   if (yearIndex < 1) throw new Error(`No prior fiscal year for ${cik} ${fyEnd}`);

@@ -194,9 +194,9 @@ test('unknown citations are rejected before any graph records are created',async
   assert.throws(()=>store.world(id),/Unknown case/);
 });
 
-test('ingesting actual live run from M2 succeeds as a distinct live revision', async () => {
-  const livePath = '/run/media/manishm/T7_Shield/Projects/Hackathon/.agent/tasks/open-agent/app-handoff/live-1375365_2015-06-30.json';
-  if (!existsSync(livePath)) return;
+test('optional saved live run ingests as a distinct revision', async (t) => {
+  const livePath = process.env.VERITAS_LIVE_FIXTURE;
+  if (!livePath) { t.skip('Set VERITAS_LIVE_FIXTURE to a saved live JSON artifact to run this check'); return; }
 
   const liveRun: CaseRun = JSON.parse(await readFile(livePath, 'utf8'));
   const smId = caseId(liveRun.cik, liveRun.fy_end);

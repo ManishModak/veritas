@@ -1,0 +1,24 @@
+{
+  "_note": "Companies for the blind run. role=fraud has an SEC enforcement date (cutoff); role=peer is a comparison firm with no known enforcement (to be checked). Only the UA date is verified so far (sec.gov press release 2021-78); the other fraud dates come from the swarm's lane-b.md and are UNCONFIRMED.",
+  "companies": [
+    {"name": "Under Armour", "cik": 1336917, "role": "fraud", "sic": "2300", "enforcement": "2021-05-03", "verified": true},
+    {"name": "Super Micro Computer", "cik": 1375365, "role": "fraud", "sic": "3571", "enforcement": "2020-08-25", "verified": false},
+    {"name": "MiMedx Group", "cik": 1376339, "role": "fraud", "sic": "3841", "enforcement": "2019-11-26", "verified": false},
+    {"name": "Kraft Heinz", "cik": 1637459, "role": "fraud", "sic": "2030", "enforcement": "2021-09-03", "verified": false},
+    {"name": "Nike", "cik": 320187, "role": "peer", "sic": "3021"},
+    {"name": "Lululemon", "cik": 1397187, "role": "peer", "sic": "2300"},
+    {"name": "Columbia Sportswear", "cik": 1050797, "role": "peer", "sic": "2300"},
+    {"name": "Hanesbrands", "cik": 1359841, "role": "peer", "sic": "2250"},
+    {"name": "Skechers", "cik": 1065837, "role": "peer", "sic": "3021"},
+    {"name": "VF Corp", "cik": 103379, "role": "peer", "sic": "2300"},
+    {"name": "NetApp", "cik": 1002047, "role": "peer", "sic": "3572"},
+    {"name": "Arista Networks", "cik": 1596532, "role": "peer", "sic": "3576"},
+    {"name": "Nvidia", "cik": 1045810, "role": "peer", "sic": "3674"},
+    {"name": "Abiomed", "cik": 815094, "role": "peer", "sic": "3845"},
+    {"name": "NuVasive", "cik": 1142596, "role": "peer", "sic": "3841"},
+    {"name": "Integra LifeSciences", "cik": 917520, "role": "peer", "sic": "3841"},
+    {"name": "Mondelez", "cik": 1103982, "role": "peer", "sic": "2000"},
+    {"name": "General Mills", "cik": 40704, "role": "peer", "sic": "2040"},
+    {"name": "Campbell Soup", "cik": 16732, "role": "peer", "sic": "2000"}
+  ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+data/out/mdna/
+app/vendor/*/node_modules/
+.notebook/
+*.log
+.env

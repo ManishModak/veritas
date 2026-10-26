@@ -912,7 +912,7 @@
           if (q.rows && q.rows.length > 0) {
             const cols = Object.keys(q.rows[0]);
             rowsHtml = '<details class="drawer-details" style="margin-top: 0.5rem;">' +
-              '<summary class="drawer-details-summary">Raw Query Result Rows (' + q.rows.length + ' rows)</summary>' +
+              '<summary class="drawer-details-summary">Input rows used for this evidence (' + q.rows.length + ' rows)</summary>' +
               '<div class="drawer-details-content">' +
                 '<table class="provenance-rows-table">' +
                   '<thead><tr>' + cols.map(c => '<th>' + escapeHtml(c) + '</th>').join('') + '</tr></thead>' +

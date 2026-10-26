@@ -51,6 +51,8 @@ test('federated LEFT JOIN retains unmatched Arista and runtime uses industries o
   assert((await csv.execute(cohortQuery())).rows.every(r=>r.industry===''));
   const runtime=await AppRuntime.create({source,sampleMode:true,persist:false});
   assert.equal(runtime.dataMode,'zetaris');assert.equal(runtime.list().cases.find(c=>c.cik===1336917)!.industry,'Apparel');
+  assert.equal(runtime.list().cases.find(c=>c.cik===1336917)!.industryLabel,'');
+  assert.equal(runtime.list().cases.find(c=>c.cik===40704)!.industryLabel,'No industry match');
   assert(bridge.executed.some(sql=>sql===cohortQuery().sql));
 });
 

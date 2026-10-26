@@ -40,7 +40,7 @@ To use a running bridge:
 ZETARIS_BRIDGE_URL=http://localhost:8787 npm start
 ```
 
-Setting the URL selects Zetaris independently of `SAMPLE_MODE`. `FACTS_SOURCE=csv` forces CSV; `FACTS_SOURCE=zetaris` requires a bridge URL. Bridge errors fail loudly without falling back to CSV. The drawer labels evidence queries “executed on Zetaris” or “equivalent SQL (CSV mode)”.
+Setting the URL selects Zetaris independently of `SAMPLE_MODE`. `FACTS_SOURCE=csv` forces CSV; `FACTS_SOURCE=zetaris` requires a bridge URL. Bridge errors fail loudly without falling back to CSV. The drawer labels evidence queries “executed on Zetaris” or “equivalent SQL (CSV mode)”. Evidence is loaded and validated at startup; live model runs reuse that evidence snapshot. Real-source startup took about 31 seconds in the reviewed deployment. `/api/health` reports application readiness and source mode, not a fresh bridge connectivity check.
 
 The cohort industry name comes from a federated relational-to-REST join:
 
@@ -103,12 +103,12 @@ Verified on Oct 26, 2026:
 | Default suite | 56 passed; 1 optional saved-live-fixture test skipped |
 | CSV evidence parity | Exact ID/kind/text/source equality for all 11 recorded cases |
 | Typed SQLite SQL mock | 16 tests passed, including all 11 evidence packs and source-mutation attacks |
-| Real Zetaris bridge | 12 tests passed, including exact parity for all 11 packs |
+| Real Zetaris bridge | 13 tests passed, including exact parity for all 11 packs |
 | Real industry federation | 148 company-years; 141 named; all 7 unmatched Arista rows retained |
 | World Model replay | Empty diff; deliberately changed input produces a nonempty diff |
 | TypeScript | No diagnostics |
 
-Mock transport tests cover numeric, boolean and string flags, derived Q4, the actual MiMedx FY2018 `DSRI=0.0`, and a **synthetic** `DEPI=1.0` value (no such DEPI row exists in the current dataset). The real bridge suite covers derived Q4 and the actual `DSRI=0.0` row. `VERITAS_LIVE_FIXTURE` optionally points the World Model tests at a saved live JSON file; default verification makes no model calls.
+Mock transport tests cover numeric, boolean and string flags, derived Q4, the actual MiMedx FY2018 `DSRI=0.0`, and a **synthetic** `DEPI=1.0` value (no such DEPI row exists in the current dataset). The real bridge suite covers derived Q4, the actual `DSRI=0.0` row and a read-only synthetic `SELECT 1.0 AS depi` wire check. `VERITAS_LIVE_FIXTURE` optionally points the World Model tests at a saved live JSON file; default verification makes no model calls.
 
 ## Measured results and limits
 

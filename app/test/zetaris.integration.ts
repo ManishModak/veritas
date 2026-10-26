@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { ZetarisSource } from '../src/data/zetaris.ts';
+import { ZetarisSource, normalizeRows } from '../src/data/zetaris.ts';
 import { CsvSource } from '../src/data/source.ts';
 import { evidencePack } from '../src/agent/evidence.ts';
 import { recordedCases } from '../src/cases.ts';
@@ -8,6 +8,14 @@ import { cohortQuery, query } from '../src/data/queries.ts';
 
 if(!process.env.ZETARIS_BRIDGE_URL)throw new Error('Set ZETARIS_BRIDGE_URL to the real bridge for this opt-in integration check');
 const source=new ZetarisSource(),csv=new CsvSource();
+test('real bridge synthetic DEPI=1.0 literal retains Python float spelling',{timeout:120000},async()=>{
+  const response=await fetch(process.env.ZETARIS_BRIDGE_URL!.replace(/\/$/,'')+'/sql',{
+    method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sql:'SELECT 1.0 AS depi'}),signal:AbortSignal.timeout(60000),
+  });
+  assert.equal(response.status,200);
+  const payload=await response.json() as {columns:string[];rows:unknown[][]};
+  assert.equal(normalizeRows('beneish',payload.columns,payload.rows)[0].depi,'1.0');
+});
 for(const run of await recordedCases())test(`real Zetaris exact evidence parity: ${run.cik}_${run.fy_end}`,{timeout:120000},async()=>{
   const pack=await evidencePack(source,run.cik,run.fy_end);
   assert.deepEqual(pack.evidence,run.evidence);assert.deepEqual(pack.evidence,(await evidencePack(csv,run.cik,run.fy_end)).evidence);

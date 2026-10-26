@@ -69,7 +69,7 @@ export class AppRuntime {
 
   list(reveal=false){
     const cases=[...this.entries.entries()].map(([id,e])=>({id,cik:e.run.cik,company:e.run.company,fyEnd:e.run.fy_end,split:cohortSplit(id),filed:e.filing.filed,
-      beneish:{score:e.score,flagged:e.flagged},industry:e.industry,industryLabel:this.dataMode==='csv'?'Zetaris only':'No industry match',agreement:e.recorded.agreement,samples:e.recorded.samples.length,resultMode:'recorded',liveAvailable:e.run!==e.recorded,
+      beneish:{score:e.score,flagged:e.flagged},industry:e.industry,industryLabel:this.dataMode==='csv'?'Zetaris only':e.industry?'':'No industry match',agreement:e.recorded.agreement,samples:e.recorded.samples.length,resultMode:'recorded',liveAvailable:e.run!==e.recorded,
       topQuestion:e.recorded.samples.flatMap(s=>s.investigator.questions_for_management).find(q=>/pull.forward|Q1 2016/i.test(q))??e.recorded.samples[0].investigator.questions_for_management[0]??'',
       ...(reveal?{role:this.roles.get(e.run.cik)}:{})}));
     const recorded=[...this.entries.values()].map(e=>e.recorded);

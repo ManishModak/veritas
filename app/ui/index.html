@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Veritas - 10-K Explanation Verification against SEC XBRL">
+  <title>Veritas | 10-K Explanation Verification</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="app-header" role="banner">
+    <div class="header-inner">
+      <div class="brand-group">
+        <a href="#/" class="brand-title">Veritas</a>
+        <span class="brand-divider" aria-hidden="true">/</span>
+        <span class="brand-tagline">Revenue explanations, checked against the filings</span>
+      </div>
+      <div class="header-meta" id="header-meta">
+        <span class="badge badge-mode" id="mode-badge">Sample Mode</span>
+        <span class="badge badge-datamode" id="datamode-badge">CSV</span>
+      </div>
+    </div>
+  </header>
+
+  <div id="global-banner" class="global-banner hidden" role="alert" aria-live="polite">
+    <div class="banner-content">
+      <span class="banner-icon" aria-hidden="true">!</span>
+      <span class="banner-message" id="banner-message"></span>
+    </div>
+    <button type="button" class="banner-close" id="banner-close" aria-label="Dismiss alert">&times;</button>
+  </div>
+
+  <main class="app-main" id="app-main" role="main">
+    <!-- Cohort View -->
+    <section id="view-cohort" class="view-section active" aria-labelledby="cohort-heading">
+      <div class="cohort-hero">
+        <div class="cohort-hero-text">
+          <h1 id="cohort-heading" class="cohort-title">Does the growth story fit?</h1>
+          <p class="cohort-intro">
+            Compare management’s explanation of revenue growth with as-filed revenue, receivables, and cash flow. Inspect the evidence, the strongest innocent explanation, and the judge’s ruling.
+          </p>
+        </div>
+        <div class="cohort-actions">
+          <button type="button" class="btn btn-outline" id="btn-toggle-reveal" aria-pressed="false">
+            <span class="reveal-icon" aria-hidden="true">👁</span>
+            <span id="reveal-btn-text">Show ground-truth roles (SEC cases vs peers)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Honest Strip -->
+      <div class="results-strip" id="results-strip" aria-label="Cohort Benchmark Results">
+        <div class="result-metric">
+          <span class="metric-label">Recorded Nemotron calls</span>
+          <span class="metric-value" id="res-calls">99</span>
+          <span class="metric-sub">3 samples &times; 3 stages &times; 11 cases</span>
+        </div>
+        <div class="result-metric">
+          <span class="metric-label">Out-of-pack checked IDs</span>
+          <span class="metric-value metric-good" id="res-unknown">0</span>
+          <span class="metric-sub">Structured citation lists only</span>
+        </div>
+        <div class="result-metric">
+          <span class="metric-label">Blind SEC-Case Years</span>
+          <span class="metric-value" id="res-blind-fraud">2 / 4</span>
+          <span class="metric-sub">Investigator majority: does not fit</span>
+        </div>
+        <div class="result-metric">
+          <span class="metric-label">Blind Comparison Peers</span>
+          <span class="metric-value metric-clean" id="res-blind-peers">0 / 4</span>
+          <span class="metric-sub">Investigator majority: does not fit</span>
+        </div>
+      </div>
+
+      <div class="callout-notice">
+        <strong>Reading the results:</strong> This table and benchmark counts use the original recorded samples. Cases with a newer live analysis are marked; open the case to inspect it. Labels can change between runs.
+      </div>
+
+      <!-- Cohort Table Container -->
+      <div class="table-card">
+        <div class="table-responsive">
+          <table class="cohort-table" id="cohort-table" aria-label="Verification Cohort Table">
+            <thead>
+              <tr>
+                <th scope="col">Company &amp; Period</th>
+                <th scope="col">Split</th>
+                <th scope="col" id="th-role" class="col-role hidden">Revealed Role</th>
+                <th scope="col">Industry</th>
+                <th scope="col">Beneish M-Score</th>
+                <th scope="col">Investigator Agreement (3 runs)</th>
+                <th scope="col">Judge Agreement (3 runs)</th>
+                <th scope="col" class="col-question">Top Investigative Question</th>
+                <th scope="col" class="col-action">Action</th>
+              </tr>
+            </thead>
+            <tbody id="cohort-tbody">
+              <tr>
+                <td colspan="9" class="text-center loading-cell">Loading cohort data...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Detail View -->
+    <section id="view-case" class="view-section hidden" aria-labelledby="case-heading">
+      <!-- Nav & Header -->
+      <div class="case-nav-bar">
+        <a href="#/" class="nav-back-link" id="case-back-link">&larr; Return to Cohort</a>
+        <div class="case-live-action" id="case-live-action">
+          <button type="button" class="btn btn-primary" id="btn-run-live">Run live (3 samples)</button>
+          <span class="live-hint" id="live-hint"></span>
+        </div>
+      </div>
+
+      <!-- Live Run SSE Progress Strip -->
+      <div id="live-progress-card" class="live-progress-card hidden" role="region" aria-label="Live Run Progress">
+        <div class="live-progress-header">
+          <div class="live-status-pill">
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span id="live-status-text">Live Run in Progress</span>
+          </div>
+          <span class="live-stage-counter" id="live-stage-counter">Stage 0 of 9</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="live-progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="live-progress-details" id="live-progress-details">
+          Initializing run...
+        </div>
+      </div>
+
+      <div class="case-header-card">
+        <div class="case-header-main">
+          <div class="case-title-group">
+            <h1 id="case-heading" class="case-title">Loading Case...</h1>
+            <div class="case-meta-row" id="case-meta-row"></div>
+            <p class="case-key-question" id="case-key-question"></p>
+          </div>
+        </div>
+        <div class="case-badges" id="case-header-badges"></div>
+      </div>
+
+      <!-- Caveat Banner -->
+      <div class="caveat-box">
+        Citation checks cover structured evidence IDs, not the truth of interpretations. The model may know these companies’ histories from pretraining.
+      </div>
+
+      <!-- Agreement Summary -->
+      <div class="agreement-card">
+        <div class="agreement-header">
+          <h2 class="section-title">Agreement across three independent runs</h2>
+          <a href="#quarter-heading" id="jump-to-quarters">View the quarter pattern</a>
+        </div>
+        <div class="agreement-grid">
+          <div class="agreement-column">
+            <h3 class="agreement-col-title">Investigator Agreement</h3>
+            <div class="chips-group" id="headline-investigator-chips"></div>
+          </div>
+          <div class="agreement-column">
+            <h3 class="agreement-col-title">Judge Agreement</h3>
+            <div class="chips-group" id="headline-judge-chips"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Four-Quarter Comparison -->
+      <section class="quarter-section" aria-labelledby="quarter-heading">
+        <div class="section-header-row">
+          <div>
+            <h2 id="quarter-heading" class="section-title">Revenue and receivables, quarter by quarter</h2>
+            <p class="section-subtitle">Fiscal quarters compared with prior-year equivalents. Click any quarter to view source SEC rows in the World Model drawer.</p>
+          </div>
+        </div>
+
+        <div id="quarter-comparison-container" class="quarter-comparison-card">
+          <!-- Visual Growth Bars and Data Table -->
+          <div id="quarter-chart-container" class="quarter-chart-wrapper"></div>
+          <div id="quarter-table-container" class="quarter-table-wrapper"></div>
+          <div id="quarter-hero-note" class="hero-divergence-prompt hidden"></div>
+        </div>
+      </section>
+
+      <!-- Findings Scorecard by Sample -->
+      <section class="findings-section" aria-labelledby="findings-heading">
+        <div class="section-header-row">
+          <div>
+            <h2 id="findings-heading" class="section-title">Explanation scorecard</h2>
+            <p class="section-subtitle">Explore each independent sample. Each finding includes the defender’s response and the judge’s ruling.</p>
+          </div>
+          <!-- Sample Tabs -->
+          <div class="tabs-container" role="tablist" id="sample-tabs" aria-label="Sample Selection Tabs">
+            <button type="button" class="tab-btn active" role="tab" aria-selected="true" id="tab-sample-0" data-sample="0">Sample 1</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" id="tab-sample-1" data-sample="1">Sample 2</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" id="tab-sample-2" data-sample="2">Sample 3</button>
+          </div>
+        </div>
+
+        <div class="findings-container" id="findings-container" role="tabpanel" aria-labelledby="tab-sample-0">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Inquiries, Doubts and Deciding Evidence -->
+      <div class="inquiry-grid">
+        <div class="inquiry-card">
+          <h3 class="inquiry-title">Questions for management</h3>
+          <p class="inquiry-subtitle">Targeted questions surfaced by the investigator based on quantitative discrepancies.</p>
+          <ul class="inquiry-list" id="inquiry-questions"></ul>
+        </div>
+        <div class="inquiry-card">
+          <h3 class="inquiry-title">What would change my mind</h3>
+          <p class="inquiry-subtitle">Investigator criteria that would corroborate or overturn the assessment.</p>
+          <ul class="inquiry-list" id="inquiry-change-mind"></ul>
+        </div>
+        <div class="inquiry-card inquiry-card-judge">
+          <h3 class="inquiry-title">What would settle it</h3>
+          <p class="inquiry-subtitle">Deciding evidence and external data that would conclusively settle disputed claims.</p>
+          <div class="deciding-evidence-box" id="deciding-evidence-text"></div>
+          <h4 class="sub-title">Evidence That Would Settle It:</h4>
+          <ul class="inquiry-list" id="settle-it-list"></ul>
+        </div>
+      </div>
+
+      <!-- Seen Before / H-MEM Recall -->
+      <section class="memory-section" aria-labelledby="memory-heading">
+        <div class="section-header-row">
+          <div>
+            <h2 id="memory-heading" class="section-title">Seen before</h2>
+            <p class="section-subtitle">Patterns recalled from cases whose 10-K was filed before this one.</p>
+          </div>
+        </div>
+
+        <!-- H-MEM Trace Inspection -->
+        <div class="trace-card" id="memory-trace-card">
+          <div class="trace-header">
+            <span class="trace-badge">H-MEM Retrieval Trace</span>
+            <span class="trace-rule" id="trace-rule"></span>
+          </div>
+          <div class="trace-stats-grid" id="trace-stats-grid"></div>
+          <div class="trace-note">
+            The current case and later-filed cases are excluded before ranking. Retrieval uses Meterless’s deterministic hash reference embedder; scores measure similarity, not truth.
+          </div>
+          <details class="memory-full"><summary>Query and score threshold</summary><p id="trace-query-detail"></p></details>
+        </div>
+
+        <!-- Memory Query Box -->
+        <div class="memory-query-bar">
+          <form id="memory-query-form" class="memory-query-form" role="search">
+            <label for="memory-query-input" class="sr-only">Query prior memories</label>
+            <input type="text" id="memory-query-input" class="memory-input" placeholder="Search prior case patterns (e.g. receivables surge, shipment timing, channel inventory)..." maxlength="1000">
+            <button type="submit" class="btn btn-outline" id="btn-memory-query">Search Memory</button>
+            <button type="button" class="btn btn-ghost hidden" id="btn-memory-reset">Reset</button>
+          </form>
+        </div>
+
+        <div class="memories-list" id="memories-list">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+    </section>
+
+    <!-- Not Found View -->
+    <section id="view-not-found" class="view-section hidden" aria-labelledby="notfound-heading">
+      <div class="notfound-card">
+        <h1 id="notfound-heading" class="notfound-title">Case Not Found</h1>
+        <p class="notfound-text" id="notfound-message">
+          The requested case could not be located in the verification catalogue.
+        </p>
+        <a href="#/" class="btn btn-primary">&larr; Return to Cohort</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Evidence Drawer & Modal Overlay -->
+  <div id="drawer-backdrop" class="drawer-backdrop hidden" aria-hidden="true"></div>
+  <aside id="evidence-drawer" class="evidence-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" tabindex="-1">
+    <div class="drawer-header">
+      <div class="drawer-header-left">
+        <span class="drawer-badge" id="drawer-evidence-id">E--</span>
+        <h2 id="drawer-title" class="drawer-title">World Model Provenance</h2>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close provenance drawer">&times;</button>
+    </div>
+
+    <div class="drawer-content" id="drawer-content">
+      <div class="drawer-loading" id="drawer-loading">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Loading provenance from World Evidence Store...</span>
+      </div>
+      <div class="drawer-error hidden" id="drawer-error"></div>
+      <div class="drawer-body hidden" id="drawer-body">
+        <!-- Statement & Kind -->
+        <div class="drawer-section">
+          <h3 class="drawer-section-title">Evidence statement</h3>
+          <div class="evidence-statement-box" id="drawer-statement"></div>
+          <div class="evidence-source-tag" id="drawer-source-tag"></div>
+        </div>
+
+        <!-- Filing Source Metadata -->
+        <div class="drawer-section">
+          <h3 class="drawer-section-title">SEC EDGAR Primary Source</h3>
+          <div class="filing-meta-grid" id="drawer-filing-grid"></div>
+        </div>
+
+        <!-- Origin Queries & SQL -->
+        <div class="drawer-section">
+          <h3 class="drawer-section-title">Origin Queries &amp; Grounding</h3>
+          <p class="drawer-text-muted">Direct queries against structured XBRL data layer:</p>
+          <div id="drawer-origins-container"></div>
+        </div>
+
+        <!-- Findings and Rulings Citing This Evidence -->
+        <div class="drawer-section">
+          <h3 class="drawer-section-title">World Model Relationships</h3>
+          <div id="drawer-relationships-container"></div>
+        </div>
+
+        <!-- Audit Log -->
+        <div class="drawer-section">
+          <details class="drawer-details">
+            <summary class="drawer-details-summary">World Evidence Audit Trail (<span id="drawer-audit-count">0</span> events)</summary>
+            <div class="audit-list" id="drawer-audit-list"></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="app-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span>Veritas &bull; NVIDIA Nemotron &bull; Meterless World Model and H-MEM</span>
+      <span class="footer-mono">As-filed SEC data with inspectable source queries</span>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

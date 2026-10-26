@@ -543,7 +543,8 @@
     } else {
       container.innerHTML = findings.map((f, i) => {
         // IMPORTANT: Join red-team and judge strictly by finding_index, never array offset!
-        const findingIdx = f.finding_index !== undefined ? f.finding_index : i;
+        // Investigator findings use their array index in the frozen schema; only replies carry finding_index.
+        const findingIdx = i;
         const rebuttal = (redTeam.rebuttals || []).find(r => r.finding_index === findingIdx);
         const ruling = (judge.rulings || []).find(rl => rl.finding_index === findingIdx);
 
@@ -558,8 +559,8 @@
 
         // Feedback thumbs: Sample 1 only uses findingMemoryIds[i]
         let feedbackHtml = '';
-        if (sampleIndex === 0 && findingMemoryIds[i]) {
-          const memId = findingMemoryIds[i];
+        if (sampleIndex === 0 && findingMemoryIds[findingIdx]) {
+          const memId = findingMemoryIds[findingIdx];
           const cached = state.feedbackCache.get(memId);
           const helpfulActive = cached && cached.kind === 'helpful' ? 'active' : '';
           const notHelpfulActive = cached && cached.kind === 'not_helpful' ? 'active' : '';

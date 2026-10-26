@@ -3,8 +3,9 @@ import { join } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 
 const [base='http://127.0.0.1:8788',out='/tmp/veritas-ui-screens',mode='standard']=process.argv.slice(2);
-const tabs=await (await fetch('http://127.0.0.1:9337/json/list')).json() as {type:string;webSocketDebuggerUrl:string}[];
-const tab=tabs.find(t=>t.type==='page');if(!tab)throw new Error('Start a separate headless Chrome on port 9337 first');
+const cdpPort=process.env.CDP_PORT??'9337';
+const tabs=await (await fetch(`http://127.0.0.1:${cdpPort}/json/list`)).json() as {type:string;webSocketDebuggerUrl:string}[];
+const tab=tabs.find(t=>t.type==='page');if(!tab)throw new Error(`Start a separate headless Chrome on port ${cdpPort} first`);
 const ws=new WebSocket(tab.webSocketDebuggerUrl),pending=new Map<number,{resolve:(v:any)=>void;reject:(e:any)=>void;timer:ReturnType<typeof setTimeout>}>();
 let seq=0;
 const errors:string[]=[];

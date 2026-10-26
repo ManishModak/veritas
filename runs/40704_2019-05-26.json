@@ -1,0 +1,1017 @@
+{
+  "cik": 40704,
+  "company": "General Mills",
+  "fy_end": "2019-05-26",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2018-05-27 = $15,740.4M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2018-05-27 = $10,312.9M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2018-05-27 = $2,752.6M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2018-05-27 = $618.8M (XBRL tag DepreciationDepletionAndAmortization)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2018-05-27 = $2,131.0M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2018-05-27 = $2,841.0M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2018-05-27 = $1,684.2M (XBRL tag ReceivablesNetCurrent)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2018-05-27 = $4,123.7M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2018-05-27 = $4,047.2M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2018-05-27 = $30,624.0M (XBRL tag Assets)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2018-05-27 = $7,341.9M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001193125-18-209377, filed 2018-06-29",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2019-05-26 = $16,865.2M (XBRL tag RevenueFromContractWithCustomerExcludingAssessedTax)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2019-05-26 = $11,108.4M (XBRL tag CostOfGoodsAndServicesSold)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2019-05-26 = $2,935.8M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2019-05-26 = $620.1M (XBRL tag DepreciationDepletionAndAmortization)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2019-05-26 = $1,752.7M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2019-05-26 = $2,807.0M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2019-05-26 = $1,679.7M (XBRL tag ReceivablesNetCurrent)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2019-05-26 = $4,186.5M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2019-05-26 = $3,787.2M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2019-05-26 = $30,111.2M (XBRL tag Assets)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2019-05-26 = $7,087.1M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001193125-19-184675, filed 2019-06-28",
+      "id": "E22"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 7.1% vs receivables growth -0.3%; days sales outstanding 39 -> 36 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E23"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $2,131.0M -> $1,752.7M while operating cash flow $2,841.0M -> $2,807.0M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2018-08-26): revenue $4,094.0M vs $3,769.2M a year earlier (+8.6%); quarter-end receivables $1,709.1M vs $1,546.5M (+10.5%); quarter-end DSO 37 -> 38 days",
+      "source": "10-Q/10-K accessions 0001193125-18-276507, 0001193125-18-276507 (and prior-year 0001193125-17-289410)",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2018-11-25): revenue $4,411.2M vs $4,198.7M a year earlier (+5.1%); quarter-end receivables $1,716.8M vs $1,510.5M (+13.7%); quarter-end DSO 33 -> 35 days",
+      "source": "10-Q/10-K accessions 0001193125-18-353281, 0001193125-18-353281 (and prior-year 0001193125-17-374688)",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2019-02-24): revenue $4,198.3M vs $3,882.3M a year earlier (+8.1%); quarter-end receivables $1,704.1M vs $1,496.5M (+13.9%); quarter-end DSO 35 -> 37 days",
+      "source": "10-Q/10-K accessions 0001193125-19-080962, 0001193125-19-080962 (and prior-year 0001193125-18-090832)",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2019-05-26): revenue $4,161.7M vs $3,890.2M a year earlier (+7.0%); quarter-end receivables $1,679.7M vs $1,684.2M (-0.3%); quarter-end DSO 39 -> 37 days",
+      "source": "10-Q/10-K accessions 0001193125-19-184675, 0001193125-19-184675 (and prior-year 0001193125-18-209377)",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -2.6371 (flag threshold -1.78; flagged=False). Indices: DSRI=0.9308 GMI=1.0102 AQI=1.0027 SGI=1.0715 DEPI=0.9426 SGAI=0.9954 TATA=-0.035 LVGI=0.9817",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E29"
+    },
+    {
+      "kind": "mdna",
+      "text": "We are a global packaged foods company. We develop distinctive value-added food products and market them under unique brand names. We work continuously to\nimprove our core products and to create new products that meet consumers\u2019 evolving needs and preferences. In addition, we build the equity of our brands over time with strong consumer-directed marketing, innovative new products, and effective\nmerchandising. We believe our brand-building strategy is the key to winning and sustaining leading share positions in markets around the globe. \n Our\nfundamental financial goal is to generate superior returns for our shareholders over the long term. We believe that increases in organic net sales, adjusted operating profit, adjusted earnings per share (EPS), free cash flow, and cash return to\nshareholders are key drivers of financial performance for our business. \n Our long-term growth objectives are to consistently deliver:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E30"
+    },
+    {
+      "kind": "mdna",
+      "text": "We successfully transitioned Blue Buffalo into the General Mills portfolio in fiscal 2019, achieving our goals of double-digit pro forma growth in net sales\nand segment operating profit excluding the impact of purchase accounting. The combination of record-level Holistic Margin Management (HMM) savings, increased benefits from net price realization and mix, and strong cost management drove growth in\nconstant-currency adjusted operating profit and adjusted diluted EPS ahead of our initial targets. Finally, we continued to maintain a disciplined focus on cash, resulting in another year of strong free cash flow conversion.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our consolidated net sales for fiscal 2019 rose 7 percent to $16.9 billion. On an organic basis, net sales essentially matched year-ago levels. Operating profit of $2.5 billion increased 4 percent. Adjusted operating profit of $2.8 billion increased 9 percent and increased 10 percent on a constant-currency\nbasis. Diluted EPS of $2.90 was down 20 percent compared to fiscal 2018 results. Adjusted diluted EPS was up 4 percent to $3.22 per share and increased 4 percent on a constant-currency basis (See the \u201cNon-GAAP Measures\u201d section below for a description of our use of measures not defined by generally accepted accounting principles (GAAP)).",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "In fiscal 2018, we acquired Blue Buffalo, which became our Pet operating segment. We are reporting the Pet operating segment results on a one-month lag and, accordingly, our fiscal 2018 results did not include Pet segment operating results. \n In fiscal 2019,\nnet sales increased 7 percent compared to last year, primarily reflecting the addition of Blue Buffalo. Organic net sales were flat in the fiscal year ended May 26, 2019. Operating profit margin of 14.9 percent was down 50 basis\npoints from year-ago levels primarily driven by impairment charges recorded for certain intangible and manufacturing assets and unfavorable\n mark-to-market valuation of certain commodity positions. Adjusted operating profit margin increased 30 basis points to 16.9 percent, primarily driven by lower\nselling, general, and administrative expenses in our North America Retail segment and the addition of Blue Buffalo, partially offset by higher input costs. Diluted earnings per share of $2.90 decreased 20 percent primarily driven by a one-time benefit recorded in fiscal 2018 related to the Tax Cuts and Jobs Act (TCJA). Adjusted diluted earnings per share of $3.22 increased 4 percent on a constant-currency basis (see the \u201cNon-GAAP Measures\u201d section below for a description of our use of measures not defined by GAAP).",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E33"
+    },
+    {
+      "kind": "mdna",
+      "text": "The 7 percent increase in net sales in fiscal 2019 reflects the addition of Blue Buffalo, favorable net price realization and mix across all other\nsegments, and higher contributions from volume growth in the Asia & Latin America segment, partially offset by lower contributions from volume growth in the North America Retail, Europe & Australia, and Convenience\nStores & Foodservice segments. \n Components of organic net sales growth are shown in the following table:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E34"
+    },
+    {
+      "kind": "mdna",
+      "text": "Organic net sales in fiscal 2019 were flat compared to fiscal 2018, as favorable organic net price realization and mix was offset by declining contributions\nfrom organic volume growth. \n Cost of sales increased $804 million in fiscal 2019 to $11,108 million. The increase was driven by a\n$503 million increase due to higher volume and a $194 million increase attributable to product rate and mix, including the impact of the Blue Buffalo acquisition. In fiscal 2019, we recorded a $53 million charge related to the fair\nvalue adjustment of inventory acquired in the Blue Buffalo acquisition. We recorded a $36 million net increase in cost of sales related to mark-to-market valuation\nof certain commodity positions and grain inventories compared to a net decrease of $32 million in fiscal 2018 (please see Note 7 to the Consolidated Financial Statements in Item 8 of this report). In fiscal 2019, we recorded $10 million of\nrestructuring charges in cost of",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E35"
+    },
+    {
+      "kind": "mdna",
+      "text": "sales compared to $14 million in fiscal 2018. We also recorded $1 million of restructuring initiative project-related costs in cost of sales in fiscal 2019 compared to $11 million\nin fiscal 2018 (please see Note 4 to the Consolidated Financial Statements in Item 8 of this report for additional information). \n Gross margin\n increased 6 percent in fiscal 2019 versus fiscal 2018. Gross margin as a percent of net sales of 34.1 percent decreased 40 basis points compared to fiscal 2018.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E36"
+    },
+    {
+      "kind": "mdna",
+      "text": "Selling, general and administrative (SG&A) expenses increased $86 million to $2,936 million in fiscal 2019 compared to fiscal 2018. The\nincrease in SG&A expenses primarily reflects the addition of Blue Buffalo, partially offset by a decrease in media and advertising expense. SG&A expenses as a percent of net sales in fiscal 2019 decreased 70 basis points compared to fiscal\n2018. \n Divestitures loss totaled $30 million in fiscal 2019. In fiscal 2019, we sold our La Salte\u00f1a fresh pasta and\nrefrigerated dough business in Argentina, and recorded a pre-tax loss of $35 million. We also sold our yogurt business in China and simultaneously entered into a new Yoplait license agreement with the\npurchaser for their use of the Yoplait brand. We recorded a pre-tax gain of $5 million.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E37"
+    },
+    {
+      "kind": "mdna",
+      "text": "In fiscal 2019, as a result of lower sales projections in our long range plans for the businesses supporting our Progresso , Food Should Taste\nGood , and Mountain High brand intangible assets, we recorded $193 million of impairment charges related to these brand intangible assets (please see Note 6 to the Consolidated Financial Statements in Item 8 of this report for\nadditional information). \n In addition, in fiscal 2019, we recorded a $15 million charge related to the impairment of certain manufacturing assets in\nour North America Retail and Asia & Latin America segments. \n Charges associated with our restructuring initiatives recognized in fiscal 2019\nconsisted of the following:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E38"
+    },
+    {
+      "kind": "mdna",
+      "text": "Benefit plan non-service income totaled $88 million in\nfiscal 2019 compared to $89 million in fiscal 2018 (please see to Note 2 to the Consolidated Financial Statements in Item 8 of this report for additional information).",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E39"
+    },
+    {
+      "kind": "mdna",
+      "text": "The following tables provide the dollar amount and percentage of net sales and operating profit from each\nsegment for fiscal 2019 and 2018:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E40"
+    },
+    {
+      "kind": "mdna",
+      "text": "The 2 percent decrease in North America Retail net sales for fiscal 2019 was driven by a decrease in contributions from volume growth and unfavorable\nforeign currency exchange, partially offset by an increase in net price realization and mix.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E41"
+    },
+    {
+      "kind": "mdna",
+      "text": "North America Retail organic net sales decreased 1 percent in fiscal 2019 compared to fiscal 2018, driven by a decrease in contributions from organic\nvolume growth partially offset by favorable organic net price realization and mix. \n Net sales for our North America Retail operating units are shown in\nthe following table:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E42"
+    },
+    {
+      "kind": "mdna",
+      "text": "(a) \n On a constant currency basis, Canada operating unit net sales decreased 4 percent in fiscal 2019. See the \u201cNon-GAAP Measures\u201d section below for our use of this measure not defined by GAAP.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E43"
+    },
+    {
+      "kind": "mdna",
+      "text": "Convenience Stores & Foodservice net sales increased 2 percent in fiscal 2019, driven by\nfavorable net price realization and mix partially offset by a decrease in contributions from volume growth. \n The components of Convenience\nStores & Foodservice organic net sales growth are shown in the following table:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E44"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our Europe & Australia operating segment reflects retail and foodservice businesses in the greater Europe and Australia regions. Our product\ncategories include refrigerated yogurt, meal kits, super-premium ice cream, refrigerated and frozen dough products, shelf stable vegetables, grain snacks, and dessert and baking mixes. We also sell super-premium ice cream directly to consumers\nthrough owned retail shops. Revenues from franchise fees are reported in the region or country where the franchisee is located. \n Europe &\nAustralia net sales were as follows:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E45"
+    },
+    {
+      "kind": "mdna",
+      "text": "The 5 percent decrease in Europe & Australia net sales in fiscal 2019 was driven by unfavorable foreign currency exchange and lower\ncontributions from volume growth, partially offset by favorable net price realization and mix. \n The components of Europe & Australia organic net\nsales growth are shown in the following table:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E46"
+    },
+    {
+      "kind": "mdna",
+      "text": "The 1 percent decrease in Europe & Australia organic net sales growth in fiscal 2019 was driven by a decrease in contributions from organic\nvolume growth partially offset by favorable organic net price realization and mix.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E47"
+    },
+    {
+      "kind": "mdna",
+      "text": "Asia & Latin America net sales decreased 3 percent in fiscal 2019 compared to fiscal 2018, driven by unfavorable foreign currency exchange,\npartially offset by favorable net price realization and mix and an increase in contributions from volume growth. \n The components of Asia & Latin\nAmerica organic net sales growth are shown in the following table:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E48"
+    },
+    {
+      "kind": "mdna",
+      "text": "The 6 percent increase in Asia & Latin America organic net sales in fiscal 2019 was driven by favorable organic net price\nrealization and mix and an increase in contributions from organic volume growth. \n Segment operating profit increased 83 percent to $72 million\nin fiscal 2019, compared to $40 million in fiscal 2018, primarily driven by higher contributions from volume growth, higher net price realization and mix and lower SG&A expenses, partially offset by higher input costs, including\ncurrency-driven inflation on imported",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E49"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our Pet operating segment includes pet food products sold primarily in the United States in national pet superstore chains, e-commerce retailers, grocery stores, regional pet store chains, mass merchandisers, and veterinary clinics and hospitals. Our product categories include dog and cat food (dry foods, wet foods, and treats) made\nwith whole meats, fruits, and vegetables and other high-quality natural ingredients. Our tailored pet product offerings address specific dietary, lifestyle, and life-stage needs and span different product types, diet types, breed sizes for dogs,\nlifestages, flavors, product functions and textures, and cuts for wet foods. We are reporting the Pet operating segment results on a one-month lag and accordingly, our fiscal 2018 results\ndid not include Pet segment operating results. \n Pet net sales were as follows:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E50"
+    },
+    {
+      "kind": "mdna",
+      "text": "Pet net sales and segment operating profit in fiscal 2019 totaled $1,431 million and $268 million, respectively. Pet\noperating profit includes a $53 million purchase accounting adjustment related to inventory acquired and $13 million of amortization of the customer list intangible asset.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E51"
+    },
+    {
+      "kind": "mdna",
+      "text": "The primary source of our liquidity is cash flow from operations. Over the most recent two-year period, our operations\nhave generated $5.6 billion in cash. A substantial portion of this operating cash flow has been returned to shareholders through share repurchases and dividends. We also use cash from operations to fund our capital expenditures and\nacquisitions. We typically use a combination of cash, notes payable, and long-term debt, and occasionally issue shares of stock, to finance significant acquisitions.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E52"
+    },
+    {
+      "kind": "mdna",
+      "text": "As of May 26, 2019, we had $399 million of cash and cash equivalents held in foreign jurisdictions. As a result of the TCJA, the historic\nundistributed earnings of our foreign subsidiaries were taxed in the U.S. via the one-time repatriation tax in fiscal 2018. We have re-evaluated our assertion and\nhave concluded that although earnings prior to fiscal 2018 will remain permanently reinvested, we will no longer make a permanent reinvestment assertion beginning with our fiscal 2018 earnings. As part of the accounting for the TCJA, we recorded\nlocal country withholding taxes related to certain entities from which we began repatriating undistributed earnings and will continue to record local country withholding taxes on all future earnings. As a result of the transition tax, we may\nrepatriate our cash and cash equivalents held by our foreign subsidiaries without such funds being subject to further U.S. income tax liability (please see Note 14 to the Consolidated Financial Statements in Item 8 of this report for additional\ninformation). \n Cash Flows from Operations",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E53"
+    },
+    {
+      "kind": "mdna",
+      "text": "We strive to grow core working capital at or below the rate of growth in our net sales. For fiscal 2019, core working capital decreased 34 percent,\ncompared to a net sales increase of 7 percent. As of May 26, 2019, our core working capital balance totaled $385 million, down 34 percent versus last year, this is primarily driven by continued benefits from our payment terms\nextension program and lower inventory balances. In fiscal 2018, core working capital decreased 27 percent, compared to a net sales increase of 1 percent.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/40704/000119312519184675/d725716d10k.htm",
+      "id": "E54"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Management attributes the 7% revenue growth primarily to the Blue Buffalo acquisition (Pet segment) with organic sales flat, which matches the segment data showing $1.4B of new Pet revenue and declining volumes elsewhere. Receivables were flat year-over-year with DSO improving from 39 to 36 days, and operating cash flow was stable despite lower net income, consistent with management's cited 34% core working capital reduction driven by payment-term extensions (higher payables) and lower inventory. The quarterly pattern of receivables outpacing revenue in Q1\u2013Q3 then reversing in Q4 is not explicitly addressed but nets out by year-end.",
+        "findings": [
+          {
+            "management_says": "Revenue grew 7% primarily from Blue Buffalo addition; organic net sales flat (E32, E33, E34).",
+            "numbers_show": "Consolidated revenue +7.1% ($15.74B to $16.87B). New Pet segment contributed $1.431B in FY2019 (E51). Other segments: North America Retail -2%, Europe & Australia -5%, Convenience +2%, Asia & Latin America -3% (E41, E44, E46, E48). Organic sales flat per management (E35).",
+            "fit": "fits",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E51"
+            ]
+          },
+          {
+            "management_says": "Core working capital decreased 34% vs 7% sales growth, driven by payment terms extension program and lower inventory (E54).",
+            "numbers_show": "Receivables essentially flat (-0.3%, $1,684M to $1,680M) and DSO improved 39 to 36 days (E7, E18, E23). Operating cash flow flat ($2,841M to $2,807M) despite net income falling $378M (E5, E6, E16, E17, E24). Core WC balance $385M at year-end, down 34% (E54). The WC reduction (likely higher payables + lower inventory) provided cash that offset lower earnings, keeping CFO stable.",
+            "fit": "fits",
+            "evidence": [
+              "E5",
+              "E6",
+              "E7",
+              "E16",
+              "E17",
+              "E18",
+              "E23",
+              "E24",
+              "E54"
+            ]
+          },
+          {
+            "management_says": "Strong free cash flow conversion and disciplined cash focus (E31, E52).",
+            "numbers_show": "CFO $2.8B both years; free cash flow not separately provided but CFO stability amid earnings decline supports conversion claim. Beneish M-score -2.64 (no manipulation flag) (E29).",
+            "fit": "fits",
+            "evidence": [
+              "E6",
+              "E17",
+              "E29",
+              "E31",
+              "E52"
+            ]
+          },
+          {
+            "management_says": "(Implicit) No specific explanation for quarterly receivables pattern.",
+            "numbers_show": "Q1\u2013Q3: receivables grew 10\u201314% vs revenue 5\u20138%, DSO rose 1\u20132 days each quarter (E25, E26, E27). Q4: receivables fell 0.3% vs revenue +7%, DSO dropped 39 to 37 (E28). Full-year receivables flat, DSO improved. Pattern suggests intra-year buildup (possible seasonality/channel loading) that reversed by year-end.",
+            "fit": "unverified",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E23"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What drove the intra-year receivables buildup in Q1\u2013Q3 (DSO rising) and the sharp Q4 reversal? Was there channel loading or shipment timing that pulled revenue forward?",
+          "How much of the core working capital reduction came from extended payables vs lower inventory, and what is the expected sustainability of the payment-terms program?",
+          "Does the Pet (Blue Buffalo) segment have materially different receivables/DPO terms that affect consolidated DSO and cash conversion?"
+        ],
+        "what_would_change_my_mind": [
+          "Evidence that the Q4 receivables drop resulted from factoring, securitization, or aggressive collection that merely shifted timing rather than improved cash conversion.",
+          "Disclosure that the payment-terms extension program is near its limit or that suppliers are pushing back, which would reduce future CFO benefits.",
+          "Segment-level receivables data showing Pet segment DSO significantly higher than corporate average, implying the consolidated DSO improvement masks deterioration elsewhere."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 7% revenue growth is fully accounted for by the Blue Buffalo acquisition, which added a new Pet segment with $1.431B in net sales in FY2019, while organic sales were flat as other segments declined.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E51"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 34% core working capital reduction was achieved through the payment terms extension program and lower inventory balances, as stated by management, which is consistent with flat receivables, improved DSO, and stable operating cash flow despite lower net income.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E7",
+              "E16",
+              "E17",
+              "E18",
+              "E23",
+              "E24",
+              "E54"
+            ],
+            "support": "management's word"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "Strong free cash flow conversion is evidenced by stable operating cash flow of $2.8B in both years and a Beneish M-score of -2.64 indicating no earnings manipulation.",
+            "evidence": [
+              "E6",
+              "E17",
+              "E29",
+              "E31",
+              "E52"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "The intra-year receivables buildup in Q1\u2013Q3 and sharp Q4 reversal likely reflects normal seasonality in the packaged foods business (e.g., holiday-driven channel loading), but the pack does not contain management commentary or segment-level quarterly data to confirm this.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E23"
+            ],
+            "support": "outside the pack"
+          }
+        ],
+        "overall": "The investigator's verdict that management's explanation fits the numbers stands for the full-year revenue, working capital, and cash flow trends, as the reported numbers corroborate the acquisition-driven growth and working capital improvement. However, the quarterly receivables pattern remains unverified within the pack, as no management explanation or segment-level quarterly data is provided to confirm the seasonal interpretation."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.8,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Consolidated revenue grew 7.1% (E1, E12). The new Pet segment contributed $1.431B in net sales (E51), while other segments declined: North America Retail -2% (E41), Convenience Stores & Foodservice +2% (E44), Europe & Australia -5% (E46), Asia & Latin America -3% (E48). Management states organic net sales were flat (E35). The acquisition is visible in segment data and its size accounts for the overall growth.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E51",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E35"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management attributes the 34% core working capital reduction to a payment terms extension program and lower inventory (E54). The pack shows core working capital fell 34% (E54), receivables were flat (E7, E18), DSO improved (E23), and operating cash flow was stable (E6, E17). However, the pack contains no payables or inventory breakdown to verify the named drivers. The explanation rests on management's word.",
+            "evidence": [
+              "E54",
+              "E7",
+              "E18",
+              "E23",
+              "E6",
+              "E17"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Operating cash flow was stable at $2.8B in both years (E6, E17) despite net income falling from $2,131M to $1,753M (E5, E16). The Beneish M-score of -2.64 (E29) flags no earnings manipulation. These numbers support management's claim of strong free cash flow conversion and disciplined cash focus.",
+            "evidence": [
+              "E6",
+              "E17",
+              "E5",
+              "E16",
+              "E29"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "unverified",
+            "reason": "Management provides no explanation for the quarterly receivables pattern. The numbers show Q1\u2013Q3 receivables grew 10\u201314% vs revenue growth of 5\u20138%, with DSO rising 1\u20132 days each quarter (E25, E26, E27). In Q4, receivables fell 0.3% while revenue rose 7%, and DSO dropped from 39 to 37 days (E28). Full-year receivables were flat and DSO improved (E23). The defender suggests seasonality but that is outside the pack.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E23"
+            ]
+          }
+        ],
+        "deciding_evidence": "The segment revenue data (E51, E12, E1) corroborates the acquisition-driven growth claim. The core working capital reduction claim (E54) lacks supporting payables/inventory data to verify the stated drivers. The quarterly receivables pattern (E25\u2013E28) has no management explanation in the pack.",
+        "evidence_that_would_settle_it": [
+          "Segment-level quarterly receivables and payables data to confirm whether the Q1\u2013Q3 buildup and Q4 reversal are seasonal or due to channel loading.",
+          "Inventory and payables breakdown from the balance sheet or footnotes to verify the payment terms extension program and lower inventory as drivers of the core working capital reduction."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 30,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 30,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 24,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Management attributes the 7% revenue growth almost entirely to the Blue Buffalo acquisition (Pet segment $1,431M in FY2019 vs $0 in FY2018) with organic sales flat, which matches the segment data and the fact that total revenue rose only $1,125M while other segments declined. Receivables were flat (-0.3%) and DSO improved 39\u219236 days despite revenue growth, consistent with management's cited 'payment terms extension program' (likely extending payables) and strong collections, though the quarterly pattern (DSO rising Q1\u2013Q3 then falling sharply in Q4) is not explicitly addressed. Operating cash flow held nearly flat (-1.2%) while net income fell 18%, a gap explained by large non-cash charges (impairments $193M, purchase accounting $53M) that management flags.",
+        "findings": [
+          {
+            "management_says": "Revenue growth of 7% primarily reflects the addition of Blue Buffalo; organic net sales were flat (E32, E33, E34, E35).",
+            "numbers_show": "Pet segment (Blue Buffalo) recorded $1,431M net sales in FY2019 (E51) vs $0 in FY2018 (E33, E50). Total revenue rose $1,125M (E1, E12). Other segments declined: North America Retail -2% (E41), Europe & Australia -5% (E46), Convenience Stores & Foodservice +2% (E44), Asia & Latin America -3% (E48). The acquisition more than accounts for the total growth, with organic segments offsetting.",
+            "fit": "fits",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E50",
+              "E51"
+            ]
+          },
+          {
+            "management_says": "Core working capital decreased 34% driven by 'continued benefits from our payment terms extension program and lower inventory balances' (E54).",
+            "numbers_show": "Receivables were essentially flat (-0.3%, E7, E18) while revenue grew 7.1% (E23), so DSO improved from 39 to 36 days (E23). Quarterly DSO rose in Q1\u2013Q3 (37\u219238, 33\u219235, 35\u219237) then fell sharply in Q4 (39\u219237) (E25\u2013E28). The 'payment terms extension program' likely refers to extending payables (reducing core working capital), not customer terms, which would increase DSO. The full-year receivables/DSO improvement is consistent with strong collection or mix shift, but the quarterly pattern (build then release) is not explained.",
+            "fit": "fits",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E54"
+            ]
+          },
+          {
+            "management_says": "Strong free cash flow conversion and disciplined focus on cash (E31, E52).",
+            "numbers_show": "CFO was $2,841M \u2192 $2,807M (-1.2%, E6, E17, E24) while revenue grew 7.1%. Net income fell 17.8% ($2,131M \u2192 $1,753M, E5, E16, E24). The divergence is bridged by non-cash charges: $193M brand impairments (E38), $53M Blue Buffalo inventory purchase accounting (E51), $15M manufacturing impairments (E38), and depreciation ~$620M (E4, E15). CFO resilience matches management's cash-focus narrative.",
+            "fit": "fits",
+            "evidence": [
+              "E4",
+              "E5",
+              "E6",
+              "E15",
+              "E16",
+              "E17",
+              "E24",
+              "E31",
+              "E38",
+              "E51",
+              "E52"
+            ]
+          },
+          {
+            "management_says": "Organic net sales flat, with favorable price/mix offset by volume declines across major segments (E35, E41, E42, E44, E46, E47, E49).",
+            "numbers_show": "Segment commentary consistently cites price/mix gains offset by volume declines in North America Retail, Europe & Australia, and Convenience Stores & Foodservice; only Asia & Latin America shows organic volume growth (E49). This aligns with flat organic sales and the 7% consolidated growth coming from the Pet segment addition.",
+            "fit": "fits",
+            "evidence": [
+              "E35",
+              "E41",
+              "E42",
+              "E44",
+              "E46",
+              "E47",
+              "E49"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "The quarterly DSO rose in Q1\u2013Q3 (receivables growing faster than revenue) then fell sharply in Q4. Was this due to seasonal collection patterns, a year-end push, or changes in shipment timing/channel loading?",
+          "The 'payment terms extension program' is cited for working capital improvement. Does this program extend terms to suppliers (increasing payables) or to customers (increasing receivables)? The DSO improvement suggests the former, but clarification would help.",
+          "Blue Buffalo added $1,431M in net sales but total revenue rose only $1,125M. Can you quantify the organic revenue decline in the legacy segments that was offset by the acquisition?"
+        ],
+        "what_would_change_my_mind": [
+          "Evidence that the Pet segment's $1,431M includes significant channel loading or one-time shipment timing effects that inflate reported revenue growth.",
+          "Disclosure that the 'payment terms extension program' primarily extended customer payment terms (which would raise DSO, contrary to the observed improvement).",
+          "A reconciliation showing that the non-cash charges bridging net income to CFO include unusual or non-recurring items that overstate operating cash flow sustainability."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 7% consolidated revenue growth is fully accounted for by the Blue Buffalo acquisition, which contributed $1,431M of Pet segment net sales in FY2019 (E51) versus zero in FY2018 (E33, E50), while legacy segments collectively declined, resulting in flat organic net sales as management states (E32, E33, E34, E35).",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E50",
+              "E51"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 34% core working capital reduction is consistent with management's payment terms extension program extending supplier payables (not customer terms), which would lower working capital without increasing DSO; the full-year receivables were flat (-0.3%) while revenue grew 7.1%, driving DSO improvement from 39 to 36 days (E23). The quarterly DSO rise in Q1\u2013Q3 likely reflects seasonal shipment builds (e.g., holiday inventory) and the sharp Q4 decline reflects year-end collections, a pattern common in packaged foods.",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E54"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The near-flat operating cash flow ($2,841M \u2192 $2,807M) despite an 18% net income decline is explained by large non-cash charges that management disclosed: $193M brand impairments (E38), $53M Blue Buffalo inventory purchase accounting (E51), $15M manufacturing impairments (E38), and ~$620M depreciation (E4, E15). These charges reduce net income but not cash flow, supporting management's cash-focus narrative (E31, E52).",
+            "evidence": [
+              "E4",
+              "E5",
+              "E6",
+              "E15",
+              "E16",
+              "E17",
+              "E24",
+              "E31",
+              "E38",
+              "E51",
+              "E52"
+            ],
+            "support": "management's word"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "Organic net sales were flat because favorable price/mix across all segments (E35, E41, E42, E44, E46, E47, E49) offset volume declines in North America Retail, Europe & Australia, and Convenience Stores & Foodservice, with only Asia & Latin America showing organic volume growth (E49). This segment-level composition aligns with the 7% consolidated growth coming entirely from the Pet segment addition.",
+            "evidence": [
+              "E35",
+              "E41",
+              "E42",
+              "E44",
+              "E46",
+              "E47",
+              "E49"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict stands because each management explanation is corroborated by the reported financial data and segment disclosures in the evidence pack. No contradictory evidence emerges from the numbers provided."
+      },
+      "judge": {
+        "final_verdict": "explanation fits the numbers",
+        "confidence": 0.95,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Pet segment net sales of $1,431M in FY2019 (E51) versus $0 in FY2018 (E33, E50) accounts for the $1,125M total revenue increase (E1, E12), while legacy segment declines (E41, E44, E46, E48) offset the remainder, corroborating management's claim that organic net sales were flat (E32, E33, E34, E35).",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E50",
+              "E51"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "Receivables were flat (-0.3%, E7, E18) while revenue grew 7.1% (E23), driving DSO improvement from 39 to 36 days (E23), consistent with management's cited working capital reduction (E54). The quarterly DSO pattern (E25-E28) shows a seasonal build and year-end release but does not contradict the full-year improvement.",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E54"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Operating cash flow held nearly flat ($2,841M \u2192 $2,807M, E6, E17) while net income fell 18% ($2,131M \u2192 $1,753M, E5, E16). The divergence is bridged by disclosed non-cash charges: $193M brand impairments (E38), $53M Blue Buffalo inventory purchase accounting (E51), $15M manufacturing impairments (E38), and ~$620M depreciation (E4, E15), supporting management's cash-focus narrative (E31, E52).",
+            "evidence": [
+              "E4",
+              "E5",
+              "E6",
+              "E15",
+              "E16",
+              "E17",
+              "E24",
+              "E31",
+              "E38",
+              "E51",
+              "E52"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "fits",
+            "reason": "Segment commentary consistently reports favorable price/mix offsetting volume declines in North America Retail (E41, E42), Europe & Australia (E46, E47), and Convenience Stores & Foodservice (E44), with only Asia & Latin America showing organic volume growth (E49), aligning with flat organic net sales (E35) and 7% consolidated growth from the Pet segment (E51).",
+            "evidence": [
+              "E35",
+              "E41",
+              "E42",
+              "E44",
+              "E46",
+              "E47",
+              "E49",
+              "E51"
+            ]
+          }
+        ],
+        "deciding_evidence": "Pet segment net sales of $1,431M (E51) versus $0 in prior year (E33, E50) and total revenue increase of $1,125M (E1, E12) decide the revenue growth explanation; full-year receivables flat (E7, E18) and DSO improvement (E23) decide the working capital explanation; CFO stability (E6, E17) alongside large non-cash charges (E38, E51, E4, E15) decides the cash flow explanation.",
+        "evidence_that_would_settle_it": [
+          "Quarterly inventory and payables balances to verify the 34% core working capital reduction and the 'payment terms extension program' impact (E54).",
+          "Blue Buffalo acquisition purchase accounting details to confirm the $53M inventory fair value adjustment (E51) and any channel loading effects.",
+          "Quarterly segment net sales (organic and reported) to verify the price/mix vs volume trends throughout the year."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 38,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 38,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 39,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation partially fits the numbers",
+        "summary": "Management's revenue growth explanation (Blue Buffalo acquisition driving 7% growth with organic sales flat) is fully corroborated by segment data. However, management does not explain the receivables/DSO improvement (39\u219236 days) in the provided MD&A, only citing a payment-terms extension program that likely refers to payables, not receivables. Operating cash flow stability despite lower net income fits the disclosed working capital reduction and large non-cash charges.",
+        "findings": [
+          {
+            "management_says": "Consolidated net sales rose 7% to $16.9B, primarily reflecting the addition of Blue Buffalo; organic net sales were essentially flat (E32, E33, E34).",
+            "numbers_show": "Pet segment (Blue Buffalo) contributed $1,431M of net sales in FY2019 (E51) vs $0 in FY2018 (one-month lag, E50). Total revenue grew $1,124.8M (E1, E12). Other segments declined: North America Retail -2% (E41), Europe & Australia -5% (E46), Convenience Stores & Foodservice +2% (E44), Asia & Latin America -3% (E48). Organic net sales flat per management (E35) matches segment organic trends (E42, E47, E49).",
+            "fit": "fits",
+            "evidence": [
+              "E1",
+              "E12",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E41",
+              "E42",
+              "E44",
+              "E46",
+              "E47",
+              "E48",
+              "E49",
+              "E50",
+              "E51"
+            ]
+          },
+          {
+            "management_says": "Core working capital decreased 34% vs a 7% net sales increase, primarily driven by continued benefits from our payment terms extension program and lower inventory balances (E54).",
+            "numbers_show": "Receivables were flat year-over-year ($1,684.2M \u2192 $1,679.7M, -0.3%) while revenue grew 7.1%, so DSO improved 39\u219236 days (E23). Quarterly signals show receivables outpacing revenue in Q1\u2013Q3 (E25\u2013E27: receivables +10.5%/+13.7%/+13.9% vs revenue +8.6%/+5.1%/+8.1%), then a sharp drop in Q4 (E28: receivables -0.3% vs revenue +7.0%). Management's 'payment terms extension program' likely extends payables (reducing core working capital), but does not explain the receivables/DSO improvement or the intra-year build-and-release pattern.",
+            "fit": "unverified",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E54"
+            ]
+          },
+          {
+            "management_says": "Operations generated $5.6B in cash over the most recent two-year period; we maintained a disciplined focus on cash, resulting in another year of strong free cash flow conversion (E31, E52).",
+            "numbers_show": "CFO declined only 1.2% ($2,841.0M \u2192 $2,807.0M, E6, E17) despite net income falling 17.8% ($2,131.0M \u2192 $1,752.7M, E5, E16). The gap is explained by large non-cash charges (impairments $208M per E38, Blue Buffalo inventory fair-value adjustment $53M per E35, depreciation $620M per E15) and a 34% core working capital reduction (E54) driven by payables extension and lower inventory, which boosts operating cash flow.",
+            "fit": "fits",
+            "evidence": [
+              "E5",
+              "E6",
+              "E16",
+              "E17",
+              "E15",
+              "E35",
+              "E38",
+              "E54"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific factors drove the DSO improvement from 39 to 36 days? Was it a mix shift (e.g., Blue Buffalo's shorter collection terms), tighter credit/collection, or a change in revenue recognition timing?",
+          "The quarterly data shows receivables growing faster than revenue in Q1\u2013Q3 then falling sharply in Q4. Was this due to shipment timing, channel loading, seasonal patterns, or the one-month lag in Blue Buffalo reporting?",
+          "The 'payment terms extension program' cited for core working capital reduction: does this extend terms with suppliers (increasing payables) or with customers (increasing receivables)? The DSO improvement suggests customers paid faster, not slower."
+        ],
+        "what_would_change_my_mind": [
+          "Segment-level receivables and DSO data showing Blue Buffalo operates at a materially lower DSO than the corporate average, corroborating a mix-shift explanation for the DSO improvement.",
+          "Quarterly cash flow statements showing a large Q4 increase in accounts payable that offsets the Q4 receivables decline, confirming the payment-terms extension program's timing.",
+          "Disclosure that the Q4 receivables drop reflects a deliberate shipment pull-forward reversal or a change in credit terms, rather than organic collection improvement."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 7% consolidated revenue growth is fully accounted for by the Blue Buffalo acquisition, which contributed $1,431M of net sales in FY2019 (E51) versus $0 in FY2018 due to the one-month reporting lag (E50), while organic net sales were flat across all other segments (North America Retail -2% per E41, Europe & Australia -5% per E46, Convenience Stores & Foodservice +2% per E44, Asia & Latin America -3% per E48), matching management's organic flatness claim (E35, E42, E47, E49).",
+            "evidence": [
+              "E1",
+              "E12",
+              "E51",
+              "E50",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E42",
+              "E47",
+              "E49",
+              "E35"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The DSO improvement from 39 to 36 days (E23) and the intra-year pattern of receivables outpacing revenue in Q1-Q3 then falling sharply in Q4 (E25-E28) are consistent with the addition of the Pet segment (Blue Buffalo) reported on a one-month lag (E50, E51) and normal seasonal collection patterns. The payment terms extension program cited for core working capital reduction (E54) refers to extending payables to suppliers, which reduces core working capital but does not directly affect DSO; the quarterly signals show a seasonal build-and-release pattern that aligns with typical year-end collection efforts.",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E50",
+              "E51",
+              "E54"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The modest 1.2% decline in operating cash flow ($2,841.0M to $2,807.0M per E6, E17) despite a 17.8% drop in net income ($2,131.0M to $1,752.7M per E5, E16) is fully explained by large non-cash charges: $208M in impairments (E38), $53M Blue Buffalo inventory fair-value adjustment (E35), $620M depreciation (E15), and a 34% core working capital reduction (E54) driven by payables extension and lower inventory, which collectively boost operating cash flow relative to net income.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E16",
+              "E17",
+              "E15",
+              "E35",
+              "E38",
+              "E54"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that the explanation partially fits the numbers stands: the revenue growth and cash flow stability are fully corroborated by reported numbers, while the DSO improvement lacks explicit management explanation in the provided MD&A but is consistent with acquisition mix and seasonal patterns visible in the quarterly data."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.78,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "The 7% revenue growth is fully accounted for by the Blue Buffalo acquisition ($1,431M in FY2019 vs $0 in FY2018 due to one-month lag) while organic net sales were flat across other segments, matching management's description. Segment sales trends (North America Retail -2%, Europe & Australia -5%, Convenience Stores & Foodservice +2%, Asia & Latin America -3%) and organic trends corroborate the flat organic claim.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E51",
+              "E50",
+              "E41",
+              "E44",
+              "E46",
+              "E48",
+              "E42",
+              "E47",
+              "E49",
+              "E35"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management attributes the 34% core working capital reduction to a payment terms extension program and lower inventory (E54). However, the pack lacks payables and inventory breakdowns to verify these drivers. The DSO improvement (39\u219236 days) and intra-year receivables pattern (build in Q1-Q3, sharp drop in Q4) are not explained by management; the defender's suggestion of acquisition mix and seasonality is plausible but not directly visible in the numbers (no segment receivables/DSO data). Thus the explanation rests on management's word.",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E54"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Operating cash flow declined only 1.2% despite a 17.8% drop in net income. The gap is explained by large non-cash charges (impairments $208M per E38, Blue Buffalo inventory fair-value adjustment $53M per E35, depreciation $620M per E15) and a 34% core working capital reduction (E54) that boosts CFO. The numbers corroborate management's claim of strong cash flow conversion.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E16",
+              "E17",
+              "E15",
+              "E35",
+              "E38",
+              "E54"
+            ]
+          }
+        ],
+        "deciding_evidence": "E51 (Pet segment sales $1,431M) and E1/E12 (revenue growth) decide finding 0; E23 (DSO improvement) and E54 (management's core working capital claim) decide finding 1; E5/E6/E16/E17 (net income and CFO) with E35/E38/E15 (non-cash charges) decide finding 2.",
+        "evidence_that_would_settle_it": [
+          "Segment-level receivables and DSO data for Blue Buffalo to test if its addition drove the corporate DSO improvement.",
+          "Quarterly accounts payable and inventory balances to verify the payment terms extension program and lower inventory claimed as drivers of core working capital reduction."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 31,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 30,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 28,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation fits the numbers": 2,
+      "explanation partially fits the numbers": 1
+    },
+    "judge": {
+      "explanation unverified": 2,
+      "explanation fits the numbers": 1
+    }
+  }
+}

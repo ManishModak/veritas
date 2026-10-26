@@ -1,0 +1,1033 @@
+{
+  "cik": 1336917,
+  "company": "Under Armour",
+  "fy_end": "2013-12-31",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2012-12-31 = $1,834.9M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2012-12-31 = $955.6M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2012-12-31 = $670.6M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2012-12-31 = $43.1M (XBRL tag DepreciationAndAmortization)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2012-12-31 = $128.8M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2012-12-31 = $199.8M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2012-12-31 = $175.5M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2012-12-31 = $903.6M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2012-12-31 = $180.8M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2012-12-31 = $1,157.1M (XBRL tag Assets)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2012-12-31 = $252.2M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2012-12-31 = $52.8M (XBRL tag LongTermDebtNoncurrent)",
+      "source": "10-K accession 0001336917-13-000011, filed 2013-02-25",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2013-12-31 = $2,332.1M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2013-12-31 = $1,195.4M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2013-12-31 = $871.6M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2013-12-31 = $50.5M (XBRL tag DepreciationAndAmortization)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2013-12-31 = $162.3M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2013-12-31 = $120.1M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2013-12-31 = $210.0M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2013-12-31 = $1,128.8M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2013-12-31 = $224.0M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2013-12-31 = $1,577.7M (XBRL tag Assets)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E22"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2013-12-31 = $426.6M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E23"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2013-12-31 = $48.0M (XBRL tag LongTermDebtNoncurrent)",
+      "source": "10-K accession 0001336917-14-000008, filed 2014-02-21",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 27.1% vs receivables growth 19.6%; days sales outstanding 35 -> 33 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $128.8M -> $162.3M while operating cash flow $199.8M -> $120.1M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2013-03-31): revenue $471.6M vs $384.4M a year earlier (+22.7%); quarter-end receivables $246.2M vs $196.4M (+25.4%); quarter-end DSO 46 -> 48 days",
+      "source": "10-Q/10-K accessions 0001336917-13-000017, 0001336917-13-000017 (and prior-year 0001193125-12-211167)",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2013-06-30): revenue $454.5M vs $369.5M a year earlier (+23.0%); quarter-end receivables $212.8M vs $175.2M (+21.4%); quarter-end DSO 43 -> 43 days",
+      "source": "10-Q/10-K accessions 0001336917-13-000023, 0001336917-13-000023 (and prior-year 0001193125-12-335302)",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2013-09-30): revenue $723.1M vs $575.2M a year earlier (+25.7%); quarter-end receivables $353.3M vs $311.0M (+13.6%); quarter-end DSO 49 -> 44 days",
+      "source": "10-Q/10-K accessions 0001336917-13-000030, 0001336917-13-000030 (and prior-year 0001336917-12-000005)",
+      "id": "E29"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2013-12-31): revenue $682.8M vs $505.9M a year earlier (+35.0%); quarter-end receivables $210.0M vs $175.5M (+19.6%); quarter-end DSO 32 -> 28 days",
+      "source": "10-Q/10-K accessions 0001336917-14-000008, 0001336917-14-000008 (and prior-year 0001336917-13-000011)",
+      "id": "E30"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -1.7072 (flag threshold -1.78; flagged=True). Indices: DSRI=0.9412 GMI=0.9832 AQI=2.2716 SGI=1.2709 DEPI=1.0447 SGAI=1.0226 TATA=0.0268 LVGI=1.1412",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "Consolidated Results of Operations \n Year Ended December 31, 2013 Compared to Year Ended December 31, 2012 \n Net revenues increase d $497.2 million, or 27.1% , to $ 2,332.1 million in 2013 from $ 1,834.9 million in 2012 . Net revenues by product category are summarized below:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "Net sales increase d $ 487.0 million , or 27.2% , to $ 2,277.1 million in 2013 from $ 1,790.1 million in 2012 as noted in the table above. The increase in net sales primarily reflects:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E33"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n $176.8 million, or 33.2%, increase in direct to consumer sales, which includes 18 additional retail stores, or a 16.5% growth, since December 31, 2012, and continued growth in our ecommerce business;",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E34"
+    },
+    {
+      "kind": "mdna",
+      "text": "License and other revenues increase d $ 10.2 million , or 22.8% , to $ 55.0 million in 2013 from $ 44.8 million in 2012 . This increase in license and other revenues was primarily a result of increased distribution and continued unit volume growth by our licensees. \n Gross profit increase d $ 257.4 million to $ 1,136.7 million in 2013 from $ 879.3 million in 2012 . Gross profit as a percentage of net revenues, or gross margin, increase d 80 basis points to 48.7% in 2013 compared to 47.9% in 2012 . The increase in gross margin percentage was primarily driven by the following:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E35"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n approximate 60 basis point increase driven by sales mix. The sales mix impact was primarily driven by decreased sales mix of excess inventory through our factory house outlet stores at lower prices, along with a lower proportion of North American wholesale footwear sales. We expect the North American wholesale footwear proportion of sales will increase during the first half of 2014 driving a negative sales mix impact; and",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E36"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n approximate 50 basis point increase driven by lower North American apparel and accessories product input costs. We expect North American wholesale product input costs will continue to positively impact year over year margins during the first half of 2014, but on a more limited basis.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E37"
+    },
+    {
+      "kind": "mdna",
+      "text": "Selling, general and administrative expenses increase d $ 201.0 million to $ 871.6 million in 2013 from $ 670.6 million in 2012 . As a percentage of net revenues, selling, general and administrative expenses increase d to 37.3% in 2013 from 36.5% in 2012 . These changes were primarily attributable to the following:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E38"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Marketing costs increased $41.1 million to $246.5 million in 2013 from $205.4 million in 2012 primarily due to increased sponsorship of collegiate and professional teams and athletes and marketing to support our international expansion. As a percentage of net revenues, marketing costs decreased to 10.5% in 2013 from 11.2% in 2012 .",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E39"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Selling costs increased $63.9 million to $239.9 million in 2013 from $176.0 million in 2012 . This increase was primarily due to higher personnel and other costs incurred primarily for the continued expansion of our direct to consumer distribution channel. As a percentage of net revenues, selling costs increased to 10.3% in 2013 from 9.6% in 2012 .",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E40"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Product innovation and supply chain costs increased $50.7 million to $209.2 million in 2013 from $158.5 million in 2012 primarily due to higher incentive compensation as well as higher personnel costs to support our growth in net revenues. As a percentage of net revenues, product innovation and supply chain costs increased to 9.0% in 2013 from 8.6% in 2012 .",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E41"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Corporate services costs increased $45.3 million to $176.0 million in 2013 from $130.7 million in 2012 . This increase was primarily attributable to higher incentive compensation as well as higher corporate personnel costs necessary to support our growth. As a percentage of net revenues, corporate services costs increased to 7.5% in 2013 from 7.1% in 2012 .",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E42"
+    },
+    {
+      "kind": "mdna",
+      "text": "Net sales increased $354.0 million , or 24.7% , to $1,790.1 million in 2012 from $1,436.1 million in 2011 as noted in the table above. The increase in net sales primarily reflects:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E43"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n $134.7 million, or 33.8%, increase in direct to consumer sales, which includes 22 additional factory house stores, or a 27.5% increase, since December 31, 2011; and",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E44"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n increased average selling prices due to a higher mix in the current year period of direct to consumer sales, along with increasing sales of our higher priced products such as Fleece, our women's UA Studio line and UA Spine footwear.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E45"
+    },
+    {
+      "kind": "mdna",
+      "text": "License revenues increased $8.2 million , or 22.5% , to $44.8 million in 2012 from $36.6 million in 2011 . This increase in license revenues was a result of increased distribution and continued unit volume growth by our licensees. \n Gross profit increased $166.5 million to $879.3 million in 2012 from $712.8 million in 2011. Gross profit as a percentage of net revenues, or gross margin, decreased 50 basis points to 47.9% in 2012 compared to 48.4% in 2011. The decrease in gross margin percentage was primarily driven by the following:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E46"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n approximate 35 basis point decrease driven by sales mix. The sales mix impact was partially driven by increased sales of excess inventory through our factory house stores at lower prices, along with a larger proportion of footwear sales, primarily due to new 2012 running styles and growth within our cleated shoe sales; and",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E47"
+    },
+    {
+      "kind": "mdna",
+      "text": "Selling, general and administrative expenses increased $120.5 million to $670.6 million in 2012 from $550.1 million in 2011. As a percentage of net revenues, selling, general and administrative expenses decreased to 36.5% in 2012 from 37.3% in 2011. These changes were primarily attributable to the following:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E48"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Marketing costs increased $37.5 million to $205.4 million in 2012 from $167.9 million in 2011 primarily due to increased marketing campaigns for key apparel and footwear launches in 2012 and sponsorship of collegiate and professional teams and athletes, including Tottenham Hotspur Football Club. As a percentage of net revenues, marketing costs decreased slightly to 11.2% in 2012 from 11.4% in 2011.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E49"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Selling costs increased $37.2 million to $176.0 million in 2012 from $138.8 million in 2011. This increase was primarily due to higher personnel and other costs incurred primarily for the continued expansion of our direct to consumer distribution channel. As a percentage of net revenues, selling costs increased slightly to 9.6% in 2012 from 9.4% in 2011.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E50"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Product innovation and supply chain costs increased $29.4 million to $158.5 million in 2012 from $129.1 million in 2011 primarily due to higher distribution facilities operating and personnel costs to support our growth in net revenues and higher personnel costs for the design and sourcing of our expanding apparel, footwear and accessory lines. As a percentage of net revenues, product innovation and supply chain costs decreased slightly to 8.6% in 2012 from 8.8% in 2011.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E51"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Corporate services costs increased $16.4 million to $130.7 million in 2012 from $114.3 million in 2011. This increase was primarily attributable to higher corporate personnel cost and information technology initiatives necessary to support our growth. As a percentage of net revenues, corporate services costs decreased to 7.1% in 2012 from 7.7% in 2011 primarily due to decreased corporate personnel costs as a percentage of net revenues in 2012.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E52"
+    },
+    {
+      "kind": "mdna",
+      "text": "Income from operations increased $45.9 million, or 28.2%, to $208.7 million in 2012 from $162.8 million in 2011. Income from operations as a percentage of net revenues increased to 11.4% in 2012 from 11.1% in 2011. This increase was a result of the items discussed above. \n Interest expense, net increased $1.4 million to $5.2 million in 2012 from $3.8 million in 2011. This increase was primarily due to a full year of interest on the debt related to the acquisition of our corporate headquarters in 2012 as compared to 2011.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E53"
+    },
+    {
+      "kind": "mdna",
+      "text": "Other expense, net decreased $2.0 million to $0.1 million in 2012 from $2.1 million in 2011. This decrease was due to lower net losses in 2012 on the combined foreign currency exchange rate changes on transactions denominated in foreign currencies and our foreign currency derivative financial instruments as compared to 2011. \n Provision for income taxes increased $14.8 million to $74.7 million in 2012 from $59.9 million in 2011. Our effective tax rate was 36.7% in 2012 compared to 38.2% in 2011, primarily due to state tax credits received in 2012. \n Segment Results of Operations \n The net revenues and operating income (loss) associated with our segments are summarized in the following tables. The majority of corporate expenses within North America have not been allocated to other foreign countries and businesses. Certain corporate services costs, previously included within North America, have been allocated to other foreign countries and businesses. Prior period segment data has been recast within the tables to conform to current year presentation. \n Year Ended December 31, 2013 Compared to Year Ended December 31, 2012",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E54"
+    },
+    {
+      "kind": "mdna",
+      "text": "Net revenues in our North American operating segment increase d $ 467.0 million to $ 2,193.7 million in 2013 from $ 1,726.7 million in 2012 primarily due to the items discussed above in the Consolidated Results of Operations. Net revenues in other foreign countries and businesses increase d by $ 30.1 million to $ 138.3 million in 2013 from $ 108.2 million in 2012 primarily due to unit sales growth in our EMEA and Asia operating segments and to distributors in our Latin American operating segment. \n Operating income (loss) by segment is summarized below:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E55"
+    },
+    {
+      "kind": "mdna",
+      "text": "Operating income in our North American operating segment increased $71.2 million to $ 271.3 million in 2013 from $ 200.1 million in 2012 primarily due to the items discussed above in the Consolidated Results of Operations. Operating income (loss) in other foreign countries and businesses decreased by $14.8 million to $ (6.2) million in 2013 from $ 8.6 million in 2012 primarily due to our continued investment to support our international expansion in our EMEA, Asia and Latin American operating segments. Investments in 2013 primarily include the opening of brand and factory house stores in China and offices and distribution facilities in Brazil and Chile, along with higher personnel costs and incentive compensation. \n Year Ended December 31, 2012 Compared to Year Ended December 31, 2011 \n Net revenues by segment are summarized below:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1336917/000133691714000008/ua-20131231x10k.htm",
+      "id": "E56"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes 27.1% revenue growth primarily to direct-to-consumer (DTC) expansion and license revenue, but those cited drivers account for only ~37% of the $497M increase. Meanwhile, operating cash flow fell 40% despite higher net income and improving DSO, a divergence that management does not explain in the provided MD&A. The quarterly pattern shows Q4 revenue surged 35% with DSO improving to 28 days, yet full-year cash flow collapsed, suggesting material working-capital or non-cash headwinds not addressed by management.",
+        "findings": [
+          {
+            "management_says": "Revenue growth driven by $176.8M (33.2%) increase in direct-to-consumer sales (18 new stores, ecommerce) and $10.2M (22.8%) license revenue growth.",
+            "numbers_show": "Total revenue grew $497.2M (27.1%). Cited drivers sum to $187M, covering only 37.6% of growth. The remaining ~$310M (wholesale) is unexplained in the provided MD&A. Receivables grew 19.6% vs revenue 27.1%; DSO improved 35\u219233 days annually, but quarterly DSO worsened in Q1 (46\u219248) and improved sharply in Q4 (32\u219228). Operating cash flow dropped 40% ($199.8M\u2192$120.1M) while net income rose 26%.",
+            "fit": "does not fit",
+            "evidence": [
+              "E13",
+              "E1",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E25",
+              "E27",
+              "E30",
+              "E26"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation provided in the evidence pack for the rise in receivables or the decline in operating cash flow.",
+            "numbers_show": "Receivables grew slower than revenue (19.6% vs 27.1%) and DSO improved annually, consistent with a DTC mix shift. However, quarterly signals show Q1 receivables outpacing revenue (+25.4% vs +22.7%) and DSO rising, while Q4 shows the opposite. The 40% CFO decline amid rising income and better DSO indicates large adverse working-capital moves (e.g., inventory, payables, accruals) not discussed.",
+            "fit": "unverified",
+            "evidence": [
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E26",
+              "E31"
+            ]
+          },
+          {
+            "management_says": "Gross margin improved 80 bps due to sales mix (60 bps) and lower input costs (50 bps), with DTC growth reducing outlet excess-inventory sales.",
+            "numbers_show": "Gross margin rose 47.9%\u219248.7% (E35, E36, E37). The mix shift toward DTC (higher margin) aligns with the margin improvement and could support faster cash collection. However, the magnitude of wholesale growth (unquantified) and the CFO collapse suggest the mix shift was insufficient to offset cash-flow pressures elsewhere.",
+            "fit": "fits",
+            "evidence": [
+              "E35",
+              "E36",
+              "E37",
+              "E25",
+              "E26"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What drove the ~$310M of revenue growth not attributed to DTC or license channels, and what were the payment terms for that wholesale growth?",
+          "Why did operating cash flow fall $79.7M despite a $33.5M rise in net income and a 2-day DSO improvement? Please quantify the impact of inventory, accounts payable, accrued expenses, and tax payments.",
+          "The Q1 receivables build (DSO 46\u219248 days) reversed by Q4 (DSO 32\u219228 days). Was this due to shipment timing, extended terms early in the year, or collection efforts? How much of Q4 revenue shipped in the final weeks?",
+          "The Beneish M-score flags asset-quality deterioration (AQI=2.27). What non-current assets grew disproportionately (e.g., goodwill, intangibles, deferred tax assets), and do they relate to acquisitions or capitalized costs?"
+        ],
+        "what_would_change_my_mind": [
+          "A segment-level breakdown of receivables and cash collections showing DTC cash conversion offsetting wholesale terms.",
+          "A reconciliation of the $79.7M CFO decline to specific working-capital line items (inventory, payables, accrued liabilities, taxes) with magnitudes.",
+          "Disclosure of whether Q4 revenue included unusual shipment timing or channel loading, and the associated receivables aging.",
+          "Explanation of the AQI driver: detail on the non-PP&E, non-current assets that grew faster than total assets."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The $310M of revenue growth not attributed to DTC or license channels is wholesale revenue within the North America segment, which grew $467.0M (E55) and, combined with $30.1M international growth (E55), accounts for the total $497.2M increase (E13, E1). The MD&A states North America growth was \"primarily due to the items discussed above in the Consolidated Results of Operations\" (E55), linking it to the same demand drivers. The quarterly DSO patterns (E27-E30) reflect seasonal shipment timing (Q4 revenue surge 35% with DSO improving to 28 days) rather than collection deterioration.",
+            "evidence": [
+              "E13",
+              "E1",
+              "E55",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 40% CFO decline ($199.8M to $120.1M, E26) reflects substantial working-capital investment \u2014 inventory build, higher payables, and accrued expenses \u2014 to support 27% revenue growth, which is not itemized in the evidence pack. The quarterly DSO pattern (E27-E30) shows a Q1 receivables build (DSO 46\u219248 days) that reverses by Q4 (DSO 32\u219228 days), consistent with seasonal shipment timing rather than systemic collection issues. Annual DSO improved (35\u219233 days, E25), indicating overall collection efficiency.",
+            "evidence": [
+              "E26",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The 80 bps gross margin improvement (47.9%\u219248.7%, E35) is corroborated by the 33.2% DTC revenue growth ($176.8M, E34) shifting mix toward higher-margin channels (E36) and management's stated 50 bps input cost benefit (E37). The DTC mix shift is visible in the numbers at a scale consistent with the claimed 60 bps mix benefit, and the margin expansion supports faster cash conversion from DTC sales.",
+            "evidence": [
+              "E35",
+              "E34",
+              "E36",
+              "E37"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict overstates the mismatch: segment revenue data (E55) explains the bulk of revenue growth not attributed to DTC/license, and the CFO decline is typical for a high-growth company investing in working capital, though the pack lacks the detailed working-capital reconciliation to fully quantify it."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.82,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Management's stated drivers (DTC +$176.8M, license +$10.2M) sum to $187M, covering only 37.6% of the $497.2M revenue increase. The remaining ~$310M is not attributed to any driver in the provided MD&A. Segment data (E55) shows North America revenue grew $467M but does not break out wholesale vs DTC; the MD&A links North America growth to the same consolidated drivers, not providing a separate wholesale driver.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E32",
+              "E33",
+              "E34",
+              "E35",
+              "E55"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management provides no explicit explanation for the 40% decline in operating cash flow (E26) despite rising net income and improved annual DSO (E25). The defender's explanation (working-capital investment) relies on facts not in the evidence pack (inventory, payables, accruals). Quarterly DSO patterns (E27-E30) show seasonal variation but do not quantify the cash-flow impact. Since the explanation rests on facts outside the pack, it is unverified.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Gross margin improved 80 bps (E35). The MD&A attributes this to a ~60 bps sales mix benefit from reduced outlet excess-inventory sales and lower wholesale footwear proportion (E36), and a ~50 bps benefit from lower input costs (E37). The DTC revenue growth of $176.8M (E34) is visible in the numbers and supports a mix shift toward higher-margin channels. The aggregate COGS growth (25.1%) lagging revenue growth (27.1%) is consistent with lower input costs or favorable mix. While the input cost benefit is not directly isolated, the overall margin expansion is consistent with the cited drivers at the stated scale.",
+            "evidence": [
+              "E34",
+              "E35",
+              "E36",
+              "E37",
+              "E2",
+              "E14"
+            ]
+          }
+        ],
+        "deciding_evidence": "E1, E13, E34, E55 show DTC+license growth $187M vs total revenue growth $497M; E26 shows CFO fell 40% while net income rose, with no working-capital reconciliation in the pack.",
+        "evidence_that_would_settle_it": [
+          "A segment-level breakdown of revenue by channel (wholesale vs DTC) with associated margins and cash collection terms.",
+          "A cash flow statement reconciliation showing changes in inventory, accounts payable, accrued liabilities, and tax payments for FY2013."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 22,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 17,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 20,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Management attributes 2013 revenue growth mainly to direct-to-consumer expansion (+$176.8M) and license growth (+$10.2M). The numbers show revenue up 27.1% while receivables rose only 19.6% and DSO improved from 35 to 33 days, consistent with a shift to faster-collecting direct-to-consumer sales. Operating cash flow fell 40% despite higher net income, which aligns with the disclosed $201M increase in cash SG&A (marketing, selling, supply chain) to support that expansion and likely inventory investment (not shown). Quarter-level signals show steady growth across periods with no spike in DSO or receivables that would indicate shipment timing or channel loading.",
+        "findings": [
+          {
+            "management_says": "Revenue growth primarily reflects a $176.8M (33.2%) increase in direct-to-consumer sales from 18 new retail stores and ecommerce growth.",
+            "numbers_show": "Revenue grew 27.1% ($1,834.9M to $2,332.1M). Receivables grew 19.6% ($175.5M to $210.0M) and DSO improved from 35 to 33 days. Quarter-end DSO fell in Q3 (49\u219244) and Q4 (32\u219228), consistent with faster cash collection from direct-to-consumer sales.",
+            "fit": "fits",
+            "evidence": [
+              "E13",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E34"
+            ]
+          },
+          {
+            "management_says": "License and other revenues increased $10.2M (22.8%) due to increased distribution and unit volume growth by licensees.",
+            "numbers_show": "License revenue growth of 22.8% is reported (E35). As a smaller, royalty-like stream, it would not materially affect DSO; the overall DSO improvement supports that this portion did not lengthen collection periods.",
+            "fit": "fits",
+            "evidence": [
+              "E35",
+              "E25"
+            ]
+          },
+          {
+            "management_says": "SG&A increased $201M due to higher marketing, selling costs (direct-to-consumer expansion), product innovation/supply chain, and corporate services.",
+            "numbers_show": "SG&A rose from $670.6M to $871.6M (E3, E15). Operating cash flow dropped from $199.8M to $120.1M (E6, E18) while net income rose $33.5M. The large cash outflows for selling ($63.9M increase, E40) and marketing ($41.1M increase, E39) directly reduce CFO, and the receivables increase of $34.5M (E7, E19) also consumed cash. The pattern fits the described investment in growth.",
+            "fit": "fits",
+            "evidence": [
+              "E3",
+              "E6",
+              "E15",
+              "E18",
+              "E39",
+              "E40",
+              "E41",
+              "E42"
+            ]
+          },
+          {
+            "management_says": "Gross margin improved 80 bps driven by sales mix (60 bps) and lower input costs (50 bps).",
+            "numbers_show": "Gross margin rose from 47.9% to 48.7% (E35). This profitability improvement supports higher net income but does not directly explain receivables or cash flow movements; it is consistent with the overall narrative.",
+            "fit": "fits",
+            "evidence": [
+              "E35",
+              "E36",
+              "E37"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation provided in the evidence pack for the decline in operating cash flow or the change in receivables.",
+            "numbers_show": "CFO fell $79.7M despite higher net income; receivables rose $34.5M. The quarter signals show no evidence of shipment timing, extended terms, or channel loading (DSO stable or improving each quarter). The observed patterns are consistent with the stated revenue drivers and SG&A increases, but management's own causal linkage for cash flow is absent.",
+            "fit": "unverified",
+            "evidence": [
+              "E6",
+              "E18",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "Please quantify the impact of inventory changes and accounts payable on the $79.7M decline in operating cash flow.",
+          "Were any shipments pulled forward into Q4 or payment terms extended to wholesale customers that would inflate revenue temporarily?",
+          "What is the expected cash conversion cycle for the new direct-to-consumer stores versus the wholesale channel?",
+          "Does the Beneish M-score flag (DSRI=0.94, AQI=2.27) reflect any accounting policy changes or one-time items?"
+        ],
+        "what_would_change_my_mind": [
+          "Disclosure that a material portion of Q4 revenue was recognized under extended payment terms or bill-and-hold arrangements.",
+          "Evidence that receivables growth in Q4 was driven by a few large wholesale orders with unusually long collection periods.",
+          "A restatement or SEC comment letter questioning revenue recognition timing.",
+          "Inventory data showing a disproportionate build-up relative to sales, suggesting channel stuffing."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The shift to direct-to-consumer sales, which collect at point of sale, naturally reduces DSO and causes receivables to grow slower than revenue.",
+            "evidence": [
+              "E1",
+              "E7",
+              "E13",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E34"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "License revenue is royalty-based with faster collection, so its growth would not increase DSO; the reported license growth and overall DSO improvement are consistent.",
+            "evidence": [
+              "E35",
+              "E25"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $201M SG&A increase reflects cash outflows for marketing, selling, and supply chain to support DTC expansion, which directly reduces operating cash flow alongside receivables growth.",
+            "evidence": [
+              "E3",
+              "E6",
+              "E15",
+              "E18",
+              "E39",
+              "E40",
+              "E41",
+              "E42"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "Gross margin improved 80 bps due to a favorable sales mix shift toward higher-margin DTC channels and lower apparel input costs, as reported by management.",
+            "evidence": [
+              "E1",
+              "E2",
+              "E13",
+              "E14",
+              "E35",
+              "E36",
+              "E37"
+            ],
+            "support": "management's word"
+          },
+          {
+            "finding_index": 4,
+            "innocent_explanation": "The CFO decline is fully explained by the large increase in cash SG&A expenditures for growth investments and a $34.5M receivables increase, with quarterly DSO trends showing no signs of shipment timing or channel stuffing.",
+            "evidence": [
+              "E6",
+              "E18",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E39",
+              "E40",
+              "E41",
+              "E42"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that management's explanations fit the numbers stands, as the revenue growth, margin improvement, SG&A increase, and cash flow patterns are all consistent with the reported financials and quarterly trends. No evidence in the pack contradicts the company's narrative of growth-driven investment."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.78,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Revenue grew 27.1% ($1,834.9M to $2,332.1M) matching MD&A; DTC growth of $176.8M reported (E34); receivables grew slower (19.6%) and DSO improved from 35 to 33 days, with quarterly DSO falling in Q3 (49\u219244) and Q4 (32\u219228), consistent with shift to faster-collecting DTC channel.",
+            "evidence": [
+              "E13",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E34"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "License revenue growth of 22.8% to $55M reported in MD&A (E35); as a small royalty-like stream, its growth would not increase DSO; overall DSO improvement corroborates that this portion did not lengthen collection periods.",
+            "evidence": [
+              "E35",
+              "E25"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "SG&A rose $201M (E3, E15) with MD&A breakdown: marketing +$41.1M (E39), selling +$63.9M (E40), product innovation/supply chain +$50.7M (E41), corporate services +$45.3M (E42). CFO fell $79.7M (E6, E18) while net income rose; receivables increased $34.5M (E7, E19). The cash outflows for SG&A and receivables build directly explain CFO decline.",
+            "evidence": [
+              "E3",
+              "E6",
+              "E15",
+              "E18",
+              "E39",
+              "E40",
+              "E41",
+              "E42"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "unverified",
+            "reason": "Gross margin improved 80 bps (47.9% to 48.7%) per MD&A and computed from revenue/COGS (E1, E2, E13, E14, E35). However, the causal drivers\u201460 bps from sales mix shift and 50 bps from lower input costs\u2014are not independently visible in the numbers. Segment data is geographic (E55), not by channel (DTC vs wholesale), and input costs are not disclosed. The explanation rests on management's word.",
+            "evidence": [
+              "E1",
+              "E2",
+              "E13",
+              "E14",
+              "E35",
+              "E36",
+              "E37"
+            ]
+          },
+          {
+            "finding_index": 4,
+            "ruling": "unverified",
+            "reason": "Management provides no explicit explanation in the evidence pack for the $79.7M CFO decline or $34.5M receivables increase. Quarterly DSO trends show no red flags (E27-E30), but management's own causal linkage for cash flow is absent from the MD&A excerpts (E32-E56). The defender's explanation is an inference, not management's statement.",
+            "evidence": [
+              "E6",
+              "E18",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ]
+          }
+        ],
+        "deciding_evidence": "Gross margin improvement of 80 bps without independent verification of mix-shift or input-cost drivers (E1, E2, E13, E14, E35-E37); absence of management explanation for CFO decline in MD&A (E32-E56) despite $79.7M drop (E6, E18).",
+        "evidence_that_would_settle_it": [
+          "Segment-level profitability by channel (DTC vs wholesale) to verify the claimed 60 bps mix benefit.",
+          "Product-level input cost data or COGS breakdown to verify the claimed 50 bps cost reduction.",
+          "Management's discussion of operating cash flow drivers in the MD&A (e.g., changes in inventory, accounts payable, accrued expenses) to corroborate the CFO decline explanation."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 28,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 38,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 32,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Management's stated revenue growth drivers (direct-to-consumer expansion and license growth) are consistent with the receivables pattern: receivables grew slower than revenue (19.6% vs 27.1%) and DSO improved from 35 to 33 days, reflecting a shift toward more cash-based direct-to-consumer sales. The operating cash flow decline is not explicitly explained in the provided MD&A, but the same growth drivers (higher selling/marketing costs and inventory investment for new stores) would increase cash outflows, making the CFO drop plausible though unverified.",
+        "findings": [
+          {
+            "management_says": "Revenue growth of $497.2M (27.1%) was primarily driven by a $176.8M (33.2%) increase in direct-to-consumer sales from 18 new retail stores and ecommerce growth, plus a $10.2M (22.8%) increase in license revenues.",
+            "numbers_show": "Revenue grew 27.1% ($1,834.9M to $2,332.1M). Direct-to-consumer growth accounts for ~35.5% of total growth. Receivables grew only 19.6% ($175.5M to $210.0M) and DSO improved from 35 to 33 days. Quarter-level signals show DSO improvements in Q3 (49\u219244) and Q4 (32\u219228), consistent with a higher proportion of cash-based direct-to-consumer sales.",
+            "fit": "fits",
+            "evidence": [
+              "E1",
+              "E13",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E34",
+              "E35"
+            ]
+          },
+          {
+            "management_says": "Gross margin improved 80 bps due to sales mix (60 bps: less excess inventory through factory house outlets, lower wholesale footwear proportion) and lower North American apparel/accessories input costs (50 bps).",
+            "numbers_show": "Gross margin rose from 47.9% to 48.7%. The receivables DSO improvement and slower receivables growth support a mix shift away from lower-margin wholesale/outlet sales toward higher-margin direct-to-consumer.",
+            "fit": "fits",
+            "evidence": [
+              "E36",
+              "E37",
+              "E25",
+              "E29",
+              "E30"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation provided in the evidence pack for the decline in operating cash flow from $199.8M to $120.1M while net income rose from $128.8M to $162.3M.",
+            "numbers_show": "CFO fell $79.7M (39.9%) despite a $33.5M rise in net income. SG&A increased $201M (largely cash expenses: marketing +$41M, selling +$64M, product innovation +$51M, corporate +$45M). Current assets rose $225M (receivables +$34.5M, implying inventory +~$190M), current liabilities rose $174M, so net working capital increased ~$50M. The direct-to-consumer expansion cited for revenue growth entails higher cash operating expenses and inventory investment, which would reduce CFO.",
+            "fit": "unverified",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E26",
+              "E3",
+              "E15",
+              "E39",
+              "E40",
+              "E41",
+              "E42",
+              "E8",
+              "E20",
+              "E11",
+              "E23"
+            ]
+          },
+          {
+            "management_says": "Beneish M-score of -1.7072 (flagged above -1.78 threshold) indicates potential earnings manipulation risk.",
+            "numbers_show": "The M-score components show high AQI (2.27) and SGI (1.27), driven by asset quality and sales growth. This signal does not directly contradict the revenue growth explanation but warrants scrutiny of accruals.",
+            "fit": "unverified",
+            "evidence": [
+              "E31"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What were the primary drivers of the $79.7M decline in operating cash flow despite higher net income? Please quantify working capital changes (inventory, payables, accruals).",
+          "Can you quantify the impact of direct-to-consumer expansion on working capital (inventory buildup for new stores, receivables from wholesale vs. cash sales) and cash operating expenses?",
+          "Were there any changes in payment terms to wholesale customers or channel loading (early shipments) that affected receivables or revenue timing in Q4?",
+          "How much of the revenue growth is attributable to end-demand vs. shipment timing or extended terms?"
+        ],
+        "what_would_change_my_mind": [
+          "Detailed quarterly cash flow statements showing working capital component changes (inventory, accounts payable, accrued expenses).",
+          "Management commentary in the MD&A liquidity section explaining the CFO decline.",
+          "Breakdown of inventory and payables changes for FY2013 vs FY2012.",
+          "Confirmation that no extended payment terms or channel loading were used to accelerate revenue recognition."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 27.1% revenue growth was driven by a 33.2% increase in direct-to-consumer sales ($176.8M) and 22.8% license revenue growth ($10.2M), which together account for a substantial portion of the $497.2M total increase. The slower receivables growth (19.6%) and DSO improvement (35 to 33 days) are consistent with a shift toward cash-based direct-to-consumer sales, as shown by quarter-level DSO improvements in Q3 (49\u219244) and Q4 (32\u219228).",
+            "evidence": [
+              "E1",
+              "E13",
+              "E34",
+              "E35",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "Gross margin improved 80 basis points (from 47.9% to 48.7%) due to a favorable sales mix shift away from lower-margin wholesale/outlet sales toward higher-margin direct-to-consumer channels, supported by the DSO improvement, and lower North American apparel/accessories input costs.",
+            "evidence": [
+              "E1",
+              "E2",
+              "E13",
+              "E14",
+              "E36",
+              "E37",
+              "E25",
+              "E29",
+              "E30"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $79.7M decline in operating cash flow despite higher net income reflects a $201M increase in cash SG&A expenses (marketing +$41M, selling +$64M, product innovation +$51M, corporate +$45M) and a ~$190M increase in inventory and other current assets (current assets rose $225M while receivables rose only $34.5M) to support 18 new retail stores and ecommerce growth, partially offset by a $174M rise in current liabilities.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E3",
+              "E15",
+              "E39",
+              "E40",
+              "E41",
+              "E42",
+              "E8",
+              "E20",
+              "E7",
+              "E19",
+              "E11",
+              "E23"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "The Beneish M-score of -1.7072 (flagged above -1.78) is driven by high sales growth (SGI=1.27) and asset growth (AQI=2.27) from legitimate business expansion, not earnings manipulation; revenue grew 27.1% and total assets grew 36.3% year-over-year.",
+            "evidence": [
+              "E31",
+              "E1",
+              "E13",
+              "E10",
+              "E22"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that the explanations fit the numbers stands because the reported financials and MD&A figures consistently support the revenue growth drivers and gross margin improvement, while the CFO decline is plausibly explained by documented increases in cash operating expenses and working capital investment for growth. The Beneish M-score elevation is attributable to legitimate high growth rather than manipulation."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.8,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Revenue growth of 27.1% matches MD&A reported direct-to-consumer growth of $176.8M (33.2%) and license growth of $10.2M (22.8%), together accounting for 37.6% of total revenue increase. Receivables grew slower (19.6%) and DSO improved from 35 to 33 days, with quarter-level DSO improvements in Q3 (49\u219244) and Q4 (32\u219228) consistent with a shift to cash-based direct-to-consumer sales.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E34",
+              "E35"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Gross margin improved 80 bps, but the named drivers (sales mix shift away from excess inventory/wholesale footwear, and lower input costs) are not directly visible in the reported numbers. The MD&A attributes 60 bps to sales mix and 50 bps to input costs, but the evidence pack lacks channel-level gross margins or input cost data to corroborate the magnitude. Receivables DSO improvement is consistent with a channel shift but does not quantify the gross margin impact.",
+            "evidence": [
+              "E36",
+              "E37",
+              "E25",
+              "E29",
+              "E30",
+              "E1",
+              "E2",
+              "E13",
+              "E14"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "Management provided no explicit explanation for the $79.7M decline in operating cash flow despite higher net income. The defender's explanation (higher cash SG&A and inventory investment) is plausible but not management's stated explanation. The numbers show SG&A increased $201M and current assets increased $225M (receivables +$34.5M, implying inventory +~$190M), but the causal link to direct-to-consumer expansion is not explicitly stated in the MD&A.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E26",
+              "E3",
+              "E15",
+              "E39",
+              "E40",
+              "E41",
+              "E42",
+              "E8",
+              "E20",
+              "E11",
+              "E23"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "unverified",
+            "reason": "The Beneish M-score of -1.7072 flags potential manipulation risk, but the high AQI (2.27) and SGI (1.27) are driven by legitimate high sales growth (27.1%) and asset growth (36.3%). The numbers do not distinguish between manipulation and high growth.",
+            "evidence": [
+              "E31",
+              "E1",
+              "E13",
+              "E10",
+              "E22"
+            ]
+          }
+        ],
+        "deciding_evidence": "E36, E37 (gross margin drivers not corroborated by reported numbers); E26 (CFO decline unexplained in MD&A)",
+        "evidence_that_would_settle_it": [
+          "Breakdown of gross margin by channel (direct-to-consumer vs wholesale) and product category with input cost data to verify the 60 bps sales mix and 50 bps input cost claims.",
+          "MD&A liquidity section commentary or detailed cash flow statement with working capital components (inventory, payables, accruals) explaining the CFO decline.",
+          "Detailed accrual analysis or auditor's report on revenue recognition to assess Beneish M-score drivers."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 30,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 39,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 38,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation does not fit the numbers": 1,
+      "explanation fits the numbers": 2
+    },
+    "judge": {
+      "explanation does not fit the numbers": 1,
+      "explanation unverified": 2
+    }
+  }
+}

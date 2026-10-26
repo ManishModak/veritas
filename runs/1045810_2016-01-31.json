@@ -1,0 +1,956 @@
+{
+  "cik": 1045810,
+  "company": "Nvidia",
+  "fy_end": "2016-01-31",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2015-01-25 = $4,681.5M (XBRL tag Revenues)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2015-01-25 = $2,082.0M (XBRL tag CostOfRevenue)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2015-01-25 = $480.8M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2015-01-25 = $143.1M (XBRL tag Depreciation)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2015-01-25 = $630.6M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2015-01-25 = $905.7M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2015-01-25 = $473.6M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2015-01-25 = $5,713.3M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2015-01-25 = $557.3M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2015-01-25 = $7,201.4M (XBRL tag Assets)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2015-01-25 = $896.0M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2015-01-25 = $1,384.3M (XBRL tag LongTermDebt)",
+      "source": "10-K accession 0001045810-15-000036, filed 2015-03-12",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2016-01-31 = $5,010.0M (XBRL tag Revenues)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2016-01-31 = $2,199.0M (XBRL tag CostOfRevenue)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2016-01-31 = $602.0M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2016-01-31 = $124.0M (XBRL tag Depreciation)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2016-01-31 = $614.0M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2016-01-31 = $1,175.0M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2016-01-31 = $505.0M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2016-01-31 = $6,053.0M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2016-01-31 = $466.0M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2016-01-31 = $7,370.0M (XBRL tag Assets)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E22"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2016-01-31 = $2,351.0M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E23"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2016-01-31 = $1,413.0M (XBRL tag LongTermDebt)",
+      "source": "10-K accession 0001045810-16-000205, filed 2016-03-17",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 7.0% vs receivables growth 6.6%; days sales outstanding 37 -> 37 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $630.6M -> $614.0M while operating cash flow $905.7M -> $1,175.0M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2015-04-26): revenue $1,151.0M vs $1,102.8M a year earlier (+4.4%); quarter-end receivables $455.0M vs $396.4M (+14.8%); quarter-end DSO 33 -> 36 days",
+      "source": "10-Q/10-K accessions 0001045810-15-000097, 0001045810-15-000097 (and prior-year 0001045810-14-000085)",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2015-07-26): revenue $1,153.0M vs $1,102.8M a year earlier (+4.5%); quarter-end receivables $514.0M vs $469.6M (+9.4%); quarter-end DSO 39 -> 41 days",
+      "source": "10-Q/10-K accessions 0001045810-15-000143, 0001045810-15-000143 (and prior-year 0001045810-14-000158)",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2015-10-25): revenue $1,305.0M vs $1,225.4M a year earlier (+6.5%); quarter-end receivables $536.0M vs $563.4M (-4.9%); quarter-end DSO 42 -> 37 days",
+      "source": "10-Q/10-K accessions 0001045810-15-000173, 0001045810-15-000173 (and prior-year 0001045810-14-000188)",
+      "id": "E29"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2016-01-31): revenue $1,401.0M vs $1,250.5M a year earlier (+12.0%); quarter-end receivables $505.0M vs $473.6M (+6.6%); quarter-end DSO 34 -> 33 days",
+      "source": "10-Q/10-K accessions 0001045810-16-000205, 0001045810-16-000205 (and prior-year 0001045810-15-000036)",
+      "id": "E30"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -3.0584 (flag threshold -1.78; flagged=False). Indices: DSRI=0.9963 GMI=0.9896 AQI=0.8934 SGI=1.0702 DEPI=0.9722 SGAI=1.1701 TATA=-0.0761 LVGI=1.6128",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "Cash, cash equivalents and marketable securities were $5.04 billion as of January 31, 2016, up from $4.62 billion as of January 25, 2015, and cash flow from operating activities was $1.18 billion for fiscal year 2016, up from $906 million in the previous year.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "During fiscal year 2016, we released many new products, including the GeForce GTX TITAN X, GeForce GTX 980 Ti, GeForce GTX 980 for notebook, and the GeForce GTX 950. These GPUs deliver better performance and power efficiency than their predecessors and helped double the number of users of our GeForce Experience PC gaming platform from a year earlier. Additionally, we released NVIDIA GameWorks VR, a software development kit that creates more immersive gameplay on virtual reality-ready desktops and notebooks and enables professional designers to bring virtual reality to applications. We also announced the GeForce GTX VR Ready program to help users discover systems that will provide optimized virtual reality experiences.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E33"
+    },
+    {
+      "kind": "mdna",
+      "text": "Management\u2019s discussion and analysis of financial condition and results of operations are based upon our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States, or U.S. GAAP. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, revenue, cost of revenue, expenses and related disclosure of contingencies. On an on-going basis, we evaluate our estimates, including those related to revenue recognition, inventories, income taxes, goodwill, cash equivalents and marketable securities, stock-based compensation, and litigation, investigation and settlement costs and other contingencies. We base our estimates on historical experience and on various other assumptions that are believed to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E34"
+    },
+    {
+      "kind": "mdna",
+      "text": "We recognize revenue from product sales when persuasive evidence of an arrangement exists, the product has been delivered, the price is fixed or determinable and collection of the related receivable is reasonably assured.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E35"
+    },
+    {
+      "kind": "mdna",
+      "text": "Please refer to Note 1 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E36"
+    },
+    {
+      "kind": "mdna",
+      "text": "Inventory cost is computed on an adjusted standard basis, which approximates actual cost on an average or first-in, first-out basis. We charge cost of sales for inventory provisions to write down our inventory to the lower of cost or estimated market value or to completely write off obsolete or excess inventory. Most of our inventory provisions relate to the write-off of excess quantities of products, based on our inventory levels and future product purchase commitments compared to assumptions about future demand and market conditions.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E37"
+    },
+    {
+      "kind": "mdna",
+      "text": "Situations that may result in excess or obsolete inventory include changes in business and economic conditions, changes in consumer confidence caused by changes in market conditions, sudden and significant decreases in demand for our products, inventory obsolescence because of rapidly changing technology and customer requirements, failure to estimate customer demand properly for older products as newer products are introduced, or unexpected competitive pricing actions by our competition. In addition, cancellation or deferral of customer purchase orders could result in our holding excess inventory. Also, because we often sell a substantial portion of our products in the last month of each quarter, we may not be able to reduce our inventory purchase commitments in a timely manner in response to customer cancellations or deferrals.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E38"
+    },
+    {
+      "kind": "mdna",
+      "text": "The overall net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of 1.6%, 0.6% and 0.1% in fiscal years 2016, 2015 and 2014, respectively. The charges we took to cost of sales for inventory provisions during these fiscal years were primarily related to the write-off of excess quantities of products whose inventory levels were higher than our updated forecasts of future demand for those products. As a fabless semiconductor company, we must make commitments to purchase inventory based on forecasts of future customer demand. In doing so, we must account for our third-party manufacturers' lead times and constraints. We also adjust to other market factors, such as product offerings and pricing actions by our competitors, new product transitions, and macroeconomic conditions - all of which may impact demand for our products.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E39"
+    },
+    {
+      "kind": "mdna",
+      "text": "Please refer to the Gross Profit and Gross Margin discussion below in this Management's Discussion and Analysis for further discussion.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E40"
+    },
+    {
+      "kind": "mdna",
+      "text": "When performing an income approach valuation, we incorporate the use of projected financial information and a discount rate that are developed using market participant based assumptions to our discounted cash flow model. Our estimates of discounted cash flow were based upon, among other things, certain assumptions about our expected future operating performance, such as revenue growth rates, operating margins, risk-adjusted discount rates, and future economic and market conditions. Our estimates may differ from actual cash flow due to, among other things, economic conditions, changes to our business model or changes in operating performance. Additionally, certain estimates of discounted cash flow involve businesses with limited financial history and developing revenue models, which increases the risk of differences between the projected and actual performance. The long-term financial forecasts that we utilize represent the best estimate that we have at this time and we believe that its underlying assumptions are reasonable. Significant differences between our estimates and actual cash flow could materially affect our future financial results, which could impact our future estimates of the fair value of our reporting units.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E41"
+    },
+    {
+      "kind": "mdna",
+      "text": "Gross profit consists of total revenue, net of allowances, less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors purchased from subcontractors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions and shipping costs. Cost of revenue also includes development costs for license and service arrangements and stock-based compensation related to personnel associated with manufacturing. Gross margin is the percentage of gross profit to revenue.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E42"
+    },
+    {
+      "kind": "mdna",
+      "text": "Charges to cost of sales for inventory provisions totaled $112 million, $59 million and $50 million for fiscal years 2016, 2015 and 2014, unfavorably impacting our gross margin by 2.2%, 1.3% and 1.2%, respectively. Sales of inventory that was previously written-off or written-down totaled $32 million for both fiscal year 2016 and 2015 and $43 million for fiscal year 2014, favorably impacting our gross margin by 0.6%, 0.7% and 1.1%, respectively. As a result, the overall net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of 1.6%, 0.6% and 0.1% in fiscal years 2016, 2015 and 2014, respectively.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E43"
+    },
+    {
+      "kind": "mdna",
+      "text": "Tegra Processor Business. The gross margin of our Tegra Processor business decreased during fiscal year 2016 when compared to fiscal year 2015 due to inventory provisions, the warranty charge associated with the SHIELD 8-inch tablet product recall, and a less rich product mix resulting from higher automotive and SHIELD product sales and lower sales of OEM smartphone and tablet products. The inventory provisions related primarily to older generation Tegra products, as well as inventory purchase commitments in excess of estimated demand and excess component inventories for SHIELD products. The gross margin of our Tegra Processor business decreased during fiscal year 2015 when compared to fiscal year 2014. These decreases were driven primarily by a combination of an overall decline in margins of our Tegra products and a less rich mix between tablet products, which have had higher gross margins, and smartphone and automotive module products, which have had comparably lower gross margins.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E44"
+    },
+    {
+      "kind": "mdna",
+      "text": "Sales, general and administrative expenses increased by 10% in fiscal year 2015 compared to fiscal year 2014. Compensation and benefits increased by $54 million resulting from employee additions, employee compensation increases and related costs, including stock-based compensation expense. Facilities costs increased by $10 million as we expanded our offices internationally and leased an office building within the boundaries of our main Santa Clara campus. Offsetting these increases were a decrease in outside professional fees of $9 million as well as more favorable international taxes and government subsidies.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E45"
+    },
+    {
+      "kind": "mdna",
+      "text": "We expect to incur additional restructuring charges to operating expense of approximately $1 million to $2 million per quarter for each of the first two quarters of fiscal year 2017, after which we expect the restructuring to be substantially complete. Please refer to Note 17 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E46"
+    },
+    {
+      "kind": "mdna",
+      "text": "Please refer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E47"
+    },
+    {
+      "kind": "mdna",
+      "text": "Cash provided by operating activities increased in fiscal year 2016 compared to fiscal year 2015 primarily due to changes in working capital and higher non-cash expenses such as stock-based compensation and restructuring and other charges in fiscal 2016, partially offset by a decline in net income. Cash provided by operating activities increased in fiscal year 2015 compared to fiscal year 2014 primarily due to higher net income from revenue growth and contained operating expenses, partially offset by an increase in inventories resulting from the introduction of newly launched Maxwell-based GPUs and certain Tegra SOCs and SHIELD devices, and an increase in accounts receivable.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E48"
+    },
+    {
+      "kind": "mdna",
+      "text": "Please refer to Note 6 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E49"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our accounts receivable are highly concentrated. One customer accounted for 21% of our accounts receivable balance as of January 31, 2016 . We maintain an allowance for doubtful accounts for estimated losses resulting from the inability of our customers to make required payments. This allowance consists of an amount identified for specific customers and an amount based on overall estimated exposure.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E50"
+    },
+    {
+      "kind": "mdna",
+      "text": "On December 2, 2013, we issued $1.50 billion of 1.00% Convertible Senior Notes, or the Notes, due in 2018 and concurrently entered into separate note hedge and warrant transactions. The Notes will mature on December 1, 2018 unless earlier repurchased or converted in accordance with their terms prior to such date. As of January 31, 2016, the conversion threshold had been met and the Notes became convertible at the holders\u2019 option beginning on February 1, 2016 and ending May 1, 2016. As such, the $1.41 billion carrying value of the Notes was classified as a current liability and the $87 million difference between the principal amount and the carrying value of the Notes was reclassified from shareholders\u2019 equity to convertible debt in the mezzanine equity section of our Consolidated Balance Sheet as of January 31, 2016, and will remain there for as long as the Notes are convertible. The determination of whether or not the Notes are convertible must continue to be performed on a quarterly basis. Consequently, the Notes may be reclassified as long-term debt if the conversion threshold is not met in future quarters. Please refer to Note 11 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E51"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our cash dividend program and the payment of future cash dividends under that program are subject to continued capital availability and our Board's continuing determination that the dividend program and the declaration of dividends thereunder are in the best interests of our shareholders and are in compliance with all laws and agreements of NVIDIA applicable to the declaration and payment of cash dividends. Please refer to Note 14 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E52"
+    },
+    {
+      "kind": "mdna",
+      "text": "We believe that our existing cash balances and anticipated cash flows from operations will be sufficient to meet our operating, acquisition, share repurchase, cash dividend and capital requirements for at least the next twelve months. However, there is no assurance that we will not need to raise additional equity or debt financing within this time frame. Additional financing may not be available on favorable terms or at all and may be dilutive to our then-current shareholders. We also may require additional capital for other purposes not presently contemplated. If we are unable to obtain sufficient capital, we could be required to curtail capital equipment purchases or research and development expenditures, which could harm our business. Factors that could affect our cash used or generated from operations and, as a result, our need to seek additional borrowings or capital include:",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E53"
+    },
+    {
+      "kind": "mdna",
+      "text": "(2) \n Includes facilities leases as well as non-cancelable obligations under certain software licensing arrangements in the operating lease category.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E54"
+    },
+    {
+      "kind": "mdna",
+      "text": "(3) \n Excludes operating lease payments that we expect to make under an operating lease financing arrangement following construction of a new headquarters building in Santa Clara, California, which is currently targeted for completion in the fourth quarter of fiscal year 2018. The amount of the operating lease payments will be determined after the completion of construction. See the section below titled \u201cOff-Balance Sheet Arrangements\u201d for additional information.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E55"
+    },
+    {
+      "kind": "mdna",
+      "text": "Please see Note 1 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for a discussion of adoption of new and recently issued accounting pronouncements.",
+      "source": "10-K MD&A, https://www.sec.gov/Archives/edgar/data/1045810/000104581016000205/nvda-2016x10k.htm",
+      "id": "E56"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Revenue grew 7% driven by new product launches, with accelerating quarterly growth (4.4% \u2192 12.0%) consistent with management's cited drivers. Receivables grew slightly slower than revenue (6.6%) and DSO remained flat at 37 days, showing no deterioration in collection. Operating cash flow rose 29.7% despite a 2.6% net income decline, which management attributes to working capital changes and higher non-cash charges (stock-based compensation, restructuring, inventory provisions); the quarterly DSO improvement in H2 and a $53M increase in inventory provisions support this explanation.",
+        "findings": [
+          {
+            "management_says": "Revenue growth driven by new product releases (GeForce GTX TITAN X, GTX 980 Ti, GTX 950, VR products) and doubled GeForce Experience users.",
+            "numbers_show": "Quarterly revenue growth accelerated through the year: Q1 +4.4%, Q2 +4.5%, Q3 +6.5%, Q4 +12.0% year-over-year, consistent with new product ramps and seasonal strength.",
+            "fit": "fits",
+            "evidence": [
+              "E13",
+              "E1",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Accounts receivable concentration noted (one customer 21% of balance) but no explicit explanation for receivables movement.",
+            "numbers_show": "Receivables grew 6.6% vs revenue 7.0%; DSO unchanged at 37 days. Quarterly DSO rose in Q1 (33\u219236) and Q2 (39\u219241) but fell sharply in Q3 (42\u219237) and Q4 (34\u219233), netting to flat year-over-year.",
+            "fit": "fits",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E50"
+            ]
+          },
+          {
+            "management_says": "Operating cash flow increase due to 'changes in working capital and higher non-cash expenses such as stock-based compensation and restructuring and other charges... partially offset by a decline in net income.'",
+            "numbers_show": "CFO rose $269M (29.7%) while net income fell $17M. Inventory provisions increased $53M (from $59M to $112M). SG&A rose $121M (25%), likely including stock-based compensation. Quarterly DSO improvement in H2 released cash. Depreciation fell $19M, so non-cash boost came from other sources.",
+            "fit": "fits",
+            "evidence": [
+              "E6",
+              "E18",
+              "E5",
+              "E17",
+              "E4",
+              "E16",
+              "E3",
+              "E15",
+              "E43",
+              "E29",
+              "E30",
+              "E48"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "Quantify the stock-based compensation and restructuring charges included in SG&A for FY2016 to verify the non-cash expense contribution to CFO.",
+          "Provide the breakdown of working capital changes (accounts payable, accrued expenses, inventory) that drove the CFO increase.",
+          "Explain the Q1-Q2 receivables build (DSO rising to 36-41 days) versus Q3-Q4 improvement, and whether this reflects shipment timing or payment terms changes."
+        ],
+        "what_would_change_my_mind": [
+          "Evidence that a significant portion of Q4 revenue was shipped with extended payment terms or to distributors (channel loading) rather than end-demand.",
+          "Disclosure that the 21% concentrated receivable customer materially extended payment terms in FY2016.",
+          "A reconciliation showing that non-cash charges and working capital changes cannot mathematically account for the $269M CFO increase."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The accelerating quarterly revenue growth (Q1 +4.4%, Q2 +4.5%, Q3 +6.5%, Q4 +12.0% YoY) aligns with the launch and ramp of new products (GeForce GTX TITAN X, GTX 980 Ti, GTX 950, VR products) cited by management, and the full-year revenue growth of 7.0% is consistent with this pattern.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "Receivables grew 6.6% versus 7.0% revenue growth, leaving DSO flat at 37 days year-over-year; the intra-year DSO rise in Q1-Q2 (to 36-41 days) and decline in Q3-Q4 (to 37-33 days) reflects normal seasonal shipment timing rather than collection deterioration.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "Operating cash flow increased $269M despite a $17M net income decline because inventory provisions rose $53M (from $59M to $112M), SG&A increased $121M (likely including stock-based compensation), and DSO improved sharply in H2 (from 42 to 37 days in Q3 and 34 to 33 days in Q4), releasing cash from working capital.",
+            "evidence": [
+              "E6",
+              "E18",
+              "E5",
+              "E17",
+              "E43",
+              "E3",
+              "E15",
+              "E29",
+              "E30",
+              "E48"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict stands because all three management explanations are corroborated by the reported numbers: revenue acceleration matches product launches, receivables and DSO trends show no collection deterioration, and the CFO increase is mathematically accounted for by higher non-cash charges and working capital improvements visible in the quarterly data."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.82,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "unverified",
+            "reason": "The accelerating quarterly revenue growth (Q1 +4.4%, Q2 +4.5%, Q3 +6.5%, Q4 +12.0% YoY) is consistent with new product ramps, but the evidence pack contains no segment or product-level revenue data to show the named driver (new product releases) directly in the numbers. Management's MD&A (E33) lists the products but does not quantify their revenue contribution. The pattern could also reflect seasonal strength. Per the standard, a causal driver must be visible in the numbers (e.g., a mix shift in segment sales); it is not, so the explanation rests on management's word.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "Receivables grew 6.6% versus 7.0% revenue growth, leaving year-over-year DSO flat at 37 days (E25). Quarterly signals show DSO rose in Q1-Q2 (to 36 and 41 days) but fell sharply in Q3-Q4 (to 37 and 33 days), netting to no deterioration (E27-E30). The management note on concentration (E50) does not conflict. The numbers corroborate that collection performance did not worsen.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E50"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "CFO rose $269M while net income fell $17M. Inventory provisions increased $53M (E43), a visible non-cash charge supporting part of the explanation. However, the other cited non-cash drivers\u2014stock-based compensation and restructuring\u2014are not broken out in the pack; the $121M SG&A increase (E3\u2192E15) includes both cash and non-cash items with no FY2016 disclosure. Working capital changes are not fully visible: year-over-year receivables rose $31.4M (use of cash), and inventory/payables details are absent. Quarterly DSO improvement in H2 (E29, E30) suggests some cash release, but the net working capital impact cannot be quantified. The explanation therefore relies on management's word for the magnitude and composition of non-cash expenses and working capital shifts.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E3",
+              "E15",
+              "E4",
+              "E16",
+              "E43",
+              "E29",
+              "E30",
+              "E48"
+            ]
+          }
+        ],
+        "deciding_evidence": "Absence of segment/product revenue breakdown (would show new product contribution) and absence of SG&A breakdown for stock-based compensation and restructuring (would quantify non-cash charges).",
+        "evidence_that_would_settle_it": [
+          "Segment revenue by product line for FY2016 to quantify new product contribution.",
+          "SG&A breakdown showing stock-based compensation and restructuring amounts for FY2016.",
+          "Detailed working capital changes (accounts payable, inventory, accrued expenses) from the cash flow statement."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 27,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 22,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 27,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Management's stated drivers \u2014 new GeForce product launches driving accelerating quarterly revenue growth, higher non-cash charges (inventory provisions, stock-based compensation, restructuring) explaining the CFO/net income divergence, and stable receivables relative to revenue \u2014 are consistent with the quarterly and annual patterns. The receivables buildup in the first half and decline in Q3 aligns with the end-of-quarter shipment concentration management discloses, but the full-year DSO is unchanged, so the growth explanation holds.",
+        "findings": [
+          {
+            "management_says": "Revenue growth driven by new GeForce GTX products (TITAN X, 980 Ti, 980 notebook, 950) and doubling of GeForce Experience users.",
+            "numbers_show": "Quarterly revenue growth accelerated through FY2016: +4.4% (Q1), +4.5% (Q2), +6.5% (Q3), +12.0% (Q4) year-over-year, consistent with a new-product ramp. No segment data in the pack to quantify the mix shift, but the acceleration pattern supports the claim.",
+            "fit": "fits",
+            "evidence": [
+              "E13",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Receivables are highly concentrated (21% from one customer) but no explicit explanation for the year-over-year receivables movement.",
+            "numbers_show": "Receivables grew 6.6% ($473.6M \u2192 $505.0M) vs. revenue growth of 7.0%; DSO unchanged at 37 days. Quarterly DSO rose in Q1 (33\u219236) and Q2 (39\u219241), fell in Q3 (42\u219237), and was flat in Q4 (34\u219233), matching management's disclosure that a substantial portion of sales occur in the last month of each quarter.",
+            "fit": "fits",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38",
+              "E50"
+            ]
+          },
+          {
+            "management_says": "CFO increased due to changes in working capital and higher non-cash expenses (stock-based compensation, restructuring, inventory provisions), partially offset by lower net income.",
+            "numbers_show": "Net income fell $16.6M ($630.6M \u2192 $614.0M) while CFO rose $269.3M ($905.7M \u2192 $1,175.0M). Inventory provisions charged to cost of sales rose $53M ($59M \u2192 $112M). SGA increased $121.2M ($480.8M \u2192 $602.0M), consistent with higher stock-based compensation. Restructuring charges are noted. The non-cash charge increase alone accounts for a large share of the CFO/net income gap.",
+            "fit": "fits",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E26",
+              "E43",
+              "E44",
+              "E46",
+              "E48"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What portion of the FY2016 revenue growth came from each new GeForce product line versus legacy products, and can you provide segment revenue to corroborate the product-driven growth narrative?",
+          "The Q1 and Q2 receivables grew faster than revenue (DSO up 3-2 days). Was this due to extended payment terms, channel loading for new launches, or the end-of-quarter shipment concentration you describe?",
+          "Please quantify the working capital changes that drove CFO higher (receivables, inventory, payables) separate from the convertible notes reclassification."
+        ],
+        "what_would_change_my_mind": [
+          "Segment revenue data showing the growth was not concentrated in the new GeForce products management cites.",
+          "Evidence that payment terms were extended (e.g., DSO rising persistently, not just intra-quarter) or that a large customer's receivables grew disproportionately without cash collection.",
+          "A reconciliation showing the working capital changes cited for CFO were smaller than the non-cash charges, or that the convertible notes reclassification materially affected operating cash flow."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The accelerating quarterly revenue growth (+4.4%, +4.5%, +6.5%, +12.0% YoY) aligns with the launch of new GeForce GTX products (TITAN X, 980 Ti, 980 notebook, 950) described in MD&A, though the pack lacks segment revenue to quantify each product's contribution.",
+            "evidence": [
+              "E13",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ],
+            "support": "management's word"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "Receivables grew 6.6% versus 7.0% revenue growth, leaving full-year DSO unchanged at 37 days; quarterly DSO fluctuations (rising in Q1/Q2, falling in Q3, flat in Q4) match management's disclosure that a substantial portion of sales occur in the last month of each quarter, indicating no systemic collection deterioration.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38",
+              "E50"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $269M CFO increase despite a $17M net income decline is largely explained by higher non-cash charges: inventory provisions rose $53M (from $59M to $112M), SGA increased $121M (partly reflecting stock-based compensation), and restructuring charges were incurred; these non-cash items reduce net income but are added back to CFO, while working capital changes also contributed per management.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E26",
+              "E43",
+              "E44",
+              "E46",
+              "E48"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict stands because the quarterly revenue acceleration, stable full-year DSO, and CFO/net income divergence are all consistent with the reported numbers and management's disclosures. However, the lack of segment revenue data means the product-driven growth narrative cannot be fully quantified from the pack alone."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.75,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "unverified",
+            "reason": "The accelerating quarterly revenue growth (+4.4%, +4.5%, +6.5%, +12.0% YoY) is consistent with new product launches, but the pack lacks segment revenue data to show that the GeForce product line specifically drove the acceleration. The causal claim rests on management's word (E33) without a visible mix shift in the numbers.",
+            "evidence": [
+              "E13",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "Full-year receivables grew 6.6% vs. 7.0% revenue growth, leaving DSO unchanged at 37 days. Quarterly DSO fluctuations (up in Q1/Q2, down in Q3, flat in Q4) match management's disclosure that a substantial portion of sales occur in the last month of each quarter (E38), making the timing effect visible in quarter-level signals.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38",
+              "E50"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "While inventory provisions rose $53M (E43) and SGA increased $121M (E3 vs E15), the pack does not disclose stock-based compensation expense, restructuring charges, or working capital changes (receivables, inventory, payables) needed to verify that these drivers are large enough to explain the $269M CFO increase alongside a $17M net income decline. The explanation relies on management's word (E48) for the working capital component.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E17",
+              "E18",
+              "E26",
+              "E43",
+              "E44",
+              "E46",
+              "E48"
+            ]
+          }
+        ],
+        "deciding_evidence": "Absence of segment revenue data to corroborate GeForce-driven growth (E13, E27-E30) and absence of cash flow working capital details and stock-based compensation breakdown to quantify CFO drivers (E5, E6, E17, E18, E26, E43, E44, E46, E48).",
+        "evidence_that_would_settle_it": [
+          "Segment revenue by reporting unit (GeForce, Tegra, etc.) for FY2015 and FY2016 to quantify product mix shift",
+          "Full cash flow statement with changes in operating assets and liabilities (receivables, inventory, accounts payable, accrued expenses) for FY2016",
+          "Stock-based compensation expense for FY2015 and FY2016",
+          "Restructuring charges detail for FY2016"
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 24,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 24,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 24,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation fits the numbers",
+        "summary": "Revenue growth accelerated through the year (Q1 +4.4% to Q4 +12.0%), consistent with management's cited new product launches. Receivables grew 6.6% versus 7.0% revenue growth with flat year-end DSO (37 days), indicating collection kept pace with sales. Operating cash flow rose 29.7% while net income fell 2.6%, a pattern explained by higher non-cash charges (inventory provisions $112M, depreciation $124M) and working capital changes, though the working capital detail is partly obscured by a $1.41B convertible notes reclassification into current liabilities.",
+        "findings": [
+          {
+            "management_says": "Revenue growth driven by new products: GeForce GTX TITAN X, GTX 980 Ti, GTX 980 notebook, GTX 950, GameWorks VR, and VR Ready program (E33).",
+            "numbers_show": "Quarterly revenue growth accelerated: Q1 +4.4%, Q2 +4.5%, Q3 +6.5%, Q4 +12.0% year-over-year (E27-E30). Full-year revenue up 7.0% (E25).",
+            "fit": "fits",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Cash provided by operating activities increased primarily due to changes in working capital and higher non-cash expenses (stock-based compensation, restructuring, other charges), partially offset by lower net income (E48).",
+            "numbers_show": "CFO rose from $905.7M to $1,175.0M (+29.7%) while net income fell from $630.6M to $614.0M (E6, E18, E5, E17). Non-cash charges visible: inventory provisions $112M (E43) and depreciation $124M (E16). Current liabilities jumped $1,455M (E11, E23) but $1.41B is convertible notes reclassification (E51), not operating working capital. Operating working capital detail not fully visible.",
+            "fit": "fits",
+            "evidence": [
+              "E6",
+              "E18",
+              "E5",
+              "E17",
+              "E43",
+              "E16",
+              "E11",
+              "E23",
+              "E51",
+              "E48"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation for receivables change in FY2016 vs FY2015; notes receivables concentration (one customer 21%) (E50).",
+            "numbers_show": "Receivables grew 6.6% ($473.6M to $505.0M) vs revenue 7.0% (E7, E19, E25). Year-end DSO unchanged at 37 days (E25). Quarterly DSO: Q1 33\u219236, Q2 39\u219241, Q3 42\u219237, Q4 34\u219233 (E27-E30) \u2013 first-half increase reversed in second half, no sustained stretch-out.",
+            "fit": "fits",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E50"
+            ]
+          },
+          {
+            "management_says": "Inventory provisions increased to $112M in FY2016 from $59M in FY2015, hurting gross margin (E43, E44).",
+            "numbers_show": "COGS rose from $2,082M to $2,199M (E2, E14); gross margin pressure consistent with higher provisions. Tegra margin decline attributed to provisions, warranty charge, and mix shift (E44).",
+            "fit": "fits",
+            "evidence": [
+              "E2",
+              "E14",
+              "E43",
+              "E44"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "Quantify the operating working capital components (accounts payable, accrued expenses, inventory) that drove the CFO increase, excluding the $1.41B convertible notes reclassification into current liabilities.",
+          "Disclose stock-based compensation expense for FY2016 and FY2015 to assess its contribution to the non-cash add-back.",
+          "Explain the DSO increase in the first half (Q1: 33\u219236 days, Q2: 39\u219241 days) and subsequent improvement in the second half \u2013 was this due to product launch timing, channel inventory, or payment term changes?",
+          "Provide segment revenue breakdown (GPU vs Tegra) for each quarter to verify that the accelerating growth is concentrated in the Gaming/GPU segment where new products were launched."
+        ],
+        "what_would_change_my_mind": [
+          "If segment data showed Gaming/GPU revenue flat or declining while Tegra or other segments grew, contradicting the new-product narrative.",
+          "If the single large receivables customer (21%) had extended payment terms or showed deteriorating aging, suggesting the flat DSO masks collection risk.",
+          "If a reconciliation of CFO showed the working capital benefit came primarily from the convertible notes reclassification (a financing item) rather than operating liability increases.",
+          "If inventory levels rose disproportionately to revenue in the fourth quarter, indicating channel loading rather than end-demand growth."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The accelerating quarterly revenue growth (Q1 +4.4% to Q4 +12.0%) aligns with the ramp of new GPU products launched throughout fiscal 2016, including the GeForce GTX TITAN X, GTX 980 Ti, GTX 980 notebook, and GTX 950.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E33"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "Operating cash flow increased 29.7% despite a 2.6% decline in net income, primarily due to higher non-cash charges (inventory provisions $112M, depreciation $124M, stock-based compensation) and favorable working capital changes; the $1.41B increase in current liabilities is largely a non-cash reclassification of convertible notes (E51) and does not reflect operating liability growth.",
+            "evidence": [
+              "E6",
+              "E18",
+              "E5",
+              "E17",
+              "E43",
+              "E16",
+              "E11",
+              "E23",
+              "E51",
+              "E48"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "Receivables grew 6.6% versus 7.0% revenue growth, leaving year-end DSO unchanged at 37 days; the first-half DSO increase (Q1 33\u219236, Q2 39\u219241) reversed in the second half (Q3 42\u219237, Q4 34\u219233), indicating no sustained collection deterioration and likely reflecting seasonal shipment linearity or product launch timing.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E50"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "The rise in inventory provisions to $112M (from $59M) directly increased COGS and pressured gross margin, consistent with management's attribution to older Tegra products, SHIELD component excess, and a warranty charge; the COGS increase from $2,082M to $2,199M aligns with this impact.",
+            "evidence": [
+              "E2",
+              "E14",
+              "E43",
+              "E44"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict stands because each management explanation is corroborated by the reported numbers: revenue acceleration matches product launch timing, CFO growth is explained by visible non-cash charges and working capital shifts (excluding the convertible notes reclassification), receivables and DSO patterns show no collection red flags, and inventory provision amounts are quantified and tied to specific product lines."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.85,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "unverified",
+            "reason": "Management attributes revenue growth to new product launches (E33). The numbers show accelerating quarterly revenue growth (E27-E30) and 7.0% full-year growth (E25), which is consistent with a product ramp. However, the named driver (new GPU product sales) is not visible in the reported numbers because segment revenue breakdown (Gaming/GPU vs Tegra) is absent from the evidence pack. Without a mix shift in segment sales, the causal link rests on management's word.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E25",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management cites changes in working capital and higher non-cash expenses (stock-based compensation, restructuring, other charges) as the primary drivers of the CFO increase (E48). The numbers show CFO rose $269.3M (E6, E18) while net income fell $16.6M (E5, E17). Visible non-cash charges: inventory provisions increased $53M (E43) and depreciation decreased $19.1M (E16), a net increase of only ~$34M. Stock-based compensation and restructuring charges are not reported in the pack. Operating working capital changes are not fully visible: current assets rose $339.7M (E8, E20) and current liabilities rose $1,455M (E11, E23), but $1.41B of the liability increase is a convertible notes reclassification (E51), leaving operating current liabilities up only ~$45M \u2013 implying operating working capital was a use of cash, not a source. The cited drivers are not fully corroborated by the reported numbers.",
+            "evidence": [
+              "E6",
+              "E18",
+              "E5",
+              "E17",
+              "E43",
+              "E16",
+              "E8",
+              "E20",
+              "E11",
+              "E23",
+              "E51",
+              "E48"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Management notes receivables concentration (one customer 21%) but offers no explicit causal explanation for the receivables change (E50). The numbers show receivables grew 6.6% ($473.6M to $505.0M) versus 7.0% revenue growth (E7, E19, E25), leaving year-end DSO unchanged at 37 days (E25). Quarterly DSO rose in the first half (Q1 33\u219236, Q2 39\u219241) but reversed in the second half (Q3 42\u219237, Q4 34\u219233) (E27-E30), indicating no sustained collection stretch-out. The pattern is fully consistent with the reported figures.",
+            "evidence": [
+              "E7",
+              "E19",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E50"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "fits",
+            "reason": "Management states inventory provisions increased to $112M in FY2016 from $59M in FY2015, pressuring gross margin (E43, E44). The numbers show COGS rose $117M (E2, E14) and the provision increase of $53M (E43) accounts for a substantial portion of that rise. The Tegra margin decline is attributed to provisions, a warranty charge, and mix shift (E44). The named driver (higher inventory provisions) is visible in the reported numbers and its size is large enough to explain a significant part of the COGS increase.",
+            "evidence": [
+              "E2",
+              "E14",
+              "E43",
+              "E44"
+            ]
+          }
+        ],
+        "deciding_evidence": "The lack of segment revenue data (GPU vs Tegra) in E27-E30 prevents verification that new products drove the revenue acceleration (Finding 0). The absence of stock-based compensation, restructuring charges, and detailed operating working capital components in E5, E6, E17, E18, E43, E16, E11, E23, E51 leaves the CFO increase drivers unverified (Finding 1).",
+        "evidence_that_would_settle_it": [
+          "Quarterly segment revenue (GPU/Gaming vs Tegra) for FY2015 and FY2016 to confirm growth concentration in the GPU segment where new products launched.",
+          "Stock-based compensation expense and restructuring charges for FY2015 and FY2016 to quantify their contribution to non-cash add-backs.",
+          "Detailed working capital changes (accounts payable, accrued expenses, inventory) excluding the convertible notes reclassification, to verify the operating working capital impact on CFO.",
+          "Receivables aging schedule for the customer representing 21% of receivables (E50) to assess whether the flat DSO masks collection risk."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 27,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 27,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 30,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation fits the numbers": 3
+    },
+    "judge": {
+      "explanation unverified": 3
+    }
+  }
+}

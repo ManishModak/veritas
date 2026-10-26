@@ -1,0 +1,77 @@
+import { mkdir, writeFile, rename } from 'node:fs/promises';
+import { dirname } from 'node:path';
+import type { EvidencePack } from './evidence.ts';
+import { INVESTIGATOR, RED_TEAM, JUDGE } from './prompts.ts';
+import { MODEL, nimClient, type Ask } from './nim.ts';
+import type { CaseRun, Grounding, Investigator, Judge, Progress, RedTeam, Sample, Stage } from './types.ts';
+
+export function grounding(result: Record<string, any>, key: string, ids: Set<string>): Grounding {
+  const cited = (result[key] ?? []).flatMap((item: { evidence?: string[] }) => item.evidence ?? []);
+  return { citations: cited.length, unknown_ids: cited.filter((id: string) => !ids.has(id)), uncited: (result[key] ?? []).filter((item: { evidence?: string[] }) => !item.evidence?.length).length };
+}
+
+// Reject malformed stage output instead of allowing a vacuous grounding pass. Unknown verdict labels remain valid text.
+export function validateStage(stage: Stage, value: Record<string, any>): void {
+  const key = stage === 'investigator' ? 'findings' : stage === 'red_team' ? 'rebuttals' : 'rulings';
+  const verdict = stage === 'investigator' ? 'verdict' : stage === 'judge' ? 'final_verdict' : 'overall';
+  if (typeof value[verdict] !== 'string' || !Array.isArray(value[key]) || value[key].length === 0) throw new Error(`Invalid ${stage} schema: missing ${verdict} or ${key}`);
+  const strings = (items: unknown) => Array.isArray(items) && items.every(v => typeof v === 'string');
+  for (const row of value[key]) {
+    if (!row || !strings(row.evidence)) throw new Error(`Invalid ${stage} evidence array`);
+    const fields = stage === 'investigator' ? ['management_says','numbers_show','fit'] : stage === 'red_team' ? ['innocent_explanation','support'] : ['ruling','reason'];
+    if (fields.some(f => typeof row[f] !== 'string')) throw new Error(`Invalid ${stage} finding fields`);
+    if (stage !== 'investigator' && (!Number.isInteger(row.finding_index) || row.finding_index < 0)) throw new Error(`Invalid ${stage} finding index`);
+  }
+  if (stage === 'investigator' && (typeof value.summary !== 'string' || !strings(value.questions_for_management) || !strings(value.what_would_change_my_mind))) throw new Error('Invalid investigator summary/questions');
+  if (stage === 'judge' && (typeof value.confidence !== 'number' || !Number.isFinite(value.confidence) || value.confidence < 0 || value.confidence > 1 || typeof value.deciding_evidence !== 'string' || !strings(value.evidence_that_would_settle_it))) throw new Error('Invalid judge confidence/settling evidence');
+}
+
+export function evidenceHead(pack: Pick<EvidencePack,'company' | 'evidence'>): string {
+  return `Company: ${pack.company}\nEvidence pack:\n${pack.evidence.map(it => `[${it.id}] (${it.kind}) ${it.text}  -- source: ${it.source}`).join('\n')}`;
+}
+
+export async function runOnce(head: string, ids: Set<string>, ask: Ask, onStage?: (stage: Stage, status: 'started' | 'completed', elapsedMs: number) => void): Promise<Sample> {
+  const stage = async (name: Stage, system: string, user: string) => {
+    const started = Date.now(); onStage?.(name, 'started', 0);
+    const value = await ask(system, user); validateStage(name, value);
+    onStage?.(name, 'completed', Date.now() - started);
+    return value;
+  };
+  const investigator = await stage('investigator', INVESTIGATOR, head) as unknown as Investigator;
+  const red_team = await stage('red_team', RED_TEAM, `${head}\n\nInvestigator findings:\n${JSON.stringify(investigator)}`) as unknown as RedTeam;
+  const references = (value: {finding_index:number}[]) => {
+    if (value.some(r => r.finding_index >= investigator.findings.length)) throw new Error('Stage refers to an out-of-range finding');
+    if (value.length !== investigator.findings.length || new Set(value.map(r=>r.finding_index)).size !== investigator.findings.length) throw new Error('Every finding needs exactly one rebuttal and ruling');
+  };
+  references(red_team.rebuttals);
+  const judge = await stage('judge', JUDGE, `${head}\n\nInvestigator findings:\n${JSON.stringify(investigator)}\n\nDefender rebuttals:\n${JSON.stringify(red_team)}`) as unknown as Judge;
+  references(judge.rulings);
+  return { investigator, red_team, judge, grounding: {
+    investigator: grounding(investigator, 'findings', ids), red_team: grounding(red_team, 'rebuttals', ids), judge: grounding(judge, 'rulings', ids),
+  } };
+}
+
+export function agreement(samples: Sample[]): CaseRun['agreement'] {
+  const count = (values: string[]) => Object.fromEntries([...new Set(values)].map(v => [v, values.filter(x => x === v).length]));
+  return { investigator: count(samples.map(s => s.investigator.verdict ?? '?')), judge: count(samples.map(s => s.judge.final_verdict ?? '?')) };
+}
+
+// Independent samples share only the immutable evidence pack; case memory is shown alongside, never injected into frozen prompts.
+export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, options: { samples?: number; ask?: Ask; progress?: (p: Progress) => void; signal?: AbortSignal } = {}): Promise<CaseRun> {
+  const total = options.samples ?? 3;
+  if (!Number.isInteger(total) || total < 1 || total > 3) throw new Error('Samples must be 1, 2 or 3');
+  const head = evidenceHead(pack), ids = new Set(pack.evidence.map(e=>e.id)), samples: Sample[] = [];
+  for (let sample = 1; sample <= total; sample++) {
+    let activeStage: Stage = 'investigator';
+    const ask = options.ask ?? nimClient({signal:options.signal,onRetry:attempt=>options.progress?.({sample,total,stage:activeStage,status:'retry',attempt})});
+    samples.push(await runOnce(head, ids, ask, (stage,status,elapsedMs) => { activeStage=stage; options.progress?.({sample,total,stage,status,elapsedMs}); }));
+  }
+  return { cik, company: pack.company, fy_end: fyEnd, model: MODEL, evidence: pack.evidence, samples, agreement: agreement(samples) };
+}
+
+export async function saveRun(file: string, run: CaseRun): Promise<void> {
+  await mkdir(dirname(file), {recursive:true});
+  const tmp = `${file}.${process.pid}.tmp`;
+  await writeFile(tmp, JSON.stringify(run,null,2) + '\n');
+  await rename(tmp,file);
+}

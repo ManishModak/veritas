@@ -7,6 +7,8 @@
   "scripts": {
     "setup": "node --import tsx app/scripts/setup.ts",
     "start": "node --import tsx app/src/server.ts",
+    "live": "node --import tsx app/scripts/live.ts",
+    "test:agent": "node --import tsx --test --test-isolation=none app/test/agent.test.ts",
     "test": "node --import tsx --test --test-isolation=none app/test/*.test.ts",
     "test:parity": "node --import tsx --test --test-isolation=none app/test/parity.test.ts",
     "typecheck": "tsc --noEmit"

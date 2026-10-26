@@ -30,6 +30,11 @@ export function evidenceHead(pack: Pick<EvidencePack,'company' | 'evidence'>): s
   return `Company: ${pack.company}\nEvidence pack:\n${pack.evidence.map(it => `[${it.id}] (${it.kind}) ${it.text}  -- source: ${it.source}`).join('\n')}`;
 }
 
+function validateReferences(value: {finding_index:number}[], count: number): void {
+  if (value.some(r => r.finding_index >= count)) throw new Error('Stage refers to an out-of-range finding');
+  if (value.length !== count || new Set(value.map(r=>r.finding_index)).size !== count) throw new Error('Every finding needs exactly one rebuttal and ruling');
+}
+
 export async function runOnce(head: string, ids: Set<string>, ask: Ask, onStage?: (stage: Stage, status: 'started' | 'completed', elapsedMs: number) => void): Promise<Sample> {
   const stage = async (name: Stage, system: string, user: string) => {
     const started = Date.now(); onStage?.(name, 'started', 0);
@@ -39,13 +44,9 @@ export async function runOnce(head: string, ids: Set<string>, ask: Ask, onStage?
   };
   const investigator = await stage('investigator', INVESTIGATOR, head) as unknown as Investigator;
   const red_team = await stage('red_team', RED_TEAM, `${head}\n\nInvestigator findings:\n${JSON.stringify(investigator)}`) as unknown as RedTeam;
-  const references = (value: {finding_index:number}[]) => {
-    if (value.some(r => r.finding_index >= investigator.findings.length)) throw new Error('Stage refers to an out-of-range finding');
-    if (value.length !== investigator.findings.length || new Set(value.map(r=>r.finding_index)).size !== investigator.findings.length) throw new Error('Every finding needs exactly one rebuttal and ruling');
-  };
-  references(red_team.rebuttals);
+  validateReferences(red_team.rebuttals,investigator.findings.length);
   const judge = await stage('judge', JUDGE, `${head}\n\nInvestigator findings:\n${JSON.stringify(investigator)}\n\nDefender rebuttals:\n${JSON.stringify(red_team)}`) as unknown as Judge;
-  references(judge.rulings);
+  validateReferences(judge.rulings,investigator.findings.length);
   return { investigator, red_team, judge, grounding: {
     investigator: grounding(investigator, 'findings', ids), red_team: grounding(red_team, 'rebuttals', ids), judge: grounding(judge, 'rulings', ids),
   } };
@@ -70,8 +71,22 @@ export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, op
 }
 
 export async function saveRun(file: string, run: CaseRun): Promise<void> {
+  assertRunGrounded(run);
   await mkdir(dirname(file), {recursive:true});
   const tmp = `${file}.${process.pid}.tmp`;
   await writeFile(tmp, JSON.stringify(run,null,2) + '\n');
   await rename(tmp,file);
+}
+
+// Gate persistence on fresh checks, rather than trusting serialized grounding metadata.
+export function assertRunGrounded(run: CaseRun): void {
+  if (!run.samples.length) throw new Error('Cannot save a run without samples');
+  const ids = new Set(run.evidence.map(e=>e.id));
+  for (const sample of run.samples) for (const [stage,key] of [['investigator','findings'],['red_team','rebuttals'],['judge','rulings']] as const) {
+    validateStage(stage,sample[stage]);
+    if (stage === 'red_team') validateReferences(sample.red_team.rebuttals,sample.investigator.findings.length);
+    if (stage === 'judge') validateReferences(sample.judge.rulings,sample.investigator.findings.length);
+    const check = grounding(sample[stage],key,ids);
+    if (check.unknown_ids.length || check.uncited) throw new Error(`Citation check failed for ${stage}; no result saved`);
+  }
 }

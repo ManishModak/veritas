@@ -5,13 +5,27 @@ export type Ask = (system: string, user: string) => Promise<Record<string, unkno
 
 // Parse only the answer content. The provider's reasoning_content is never used as evidence.
 export function parseAnswer(text: string): Record<string, unknown> {
-  const match = text.match(/\{\s*"(verdict|rebuttals|final_verdict)".*\}/s);
-  if (!match) throw new Error('NIM answer is missing the stage JSON object');
-  try {
-    const parsed = JSON.parse(match[0]);
-    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error();
-    return parsed;
-  } catch { throw new Error('NIM answer contains invalid JSON'); }
+  const starts: number[] = [];
+  let quoted = false, escaped = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (escaped) escaped = false;
+      else if (c === '\\') escaped = true;
+      else if (c === '"') quoted = false;
+      continue;
+    }
+    if (c === '"' && starts.length) quoted = true;
+    else if (c === '{') starts.push(i);
+    else if (c === '}' && starts.length) {
+      const start = starts.pop()!;
+      try {
+        const parsed = JSON.parse(text.slice(start,i+1));
+        if (['verdict','rebuttals','final_verdict'].some(k=>Object.hasOwn(parsed,k))) return parsed;
+      } catch { /* Continue past non-JSON braces in surrounding commentary. */ }
+    }
+  }
+  throw new Error('NIM answer contains invalid JSON or is missing the stage JSON object');
 }
 
 export interface NimOptions {
@@ -53,12 +67,23 @@ export function nimClient(options: NimOptions = {}): Ask {
         continue;
       }
       let payload: any;
-      try { payload = await response.json(); } catch { throw new Error('NIM returned a non-JSON response'); }
+      try { payload = await response.json(); } catch {
+        if (options.signal?.aborted) throw new Error('NIM run cancelled');
+        if (!timeout.aborted) throw new Error('NIM returned a non-JSON response');
+        if (attempt === attempts) throw new Error(`NIM timeout after ${attempts} attempts`);
+        options.onRetry?.(attempt);
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, {signal:options.signal});
+        continue;
+      }
       const choice = payload.choices?.[0];
       if (choice?.finish_reason === 'length') throw new Error('NIM answer truncated at max_tokens; no result saved');
       const content = choice?.message?.content;
       if (typeof content !== 'string') throw new Error('NIM response has no answer content');
-      return parseAnswer(content);
+      try { return parseAnswer(content); } catch (error) {
+        if (attempt === attempts) throw error;
+        options.onRetry?.(attempt);
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, {signal:options.signal});
+      }
     }
     throw new Error('NIM attempts exhausted');
   };

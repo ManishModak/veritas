@@ -1,11 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, mkdtemp, access } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
 import { ROOT, RUNS } from '../src/paths.ts';
 import * as prompts from '../src/agent/prompts.ts';
 import { MODEL, nimClient, parseAnswer } from '../src/agent/nim.ts';
-import { agreement, evidenceHead, grounding, runCase, runOnce, validateStage } from '../src/agent/run.ts';
+import { agreement, evidenceHead, grounding, runCase, runOnce, validateStage, saveRun } from '../src/agent/run.ts';
 import { CsvSource } from '../src/data/source.ts';
 import { evidencePack } from '../src/agent/evidence.ts';
 import type { CaseRun, Progress } from '../src/agent/types.ts';
@@ -28,6 +29,8 @@ test('answer regex accepts investigator, defender and judge; rejects malformed a
   for (const stage of [sample.investigator,sample.red_team,sample.judge]) assert.deepEqual(parseAnswer(`Answer:\n\`\`\`json\n${JSON.stringify(stage)}\n\`\`\``),stage);
   assert.throws(()=>parseAnswer('{"thought":"reasoning"}'),/missing/);
   assert.throws(()=>parseAnswer('{"verdict": broken}'),/invalid JSON/);
+  assert.deepEqual(parseAnswer('```json\n{"summary":"braces {inside} and \\"quotes\\"", "verdict":"fits"}\n``` trailing {note}'),{summary:'braces {inside} and "quotes"',verdict:'fits'});
+  assert.deepEqual(parseAnswer('{"overall":"x", "rebuttals":[]} commentary }'),{overall:'x',rebuttals:[]});
 });
 
 test('NIM sends frozen call settings, retries transient errors and reads content instead of reasoning', async () => {
@@ -56,6 +59,13 @@ test('NIM bounds timeouts and redacts provider bodies and network errors; perman
   await assert.rejects(nimClient({apiKey:'test-secret',fetch:truncated})('s','u'),/truncated/);
 });
 
+test('malformed answer JSON retries within the same bounded attempt budget',async()=>{
+  let calls=0;
+  const mock=(async()=>Response.json({choices:[{message:{content:++calls===1?'{"verdict": broken}':JSON.stringify(sample.investigator)}}]})) as typeof fetch;
+  assert.deepEqual(await nimClient({apiKey:'test-secret',fetch:mock,attempts:2,backoffMs:1})('s','u'),sample.investigator);
+  assert.equal(calls,2);
+});
+
 test('grounding counts unknown ids and missing evidence; malformed stages cannot pass vacuously', () => {
   assert.deepEqual(grounding({findings:[{evidence:['E1','E999']},{evidence:[]}]},'findings',new Set(['E1'])),{citations:2,unknown_ids:['E999'],uncited:1});
   assert.throws(()=>validateStage('investigator',{raw:'no answer'}),/Invalid investigator schema/);
@@ -79,13 +89,18 @@ test('grounding and agreement reproduce every recorded sample, including off-sch
 
 test('runCase is independent per sample, preserves the recorded JSON shape, stage order and arbitrary verdict labels', async () => {
   const pack=await evidencePack(new CsvSource(),1336917,'2015-12-31');
-  const heads: string[]=[], systems: string[]=[], progress: Progress[]=[];
+  const heads: string[]=[], systems: string[]=[], progress: Progress[]=[], users: string[]=[];
   const result=await runCase(1336917,'2015-12-31',pack,{samples:3,progress:p=>progress.push(p),ask:async (system,user)=>{
-    systems.push(system); if(system === prompts.INVESTIGATOR) heads.push(user);
+    systems.push(system); users.push(user); if(system === prompts.INVESTIGATOR) heads.push(user);
     const data = system === prompts.INVESTIGATOR ? {...sample.investigator,verdict:'unknown label'} : system === prompts.RED_TEAM ? sample.red_team : sample.judge;
     return structuredClone(data) as unknown as Record<string,unknown>;
   }});
   assert.equal(heads.length,3); assert(heads.every(h=>h===evidenceHead(pack)));
+  const inv={...sample.investigator,verdict:'unknown label'};
+  for(let n=0;n<3;n++){
+    assert.equal(users[n*3+1],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}`);
+    assert.equal(users[n*3+2],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}\n\nDefender rebuttals:\n${JSON.stringify(sample.red_team)}`);
+  }
   assert.deepEqual(systems,[prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE,prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE,prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE]);
   assert.deepEqual(Object.keys(result),Object.keys(recorded));
   assert.deepEqual(result.agreement.investigator,{'unknown label':3});
@@ -94,10 +109,35 @@ test('runCase is independent per sample, preserves the recorded JSON shape, stag
   assert(result.samples.every(s=>Object.values(s.grounding).every(g=>g.unknown_ids.length===0 && g.uncited===0)));
 });
 
-test('out-of-range and duplicate finding indices fail before saving a result',async()=>{
+test('out-of-range and duplicate finding indices fail',async()=>{
   let call=0;
   await assert.rejects(runOnce('pack',new Set(['E1']),async()=>{
     call++;
     return (call===1 ? sample.investigator : call===2 ? {...sample.red_team,rebuttals:sample.red_team.rebuttals.map(r=>({...r,finding_index:999}))} : sample.judge) as unknown as Record<string,unknown>;
   }),/out-of-range/);
+  call=0;
+  await assert.rejects(runOnce('pack',new Set(['E1']),async()=>{
+    call++;
+    return (call===1 ? sample.investigator : {...sample.red_team,rebuttals:sample.red_team.rebuttals.map(r=>({...r,finding_index:0}))}) as unknown as Record<string,unknown>;
+  }),/exactly one/);
+  call=0;
+  await assert.rejects(runOnce('pack',new Set(['E1']),async()=>{
+    call++;
+    return (call===1 ? sample.investigator : call===2 ? sample.red_team : {...sample.judge,rulings:sample.judge.rulings.map(r=>({...r,finding_index:999}))}) as unknown as Record<string,unknown>;
+  }),/out-of-range/);
+});
+
+test('saveRun refuses unknown or absent citations before creating a result file, even with forged grounding counts',async()=>{
+  const dir=await mkdtemp(resolve(tmpdir(),'veritas-grounding-'));
+  for(const evidence of [['E99999'],[]]){
+    const defective=structuredClone(recorded);
+    defective.samples[0].investigator.findings[0].evidence=evidence;
+    const file=resolve(dir,evidence.length?'unknown.json':'uncited.json');
+    await assert.rejects(saveRun(file,defective),/Citation check failed/);
+    await assert.rejects(access(file));
+  }
+  const defective=structuredClone(recorded), file=resolve(dir,'indices.json');
+  defective.samples[0].judge.rulings[0].finding_index=999;
+  await assert.rejects(saveRun(file,defective),/out-of-range/);
+  await assert.rejects(access(file));
 });

@@ -1,7 +1,10 @@
 import { createHash } from 'node:crypto';
+import { readFileSync, writeFileSync, renameSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { HMEM, type FeedbackKind } from '../../vendor/hmem/src/index.ts';
 import { caseId, type FilingIdentity } from '../cases.ts';
 import type { CaseRun } from '../agent/types.ts';
+import { assertRunGrounded } from '../agent/run.ts';
 
 const hash = (s: string) => createHash('sha256').update(s).digest('hex');
 const memoryCase = (source: string) => /^veritas:(\d+_\d{4}-\d{2}-\d{2}):/.exec(source)?.[1];
@@ -15,12 +18,25 @@ export class CaseMemory {
   readonly hmem: HMEM;
   private catalogue = new Map<string,FilingIdentity>();
   private activeFindings = new Map<string,string[]>();
+  private indexFile?: string;
   constructor(filings: FilingIdentity[], options: {persistDir?: string; clock?:()=>number} = {}) {
     for(const filing of filings) this.catalogue.set(filing.caseId,Object.freeze({...filing}));
     this.hmem=new HMEM({persistDir:options.persistDir,clock:options.clock,actor:'veritas-analyst'});
+    if(options.persistDir){
+      this.indexFile=join(options.persistDir,'finding-index.json');
+      if(existsSync(this.indexFile)){
+        const index=JSON.parse(readFileSync(this.indexFile,'utf8')) as [string,string[]][];
+        for(const [id,ids] of index){
+          this.mustFiling(id);
+          if(!Array.isArray(ids) || !ids.every(mid=>memoryCase(this.hmem.store.get(mid)?.source??'')===id)) throw new Error('Invalid persisted finding index');
+          this.activeFindings.set(id,ids);
+        }
+      }
+    }
   }
 
   remember(run: CaseRun): string[] {
+    assertRunGrounded(run);
     const id=caseId(run.cik,run.fy_end), filing=this.mustFiling(id);
     const ids: string[]=[];
     // Keep each sample's findings and the union of questions. Nothing here reads cohort ground truth.
@@ -34,6 +50,10 @@ export class CaseMemory {
       if(sampleIndex===0) ids[findingIndex]=memory.id;
     }
     this.activeFindings.set(id,ids);
+    if(this.indexFile){
+      const tmp=`${this.indexFile}.tmp`;
+      writeFileSync(tmp,JSON.stringify([...this.activeFindings])+'\n');renameSync(tmp,this.indexFile);
+    }
     return [...ids];
   }
 

@@ -14,6 +14,7 @@ import {
 import { caseId } from '../cases.ts';
 import { RUNS } from '../paths.ts';
 import type { CaseRun } from '../agent/types.ts';
+import { assertRunGrounded } from '../agent/run.ts';
 import type { Evidence, EvidenceOrigin, EvidencePack } from '../agent/evidence.ts';
 
 export interface WorldStoreOptions {
@@ -125,6 +126,7 @@ export class WorldEvidenceStore {
   }
 
   private async ingestCase(run: CaseRun, pack: EvidencePack): Promise<IngestResult> {
+    assertRunGrounded(run);
     const id = caseId(run.cik, run.fy_end);
     const sanitizedRun = sanitize(run);
     const sanitizedPack = sanitize(pack);
@@ -295,17 +297,14 @@ export class WorldEvidenceStore {
       }
 
       // Preserve original fact accession/filed date
-      let firstFiled = sanitizedPack.filing.filed;
-      for (const a of evAccns) {
-        const f = filingMap.get(a);
-        if (f?.filed) { firstFiled = f.filed; break; }
-      }
-      const evAt = `${firstFiled}T00:00:00.000Z`;
+      const inputFilings=[...evAccns].map(a=>filingMap.get(a)).filter((f):f is FilingInfo=>Boolean(f)).sort((a,b)=>a.filed.localeCompare(b.filed));
+      const latestInput=inputFilings.at(-1);
+      const evAt = `${latestInput?.filed??sanitizedPack.filing.filed}T00:00:00.000Z`;
       const evSource: Provenance = {
         kind: 'pipeline',
         by: 'evidence-pack',
         at: evAt,
-        url: filingMap.get([...evAccns][0])?.url ?? sanitizedPack.filing.url,
+        url: latestInput?.url ?? sanitizedPack.filing.url,
         runId: revisionId,
       };
 
@@ -471,7 +470,7 @@ export class WorldEvidenceStore {
     };
   }
 
-  provenance(id: string, evidenceId: string): ProvenanceResult {
+  provenance(id: string, evidenceId: string, revisionId?: string): ProvenanceResult {
     const state = this.worlds.get(id);
     if (!state) throw new Error(`Unknown case: ${id}`);
 
@@ -481,7 +480,8 @@ export class WorldEvidenceStore {
     const company = graph.entity(externalId('company','cik',id.split('_')[0]));
     if (!company) throw new Error(`Company entity not found for case: ${id}`);
 
-    const revId = (company.attrs.activeRevision as string) || state.activeRevision;
+    const revId = revisionId ?? ((company.attrs.activeRevision as string) || state.activeRevision);
+    if(revisionId && !state.revisions.has(revisionId)) throw new Error('Unknown revision');
     if (!revId) throw new Error(`No active revision for case: ${id}`);
 
     // Find the active evidence entity

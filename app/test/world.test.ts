@@ -95,6 +95,9 @@ test('source chain accuracy, SEC URLs, input row preservation and multiple citat
   assert(provSig.filings.length >= 2, 'Signal must link to both prior and current filings');
   assert(provSig.filings.some((f) => f.attrs.accn === '0001336917-15-000006'));
   assert(provSig.filings.some((f) => f.attrs.accn === uaPack.filing.accn));
+  const signalNode=store.world(uaId).view('graph').query({type:'evidence',where:e=>e.attrs.evidenceId===sig.id})[0];
+  assert.equal(signalNode.source.at,`${uaPack.filing.filed}T00:00:00.000Z`);
+  assert.equal(signalNode.source.url,uaPack.filing.url);
 
   // 4. MD&A evidence provenance
   const mdna = uaPack.evidence.find((e) => e.kind === 'mdna')!;
@@ -146,6 +149,7 @@ test('changed run produces distinct active revision, retains audit history, and 
   assert.equal(res1.changed, true);
   const origEventsCount = store.world(smId).events().length;
   const origAuditCount = store.world(smId).audit().length;
+  const recordedRevision=store.provenance(smId,'E1').company.attrs.activeRevision as string;
 
   // 2. Ingest modified run with changed finding
   const modifiedRun: CaseRun = structuredClone(smRun);
@@ -179,6 +183,15 @@ test('changed run produces distinct active revision, retains audit history, and 
     'Super Micro claims inventory growth reflects impending enterprise product surge.',
     'Older recording must never overwrite live evidence on a read'
   );
+  assert.notEqual(store.provenance(smId,'E1',recordedRevision).findings[0]?.attrs.management_says,'Super Micro claims inventory growth reflects impending enterprise product surge.');
+  assert.throws(()=>store.provenance(smId,'E1','unknown'),/Unknown revision/);
+});
+
+test('unknown citations are rejected before any graph records are created',async()=>{
+  const store=new WorldEvidenceStore({clock}),run=structuredClone(runs[0]),id=caseId(run.cik,run.fy_end);
+  run.samples[0].judge.rulings[0].evidence.push('E99999');
+  await assert.rejects(store.ingest(run,packs.get(id)!),/Citation check failed/);
+  assert.throws(()=>store.world(id),/Unknown case/);
 });
 
 test('ingesting actual live run from M2 succeeds as a distinct live revision', async () => {

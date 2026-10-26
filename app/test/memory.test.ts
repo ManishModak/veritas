@@ -55,6 +55,17 @@ test('as-of guard uses a copied trusted catalogue and rejects same-date filings'
   assert.equal(sameDate.recall(ua.caseId).memories.length,0);
 });
 
+test('finding feedback mapping survives persistent H-MEM reload',async()=>{
+  const dir=await mkdtemp(resolve(tmpdir(),'veritas-hmem-reload-'));
+  const first=new CaseMemory(filings,{persistDir:dir,clock});
+  const ids=first.remember(laterRun);first.feedback(ids[0],'helpful');
+  const reloaded=new CaseMemory(filings,{persistDir:dir,clock});
+  assert.deepEqual(reloaded.findingMemoryIds(later.caseId),ids);
+  const confidence=reloaded.hmem.store.get(ids[0])!.confidence;
+  reloaded.feedback(ids[0],'not_helpful');
+  assert(Math.abs(reloaded.hmem.store.get(ids[0])!.confidence-confidence+0.03)<1e-10);
+});
+
 test('mutation proof: removing the real filing-date guard leaks a later case and the same assertion catches it',async()=>{
   const source=resolve(ROOT,'app/src/memory/cases.ts');
   let code=await readFile(source,'utf8');

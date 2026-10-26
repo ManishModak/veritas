@@ -1,0 +1,307 @@
+Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations 
+
+ The following discussion and analysis should be read in conjunction with the Consolidated Financial Statements and the corresponding notes included in Item 8. Certain percentages presented in this discussion and analysis are calculated from the underlying whole dollar amounts and therefore may not recalculate from the rounded numbers used for disclosure purposes. Some of the information contained in this discussion and analysis or set forth elsewhere in this report includes forward-looking statements that involve risks and uncertainties. You should read the “Risk Factors” section of this report for a discussion of important factors that could cause actual results to differ materially from the results described in or implied by the forward-looking statements contained in the following discussion and analysis. 
+
+ The discussion and analysis of our financial condition and results of operations are based on our financial statements, which have been prepared in accordance with U.S. generally accepted accounting principles. The preparation of these financial statements requires making estimates and assumptions that affect the reported amounts of assets and liabilities and the disclosure of contingent assets and liabilities at the date of the financial statements, as well as the reported revenue, and expenses during the reporting periods. On an ongoing basis, we evaluate such estimates and judgments, including those described in greater detail below. We base our estimates on historical experience and on various other factors that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying value of assets and liabilities that are not readily apparent from other sources. Actual results may differ from these estimates under different assumptions or conditions. 
+
+ Overview 
+
+ MiMedx® is an integrated developer, processor and marketer of patent protected and proprietary regenerative biomaterial products and bioimplants processed from human amniotic membrane and other birth tissues and human skin and bone. " Innovations in Regenerative Biomaterials" is the framework behind our mission to give physicians products and tissues to help the body heal itself. Our biomaterial platform technologies are AmnioFix®, EpiFix®, OrthoFlo, Physio™, AlloBurn™, and CollaFix™. AmnioFix and EpiFix are our tissue technologies processed from human amniotic membrane derived from donated placentas. Elected in advance of delivery through our donor program, a mother delivering a healthy baby via scheduled full-term Caesarean section birth may donate the placenta in lieu of having it discarded as medical waste. We process the human amniotic membrane utilizing our proprietary PURION® Process, to produce a safe and effective implant. MiMedx is the leading supplier of amniotic tissue, having supplied over 500,000 allografts to date for application in the Wound Care, Burn, Surgical, Orthopedic, Spine, Sports Medicine, Ophthalmic and Dental sectors of healthcare. We recently introduced OrthoFlo, an amniotic fluid derived allograft for homologous use. Amniotic fluid is donated by a consenting mother delivering a full-term healthy baby by scheduled Caesarean section. Through the recent acquisition of Stability Biologics, our newest proprietary platforms include Physio, a unique bone grafting material comprised of 100% bone tissue with no added carrier, a demineralized bone matrix (DBM) to complement our product portfolio offerings within the Orthopedic market and AlloBurn, a skin product for burns. CollaFix, our next technology platform we plan to commercialize, is our collagen fiber technology designed to mimic the natural composition, structure and mechanical properties of musculoskeletal tissues in order to augment their repair. CollaFix is the only known biological, biodegradable, biomimetic technology that matches human tendon in strength and stiffness. 
+
+ Our EpiFix allografts are configured for external use. We offer EpiFix® in a sheet form as well as a micronized powder form. Currently, the EpiFix platform is being used to treat chronic wounds, including diabetic foot ulcers, venous stasis ulcers, arterial ulcers and pressure ulcers, burns and surgical wounds (such as wounds following plastic surgery). 
+
+ Our AmnioFix allografts consist of three configurations, all configured for internal use: 
+
+ • 
+ AmnioFix is provided in a sheet form. It is used to modulate inflammation, enhance soft tissue healing and to minimize scar tissue formation. It has been used in spine, urology and general surgeries. 
+
+ • 
+ AmnioFix Wrap also is supplied in a sheet form and is configured for the same purposes as AmnioFix®, but is optimized for use as a “wrap” for nerves, tendons or ligaments. 
+
+ • 
+ AmnioFix Injectable is supplied in micronized powder form used to reduce inflammation while enhancing healing of soft tissue. AmnioFix Injectable has been used to treat conditions such as tendonitis, including plantar fasciitis, lateral epicondylitis, and medial epicondylitis, bursitis, strains and sprains. 
+
+ We also process allografts for ophthalmic surgery and dental applications, which are sold on an OEM basis. 
+
+ 34 
+
+ Our assets also include licenses to two medical device technology platforms- HydroFix and CollaFix. Although we had commercialized some products based on the HydroFix technology, due to the relatively small size of the addressable market for those products, we decided to discontinue that product line in the fourth quarter of 2013. We are currently working to develop products using our CollaFix technology and continue to assess how best to exploit that technology. 
+
+ Our distribution model is comprised of direct sales, third party sales agents and stocking distributors that market MiMedx-branded products. We also have several OEM relationships targeting the spine, orthopedic, ophthalmic and dental markets. Our primary focus is in the U.S. market, but we are currently exploring international expansion opportunities. In 2015 approximately 3% of our revenues were from sales outside the U.S. to stocking distributors compared with less than 1% of revenues in 2014. 
+
+ Recent Events 
+
+ FDA Guidance 
+
+ On December 22, 2014, the FDA issued for comment “Draft Guidance for Industry and FDA Staff: Minimal Manipulation of Human Cells, Tissues, and Cellular and Tissue-Based Products.” Essentially, the Minimal Manipulation draft guidance takes the same position with respect to micronized amniotic tissue that it took in the Untitled Letter to the Company 16 months earlier. The Company submitted comments to the Minimal Manipulation draft guidance asserting that the Minimal Manipulation draft guidance represents agency action that goes far beyond the FDA’s statutory authority, is inconsistent with existing HCT/ P regulations and the FDA’s prior positions, and is internally inconsistent and scientifically unsound. On October 28, 2015, the FDA issued for comment, "Draft Guidance for Industry and FDA Staff: Homologous Use of Human Cells, Tissues, and Cellular and Tissue-Based Products." The Company submitted comments on this Homologous Use draft guidance. The FDA has also indicated that it will hold a public hearing on a date in 2016 to be determined to obtain input on the Homologous Use draft guidance and the previously released Minimal Manipulation draft guidance, as well as other recently issued guidance documents on HCT/Ps. The Company has requested, and has been granted an opportunity to speak at this hearing. 
+
+ Acquisition of Stability 
+
+ On January 13, 2016, the Company completed the acquisition of Stability Inc., d/b/a Stability Biologics, a provider of human tissue products to surgeons, facilities, and distributors serving the surgical, spine, and orthopedic sectors of the healthcare industry. The acquisition of Stability was effected by the merger of Stability Inc. into a newly created wholly owned subsidiary of the Company. The new subsidiary was the surviving company in the merger and was subsequently renamed Stability Biologics, LLC ("Stability"). The Company paid $10 million at the closing, comprised of 60% cash and 40% in shares of common stock of MiMedx Group, Inc., assumed approximately $800,000 in debt and eliminated a $2.4 million receivable related to Company products sold to Stability prior to the acquisition. The Company will also pay future contingent consideration through a two-year earn out arrangement based on the 2016 and 2017 performance of Stability's business. The Company expects the earn out will be the larger portion of the overall consideration for the transaction. The earn out will also be paid in the form of 60% cash and 40% in shares of stock of MiMedx Group, Inc. 
+
+ Critical Accounting Policies 
+ We believe that of our significant accounting policies, which are described in Note 2 to our financial statements appearing elsewhere in this report, the following accounting policies involve a greater degree of judgment and complexity. 
+ Revenue Recognition and Sales Returns, Discounts, and Allowances Accruals 
+ The Company sells its products primarily through a combination of a direct sales force, independent stocking distributors and third - party representatives in the U.S. and independent distributors in international markets. The Company recognizes revenue when title to the goods and risk of loss transfers to customers, provided there are no material remaining performance obligations required of the Company or any matters of customer acceptance. In cases where the Company utilizes distributors or ships products directly to the end user, it recognizes revenue according to the shipping terms of the agreement provided all revenue recognition criteria have been met. A portion of the Company’s revenue is generated from inventory maintained at hospitals or with field representatives. For these products, revenue is recognized at the time the product has been 
+
+ 35 
+
+ used or implanted. The Company records estimated sales returns, discounts and allowances as a reduction of net sales in the same period revenue is recognized. 
+ Goodwill and Impairment of Long-Lived Assets 
+ Goodwill is the excess of the purchase price over the fair value of net assets of acquired businesses. Goodwill is tested for impairment annually or whenever an event occurs or circumstances change that would indicate that the carrying amount may be impaired. The test for impairment requires us to make several estimates about fair value, most of which are based on projected future cash flows. Our estimates associated with the goodwill impairment test are considered critical due to the amount of goodwill recorded on our consolidated balance sheets and the judgment required in determining fair value, including projected future cash flows. No goodwill impairment has been recognized during 2015, 2014 or 2013. 
+ Other intangible assets include patents, trademarks, and purchased technology. Intangible assets with a definite life are amortized on a straight-line or accelerated basis, as appropriate, with estimated useful lives ranging from ten to fourteen years, and are tested for impairment whenever events or changes in circumstances indicate that the carrying amount of an intangible asset may not be recoverable. Indefinite-lived intangible assets are tested for impairment annually or whenever events or changes in circumstances indicate that the carrying amount of an intangible asset may not be recoverable. Refer to Note 8 to the consolidated financial statements in Item 8 for additional information. Our impairment reviews are based on an estimated future cash flow approach that requires significant judgment with respect to future revenue and expense growth rates, selection of appropriate discount rate, asset groupings, and other assumptions and estimates. We use estimates that are consistent with our business plans and a market participant view of the assets being evaluated. Actual results may differ from our estimates. In 2012, because our impairment test indicated that the carrying value of the intangible assets related to HydroFix exceeded its fair value, an impairment loss of approximately $1,798,000 was recognized and the intangible asset carrying amount was adjusted to its new basis. During the fourth quarter of 2013 we chose to discontinue the HydroFix product line. This action resulted in an impairment charge of approximately $368,000. This item is included in our Statement of Operations for the year ended December 31, 2013. 
+ Fair Value Measurements 
+ We record certain financial instruments at fair value, including: cash equivalents and contingent consideration. We may make an irrevocable election to measure other financial instruments at fair value on an instrument-by-instrument basis; although as of December 31, 2015 we have not chosen to make any such elections. Fair value financial instruments are recorded in accordance with the fair value measurement framework. 
+ We also measure certain non-financial assets at fair value on a non-recurring basis. These non-recurring valuations include evaluating assets such as long-lived assets, and non-amortizing intangible assets for impairment; allocating value to assets in an acquired asset group; and applying accounting for business combinations. We use the fair value measurement framework to value these assets and report the fair values in the periods in which they are recorded or written down. 
+ The fair value measurement framework includes a fair value hierarchy that prioritizes observable and unobservable inputs used to measure fair values in their broad levels. These levels from highest to lowest priority are as follows: 
+
+ • 
+ Level 1: Quoted prices (unadjusted) in active markets that are accessible at the measurement date for identical assets or liabilities; 
+
+ • 
+ Level 2: Quoted prices in active markets for similar assets or liabilities or observable prices that are based on inputs not quoted on active markets, but corroborated by market data; and 
+
+ • 
+ Level 3: Unobservable inputs or valuation techniques that are used when little or no market data is available. 
+
+ The determination of fair value and the assessment of a measurement’s placement within the hierarchy requires judgment. Level 3 valuations often involve a higher degree of judgment and complexity. Level 3 valuations may require the use of various cost, market, or income valuation methodologies applied to unobservable management estimates and assumptions. Management’s assumptions could vary depending on the asset or liability valued and the valuation method used. Such assumptions could include: estimates of prices, earnings, costs, actions of market participants, market factors, or the weighting of various valuation methods. We may also engage external advisors to assist us in determining fair value, as appropriate. 
+ Although we believe that the recorded fair value of our financial instruments is appropriate, these fair values may not be indicative of net realizable value or reflective of future fair values. 
+
+ 36 
+
+ Share-based Compensation 
+ We follow the provisions of FASB Accounting Standards Codification (“ASC”) 718, “Compensation — Stock Compensation” (ASC 718), previously referred to as Statement of Financial Accounting Standards No. 123R — Share-based Payments which requires the measurement and recognition of compensation expense for all share-based payment awards either modified or granted to employees and directors based upon estimated fair values. The Black-Scholes-Merton option-pricing model, consistent with the provisions of ASC 718, was used to determine the fair value of each option granted. Option valuation models require the input of highly subjective assumptions, including the expected stock price volatility. We use projected volatility rates, which are based upon historical volatility rates, trended into future years. Because our stock options have characteristics significantly different from those of traded options, and because changes in the subjective input assumptions can materially affect the fair value estimate, in management’s opinion, the existing models do not necessarily provide a reliable single measure of the fair value of our options. 
+ Income Taxes 
+ The Company accounts for income taxes under the asset and liability method, which requires the recognition of deferred tax assets and liabilities for the expected future tax consequences of events that have been included in the financial statements. Under this method, we determine deferred tax assets and liabilities on the basis of the differences between the financial statement and tax bases of assets and liabilities by using enacted tax rates in effect for the year in which the differences are expected to reverse. The effect of a change in tax rates on deferred tax assets and liabilities is recognized in income in the period that includes the enactment date. 
+ The Company recognizes deferred tax assets to the extent that we believe that these assets are more likely than not to be realized. In making such a determination, we consider all available positive and negative evidence, including future reversals of existing taxable temporary differences, projected future taxable income, tax-planning strategies, and results of recent operations. If we determine that we would be able to realize our deferred tax assets in the future in excess of their net recorded amount, we would make an adjustment to the deferred tax asset valuation allowance, which would reduce the provision for income taxes. 
+ The Company records uncertain tax positions in accordance with ASC 740 on the basis of a two-step process in which (1) we determine whether it is more likely than not that the tax positions will be sustained on the basis of the technical merits of the position and (2) for those tax positions that meet the more-likely-than-not recognition threshold, we recognize the largest amount of tax benefit that is more than 50 percent likely to be realized upon ultimate settlement with the related tax authority. 
+
+ Recently Adopted Accounting Pronouncements 
+ See Note 2 to the consolidated financial statements in Item 8 for recently adopted accounting pronouncements. 
+
+ Results of Operations for the year ended December 31, 2015, compared to the year ended December 31, 2014 
+ Revenue 
+ Total revenue increased $69.1 million, or 58%, from approximately $118.2 million in 2014 to $187.3 million in 2015. This growth in revenue was driven by increases in our direct sales force, taking market share from other suppliers of wound care technologies, as well as market expansion due to the clinical and cost benefits of our EpiFix platform. Growth was also driven by expansion into several new surgical applications with our AmnioFix platform. Wound Care revenue in 2015 grew by $47.5 million, or approximately 51%, compared with 2014. Surgical, Sports Medicine, and Orthopedics (SSO) revenue in 2015 grew by $21.5 million or approximately 87%, compared with 2014. 
+ Tissue Processing Costs and Cost of Products Sold 
+ Cost of sales as a percentage of revenue was 10.8% versus 10.7% when compared to the prior year. The increase is due to the expiration of pass through status of our wound care products for Medicare patients in hospital out-patient clinics and ambulatory surgery centers, product sales mix, mostly offset by an increase in direct sales revenue and higher production rates that absorb a greater percentage of fixed manufacturing costs, and continued improvements in manufacturing efficiencies. SSO sales have lower gross margins than Wound Care sales, so the Company expects cost of sales as a percentage of revenue to increase as SSO sales become a larger percentage of total company sales. 
+
+ 37 
+
+ Research and Development Expenses 
+ Our research and development expenses increased approximately $1.4 million, or 19%, to $8.4 million in 2015, compared to approximately $7.0 million in the prior year. The increase is primarily related to increased investments in clinical trials, personnel costs, lab supplies, and consulting fees. The Company expects research and development expenses to remain in line with current spending on a percentage of sales basis moving forward. 
+ Selling, General and Administrative Expenses 
+ Selling, General and Administrative expenses for 2015 increased approximately $42.9 million, or 47%, to $133.4 million compared to $90.5 million for 2014. Selling expense increases were driven primarily by costs associated with building our direct sales organization for both the Wound Care and SSO markets, where headcount grew by 65 during the year, as well as increased commissions due to higher sales volume. General and administrative expense increases were driven primarily by costs associated with adding personnel to support continued growth, as well as increased patent litigation costs. 
+ Selling, General and Administrative expenses consist of personnel costs, professional fees, sales commissions, sales training costs, industry trade show fees and expenses, product promotions and product literature costs, facilities costs and other sales, marketing and administrative costs, depreciation and amortization, and share-based compensation. Share-based compensation included in SG&A for the years ended December 31, 2015 and 2014, was approximately $15.8 million and $10.5 million, respectively, an increase of approximately $5.3 million, or 50%. 
+ Amortization expense related to intangible assets remained flat at $0.9 million for the year ended December 31, 2015 as compared to the prior year. We amortize our intangible assets over a period of 10 to 17 years, which we believe represents the remaining useful lives of the patents underlying the licensing rights and intellectual property. We do not amortize goodwill but we test our goodwill at least annually for impairment and periodically evaluate other intangibles for impairment based on events or changes in circumstances as they occur. 
+ Net Interest Expense 
+ We recorded financing and net interest expense of approximately $86,000 during the year ended December 31, 2015, compared with approximately $48,000 of financing and net interest expense during the year ended December 31, 2014. The increase is due to the amortization of deferred financing costs incurred during 2015 related to our $50 million revolving credit facility. See Note 9 in the consolidated financial statements in Item 8 for further details. 
+ Results of Operations for the year ended December 31, 2014, compared to the year ended December 31, 2013 
+ Revenue 
+ Total revenue increased $59 million, or 100%, from approximately $59.2 million in 2013 to $118.2 million in 2014. The increase in revenue as compared to the prior year is due primarily to increased wound care sales of EpiFix in both commercial and Government accounts. Commercial revenue growth was driven by expanded Medicare and private insurance coverage. 
+ Tissue Processing Costs and Cost of Products Sold 
+ Cost of products sold as a percentage of revenue were 10.7% versus 15.8% when compared to the prior year. The improvement was due primarily to the increase in direct sales revenue, favorable product mix and higher production rates that absorb a greater percentage of fixed manufacturing costs. 
+ Research and Development Expenses 
+ Our research and development expenses increased approximately $2.2 million, or 46%, to $7.0 million in 2014, compared to approximately $4.8 million in the prior year. The increase is primarily related to increased investments in clinical trials, personnel costs, lab supplies, and testing costs. Our research and development expenses consist primarily of internal personnel costs, clinical trials, fees paid to external consultants, and supplies and instruments used in our laboratories. Additionally, during 2014, we were granted seven U.S. patents for the amnion technology, one U.S. patent for the collagen technology (under license agreement), and four international patents for the collagen technology (three under license agreements). 
+ Selling, General and Administrative Expenses 
+
+ 38 
+
+ Selling, General and Administrative expenses for 2014 increased approximately $44.3 million, or 96%, to $90.5 million compared to $46.2 million for 2013. Selling expense increases were driven by costs associated with building our direct sales organization for Government and commercial accounts, where headcount grew by 94 during the year, as well as increased commissions due to higher sales volume. 
+ Additional increases included spending on support costs related to medical reimbursement, including our reimbursement hotline; our information technology infrastructure to help manage the growth of the business; increased share-based compensation expense, and a provision for anticipated costs associated with the management incentive program. 
+ Selling, General and Administrative expenses consist of personnel costs, professional fees, sales commissions, sales training costs, industry trade show fees and expenses, product promotions and product literature costs, facilities costs and other sales, marketing and administrative costs, depreciation and amortization, and share-based compensation. Share-based compensation included in SG&A for the years ended December 31, 2014 and 2013, was approximately $10.5 million and $5.3 million, respectively, an increase of approximately $5.2 million, or 98%. 
+ We recorded approximately $.9 million and $1.1 million in amortization expense related to intangible assets in the years ended December 31, 2014 and 2013, respectively. The decrease of approximately $0.2 million is attributable to the impairment related to our HydroFix product line which we elected to discontinue in the fourth quarter of 2013. We amortize our intangible assets over a period of 10 to 17 years, which we believe represents the remaining useful lives of the patents underlying the licensing rights and intellectual property. We do not amortize goodwill but we test our goodwill at least annually for impairment and periodically evaluate other intangibles for impairment based on events or changes in circumstances as they occur. 
+ Net Interest Expense 
+ We recorded financing and net interest expense of approximately $48,000 during the year ended December 31, 2014, compared with approximately $1.4 million of financing and net interest expense during the year ended December 31, 2013, which represented the amortization of debt discount in connection with convertible senior secured promissory notes issued in 2011. 
+ Contractual Commitments 
+ The table below sets forth our known contractual obligations as of December 31, 2015 (in thousands): 
+
+ less than 
+
+ More 
+ than 
+
+ Contractual Obligations 
+ TOTAL 
+
+ 1 year 
+
+ 1-3 years 
+
+ 3-5 years 
+
+ 5 years 
+
+ Capital lease obligations 
+ $ 
+ 133 
+
+ $ 
+ 102 
+
+ $ 
+ 31 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ Operating lease obligations 
+ 7,542 
+
+ 1,804 
+
+ 3,623 
+
+ 2,115 
+
+ — 
+
+ Charitable contribution obligations 
+ 250 
+
+ 250 
+
+ — 
+
+ — 
+
+ — 
+
+ Meeting space commitments 
+ 1,247 
+
+ 764 
+
+ 483 
+
+ — 
+
+ — 
+
+ $ 
+ 9,172 
+
+ $ 
+ 2,920 
+
+ $ 
+ 4,137 
+
+ $ 
+ 2,115 
+
+ $ 
+ — 
+
+ Off-Balance Sheet Arrangements 
+ We have no off-balance sheet arrangements. 
+ Liquidity and Capital Resources 
+ Our net working capital at December 31, 2015, increased $2.2 million to $69.5 million from $67.3 million at December 31, 2014. The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases. The current ratio (current assets divided by current liabilities) decreased to 3.6 as of December 31, 2015, as compared to 4.6 at December 31, 2014. 
+ On October 12, 2015, the Company and its subsidiaries entered into a Credit Agreement (the "Credit Agreement") with certain lenders and Bank of America, N.A., as administrative agent. The Credit Agreement establishes a senior secured revolving credit facility in favor of the Company, with an aggregate lender commitment of up to $50 million at any time 
+
+ 39 
+
+ outstanding. As of the date hereof, there are no outstanding revolving loans under the Credit Agreement. The Credit Agreement also provides for an uncommitted incremental facility of up to $35 million , which can be exercised as one or more revolving commitment increases or new term loans, all subject to certain customary terms and conditions set forth in the Credit Agreement. The obligations of the Company under the Credit Agreement are guaranteed by the Company's subsidiaries. Borrowings under the Credit Agreement bear interest at a rate equal to, at the Company’s option, the base rate or LIBOR, in each case plus an applicable margin. The base rate under the Credit Agreement equals the highest of (i) the agent’s prime rate, (ii) the Federal Funds rate plus 0.50%, or (iii) LIBOR for a one month interest period plus 1.0%. The initial applicable margin is 0.50% with respect to base rate borrowings and 1.50% with respect to the LIBOR borrowings. The applicable margin is subject to quarterly pricing adjustments based on the Company’s consolidated leverage ratio. In addition to paying interest on outstanding principal under the facility, the Company is required to pay a commitment fee in respect of committed but unutilized commitments equal to 0.25% per annum initially. The commitment fee is subject to quarterly adjustments based on the Company's consolidated leverage ratio. The Company must pay a fee on outstanding letters of credit under the facility at a rate equal to the applicable margin in respect of LIBOR borrowings plus certain fronting and administrative fees. The maturity date of the revolving credit facility is October 12, 2018. The Credit Agreement provides that the maturity date may be extended up to twice for one additional year each, subject to certain customary terms and conditions set forth in the Credit Agreement, if requested by the Company and agreed-upon by the lenders. The Credit Agreement contains customary covenants and events of default for senior secured credit agreements of this type. The covenants include (a) a requirement for the Company to maintain a maximum consolidated leverage ratio of 2.50:1.00; (b) a requirement for the Company to maintain a minimum consolidated fixed charge coverage ratio of 2.00:1.00; and (c) a requirement for the Company to maintain minimum liquidity of $10 million.
+
+ As of December 31, 2015, we had approximately $28.5 million of cash and cash equivalents. In addition, we had short term investments in FDIC insured certificates of deposit at various U.S. financial institutions that totaled, approximately $3.0 million. We believe that our anticipated cash from operating activities, existing cash and cash equivalents and availability under the Credit Agreement will enable us to meet our operational liquidity needs and fund our planned investing activities for the next year. 
+ Discussion of cash flows 
+ Net cash from operations during the year ended December 31, 2015, increased approximately $2.0 million to $18.8 million, compared to $16.8 million from operating activities for the year ended December 31, 2014, and was primarily attributable to the increase in Net Income (net of non cash items), partially offset by an increase in accounts receivable. 
+ Net cash used in investing activities during the year ended December 31, 2015, decreased approximately $11.5 million to $0.7 million compared to $12.2 million used in investing activities for the year ended December 31, 2014. The decrease was primarily due to maturing certificates of deposit. 
+ Net cash flows used in financing activities during the year ended December 31, 2015, was approximately $36.2 million compared to $2.1 million during the year ended December 31, 2014. The increase is primarily due to an increase in share repurchases, partially offset by an increase in proceeds received from the exercise of stock options and warrants. 
+ Due to the material amount of non-cash related items included in our results of operations, we have developed an Adjusted EBITDA metric that provides management with a clearer view of operational use of cash (see the table below). Our Adjusted EBITDA for the year ended December 31, 2015, was approximately $44.0 million which is an improvement of approximately $23.3 million as compared to 2014 and an improvement of $38.5 million compared to 2013. These year-over-year improvements were the result of improved operating results. 
+ Adjusted EBITDA is a non-GAAP measure. Non-GAAP financial measures are commonly used in the industry and are presented because management believes they provide relevant and useful information to investors. However, there are limitations to using these non-GAAP financial measures. Adjusted EBITDA is not indicative of cash provided or used by operating activities and may differ from comparable information provided by other companies. Adjusted EBITDA should not be considered in isolation, as an alternative to, or more meaningful than measures of financial performance determined in accordance with U.S. GAAP. The following table presents a reconciliation of Adjusted EBITDA to Net Income (loss), the most comparable financial measure reported under GAAP, for the years ended December 31, 2015, 2014 and 2013. 
+
+ 40 
+
+ Years Ended December 31 (in thousands) 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ Net Income (Loss) (Per GAAP) 
+ $ 
+ 29,446 
+
+ $ 
+ 6,220 
+
+ $ 
+ (4,112 
+ ) 
+
+ Add back (deduct): 
+
+ Income Taxes 
+ (5,168 
+ ) 
+
+ 832 
+
+ 100 
+
+ Financing expense associated with beneficial conversion of Senior Secured Promissory Notes 
+ — 
+
+ — 
+
+ 1,328 
+
+ Other interest expense, net 
+ 86 
+
+ 48 
+
+ 45 
+
+ Depreciation Expense 
+ 1,799 
+
+ 1,197 
+
+ 637 
+
+ Loss on fixed asset disposal 
+ — 
+
+ — 
+
+ 37 
+
+ Amortization Expense 
+ 933 
+
+ 928 
+
+ 1,054 
+
+ Share-Based Compensation 
+ 16,896 
+
+ 11,453 
+
+ 6,010 
+
+ Impairment of Intangible Assets 
+ — 
+
+ — 
+
+ 368 
+
+ Income Before Interest, Taxes, Depreciation, Amortization and Share -Based Compensation (Adjusted EBITDA) 
+ $ 
+ 43,992 
+
+ $ 
+ 20,678 
+
+ $ 
+ 5,467 
+
+ Inflation 
+ We do not believe that the rate of inflation has had a material effect on our operating results. However, inflation could adversely affect our future operating results.

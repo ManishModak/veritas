@@ -1,0 +1,16 @@
+{
+  "name": "veritas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=26" },
+  "scripts": {
+    "setup": "node --import tsx app/scripts/setup.ts",
+    "start": "node --import tsx app/src/server.ts",
+    "test": "node --import tsx --test --test-isolation=none app/test/*.test.ts",
+    "test:parity": "node --import tsx --test --test-isolation=none app/test/parity.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "tsx": "^4.21.0" },
+  "devDependencies": { "@types/node": "^26.0.0", "typescript": "^6.0.0" }
+}

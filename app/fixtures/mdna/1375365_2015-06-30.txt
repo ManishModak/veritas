@@ -1,0 +1,1148 @@
+Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations 
+
+ The following discussion should be read in conjunction with the consolidated financial statements and related notes which appear elsewhere in this Annual Report on Form 10-K. This discussion contains forward-looking statements that involve risks and uncertainties. Our actual results could differ materially from those anticipated in these forward-looking statements as a result of various factors, including those discussed below and elsewhere in this Annual Report on Form 10-K, particularly under the heading “Risk Factors.” 
+
+ Overview 
+
+ We are a global leader in high performance, high efficiency server technology and innovation. We develop and provide end-to-end green computing solutions to the data center, cloud computing, enterprise IT, big data, HPC and embedded markets. Our solutions range from complete server, storage, blade and workstations to full racks, networking devices, server management software and technology support and services. For fiscal years 2015 , 2014 and 2013 , net sales of optimized servers were $1,213.6 million , $740.8 million and $501.9 million , respectively, and net sales of subsystems and accessories were $777.5 million , $726.4 million and $660.7 million , respectively. The increase in our net sales in fiscal year 2015 compared with fiscal year 2014 was primarily due to continue increased sales of our products optimized for OEM, internet data center cloud computing and enterprise verticals. In fiscal year 2015, we had a strong growth of our complete systems including storage servers and our Twin family of servers and to a lesser extent our GPU/Xeon Phi servers. Net sales also increased as a result of an increase in customers purchasing our software and service together with our complete systems as total solution packages. The percentage of our net sales represented by sales of complete server systems increased to 60.9% in fiscal year 2015 from 50.5% in fiscal year 2014. 
+
+ We commenced operations in 1993 and have been profitable every year since inception. For fiscal years 2015 , 2014 and 2013 , our net sales were $1,991.2 million , $1,467.2 million and $1,162.6 million , respectively, and our net income was $101.9 million , $54.2 million and $21.3 million , respectively. Our increase in net income in fiscal year 2015 was primarily attributable to an increase in our gross profit resulting primarily from higher sales and improved gross margin and operating margin, partially offset by higher income tax expenses attributable to higher operating income. 
+
+ We sell our server systems and subsystems and accessories primarily through distributors and OEMs as well as through our direct sales force. For fiscal years 2015 , 2014 and 2013 , we derived 50.3% , 54.1% and 56.3% , respectively, of our net sales from products sold to distributors. One of our customers accounted for 10.1% of our net sales in fiscal year 2015, and none of our customers accounted for 10% or more of our net sales in fiscal years 2014 and 2013 . For fiscal years 2015 , 2014 and 2013 , we derived 58.3% , 55.2% and 54.2% , respectively, of our net sales from customers in the United States. 
+
+ We perform the majority of our research and development efforts in-house. For fiscal years 2015 , 2014 and 2013 , research and development expenses represented 5.0% , 5.7% and 6.5% of our net sales, respectively. 
+
+ We use several suppliers and contract manufacturers to design and manufacture components in accordance with our specifications, with most final assembly and testing performed at our manufacturing facility in San Jose, California. During fiscal year 2015, we continued to increase manufacturing and service operations in Taiwan and the Netherlands to primarily support our Asian and European customers and we have improved our utilization of our overseas manufacturing capacity. One of our key suppliers is Ablecom, a related party, which supplies us with contract design and manufacturing support. For fiscal years 2015 , 2014 and 2013 , our purchases from Ablecom represented 13.6% , 16.3% and 17.9% of our cost of sales, respectively. Ablecom’s sales to us constitute a substantial majority of Ablecom’s net sales. We continue to maintain our manufacturing relationship with Ablecom in Asia in an effort to reduce our cost of sales. In addition to providing a larger volume of contract manufacturing services for us, Ablecom continues to warehouse for us a number of components and subassemblies manufactured by multiple suppliers prior to shipment to our facilities in the United States and Europe. We typically negotiate the price of products that we purchase from Ablecom on a quarterly basis; however, either party may re-negotiate the price of products with each order. As a result of our relationship with Ablecom, it is possible that Ablecom may in the future sell products to us at a price higher or lower than we could obtain from an unrelated third party supplier. This may result in our future reporting of gross profit as a percentage of net sales that is less than or in excess of what we might have obtained absent our relationship with Ablecom. 
+
+ In order to continue to increase our net sales and profits, we believe that we must continue to develop flexible and customizable server solutions and be among the first to market with new features and products. We must also continue to expand our software and customer service and support offerings, particularly as we increasingly focus on larger enterprise sales. We measure our financial success based on various indicators, including growth in net sales, gross profit as a percentage 
+
+ 26 
+
+ Table of Contents 
+
+ of net sales, operating income as a percentage of net sales, levels of inventory, and days sales outstanding, or DSOs. In connection with these efforts, we monitor daily and weekly sales and shipment reports. Among the key non-financial indicators of our success is our ability to rapidly introduce new products and deliver the latest application optimized server solutions. In this regard, we work closely with microprocessor and other component vendors to take advantage of new technologies as they are introduced. Historically, our ability to introduce new products rapidly has allowed us to benefit from the introduction of new microprocessors and as a result we monitor the introduction cycles of Intel, AMD and Nvidia carefully. This also impacts our research and development expenditures. 
+
+ Other Financial Highlights 
+
+ The following is a summary of other financial highlights of fiscal year 2015 : 
+
+ • 
+ Net cash provided by (used in) operating activities was $(44.6) million , $6.5 million and $13.6 million in fiscal year 2015 , 2014 and 2013 , respectively. Our cash and cash equivalents, together with our investments, were $98.1 million at the end of fiscal year 2015 , compared with $99.6 million at the end of fiscal year 2014 . The decrease in our cash and cash equivalents, together with our investments at the end of fiscal year 2015 was primarily due to $44.6 million of cash used in our operating activities and $35.1 million of purchases of property and equipment, of which $21.8 million was related to the development and construction of improvements on our first manufacturing building at our Green Computing Park in San Jose, California, which was completed in August 2015 and $4.8 million was related to the implementation of a new ERP system for the U.S. headquarters, which was completed in July 2015. The increase was partially offset by $23.3 million of proceeds from the exercise of stock options and $48.9 million of borrowings, net of repayments. 
+
+ • 
+ Days sales outstanding in accounts receivable (“DSO”) at the end of fiscal year 2015 was 48 days, compared with 44 days at the end of fiscal year 2014 . The increase in our DSO was primarily due to an increase in sales late in the quarter. 
+
+ • 
+ Our inventory balance was $463.5 million at the end of fiscal year 2015 , compared with $315.8 million at the end of fiscal year 2014 . Days sales of inventory (“DSI”) at the end of fiscal year 2015 was 84 days, compared with 83 days at the end of fiscal year 2014 . The increase in our inventory was to support our anticipated level of growth in net sales in fiscal year 2016. 
+
+ • 
+ Our purchase commitments with contract manufacturers and suppliers were $378.3 million at the end of fiscal year 2015 and $211.1 million at the end of fiscal year 2014 . Included in the above non-cancellable commitments are hard disk drive purchase commitments totaling approximately $185.7 million , which have terms expiring through December 2016 . See Note 12 of Notes to our Consolidated Financial Statements in Item 8 of this Form 10-K for a discussion of purchase commitments. 
+
+ Fiscal Year 
+
+ Our fiscal year ends on June 30. References to fiscal year 2015 , for example, refer to the fiscal year ended June 30, 2015 . 
+
+ 27 
+
+ Table of Contents 
+
+ Revenues and Expenses 
+
+ Net sales. Net sales consist of sales of our server solutions, including server systems, subsystems and accessories. The main factors which impact our net sales are unit volumes shipped and average selling prices. The prices for server systems range widely depending upon the configuration, and the prices for our subsystems and accessories vary based on the type. As with most electronics-based products, average selling prices typically are highest at the time of introduction of new products which utilize the latest technology and tend to decrease over time as such products mature in the market and are replaced by next generation products. 
+
+ Cost of sales. Cost of sales primarily consists of the costs to manufacture our products, including the costs of materials, contract manufacturing, shipping, personnel and related expenses, equipment and facility expenses, warranty costs and inventory excess and obsolete provisions. The primary factors that impact our cost of sales are the mix of products sold and cost of materials, which include raw material costs, shipping costs and salary and benefits related to production. Cost of sales as a percentage of net sales may increase over time if decreases in average selling prices are not offset by corresponding decreases in our costs. Our cost of sales, as a percentage of net sales, is generally lower on server systems than on subsystems and accessories, but generally higher in the case of sales of server systems to internet data system customers. Because we generally do not have long-term fixed supply agreements, our cost of sales is subject to change based on market conditions. 
+
+ Research and development expenses. Research and development expenses consist of the personnel and related expenses of our research and development teams, and materials and supplies, consulting services, third party testing services and equipment and facility expenses related to our research and development activities. All research and development costs are expensed as incurred. We occasionally receive non-recurring engineering, or NRE, funding from certain suppliers and customers. Under these programs, we are reimbursed for certain research and development costs that we incur as part of the joint development of our products and those of our suppliers and customers. These amounts offset a portion of the related research and development expenses and have the effect of reducing our reported research and development expenses. 
+
+ Sales and marketing expenses. Sales and marketing expenses consist primarily of salaries and incentive bonuses for our sales and marketing personnel, costs for tradeshows, independent sales representative fees and marketing programs. From time to time, we receive cooperative marketing funding from certain suppliers. Under these programs, we are reimbursed for certain marketing costs that we incur as part of the joint promotion of our products and those of our suppliers. These amounts offset a portion of the related expenses and have the effect of reducing our reported sales and marketing expenses. Similarly, we from time to time offer our distributors cooperative marketing funding which has the effect of increasing our expenses. The timing, magnitude and estimated usage of our programs and those of our suppliers can result in significant variations in reported sales and marketing expenses from period to period. Spending on cooperative marketing, either by us or our suppliers, typically increases in connection with significant product releases by us or our suppliers. 
+
+ General and administrative expenses. General and administrative expenses consist primarily of general corporate costs, including personnel expenses, financial reporting, corporate governance and compliance and outside legal, audit and tax fees. 
+
+ Interest and other expense, net . Interest and other expense, net represents interest expense on our term loans and line of credit, offset by interest earned on our investment and cash balances. 
+
+ Income tax provision. Our income tax provision is based on our taxable income generated in the jurisdictions in which we operate, currently primarily the United States, Taiwan, the Netherlands, and to a lesser extent, China and Japan. Our effective tax rate differs from the statutory rate primarily due to research and development tax credits, the domestic production activities deduction and lower taxes in foreign jurisdictions which were partially offset by the impact of state taxes and stock option expenses. In recent years, our effective tax rate from period to period has been significantly impacted by delays in the approval of extensions of the U.S. research and development tax credit. A reconciliation of the federal statutory income tax rate to our effective tax rate is set forth in Note 11 of Notes to Consolidated Financial Statements. 
+
+ 28 
+
+ Table of Contents 
+
+ Critical Accounting Policies 
+
+ Our discussion and analysis of our financial condition and results of operations are based upon our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amount of assets, liabilities, revenues and expenses. We evaluate our estimates on an on-going basis, including those related to allowances for doubtful accounts and sales returns, inventory valuations, income taxes, warranty obligations, stock-based compensation and impairment of short-term and long-term investments. We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances, the results of which form the basis for making the judgments we make about the carrying values of assets and liabilities that are not readily apparent from other sources. Because these estimates can vary depending on the situation, actual results may differ from the estimates. 
+
+ We believe the following are our most critical accounting policies as they require our more significant judgments in the preparation of our financial statements. 
+
+ Revenue recognition. We recognize revenue from sales of products when persuasive evidence of an arrangement exists, shipment has occurred and title has transferred, the sales price is fixed or determinable, collection of the resulting receivable is reasonably assured, and all significant obligations have been met. Generally this occurs at the time of shipment when risk of loss and title has passed to the customer. Our standard arrangement with our customers includes a signed purchase order or contract, 30 to 60 days payment terms, Ex-works terms, except for a few customers who have free-on-board destination terms, for which revenue is recognized when the products arrive at the destination. We generally do not provide for non-warranty rights of return except for products which have “Out-of-box” failure, where customers could return these products for credit within 30 days of receiving the items. Certain distributors and OEMs are also permitted to return products in unopened boxes, limited to purchases over a specified period of time, generally within 60 to 90 days of the purchase, or to products in the distributor’s or OEM’s inventory at certain times (such as the termination of the agreement or product obsolescence). To estimate reserves for future sales returns, we regularly review our history of actual returns for each major product line. We also communicate regularly with our distributors to gather information about end customer satisfaction, and to determine the volume of inventory in the channel. Reserves for future returns are adjusted as necessary, based on returns experience, returns expectations and communication with our distributors. 
+
+ In addition, certain customers have acceptance provisions and revenue is deferred until the customers provide the necessary acceptance. At June 30, 2015 and 2014 , we had deferred revenue of $0.5 million and $7.7 million and related deferred product costs of $0.2 million and $6.7 million , respectively, related to shipments to customers pending acceptances. 
+
+ Probability of collection is assessed on a customer-by-customer basis. Customers are subjected to a credit review process that evaluates the customers’ financial position and ability to pay. If it is determined from the outset of an arrangement that collection is not probable based upon the review process, the customers are required to pay cash in advance of shipment. We also make estimates of the uncollectibility of accounts receivables, analyzing accounts receivable and historical bad debts, customer concentration, customer-credit-worthiness, current economic trends and changes in customer payment terms to evaluate the adequacy of the allowance for doubtful accounts. On a quarterly basis, we evaluate aged items in the accounts receivable aging report and provide an allowance in an amount we deem adequate for doubtful accounts. Our provision for bad debt was $0.3 million , $1.5 million and $0.9 million in fiscal years 2015 , 2014 and 2013 , respectively. If a major customer's creditworthiness deteriorates, if actual defaults are higher than our historical experience, or if other circumstances arise, our estimates of the recoverability of amounts due to us could be overstated, and additional allowances could be required, which could have an adverse impact on our reported operating expenses. We provide for price protection to certain distributors. We assess the market competition and product technology obsolescence, and make price adjustments based on our judgment. Upon each announcement of price reductions, the accrual for price protection is calculated based on our distributors’ inventory on hand. Such reserves are recorded as a reduction to revenue at the time we reduce the product prices. 
+
+ We have an immaterial amount of service revenue relating to on-site service and non-warranty repairs. Revenue for on-site service is recognized over the contracted service period, and revenue for non-warranty repair service is recognized upon shipment of the repaired units to customers. Service revenue has been less than 10% of net sales for all periods presented and is not separately disclosed. 
+
+ Product warranties. We offer product warranties ranging from 15 to 39 months against any defective product. We accrue for estimated returns of defective products at the time revenue is recognized, based on historical warranty experience and recent trends. We monitor warranty obligations and may make revisions to our warranty reserve if actual costs of product repair and replacement are significantly higher or lower than estimated. Accruals for anticipated future warranty costs are 
+
+ 29 
+
+ Table of Contents 
+
+ charged to cost of sales and included in accrued liabilities. The liability for product warranties was $7.7 million as of June 30, 2015 , compared with $7.1 million as of June 30, 2014 . The provision for warranty reserve was $15.8 million , $14.2 million and $13.4 million in fiscal years 2015 , 2014 and 2013 , respectively. Our estimates and assumptions used have been historically close to actual. The change in estimated liability for pre-existing warranties was ($0.2) million , $0.4 million and ($1,000) in fiscal years 2015 , 2014 and 2013 , respectively. As a result of our increase in cost of servicing warranty claims from our increase in net sales in fiscal year 2015 and 2014 , the provision for warranty reserve increased $1.6 million and $0.7 million in fiscal year 2015 and 2014, respectively. If in future periods, we experience or anticipate an increase or decrease in warranty claims as a result of new product introductions or change in unit volumes compared with our historical experience, or if the cost of servicing warranty claims is greater or lesser than expected, we intend to adjust our estimates appropriately. 
+
+ Inventory valuation. Inventory is valued at the lower of cost or market. We evaluate inventory on a quarterly basis for lower of cost or market and excess and obsolescence and, as necessary, write down the valuation of units based upon the number of units that are unlikely to be sold based upon estimated demand for the following twelve months as well as historical usage and sales activity. This evaluation takes into account matters including expected demand, historical usage and sales, anticipated sales price, product obsolescence and other factors. If actual future demand for our products is less than currently forecasted, additional inventory adjustments may be required. Once a reserve is established, it is maintained until the product to which it relates is sold or scrapped. If a unit that has been written down is subsequently sold, the cost associated with the revenue from this unit is reduced to the extent of the write down, resulting in an increase in gross profit. We monitor the extent to which previously written down inventory is sold at amounts greater or less than carrying value, and based on this analysis, adjust our estimate for determining future write downs. If in future periods, we experience or anticipate a change in recovery rate compared with our historical experience, our gross margin would be affected. Our provision for inventory was $5.9 million , $2.3 million and $9.7 million in fiscal years 2015 , 2014 and 2013 , respectively. 
+
+ Accounting for income taxes. We account for income taxes under an asset and liability approach. Deferred income taxes reflect the impact of temporary differences between assets and liabilities recognized for financial reporting purposes and such amounts recognized for income tax reporting purposes, net operating loss carry-forwards and other tax credits measured by applying currently enacted tax laws. Valuation allowances are provided when necessary to reduce deferred tax assets to an amount that is more likely than not to be realized. 
+
+ We recognize the tax liability for uncertain income tax positions on the income tax return based on the two-step process. The first step is to determine whether it is more likely than not that each income tax position would be sustained upon audit. The second step is to estimate and measure the tax benefit as the amount that has a greater than 50% likelihood of being realized upon ultimate settlement with the tax authority. Estimating these amounts requires us to determine the probability of various possible outcomes. We evaluate these uncertain tax positions on a quarterly basis. This evaluation is based on the consideration of several factors, including changes in facts or circumstances, changes in applicable tax law, settlement of issues under audit and new exposures. If we later determine that our exposure is lower or that the liability is not sufficient to cover our revised expectations, we adjust the liability and effect a related change in our tax provision during the period in which we make such determination. See Note 11 of Notes to Consolidated Financial Statements for the impact on our consolidated financial statements. 
+
+ Stock-based compensation. We measure and recognize the compensation expense for all share-based awards made to employees and non-employee members of our Board of Directors including employee stock options and restricted stock units. We are required to estimate the fair value of share-based awards on the date of grant. The value of awards that are ultimately expected to vest is recognized as an expense over the requisite service periods. The fair value of our restricted stock units is based on the closing market price of our common stock on the date of grant. We estimated the fair value of stock options granted using a Black-Scholes option-pricing model and a single option award approach. This model requires us to make estimates and assumptions with respect to the expected term of the option, the expected volatility of the price of our common 
+ stock and the expected forfeiture rate. The fair value is then amortized on a straight-line basis over the requisite service periods of the awards, which is generally the vesting period. 
+
+ The expected term represents the period that our stock-based awards are expected to be outstanding and was determined based on on a combination of our peer group and our historical experience. The expected volatility is based on a combination of our implied and historical volatility. In addition, forfeitures of share-based awards are estimated at the time of grant and revised, if necessary, in subsequent periods if actual forfeitures differ from those estimates. We use historical data to estimate pre-vesting option and restricted stock unit forfeitures and record stock-based compensation expense only for those awards that are expected to vest. 
+
+ 30 
+
+ Table of Contents 
+
+ Compensation expense for options and restricted stock units granted to employees was $13.7 million , $11.1 million and $11.4 million for the years ended June 30, 2015 , 2014 and 2013 , respectively. As of June 30, 2015 , the total unrecognized compensation cost, adjusted for estimated forfeitures, related to unvested stock options and restricted stock units to employees and non-employee members of our Board of Directors, was $30.2 million , which is expected to be recognized as an expense over a weighted-average period of approximately 2.32 years. See Note 10 of Notes to our Consolidated Financial Statements for additional information. 
+
+ Variable interest entities. We have concluded that Ablecom and its subsidiaries ("Ablecom") is a variable interest entity in accordance with applicable accounting standards and guidance; however, we are not the primary beneficiary of Ablecom and therefore, we do not consolidate Ablecom. In performing our analysis, we considered our explicit arrangements with Ablecom including the supplier and distributor arrangements. Also, as a result of the substantial related party relationship between the two companies, we considered whether any implicit arrangements exist that would cause us to protect those related parties’ interests in Ablecom from suffering losses. We determined that no implicit arrangements exist with Ablecom or its shareholders. Such an arrangement would be inconsistent with the fiduciary duty that we have towards our stockholders who do not own shares in Ablecom. 
+
+ In May 2012, we and Ablecom jointly established Super Micro Asia Science and Technology Park, Inc. ("Management Company") in Taiwan to manage the common areas shared by us and Ablecom for our separately constructed manufacturing facilities. Each company contributed $168,000 and own 50% of the Management Company. Although the operations of the Management Company are independent of us, through governance rights, we have the ability to direct the Management Company's business strategies. Therefore, we have concluded that the Management Company is a variable interest entity of us as we are the primary beneficiary of the Management Company. As of June 30, 2015 , the accounts of the Management Company have been consolidated with our accounts, and a noncontrolling interest has been recorded for Ablecom's interests in the net assets and operations of the Management Company. In fiscal year 2015 and 2014 , $11,000 and $6,000 of net loss attributable to Ablecom's interest was included in our general and administrative expenses in the consolidated statements of operations, respectively. 
+
+ Results of Operations 
+
+ Net Sales 
+
+ The following table presents net sales by product type for fiscal year 2015 , 2014 and 2013 (dollars in millions): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ $ 
+
+ % 
+
+ $ 
+
+ % 
+
+ Server systems 
+ $ 
+ 1,213.6 
+
+ $ 
+ 740.8 
+
+ $ 
+ 501.9 
+
+ $ 
+ 472.8 
+
+ 63.8 
+ % 
+
+ $ 
+ 238.9 
+
+ 47.6 
+ % 
+
+ Percentage of total net sales 
+ 60.9 
+ % 
+
+ 50.5 
+ % 
+
+ 43.2 
+ % 
+
+ Subsystems and accessories 
+ 777.5 
+
+ 726.4 
+
+ 660.7 
+
+ 51.1 
+
+ 7.0 
+ % 
+
+ 65.7 
+
+ 9.9 
+ % 
+
+ Percentage of total net sales 
+ 39.1 
+ % 
+
+ 49.5 
+ % 
+
+ 56.8 
+ % 
+
+ Total net sales 
+ $ 
+ 1,991.2 
+
+ $ 
+ 1,467.2 
+
+ $ 
+ 1,162.6 
+
+ $ 
+ 524.0 
+
+ 35.7 
+ % 
+
+ $ 
+ 304.6 
+
+ 26.2 
+ % 
+
+ The following table presents unit sales and average selling price by product type for fiscal year 2015 , 2014 and 2013 (units in thousands): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ % 
+
+ % 
+
+ Server systems: 
+
+ Unit sales 
+ 314 
+
+ 262 
+
+ 232 
+
+ 19.8 
+ % 
+
+ 12.9 
+ % 
+
+ Average selling price 
+ $ 
+ 3,900 
+
+ $ 
+ 2,800 
+
+ $ 
+ 2,200 
+
+ 39.3 
+ % 
+
+ 27.3 
+ % 
+
+ Subsystems and accessories: 
+
+ Unit sales 
+ 4,733 
+
+ 4,458 
+
+ 4,505 
+
+ 6.2 
+ % 
+
+ (1.0 
+ )% 
+
+ Average selling price 
+ $ 
+ 200 
+
+ $ 
+ 200 
+
+ $ 
+ 100 
+
+ — 
+ % 
+
+ 100.0 
+ % 
+
+ 31 
+
+ Table of Contents 
+
+ Fiscal Year 2015 compared with Fiscal Year 2014 
+
+ The increase in our net sales in fiscal year 2015 compared with fiscal year 2014 was primarily due to continued increased sales of our products optimized for OEM, internet data center cloud computing and enterprise verticals. The year-over-year growth in net sales of our server systems in fiscal year 2015 was due primarily to an increase in the average selling price of our server systems and to a lesser extent an increase in unit volumes of server systems. The average selling prices of our server systems increased primarily due to an increase in average selling prices of our complete server systems which offer higher density computing and more memory and hard disk drive capacity. The increase in the sales of these complete systems include our storage servers and our Twin family of servers and to a lesser extent our GPU/Xeon Phi servers. Net sales also increased as a result of an increase in customers purchasing our software and service together with our complete systems as total solution packages. 
+
+ The year-over-year growth in net sales and unit sales of our subsystems and accessories in fiscal year 2015 was primarily due to a higher sales of hard disk drives and memory bundled with our server solutions to our distributors and system integrators who increasingly are purchasing additional accessories from us and completing the final assembly themselves. 
+
+ Fiscal Year 2014 compared with Fiscal Year 2013 
+
+ The increase in our net sales in fiscal year 2014 compared with fiscal year 2013 was primarily due to increased sales of our products optimized for the storage, HPC, cloud computing, data center and OEM verticals and the successful launch of our new products resulted from the technology transition from Intel's Sandybridge to Ivybridge processor in fiscal year 2014. 
+
+ The year-over-year growth in net sales of our server systems was due primarily to an increase in the average selling price of our server systems and to a lesser extent an increase in unit volumes of server systems. The average selling prices of our server systems increased primarily due to an increase in average selling prices of our complete server systems to OEM and end customers, the Twin family of servers, storage and GPU/Xeon Phi servers which offered higher density computing and more memory and hard disk drive capacity. 
+
+ The year-over-year growth in net sales and decrease in unit sales of our subsystems and accessories in fiscal year 2014, primarily related to higher sales of hard disk drives and memory bundled with our server solutions to our distributors and system integrators who are completing the final assembly themselves. 
+
+ The following table presents the percentages of net sales from products sold to distributors and OEMs and to end customers for fiscal year 2015 , 2014 and 2013 : 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ % 
+
+ % 
+
+ Distributors 
+ 50.3 
+ % 
+
+ 54.1 
+ % 
+
+ 56.3 
+ % 
+
+ (3.8 
+ )% 
+
+ (2.2 
+ )% 
+
+ OEMs and end customers 
+ 49.7 
+ % 
+
+ 45.9 
+ % 
+
+ 43.7 
+ % 
+
+ 3.8 
+ % 
+
+ 2.2 
+ % 
+
+ Total net sales 
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ The following table presents percentages of net sales by geographic region for fiscal year 2015 , 2014 and 2013 : 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ % 
+
+ % 
+
+ United States 
+ 58.3 
+ % 
+
+ 55.2 
+ % 
+
+ 54.2 
+ % 
+
+ 3.1 
+ % 
+
+ 1.0 
+ % 
+
+ Europe 
+ 19.0 
+ % 
+
+ 21.6 
+ % 
+
+ 22.7 
+ % 
+
+ (2.6 
+ )% 
+
+ (1.1 
+ )% 
+
+ Asia 
+ 16.4 
+ % 
+
+ 20.4 
+ % 
+
+ 20.5 
+ % 
+
+ (4.0 
+ )% 
+
+ (0.1 
+ )% 
+
+ Others 
+ 6.3 
+ % 
+
+ 2.8 
+ % 
+
+ 2.6 
+ % 
+
+ 3.5 
+ % 
+
+ 0.2 
+ % 
+
+ Total net sales 
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ 32 
+
+ Table of Contents 
+
+ Cost of Sales and Gross Margin 
+
+ Cost of sales and gross margin for fiscal year 2015 , 2014 and 2013 are as follows (dollars in millions): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ $ 
+
+ % 
+
+ $ 
+
+ % 
+
+ Total cost of sales 
+ $ 
+ 1,670.9 
+
+ $ 
+ 1,241.7 
+
+ $ 
+ 1,002.5 
+
+ $ 
+ 429.3 
+
+ 34.6 
+ % 
+
+ $ 
+ 239.1 
+
+ 23.9 
+ % 
+
+ Total gross profit 
+ 320.2 
+
+ 225.5 
+
+ 160.1 
+
+ $ 
+ 94.7 
+
+ 42.0 
+ % 
+
+ $ 
+ 65.5 
+
+ 40.9 
+ % 
+
+ Total gross margin 
+ 16.1 
+ % 
+
+ 15.4 
+ % 
+
+ 13.8 
+ % 
+
+ 0.7 
+ % 
+
+ 1.6 
+ % 
+
+ Fiscal Year 2015 compared with Fiscal Year 2014 
+
+ The year-over-year increase in absolute dollars of cost of sales in fiscal year 2015 compared to fiscal year 2014 was primarily attributable to the increase in net sales, an increase of $3.7 million in provision for inventory reserve and an increase of $1.6 million in provision for warranty reserve. In fiscal year 2015 , we recorded a $5.9 million expense, net of recovery, or 0.3% of net sales, related to the inventory provision as compared to $2.3 million, or 0.2% of net sales, in fiscal year 2014. The increase in the inventory provision was primarily due to higher inventory reserves for specific products. 
+
+ In fiscal year 2015, we recorded a $15.8 million expense, or 0.8% of net sales, related to the provision for warranty reserve as compared to a $14.2 million expense, or 1.0% of net sales, in fiscal year 2014. The increase in the provision for warranty reserve was primarily due to higher cost of servicing warranty claims from higher net sales in fiscal year 2015 . If in future periods we experience or anticipate an increase or decrease in warranty claims as a result of new product introductions or change in unit volumes compared with our historical experience, or if the cost of servicing warranty claims is greater or lesser than expected, our gross margin would be affected. 
+
+ The year-over-year increase in the gross margin percentage in fiscal year 2015 compared to fiscal year 2014 was primarily due to lower costs resulting from an increase in the mix of complete server system sales with higher margin, the increased scale of our business and higher utilization of our manufacturing facilities in Taiwan, offset by higher sales to internet data center customers, which generally have a lower gross margin. 
+
+ Fiscal Year 2014 compared with Fiscal Year 2013 
+
+ The year-over-year increase in absolute dollars of cost of sales in fiscal year 2014 compared to fiscal year 2013 was primarily attributable to the increase in net sales partially offset by a decrease of $7.5 million in provision for inventory reserve. 
+ The decrease in the inventory provision was primarily due to lower inventory reserves for special items and higher sales of previously reserved inventory of $7.8 million as we have improved our processes and reduced our excess and slow moving inventory. In fiscal year 2014, we recorded a $14.2 million expense, or 1.0% of net sales, related to the provision for warranty reserve as compared to $13.4 million, or 1.2% of net sales, in fiscal year 2013. The increase in the provision for warranty reserve was primarily due to higher cost of servicing warranty claims from higher net sales in fiscal year 2014. 
+
+ The year-over-year increase in the gross margin percentage in fiscal year 2014 compared to fiscal year 2013 was 
+ primarily due to a lower provision for inventory reserve, an increase in purchasing power, an increase in the mix of server system sales and higher utilization of our manufacturing facilities in Taiwan, offset by higher sales to internet data center customers, which generally have a lower gross margin. 
+
+ 33 
+
+ Table of Contents 
+
+ Operating Expenses 
+
+ Operating expenses for fiscal years 2015 , 2014 and 2013 are as follows (dollars in millions): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ $ 
+
+ % 
+
+ $ 
+
+ % 
+
+ Research and development 
+ $ 
+ 100.3 
+
+ $ 
+ 84.3 
+
+ $ 
+ 75.2 
+
+ $ 
+ 16.0 
+
+ 19.0 
+ % 
+
+ $ 
+ 9.0 
+
+ 12.0 
+ % 
+
+ Percentage of total net sales 
+ 5.0 
+ % 
+
+ 5.7 
+ % 
+
+ 6.5 
+ % 
+
+ Sales and marketing 
+ 48.9 
+
+ 38.0 
+
+ 33.8 
+
+ 10.8 
+
+ 28.5 
+ % 
+
+ 4.2 
+
+ 12.5 
+ % 
+
+ Percentage of total net sales 
+ 2.5 
+ % 
+
+ 2.6 
+ % 
+
+ 2.9 
+ % 
+
+ General and administrative 
+ 24.4 
+
+ 23.0 
+
+ 23.9 
+
+ 1.4 
+
+ 5.9 
+ % 
+
+ (0.9 
+ ) 
+
+ (3.7 
+ )% 
+
+ Percentage of total net sales 
+ 1.2 
+ % 
+
+ 1.6 
+ % 
+
+ 2.1 
+ % 
+
+ Total operating expenses 
+ 173.5 
+
+ $ 
+ 145.3 
+
+ $ 
+ 132.9 
+
+ $ 
+ 28.2 
+
+ 19.4 
+ % 
+
+ $ 
+ 12.4 
+
+ 9.3 
+ % 
+
+ Percentage of total net sales 
+ 8.7 
+ % 
+
+ 9.9 
+ % 
+
+ 11.5 
+ % 
+
+ Research and development expenses. Research and development expenses increased by $16.0 million, or 19.0% in fiscal year 2015 compared to fiscal year 2014. Research and development expenses were 5.0% and 5.7% of net sales for fiscal year 2015 and 2014, respectively. The increase in absolute dollars was driven primarily by an increase of $18.1 million in compensation and benefits including stock-based compensation expense, an increase of $1.7 million in development expenses for prototype materials, partially offset by $3.2 million in non-recurring engineering funding from certain suppliers and customers and $2.8 million refund of value added taxes on research and development expenses. The decrease as a percentage of net sales was primarily due to the increase in net sales in fiscal year 2015. 
+
+ Research and development expenses increased by $9.0 million, or 12.0% in fiscal year 2014 compared to fiscal year 2013. Research and development expenses were 5.7% and 6.5% of net sales for fiscal year 2014 and 2013, respectively. The increase in absolute dollars was primarily due to an increase of $7.8 million in compensation and benefits including stock-based compensation expense and an increase of $2.7 million in development expenses for prototype materials and testing associated with new product introductions, particularly related to the introduction of new products including servers based on Intel's Ivy Bridge processor, TwinPro, EX DP and MicroBlade series of servers and the development of new products associated to the new processor technology, Grantley, from Intel. This increase was partially offset by an increase of $1.0 million in non-recurring engineering funding from certain suppliers and customers. The decrease as a percentage of net sales was primarily due to the significant increase in net sales in fiscal year 2014. 
+
+ Research and development expenses include stock-based compensation expense of $8.6 million, $6.8 million and $6.5 million for fiscal year 2015, 2014 and 2013, respectively. 
+
+ Our compensation and benefit expense in research and development continues to increase resulting from annual salary increases and growth in research and development personnel related to expanded product development initiatives in the United States and in Taiwan. We continue to believe that focused investments in research and development are critical to our future growth and competitive position in the marketplace. Our investments in this area will directly relate to enhancement of our current product line, development of new products that achieve market acceptance, and our ability to meet an expanding range of customer requirements. As such, we expect to continue to spend on current and future product development efforts. 
+
+ Sales and marketing expenses. Sales and marketing expenses increased by $10.8 million, or 28.5% in fiscal year 2015 compared to fiscal year 2014. Sales and marketing expenses were 2.5% and 2.6% of net sales for fiscal year 2015 and 2014, respectively. The increase in absolute dollars was primarily due to an increase of $7.8 million in compensation and benefits resulting primarily from growth in sales and marketing personnel and an increase of $2.9 million in advertising, marketing promotional and trade show expenses. The decrease as a percentage of net sales was primarily due to the increase in net sales in fiscal year 2015. 
+
+ Sales and marketing expenses increased by $4.2 million, or 12.5% in fiscal year 2014 compared to fiscal year 2013. Sales and marketing expenses were 2.6% and 2.9% of net sales for fiscal year 2014 and 2013, respectively. The increase in absolute dollars was primarily due to an increase of $2.3 million in compensation and benefits resulting from growth in sales and marketing personnel and an increase of $1.1 million in advertising and marketing promotional expenses including 
+
+ 34 
+
+ Table of Contents 
+
+ cooperating marketing expenses. The decrease as a percentage of net sales was primarily due to the significant increase in net sales in fiscal year 2014. 
+
+ Sales and marketing expenses include stock-based compensation expense of $1.6 million, $1.3 million and $1.5 million for fiscal year 2015, 2014 and 2013, respectively. 
+
+ General and administrative expenses. General and administrative expenses increased by $1.4 million, or 5.9% in fiscal year 2015 compared to fiscal year 2014. General and administrative expenses were 1.2% and 1.6% of net sales for fiscal year 2015 and 2014, respectively. The increase in absolute dollars was primarily due to an increase of $2.3 million in compensation and benefits including stock-based compensation expense, a decrease of $0.7 million in miscellaneous income relating to the settlement of our outstanding accounts payable with one vendor in the prior year offset in part by an increase of $1.1 million in foreign currency transaction gain and a decrease of $1.0 million in bad debt expenses. The decrease as a percentage of net sales was primarily due to the increase in net sales in fiscal year 2015. 
+
+ General and administrative expenses decreased by $0.9 million, or 3.7% in fiscal year 2014 compared to fiscal year 2013. General and administrative expenses were 1.6% and 2.1% of net sales for fiscal year 2014 and 2013, respectively. The decrease in absolute dollars was primarily due to an increase of $0.7 million in miscellaneous income relating to the settlement of our outstanding accounts payable with one vendor and a decrease of $0.6 million resulting from payroll tax audit assessment in fiscal year 2013, offset in part by an increase of $0.4 million in bad debt expenses. The decrease as a percentage of net sales was primarily due to the significant increase in net sales in fiscal year 2014. 
+
+ General and administrative expenses include stock-based compensation expense of $2.6 million, $2.1 million and $2.3 million for fiscal year 2015, 2014 and 2013, respectively. 
+
+ Interest and Other Expense, Net 
+
+ Interest and other expense, net for fiscal year 2015 , 2014 and 2013 are as follows (dollars in millions): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ $ 
+
+ % 
+
+ $ 
+
+ % 
+
+ Interest and other income, net 
+ $ 
+ 0.1 
+
+ $ 
+ 0.1 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ 25.0 
+ % 
+
+ $ 
+ — 
+
+ 91.7 
+ % 
+
+ Interest expense 
+ (1.0 
+ ) 
+
+ (0.8 
+ ) 
+
+ (0.6 
+ ) 
+
+ (0.2 
+ ) 
+
+ 27.5 
+ % 
+
+ (0.1 
+ ) 
+
+ 24.1 
+ % 
+
+ Interest and other expense, net 
+ $ 
+ (0.9 
+ ) 
+
+ $ 
+ (0.7 
+ ) 
+
+ $ 
+ (0.6 
+ ) 
+
+ $ 
+ 0.2 
+
+ 27.8 
+ % 
+
+ $ 
+ 0.1 
+
+ 18.3 
+ % 
+
+ Interest and other expense, net. Interest and other expense, net increased by $0.2 million in fiscal year 2015 compared to fiscal year 2014 and increased by $0.1 million in fiscal year 2014 compared to fiscal year 2013. The increases were primarily due to higher interest expense on debt. 
+
+ Provision for Income Taxes 
+
+ Provision for income taxes and effective tax rates for fiscal year 2015 , 2014 and 2013 are as follows (dollars in millions): 
+
+ Years Ended June 30, 
+
+ 2015 over 2014 Change 
+
+ 2014 over 2013 Change 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ $ 
+
+ % 
+
+ $ 
+
+ % 
+
+ Provision for Income Taxes 
+ $ 
+ 44.0 
+
+ $ 
+ 25.4 
+
+ $ 
+ 5.3 
+
+ $ 
+ 18.6 
+
+ 73.1 
+ % 
+
+ $ 
+ 20.1 
+
+ 378.4 
+ % 
+
+ Percentage of total net sales 
+ 2.2 
+ % 
+
+ 1.7 
+ % 
+
+ 0.4 
+ % 
+
+ Effective tax rate 
+ 30.2 
+ % 
+
+ 32.0 
+ % 
+
+ 20.0 
+ % 
+
+ Provision for income taxes. Provision for income taxes increased by $18.6 million , or 73.1% in fiscal year 2015 compared to fiscal year 2014 . The effective tax rate was 30.2% and 32.0% for fiscal year 2015 and 2014 , respectively. The higher income tax provision for the fiscal year 2015 was primarily attributable to our higher operating income. The effective tax rate for fiscal year 2015 was lower primarily due to the release of unrecognized tax benefits due to the lapse of statute of limitations, reinstatement of the U.S. federal research and development tax credits, higher income taxed by foreign jurisdictions with lower tax rates and lower add back for stock compensation expenses. 
+
+ 35 
+
+ Table of Contents 
+
+ Provision for income taxes increased by $20.1 million, or 378.4% in fiscal year 2014 compared to fiscal year 2013. The effective tax rate was 32.0% and 20.0% for fiscal year 2014 and 2013, respectively. The higher income tax provision and effective tax rate for fiscal year 2014 were primarily attributable to our higher operating income and the expiration of the U.S. federal research and development credit on December 31, 2013. 
+
+ Liquidity and Capital Resources 
+
+ Since our inception, we have financed our growth primarily with funds generated from operations and from the proceeds of our initial public offering. In addition, we have, from time to time, utilized borrowing facilities, particularly in relation to the financing of real property acquisitions. Our cash and cash equivalents and short-term investments were $95.5 million and $96.9 million as of June 30, 2015 and 2014 , respectively. Our cash in foreign locations was $26.3 million and $28.3 million at June 30, 2015 and 2014 , respectively. It is management's intention to reinvest the undistributed foreign earnings indefinitely in foreign operations. 
+
+ Operating Activities. Net cash provided by (used in) operating activities was $(44.6) million , $6.5 million and $13.6 million for fiscal years 2015 , 2014 and 2013 , respectively. 
+
+ Net cash used in our operating activities for fiscal year 2015 was primarily due to an increase in inventory of $153.6 million and an increase in accounts receivable of $110.2 million , which were partially offset by our net income of $101.9 million , an increase in accounts payable of $75.5 million , stock-based compensation expense of $13.7 million , an increase in net income taxes payable of $12.0 million , an increase in accrued liabilities of $9.6 million , depreciation expense of $8.1 million and provision for inventory of $5.9 million . 
+
+ Net cash provided by our operating activities for fiscal year 2014 was primarily due to our net income of $54.2 million, an increase in accounts payable of $46.3 million, stock-based compensation expense of $11.1 million, an increase in net income taxes payable of $10.9 million, depreciation expense of $6.4 million and an increase in accrued liabilities of $3.3 million, provision for inventory of $2.3 million, which were partially offset by an increase in accounts receivable of $64.9 million, an increase in inventory of $63.9 million and the excess tax benefits from stock-based compensation of $3.0 million. 
+
+ Net cash provided by our operating activities for fiscal year 2013 was primarily due to our net income of $21.3 million, a decrease in inventory of $12.7 million, stock-based compensation expense of $11.4 million, provision for inventory of $9.7 million, depreciation expense of $7.8 million, an increase in net income taxes payable of $4.5 million and an increase in accrued liabilities of $4.4 million, which were partially offset by an increase in accounts receivable of $48.3 million, deferred income taxes of $7.0 million and a decrease in accounts payable of $2.2 million. 
+
+ The increase for fiscal year 2014 and 2015 in accounts receivable was primarily due to an increase in our sales late in the fourth quarter. The increase for fiscal year 2014 and 2015 in inventory and accounts payable was primarily due to higher purchases to support the anticipated level of growth in our net sales in the following fiscal year. We anticipate that accounts receivable, inventory and accounts payable will increase to the extent we continue to grow our product lines and our business. In addition, we have completed our first manufacturing building and warehouse at our Green Computing Park in San Jose, California in August 2015 and our implementation of a new ERP system for our U.S. headquarters on July 5, 2015. We anticipate that our depreciation expense in fiscal year 2016 will increase as we begin to depreciate these costs. 
+
+ The increase for fiscal year 2013 in accounts receivable was primarily due to an increase in sales to customers with net payment terms and a decrease in sales to customers with electronic payment terms. The decrease for fiscal year 2013 in inventory and accounts payable was mainly due to lower hard disk drive and memory inventory. The increase for fiscal year 2013 in accrued liabilities was in part due to timing of payments to our vendors and in part due to support our growth and our increasing manufacturing activities in Taiwan. 
+
+ Investing activities. Net cash used in our investing activities was $36.2 million , $40.2 million and $5.1 million for fiscal years 2015 , 2014 and 2013 , respectively. In fiscal year 2015 , of the net cash used in our investing activities, $35.1 million was related to the purchase of property, plant and equipment, of which $21.8 million was related to the development and construction of improvements to our first manufacturing building and warehouse at our Green Computing Park in San Jose, California, which was completed in August 2015 and $4.8 million was related to the implementation of a new ERP system. We plan to continue to engage several contractors for the development and construction of improvements to our properties through fiscal year 2016. We anticipate investing approximately $14.6 million during fiscal year 2016 to build the second manufacturing facility and remodel our office building. We plan to finance this development through our operating cash flows and additional borrowings from banks. 
+
+ 36 
+
+ Table of Contents 
+
+ In fiscal year 2014, the $40.6 million net cash used in our investing activities was related to the purchase of property, plant and equipment including $30.2 million related to the real property purchased in San Jose, California in October 2013, offset in part by the termination of the certificates of deposits for $0.4 million, which were pledged as security for a value added tax examination required by tax authorities of Taiwan. 
+
+ In fiscal year 2013, the $5.0 million net cash used in our investing activities was related to the purchase of property, plant and equipment and $0.4 million was related to the additional certificate of deposit pledged as security for value added tax examination required by tax authority of Taiwan. This was offset by the redemption at par of investments in auction rate securities of $0.3 million. 
+
+ Financing activities. Net cash provided by our financing activities was $80.1 million , $37.2 million and $3.8 million for fiscal years 2015 , 2014 and 2013 , respectively. In fiscal year 2015 , we borrowed an additional $84.9 million under our revolving line of credit from Bank of America and CTBC Bank and repaid $36.0 million in loans. Further, we received $23.3 million related to the proceeds from the exercise of stock options in fiscal year 2015 . 
+
+ In fiscal year 2014, we received $23.9 million related to the proceeds from the exercise of stock options. We withheld shares and paid the minimum tax withholding for restricted stock awards of $0.7 million in fiscal year 2014. Further, we borrowed an additional $6.8 million under the line of credit from Bank of America, borrowed $7.0 million from the CTBC Bank secured term loan, and borrowed $3.5 million of our CTBC Bank revolving line of credit and repaid $6.3 million in loans in fiscal year 2014. 
+
+ In fiscal year 2013, we received $1.8 million related to the proceeds from the exercise of stock options. We withheld shares and paid the minimum tax withholding for restricted stock awards of $1.0 million in fiscal year 2013. Further, we obtained a new term loan of $15.0 million from China Trust Bank, borrowed $5.6 million of our revolving line of credit from Bank of America, N.A., and repaid $18.1 million in loans in fiscal year 2013. 
+
+ In fiscal year 2015 , 2014 and 2013 , $8.1 million , $3.0 million and $0.9 million was related to the excess tax benefits from stock-based compensation, respectively. We expect the net cash provided by financing activities will increase throughout fiscal year 2016 as we intend to obtain additional financing from banks for our working capital requirements. 
+
+ We expect to experience continued growth in our working capital requirements and capital expenditures as we continue to expand our business. Our long-term future capital requirements will depend on many factors, including our level of revenues, the timing and extent of spending to support our product development efforts, the expansion of sales and marketing activities, the timing of our introductions of new products, the costs to ensure access to adequate manufacturing capacity and the continuing market acceptance of our products. We intend to fund this continued expansion through cash generated by operations and by drawing on the revolving credit facility or through other debt financing. However we cannot be certain whether such financing will be available on commercially reasonable or otherwise favorable terms or that such financing will be available at all. We anticipate that working capital and capital expenditures will constitute a material use of our cash resources. We have sufficient cash on hand to continue to operate for at least the next 12 months. 
+
+ Other factors affecting liquidity and capital resources 
+
+ Activities under Revolving Lines of Credit and Term Loans 
+
+ Bank of America 
+ In June 2015, we entered into an amendment to our existing credit agreement with Bank of America, which provided for (i) a $65.0 million revolving line of credit facility that matures on November 15, 2015 and (ii) a five-year $14.0 million term loan facility. The term loan is secured by three buildings located in San Jose, California and the principal and interest are payable monthly through September 30, 2016 with an interest rate at the LIBOR rate plus 1.50% per annum. 
+
+ The line of credit facility provided for borrowings denominated both in U.S. dollars and in Taiwanese dollars. For borrowings denominated in U.S. dollars, the interest rate for the revolving line of credit is at the LIBOR rate plus 1.25% per annum. The LIBOR rate was 0.18% at June 30, 2015 . For borrowings denominated in Taiwanese dollars, the interest rate for the revolving line of credit is equal to the lender's established interest rate which is adjusted monthly. 
+
+ As of June 30, 2015 and 2014 , the total outstanding borrowings under the Bank of America term loan was $3.7 million and $6.5 million , respectively. The total outstanding borrowings under the Bank of America line of credit was $59.7 million 
+
+ 37 
+
+ Table of Contents 
+
+ and $17.7 million as of June 30, 2015 and 2014 , respectively. The interest rates for these loans ranged from 0.79% to 1.68% per annum at June 30, 2015 and 1.19% to 1.65% per annum at June 30, 2014 , respectively. As of June 30, 2015 , the unused revolving line of credit under Bank of America was $5.3 million . 
+
+ CTBC Bank 
+ In October 2011, we obtained an unsecured revolving line of credit from CTBC Bank totaling NT $300.0 million or $9.9 million U.S. dollars equivalents. In July 2012, we increased the credit line to NT$450.0 million or $14.9 million U.S. dollars equivalents. The term loan was secured by the land and building located in Bade, Taiwan with an interest rate at the lender's established interest rate plus 0.3% which is adjusted monthly. 
+
+ In November 2013, we entered into an amendment to the existing credit agreement with CTBC Bank to increase the credit facility amount and extend the maturity date to November 30, 2014. The amendment provides for (i) a 13 -month NT $700.0 million or $23.8 million U.S. dollar equivalents term loan secured by the land and building located in Bade, Taiwan with an interest rate equal to the lender's established NTD interest rate plus 0.25% per annum which is adjusted monthly and (ii) a 13 -month unsecured term loan up to NT $100.0 million or $3.4 million U.S. dollar equivalents, and a 13 -month revolving line of credit up to 80% of eligible accounts receivable in an aggregate amount of up to NT $500.0 million or $17.0 million U.S. dollar equivalents with an interest rate equal to the lender's established NTD interest rate plus 0.25% per annum or lender's established USD interest rate plus 0.30% per annum which is adjusted monthly. The total borrowings allowed under the credit agreement is capped at NT $1.0 billion or $34.0 million U.S. dollar equivalents. 
+
+ In December 2014, we entered into a second amendment to our existing credit agreement with CTBC Bank to extend the maturity date to November 30, 2015. The amendment provides for (i) a 12-month NT$700.0 million or $22.0 million U.S. dollar equivalents term loan secured by the land and building located in Bade, Taiwan with an interest rate equal to the lender's established NTD interest rate plus 0.25% per annum which is adjusted monthly and (ii) a 12-month revolving line of credit up to 80% of eligible accounts receivable in an aggregate amount of up to $17.0 million with an interest rate equal to the lender's established USD interest rate plus 0.30% per annum which is adjusted monthly. The total borrowings allowed under the credit agreement is capped at NT $1.0 billion or $31.5 million U.S. dollar equivalents. 
+
+ The total outstanding borrowings under the CTBC Bank term loan was denominated in Taiwanese dollars and was translated into U.S. dollars of $21.3 million and $22.1 million as of June 30, 2015 and 2014 , respectively. The total outstanding borrowings under the CTBC Bank revolving line of credit was $9.7 million in U.S. dollars at June 30, 2015 . There were no outstanding borrowings under the CTBC Bank revolving line of credit at June 30, 2014. The interest rate for these loans were ranged from 0.82% and 1.16% at June 30, 2015 and 1.15% per annum at June 30, 2014. At June 30, 2015 , NT$39.1 million or $1.3 million U.S. dollar equivalents were available for future borrowing under this credit agreement. 
+
+ Covenant Compliance 
+ The credit agreement with Bank of America contains customary representations and warranties and customary affirmative and negative covenants applicable to the Company and its subsidiaries. The credit agreement contains certain financial covenants, including the following: 
+
+ • 
+
+ Not to incur on a consolidated basis, a net loss before taxes and extraordinary items in any two consecutive quarterly accounting periods; 
+
+ • 
+
+ The Company’s funded debt to EBITDA ratio (ratio of all outstanding liabilities for borrowed money and other interest-bearing liabilities, including current and long-term debt, less the non-current portion of subordinated liabilities to EBITDA) shall not be greater than 2.00; 
+
+ • 
+
+ The Company’s unencumbered liquid assets, as defined in the agreement, held in the United States shall have an aggregate market value of not less than $30,000,000, measured as of the last day of each fiscal quarter and the last day of each fiscal year. 
+
+ As of June 30, 2015 , our total assets of $1,045.4 million collateralized the line of credit with Bank of America and were all of our assets except for the three buildings purchased in San Jose, California in June 2010 and the land and building located in Bade, Taiwan. As of June 30, 2015 , total assets collateralizing the term loan with Bank of America were $17.4 million . As of June 30, 2015 , the Company was in compliance with all financial covenants associated with the term loan and line of credit with Bank of America. 
+
+ 38 
+
+ Table of Contents 
+
+ As of June 30, 2015 , the net book value of land and building located in Bade, Taiwan collateralizing the term loan with CTBC Bank was $27.0 million . There are no financial covenants associated with the term loan with CTBC Bank at June 30, 2015 . 
+
+ Contract Manufacturers 
+ In fiscal year 2015 , we paid our contract manufacturers within 35 to 75 days of invoice and Ablecom between 46 to 74 days of invoice. Ablecom, a Taiwan corporation, is one of our major contract manufacturers and a related party. As of June 30, 2015 and 2014 amounts owed to Ablecom by us were approximately $59.0 million and $49.0 million , respectively. 
+
+ Auction Rate Securities Valuation 
+ As of June 30, 2015 , we held $2.6 million of auction rate securities, net of unrealized losses, representing our interest in auction rate preferred shares in a closed end mutual fund invested in municipal securities; the auction rate security was rated AA2 at June 30, 2015 . These auction rate preferred shares have no stated maturity date. 
+
+ During February 2008, the auctions for these auction rate securities began to fail to obtain sufficient bids to establish a clearing rate and were not saleable in the auction, thereby losing the short-term liquidity previously provided by the auction process. As a result, as of June 30, 2015 , $2.6 million of these auction rate securities have been classified as long-term available-for-sale investments. Based on our assessment of fair value at June 30, 2015 , we have recorded an accumulated unrealized loss of $0.1 million , net of deferred income taxes, on long-term auction rate securities. The unrealized loss was deemed to be temporary and has been recorded as a component of accumulated other comprehensive loss. In fiscal year 2015 and 2014 , there was no auction rate securities redeemed or sold. In fiscal year 2013 , $0.3 million of auction rate securities were redeemed at par. 
+
+ Contractual Obligations 
+
+ The following table describes our contractual obligations as of June 30, 2015 : 
+
+ Payments Due by Period 
+
+ Less Than 
+ 1 Year 
+
+ 1 to 3 
+ Years 
+
+ 3 to 5 
+ Years 
+
+ More Than 
+ 5 Years 
+
+ Total 
+
+ (in thousands) 
+
+ Operating leases 
+ $ 
+ 4,344 
+
+ $ 
+ 6,187 
+
+ $ 
+ 5,775 
+
+ $ 
+ 3,545 
+
+ $ 
+ 19,851 
+
+ Capital leases, including interest 
+ 200 
+
+ 361 
+
+ 155 
+
+ — 
+
+ 716 
+
+ Debt, including interest (1) 
+ 93,479 
+
+ 933 
+
+ — 
+
+ — 
+
+ 94,412 
+
+ Purchase commitments (2) 
+ 307,041 
+
+ 71,300 
+
+ — 
+
+ — 
+
+ 378,341 
+
+ Total (3) 
+ $ 
+ 405,064 
+
+ $ 
+ 78,781 
+
+ $ 
+ 5,930 
+
+ $ 
+ 3,545 
+
+ $ 
+ 493,320 
+
+ __________________________ 
+
+ (1) 
+ Amount reflects total anticipated cash payments, including anticipated interest payments based on the interest rate at June 30, 2015 . 
+
+ (2) 
+ Amount reflects total gross purchase commitments under our manufacturing arrangements with third-party contract manufacturers or vendors. Our purchase obligations included $185.7 million of hard disk drive purchase commitments at June 30, 2015 , which will be paid through December 2016 . See Note 12 of Notes to our Consolidated Financial Statements in Item 8 of this Form 10-K for a discussion of purchase commitments. 
+
+ (3) 
+ The table above excludes liabilities for deferred revenue of $8.4 million and unrecognized tax benefits and related interest and penalties accrual of $10.2 million . We have not provided a detailed estimate of the payment timing of unrecognized tax benefits due to the uncertainty of when the related tax settlements will become due. See Note 11 of Notes to our Consolidated Financial Statements in Item 8 of this Form 10-K for a discussion of income taxes. 
+
+ We expect to fund our remaining contractual obligations from our ongoing operations and existing cash and cash equivalents on hand. 
+
+ Adoption of New Accounting Pronouncements 
+
+ In July 2013, the FASB issued authoritative guidance associated with the presentation of an unrecognized tax benefit when a net operating loss carryforward, a similar tax loss or a tax credit carryforward exists. It requires a liability related to an unrecognized tax benefit to offset a deferred tax asset for a net operating loss carryforward, a similar tax loss or a tax credit 
+
+ 39 
+
+ Table of Contents 
+
+ carryforward if a settlement is required or expected in the event the uncertain tax position is disallowed. We adopted the new disclosure on July 1, 2014. The adoption of this guidance did not have a material impact on our results of operations or financial position. 
+
+ In May 2014, the FASB issued new accounting guidance related to revenue recognition. This new standard replaces all current U.S. GAAP guidance on revenue, eliminates all industry-specific guidance and provides a unified model in determining when and how revenue is recognized. The core principle is that a company should recognize revenue to depict the transfer of promised goods or services to customers in an amount that reflects the consideration to which the entity expects to be entitled in exchange for those goods or services. This guidance can be applied either retrospectively or as a cumulative-effect adjustment as of the date of adoption. The new standard is effective for us on July 1, 2018. We are currently evaluating the effect the guidance will have on our financial statement disclosures, results of operations or financial position. 
+
+ In April 2015, the FASB issued new accounting guidance related to presentation of debt issue costs. The new standard requires that debt issuance costs related to a recognized debt liability be presented in the balance sheet as a direct deduction from the carrying amount of that debt liability. The new standard is effective for us on July 1, 2016. We are currently evaluating the effect the guidance will have on our financial statement disclosures, results of operations and financial position. 
+
+ In July 2015, the FASB issued authoritative guidance related to inventory measurement. The new standard requires entities to measure inventory at the lower of cost and net realizable value thereby simplifying the current guidance under which an entity must measure inventory at the lower of cost or market. The new standard is effective for us on July 1, 2017. We are currently evaluating the effect the guidance will have on our financial statement disclosures, results of operations and financial position. 
+
+ Off-Balance Sheet Arrangements 
+
+ We do not have any off-balance sheet arrangements. 
+
+ Item 7A. Qualitative and Quantitative Disclosure About Market Risk 
+
+ Interest Rate Risk 
+
+ The primary objectives of our investment activities are to preserve principal, provide liquidity and maximize income without significantly increasing the risk. Some of the securities we invest in are subject to market risk. This means that a change in prevailing interest rates may cause the fair value of the investment to fluctuate. To minimize this risk, we maintain our portfolio of cash equivalents and short-term investments in money market funds and certificates of deposit. Our long-term investments include auction rate securities, which have been classified as long-term due to the lack of a liquid market for these securities. Since our results of operations are not dependent on investments, the risk associated with fluctuating interest rates is limited to our investment portfolio, and we believe that a 10% change in interest rates would not have a significant impact on our results of operations. As of June 30, 2015 , our investments were in money market funds, certificates of deposits and auction rate securities. 
+
+ We are exposed to changes in interest rates as a result of our borrowings under our term loan and revolving lines of credit. The interest rates for the term loans and the revolving lines of credit ranged from 0.79% to 1.68% at June 30, 2015 and 1.15% to 1.65% at June 30, 2014 , respectively. Based on the outstanding principal indebtedness of $94.4 million under our credit facilities as of June 30, 2015 , we believe that a 10% change in interest rates would not have a significant impact on our results of operations. 
+
+ Liquidity Risk 
+
+ As of June 30, 2015 , we held $2.6 million of auction rate securities, net of unrealized losses, representing our interest in auction rate preferred shares in a closed end mutual fund invested in municipal securities; the auction rate security was rated AA2 at June 30, 2015 . These auction rate preferred shares have no stated maturity date. During February 2008, the auctions for these auction rate securities began to fail to obtain sufficient bids to establish a clearing rate and were not saleable in the auction, thereby losing the short-term liquidity previously provided by the auction process. As a result, as of June 30, 2015 , $2.6 million of these auction rate securities have been classified as long-term available-for-sale investments. Based on our assessment of fair value at June 30, 2015 , we have recorded an accumulated unrealized loss of $0.1 million , net of deferred income taxes, on long-term auction rate securities. The unrealized loss was deemed to be temporary and has been recorded as a component of accumulated other comprehensive loss. During fiscal year 2015 and 2014 , no auction rate securities were redeemed or sold. During fiscal year 2013 , $0.3 million of auction rate securities were redeemed at par. 
+
+ 40 
+
+ Table of Contents 
+
+ Although we have determined that we will not likely be required to sell the securities before the anticipated recovery and we have the intent and ability to hold our investments until successful auctions occur, these investments are not currently liquid and in the event we need to access these funds, we will not be able to do so without a loss of principal. There can be no assurances that these investments will be settled in the short term or that they will not become other-than-temporarily impaired subsequent to June 30, 2015 , as the market for these investments is presently uncertain. In any event, we do not have a present need to access these funds for operational purposes. We will continue to monitor and evaluate these investments as there is no assurance as to when the market for these investments will allow us to liquidate them. We may be required to record impairment charges in periods subsequent to June 30, 2015 in respect to these securities and, if a liquid market does not develop for these investments, we could be required to hold them to market recovery. 
+
+ Foreign Currency Risk 
+
+ To date, our international customer and supplier agreements have been denominated primarily in U.S. dollars, and accordingly, we have limited exposure to foreign currency exchange rate fluctuations from customer agreements, and do not currently engage in foreign currency hedging transactions. However, the functional currency of our operations in the Netherlands and Taiwan is the U.S. dollar and our local accounts including financing arrangements are denominated in the local currency in the Netherlands and Taiwan, respectively, and thus we are subject to foreign currency exchange rate fluctuations associated with re-measurement to U.S. dollars. Such fluctuations have not been significant historically. Foreign exchange gain (loss) for fiscal years 2015 , 2014 and 2013 was $0.7 million , $(0.4) million and $(0.1) million , respectively. 
+
+ 41 
+
+ Table of Contents

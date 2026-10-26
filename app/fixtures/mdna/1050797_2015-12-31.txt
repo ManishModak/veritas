@@ -1,0 +1,1211 @@
+Item 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS 
+ This annual report, including Item 1 of Part I and Item 7 of Part II, contains forward-looking statements. Forward-looking statements include any statements related to our expectations regarding future performance or market position, including any statements regarding anticipated sales, gross margins and operating margins across markets, profitability and the effect of specified factors on profitability for 2016, expenses, input costs, effects of unseasonable weather on our results of operations, inventory levels, investments in our business, investments in and implementation of our information technology systems, intellectual property disputes, our direct-to-consumer channels and other capital expenditures, including planned store additions, access to raw materials and factory capacity, financing and working capital requirements and resources, income tax rates and pre-tax income, and our exposure to market risk associated with interest rates and foreign currency exchange rates. 
+ These forward-looking statements, and others we make from time to time, are subject to a number of risks and uncertainties. Many factors may cause actual results to differ materially from those projected in forward-looking statements, including the risks described above in Item 1A, Risk Factors. We do not undertake any duty either to update forward-looking statements after the date they are made or to conform them to actual results or to changes in circumstances or expectations. 
+ Our Business 
+ As one of the largest outdoor and active lifestyle apparel and footwear companies in the world, we design, source, market and distribute outdoor and active lifestyle apparel, footwear, accessories and equipment under the Columbia, Mountain Hardwear, Sorel, prAna and Montrail brands. Our products are sold through a mix of wholesale distribution channels, our own direct-to-consumer channels and independent distributors. In addition, we license some of our trademarks across a range of apparel, footwear, accessories and equipment. 
+ The popularity of outdoor activities, changing design trends, consumer adoption of innovative performance technologies, variations in seasonal weather, and the availability and desirability of competitor alternatives affect consumer desire for our products. Therefore, we seek to drive, anticipate and respond to trends and shifts in consumer preferences by adjusting our product offerings, developing new products with innovative performance features and designs, and creating persuasive and memorable marketing communications to generate consumer awareness, demand and retention. Failure to anticipate or respond to consumer needs and preferences in a timely and adequate manner could have a material adverse effect on our sales and profitability. 
+ Seasonality and Variability of Business 
+ Our business is affected by the general seasonal trends common to the industry, including seasonal weather and discretionary consumer shopping and spending patterns. Our products are marketed on a seasonal basis and our sales are weighted substantially toward the third and fourth quarters, while our operating costs are more equally distributed throughout the year. The expansion of our direct-to-consumer operations has increased the proportion of sales, profits and cash flows that we generate in the fourth calendar quarter. In 2015 , approximately 60% of our net sales and approximately 90% of our profitability was realized in the second half of the year, illustrating our dependence upon sales results in the second half of the year, as well as the less seasonal nature of our operating costs. 
+ We generally solicit orders from wholesale customers and independent distributors for the fall and spring seasons based on seasonal ordering deadlines that we establish to aid our efforts to plan manufacturing volumes to meet demand. We typically ship the majority of our advance fall season orders to customers beginning in July and continuing through December. Similarly, we typically ship the majority of our advance spring season orders to customers beginning in January and continuing through June. Generally, orders are subject to cancellation prior to the date of shipment. 
+ Results of operations in any period should not be considered indicative of the results to be expected for any future period, particularly in light of persistent volatility in global economic and geopolitical conditions and volatility of foreign currency exchange rates which, when combined with seasonal weather patterns and inflationary or volatile input costs, reduce the predictability of our business. 
+ Business Developments 
+
+ 29 
+
+ On January 1, 2014 we commenced operations of a majority-owned joint venture in mainland China with Swire Resources Limited ("Swire"). As a 60% majority-owned entity, the joint venture's operations are included in our consolidated financial results. 
+ On May 30, 2014 , we purchased 100% of the equity interest in prAna Living LLC (“prAna”) for $188.5 million, net of acquired cash. PrAna is a lifestyle apparel brand sold through select specialty and online retailers across North America, as well as through seven company-owned retail stores, an e-commerce site and direct-mail catalogs. The acquisition of prAna strengthens and diversifies our brand portfolio and generally offsets some of the more seasonal sales effects found within our portfolio of brands. The acquisition was funded with cash on hand. 
+ Business Outlook 
+ We expect 2016 profitability to be affected by the following major factors: 
+
+ • 
+ Net sales growth in the Columbia, prAna and Sorel brands in our United States wholesale channel; 
+
+ • 
+ Continued growth of our brick-and-mortar and e-commerce direct-to-consumer sales and profitability globally; 
+
+ • 
+ Difficult economic and/or competitive environments in certain international markets within our EMEA and LAAP distributor businesses; 
+
+ • 
+ Continued recovery and sales growth contributed by our Europe-direct business; and 
+
+ • 
+ The transactional effects of changes in foreign currency exchange rates on sales, gross margin, operating income and net income. 
+
+ Consistent with the historical seasonality of the business, we anticipate 2016 profitability and profitability growth to be heavily concentrated in the second half of the year. 
+ We implemented our new ERP system in our international distributor businesses in May 2015, which joins our North American wholesale business, excluding prAna, and the majority of our global supply chain operations onto our new platform. The next planned phase of our global information systems and infrastructure initiatives is to transition our Japan subsidiary to our new ERP system. 
+ The global business climate continues to present us with a great deal of uncertainty, making it difficult to predict future results. Factors that could significantly affect our full year 2016 outlook include: 
+
+ • 
+ The productivity of our existing stores and e-commerce sites in our global direct-to-consumer operations; 
+
+ • 
+ Unseasonable weather conditions or other unforeseen factors affecting consumer demand and the resulting effect on order cancellations, sales returns, customer accommodations, reorders, direct-to-consumer sales, promotional activities, and suppressed demand in subsequent seasons; 
+
+ • 
+ Macroeconomic trends affecting consumer traffic and spending in brick and mortar retail channels; 
+
+ • 
+ Changes in mix and volume of full price sales in relation to closeout product sales and promotional sales activity; 
+
+ • 
+ Costs and business interruption risks related to our supply chain; 
+
+ • 
+ Risks associated with performance and stability of our information technology systems and infrastructure; 
+
+ • 
+ Our ability to effectively manage operating costs; 
+
+ • 
+ Continued political and economic uncertainty, which is creating headwinds in key global markets; and 
+
+ • 
+ Fluctuating foreign currency exchange rates. 
+
+ These factors and others may have a material effect on our financial condition, results of operations or cash flows, particularly with respect to quarterly comparisons. 
+ We remain focused on driving sustainable, profitable sales growth by providing innovative, stylish products at accessible prices, nurturing stronger emotional connections with consumers through compelling marketing communications, transforming our global supply chain and information technology platforms and effectively managing inventory. 
+
+ 30 
+
+ Results of Operations 
+ The following discussion of our results of operations and liquidity and capital resources should be read in conjunction with the Consolidated Financial Statements and accompanying Notes that appear elsewhere in this annual report. During periods of significant foreign currency exchange rate volatility, to supplement financial information reported in accordance with accounting principles generally accepted in the United States ("GAAP"), we disclose constant-currency net sales information, which is a non-GAAP financial measure, to provide a framework to assess how the business performed excluding the effects of changes in the exchange rates used to translate net sales generated in foreign currencies into U.S. dollars. Management believes that this non-GAAP financial measure reflects an additional and useful way of viewing an aspect of our operations that, when viewed in conjunction with our GAAP results, provides a more comprehensive understanding of our business and operations. In particular, investors may find the non-GAAP measures useful by reviewing our net sales results without the significant volatility in foreign currency exchange rates. This non-GAAP financial measure also facilitates management’s internal comparisons to our historical net sales results and comparisons to competitors’ net sales results. Constant-currency financial measures should be viewed in addition to, and not in lieu of or superior to, our financial measures calculated in accordance with GAAP. The following discussion includes references to constant-currency net sales, and we provide a reconciliation of this non-GAAP measure to the most directly comparable financial measure calculated in accordance with GAAP. All references to years relate to the calendar year ended December 31. 
+ Highlights of the Year Ended December 31, 2015 
+
+ • 
+ Net sales increase d $225.6 million , or 11% ( 15% constant-currency), to $2,326.2 million from $2,100.6 million in 2014 . 
+
+ • 
+ Net income attributable to Columbia Sportswear Company increase d 27% to $174.3 million from $137.2 million in 2014 , and diluted earnings per share increase d to $2.45 compared to $1.94 in 2014 . 
+
+ • 
+ We paid cash dividends totaling $43.5 million , or $0.62 per share. 
+
+ • 
+ We repurchased 1,385,682 shares of the company's common stock at an aggregate purchase price of $70.1 million. 
+
+ The following table sets forth, for the periods indicated, the percentage relationship to net sales of specified items in our Consolidated Statements of Operations: 
+
+ Year Ended December 31, 
+
+ 2015 
+
+ 2014 
+
+ 2013 
+
+ Net sales 
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ Cost of sales 
+ 53.9 
+
+ 54.5 
+
+ 55.9 
+
+ Gross profit 
+ 46.1 
+
+ 45.5 
+
+ 44.1 
+
+ Selling, general and administrative expense 
+ 35.8 
+
+ 36.3 
+
+ 37.1 
+
+ Net licensing income 
+ 0.4 
+
+ 0.3 
+
+ 0.8 
+
+ Income from operations 
+ 10.7 
+
+ 9.5 
+
+ 7.8 
+
+ Interest income, net 
+ — 
+
+ — 
+
+ — 
+
+ Interest expense on note payable to related party 
+ — 
+
+ (0.1 
+ ) 
+
+ — 
+
+ Other non-operating expense 
+ (0.1 
+ ) 
+
+ — 
+
+ — 
+
+ Income before income tax 
+ 10.6 
+
+ 9.4 
+
+ 7.8 
+
+ Income tax expense 
+ (2.9 
+ ) 
+
+ (2.7 
+ ) 
+
+ (2.2 
+ ) 
+
+ Net income 
+ 7.7 
+
+ 6.7 
+
+ 5.6 
+
+ Net income (loss) attributable to non-controlling interest 
+ 0.2 
+
+ 0.2 
+
+ — 
+
+ Net income attributable to Columbia Sportswear Company 
+ 7.5 
+ % 
+
+ 6.5 
+ % 
+
+ 5.6 
+ % 
+
+ Year Ended December 31, 2015 Compared to Year Ended December 31, 2014 
+ Net Sales: Consolidated net sales increase d $225.6 million , or 11% ( 15% constant-currency), to $2,326.2 million in 2015 from $2,100.6 million in 2014 . 
+ Sales by Geographic Region 
+
+ 31 
+
+ Net sales by geographic region are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2015 
+
+ Translation 
+
+ 2015 (1) 
+
+ 2014 
+
+ % Change 
+
+ % Change (1) 
+
+ (In millions, except for percentage changes) 
+
+ United States 
+ $ 
+ 1,455.2 
+
+ $ 
+ — 
+
+ $ 
+ 1,455.2 
+
+ $ 
+ 1,198.4 
+
+ 21% 
+
+ 21% 
+
+ LAAP 
+ 469.2 
+
+ 29.8 
+
+ 499.0 
+
+ 491.6 
+
+ (5)% 
+
+ 2% 
+
+ EMEA 
+ 233.2 
+
+ 26.1 
+
+ 259.3 
+
+ 259.2 
+
+ (10)% 
+
+ —% 
+
+ Canada 
+ 168.6 
+
+ 28.1 
+
+ 196.7 
+
+ 151.4 
+
+ 11% 
+
+ 30% 
+
+ $ 
+ 2,326.2 
+
+ $ 
+ 84.0 
+
+ $ 
+ 2,410.2 
+
+ $ 
+ 2,100.6 
+
+ 11% 
+
+ 15% 
+
+ (1) Constant-currency net sales information is a non-GAAP financial measure, which excludes the effect of changes in foreign currency exchange rates vs. the U.S. dollar between comparable reporting periods. We calculate constant-currency net sales by translating net sales in foreign currencies for the current period into U.S. dollars at the exchange rates that were in effect during the comparable period of the prior year. 
+ Net sales in the United States increase d $256.8 million , or 21% , to $1,455.2 million in 2015 from $1,198.4 million in 2014 . The increase in net sales in the United States was led by an increase in net sales in our wholesale business, followed by our direct-to-consumer business. The increase in our wholesale business was primarily the result of a net sales increase in Columbia, Sorel and prAna brand net sales, and was driven by shipments of increased fall season advance orders. The net sales increase in our direct-to-consumer business was led by increased net sales from our retail stores, followed by increased e-commerce net sales. At December 31, 2015, we operated 109 retail stores, compared with 93 stores at December 31, 2014. 
+ Net sales in the LAAP region decrease d $22.4 million , or 5% (increased 2% constant-currency), to $469.2 million in 2015 from $491.6 million in 2014 . The net sales decrease in the LAAP region was led by Korea, followed by Japan, partially offset by net sales increases in our LAAP distributor business and China. The net sales decrease in Korea reflected business weakness amid the extremely competitive outdoor sector in that country. The net sales decrease in Japan was negatively affected by foreign currency exchange rates, which offset a net sales increase in local currency. The net sales increase in our LAAP distributor business primarily reflected increased advance orders combined with a favorable shift in timing of shipments. 
+ Net sales in the EMEA region decrease d $26.0 million , or 10% (remained flat on constant-currency basis), to $233.2 million in 2015 from $259.2 million in 2014 . The EMEA net sales decrease consisted of a decrease in our EMEA distributor business, partially offset by a net sales increase in our EMEA direct business. The EMEA distributor net sales decrease was largely attributable to a decline in net sales to our Russian distributor, where challenging economic conditions persist. 
+ Net sales in Canada increase d $17.2 million , or 11% ( 30% constant-currency), to $168.6 million in 2015 from $151.4 million in 2014 . The net sales increase in Canada reflected net sales increases in our wholesale and direct-to-consumer businesses. 
+
+ 32 
+
+ Sales by Brand 
+ Net sales by brand are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2015 
+
+ Translation 
+
+ 2015 
+
+ 2014 
+
+ % Change 
+
+ % Change 
+
+ (In millions, except for percentage changes) 
+
+ Columbia 
+ $ 
+ 1,864.7 
+
+ $ 
+ 65.9 
+
+ $ 
+ 1,930.6 
+
+ $ 
+ 1,750.3 
+
+ 7% 
+
+ 10% 
+
+ Sorel 
+ 209.2 
+
+ 13.2 
+
+ 222.4 
+
+ 166.2 
+
+ 26% 
+
+ 34% 
+
+ prAna 
+ 125.3 
+
+ — 
+
+ 125.3 
+
+ 53.7 
+
+ 133% 
+
+ 133% 
+
+ Mountain Hardwear 
+ 116.3 
+
+ 4.3 
+
+ 120.6 
+
+ 119.8 
+
+ (3)% 
+
+ 1% 
+
+ Other 
+ 10.7 
+
+ 0.6 
+
+ 11.3 
+
+ 10.6 
+
+ 1% 
+
+ 7% 
+
+ $ 
+ 2,326.2 
+
+ $ 
+ 84.0 
+
+ $ 
+ 2,410.2 
+
+ $ 
+ 2,100.6 
+
+ 11% 
+
+ 15% 
+
+ The net sales increase in 2015 compared to 2014 was led by the Columbia brand, followed by the prAna brand and the Sorel brand, partially offset by lower Mountain Hardwear net sales. The Columbia brand net sales increase was led by the United States, followed by Canada, partially offset by lower net sales in the EMEA and LAAP regions. The net sales increase in the prAna brand, which was acquired on May 30, 2014, includes approximately $56.0 million of incremental net sales for the first five months of 2015. 
+
+ Sales by Product Category 
+ Net sales by product category are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2015 
+
+ Translation 
+
+ 2015 
+
+ 2014 
+
+ % Change 
+
+ % Change 
+
+ (In millions, except for percentage changes) 
+
+ Apparel, Accessories and Equipment 
+ $ 
+ 1,821.2 
+
+ $ 
+ 53.9 
+
+ $ 
+ 1,875.1 
+
+ $ 
+ 1,676.2 
+
+ 9% 
+
+ 12% 
+
+ Footwear 
+ 505.0 
+
+ 30.1 
+
+ 535.1 
+
+ 424.4 
+
+ 19% 
+
+ 26% 
+
+ $ 
+ 2,326.2 
+
+ $ 
+ 84.0 
+
+ $ 
+ 2,410.2 
+
+ $ 
+ 2,100.6 
+
+ 11% 
+
+ 15% 
+
+ Net sales of apparel, accessories and equipment increase d $145.0 million , or 9% ( 12% constant-currency), to $1,821.2 million in 2015 from $1,676.2 million in 2014 . The increase in apparel, accessories and equipment net sales was led by a net sales increase in the Columbia brand, followed the prAna brand, partially offset by lower Mountain Hardwear brand net sales. The apparel, accessories and equipment net sales increase was led by the United States, followed by Canada, partially offset by lower net sales in the EMEA and LAAP regions. 
+ Net sales of footwear increase d $80.6 million , or 19% ( 26% constant-currency), to $505.0 million in 2015 from $424.4 million in 2014 . The increase in footwear net sales was led by the Sorel brand, followed by the Columbia brand. The footwear net sales increase was led by the United States, followed by Canada, the LAAP region and the EMEA region. 
+ Gross Profit: Gross profit as a percentage of net sales increased to 46.1% in 2015 from 45.5% in 2014 . Gross margin expansion was primarily due to: 
+
+ • 
+ Lower provisions for slow-moving inventory; and 
+
+ • 
+ A more favorable channel mix due to a higher proportion of direct-to-consumer net sales and a lower proportion of sales to international distributors, which carry lower gross margins than wholesale and direct-to-consumer channels; 
+
+ partially offset by: 
+
+ 33 
+
+ • 
+ Unfavorable foreign currency hedge rates; and 
+
+ • 
+ Lower margin on close-out product sales. 
+
+ Our gross profit may not be comparable to those of other companies in our industry because some of these companies include all of the costs related to their distribution network in cost of sales while we, like many others, include these expenses as a component of selling, general and administrative ("SG&A") expense. 
+ Selling, General and Administrative Expense: SG&A expense includes all costs associated with our design, merchandising, marketing, distribution and corporate functions, including related depreciation and amortization. 
+ SG&A expense increase d $68.9 million , or 9% , to $832.0 million , or 35.8% of net sales, in 2015 , from $763.1 million , or 36.3% of net sales, in 2014 . The SG&A expense increase was primarily due to: 
+
+ • 
+ Increased personnel expenses to support business growth and strategic initiatives; 
+
+ • 
+ Increased expenses relating to our expanding global direct-to-consumer operations; 
+
+ • 
+ Increased operating costs associated with the inclusion of a full year of prAna expenses; and 
+
+ • 
+ Increased demand creation investments; 
+
+ partially offset by: 
+
+ • 
+ Favorable foreign currency translation. 
+
+ Depreciation and amortization included in SG&A expense totaled $55.5 million in 2015 , compared to $49.2 million in 2014 . 
+ Net Licensing Income: Net licensing income increased $1.2 million to $8.2 million in 2015 , compared to $7.0 million in 2014 . The increase in net licensing income was primarily due to increased licensing income from accessories and equipment, including socks and backpacks, in the United States. 
+ Other Non-operating Expense: Other non-operating expense totaled $2.8 million in 2015 , compared to $ 0.3 million in 2014 . The increase in expense reflects net losses incurred on the revaluation of foreign currency denominated assets and liabilities and net losses incurred on the settlement of foreign-currency denominated intercompany transactions during 2015 . 
+ Income Tax Expense: Income tax expense increase d to $67.5 million in 2015 from $56.7 million in 2014 . Our effective income tax rate decrease d to 27.3% from 28.5% in 2014 . The decrease in our effective income tax rate in 2015 was primarily due to a tax benefit from the utilization of net operating loss carry-forwards and the release of associated valuation allowances in certain international tax jurisdictions, as well as a benefit from the utilization of foreign tax credits. These benefits were partially offset by a reduction in the tax benefits we recognized from the resolution of audits compared to 2014. Additionally, in 2015 we generated a higher proportion of taxable income in the United States where tax rates are generally higher than in international jurisdictions. 
+ Net Income attributable to Columbia Sportswear Company: Net income increase d $37.1 million , or 27% , to $174.3 million in 2015 from $137.2 million in 2014 . Diluted earnings per share was $2.45 in 2015 compared to $1.94 in 2014 . 
+ Year Ended December 31, 2014 Compared to Year Ended December 31, 2013 
+ Net Sales: Consolidated net sales increased $415.6 million, or 25% (26% constant-currency), to $2,100.6 million in 2014 from $1,685.0 million in 2013. 
+
+ 34 
+
+ Sales by Geographic Region 
+ Net sales by geographic region are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2014 
+
+ Translation 
+
+ 2014 
+
+ 2013 
+
+ % Change 
+
+ % Change 
+
+ (In millions, except for percentage changes) 
+
+ United States 
+ $ 
+ 1,198.4 
+
+ $ 
+ — 
+
+ $ 
+ 1,198.4 
+
+ $ 
+ 971.3 
+
+ 23% 
+
+ 23% 
+
+ LAAP 
+ 491.6 
+
+ 8.7 
+
+ 500.3 
+
+ 354.4 
+
+ 39% 
+
+ 41% 
+
+ EMEA 
+ 259.2 
+
+ (0.8 
+ ) 
+
+ 258.4 
+
+ 240.7 
+
+ 8% 
+
+ 7% 
+
+ Canada 
+ 151.4 
+
+ 9.8 
+
+ 161.2 
+
+ 118.6 
+
+ 28% 
+
+ 36% 
+
+ $ 
+ 2,100.6 
+
+ $ 
+ 17.7 
+
+ $ 
+ 2,118.3 
+
+ $ 
+ 1,685.0 
+
+ 25% 
+
+ 26% 
+
+ Net sales in the United States increased $227.1 million, or 23%, to $1,198.4 million in 2014 from $971.3 million in 2013. The increase in net sales in the United States was led by a net sales increase in apparel, accessories and equipment, followed by footwear, and was led by a net sales increase in our direct-to-consumer channel, followed by our wholesale business and $53.7 million of incremental prAna brand net sales. The increase in direct-to-consumer net sales was led by increased net sales within our retail stores, followed by increased e-commerce net sales. At December 31, 2014, we operated 93 retail stores, including 5 prAna branded stores, compared with 72 stores at December 31, 2013. The increase in wholesale net sales was due to shipments of increased fall season advance orders. 
+
+ Net sales in the LAAP region increased $137.2 million, or 39% (41% constant-currency), to $491.6 million in 2014 from $354.4 million in 2013. The net sales increase in the LAAP region was led by a net sales increase in apparel, accessories and equipment, followed by a net sales increase in footwear. The LAAP net sales increase was concentrated in the Columbia brand, followed by the Sorel brand, partially offset by a net sales decrease in the Mountain Hardwear brand. The LAAP net sales increase consisted of $161.4 million of incremental net sales by our joint venture in China, partially offset by net sales decreases in Korea and to our LAAP distributors. The decrease in Korea net sales was primarily due to business weakness amid the extremely competitive nature of the outdoor sector in that country. Net sales to our LAAP distributors decreased primarily due to ongoing currency constraints and import restrictions in key Latin American distributor markets that severely restricted trade and the transition to a joint venture in China from our previous distributor model. 
+
+ Net sales in the EMEA region increased $18.5 million, or 8% (7% constant-currency), to $259.2 million in 2014 from $240.7 million in 2013. The increase in net sales in the EMEA region was led by footwear, followed by apparel, accessories and equipment. The net sales increase was concentrated in the Columbia brand and was led by a net sales increase in our EMEA distributor business, followed by our EMEA direct business. 
+ Net sales in Canada increased $32.8 million, or 28% (36% constant-currency), to $151.4 million in 2014 from $118.6 million in 2013. The increase in net sales was led by apparel, accessories and equipment, followed by footwear, and was led by the Columbia brand, followed by the Sorel brand, partially offset by a net sales decrease in the Mountain Hardwear brand. The Canada net sales increase was led by wholesale net sales, followed by an increase in direct-to-consumer net sales. 
+
+ 35 
+
+ Sales by Brand 
+ Net sales by brand are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2014 
+
+ Translation 
+
+ 2014 
+
+ 2013 
+
+ % Change 
+
+ % Change 
+
+ (In millions, except for percentage changes) 
+
+ Columbia 
+ $ 
+ 1,750.3 
+
+ $ 
+ 13.8 
+
+ $ 
+ 1,764.1 
+
+ $ 
+ 1,412.9 
+
+ 24% 
+
+ 25% 
+
+ Sorel 
+ 166.2 
+
+ 3.2 
+
+ 169.4 
+
+ 128.7 
+
+ 29% 
+
+ 32% 
+
+ Mountain Hardwear 
+ 119.8 
+
+ 0.5 
+
+ 120.3 
+
+ 132.5 
+
+ (10)% 
+
+ (9)% 
+
+ prAna 
+ 53.7 
+
+ — 
+
+ 53.7 
+
+ — 
+
+ 100% 
+
+ 100% 
+
+ Other 
+ 10.6 
+
+ 0.2 
+
+ 10.8 
+
+ 10.9 
+
+ (3)% 
+
+ (1)% 
+
+ $ 
+ 2,100.6 
+
+ $ 
+ 17.7 
+
+ $ 
+ 2,118.3 
+
+ $ 
+ 1,685.0 
+
+ 25% 
+
+ 26% 
+
+ The net sales increase in 2014 compared to 2013 was led by the Columbia brand, followed by incremental net sales from the prAna brand and increased Sorel net sales, partially offset by decreased Mountain Hardwear net sales. The increase in Columbia brand net sales was primarily the result of incremental net sales by our China joint venture and increased wholesale and direct-to-consumer net sales in the United States. 
+ Sales by Product Category 
+ Net sales by product category are summarized in the following table: 
+
+ Year Ended December 31, 
+
+ Adjust for 
+
+ Constant- 
+
+ Constant- 
+
+ Reported 
+
+ Foreign 
+
+ currency 
+
+ Reported 
+
+ Reported 
+
+ currency 
+
+ Net Sales 
+
+ Currency 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ Net Sales 
+
+ 2014 
+
+ Translation 
+
+ 2014 
+
+ 2013 
+
+ % Change 
+
+ % Change 
+
+ (In millions, except for percentage changes) 
+
+ Apparel, Accessories and Equipment 
+ $ 
+ 1,676.2 
+
+ $ 
+ 11.9 
+
+ $ 
+ 1,688.1 
+
+ $ 
+ 1,374.6 
+
+ 22% 
+
+ 23% 
+
+ Footwear 
+ 424.4 
+
+ 5.8 
+
+ 430.2 
+
+ 310.4 
+
+ 37% 
+
+ 39% 
+
+ $ 
+ 2,100.6 
+
+ $ 
+ 17.7 
+
+ $ 
+ 2,118.3 
+
+ $ 
+ 1,685.0 
+
+ 25% 
+
+ 26% 
+
+ Net sales of apparel, accessories and equipment increased $301.6 million, or 22% (23% constant-currency), to $1,676.2 million in 2014 from $1,374.6 million in 2013. The increase in apparel, accessories and equipment net sales was led by a net sales increase in the Columbia brand, followed by $53.7 million of incremental prAna brand net sales, and was led by the United States, followed by the LAAP region, Canada and the EMEA region. The net sales increase in apparel, accessories and equipment in the United States was led by our direct-to-consumer business, followed by our wholesale business and incremental prAna brand net sales. The apparel, accessories and equipment net sales increase in the LAAP region consisted of incremental sales by our China joint venture. 
+
+ Net sales of footwear increased $114.0 million, or 37% (39% constant currency), to $424.4 million in 2014 from $310.4 million in 2013. The increase in footwear net sales was led by the Columbia brand, followed by the Sorel brand. The footwear net sales increase was led by the LAAP region, followed by the United States, Canada and the EMEA region. The LAAP footwear net sales increase primarily consisted of incremental sales by our China joint venture. The net sales increase in footwear in the United States was led by our wholesale business, followed by our direct-to-consumer business. 
+ Gross Profit: Gross profit as a percentage of net sales increased to 45.5% in 2014 from 44.1% in 2013. Gross margin expansion was primarily due to 
+
+ • 
+ Improved direct-to-consumer gross margins driven by a stronger product assortment and less promotional activity; 
+
+ 36 
+
+ • 
+ The effect of including in gross profit amounts that were previously recognized as licensing income prior to commencement of the China joint venture; and 
+
+ • 
+ A higher proportion of full-price wholesale sales; 
+
+ partially offset by: 
+
+ • 
+ Increased inventory valuation reserves in our Korean business; and 
+
+ • 
+ Unfavorable foreign currency hedge rates. 
+
+ Selling, General and Administrative Expense: SG&A expense increased $137.4 million, or 22%, to $763.1 million, or 36.3% of net sales, in 2014, from $625.7 million, or 37.1% of net sales, in 2013. The SG&A expense increase was primarily due to: 
+
+ • 
+ Incremental operating costs associated with the China joint venture and prAna; 
+
+ • 
+ Increased demand creation expenses; 
+
+ • 
+ The expansion of our direct-to-consumer operations globally; 
+
+ • 
+ Increased operating costs of our new ERP and related information technology initiatives; and 
+
+ • 
+ Increased personnel and incentive compensation costs; 
+
+ partially offset by: 
+
+ • 
+ Non-recurrence of a 2013 impairment charge to write-down the carrying amount of our Europe distribution center; and 
+
+ • 
+ Favorable foreign currency translation. 
+
+ Depreciation and amortization included in SG&A expense totaled $49.2 million in 2014, compared to $39.6 million in 2013. 
+ Net Licensing Income: Net licensing income decreased $6.8 million to $7.0 million in 2014, compared to $13.8 million in 2013. The decrease in net licensing income was concentrated in the LAAP region and was a result of the effect of including in gross profit amounts that were previously recognized in licensing income prior to the commencement of our China joint venture. 
+ Income Tax Expense: Income tax expense increased to $56.7 million in 2014 from $37.8 million in 2013. Our effective income tax rate decreased to 28.5% from 28.8% in 2013. 
+ Net Income attributable to Columbia Sportswear Company: Net income increased $42.9 million, or 45%, to $137.2 million in 2014 from $94.3 million in 2013. Diluted earnings per share was $1.94 in 2014 compared to $1.36 in 2013. 
+ Liquidity and Capital Resources 
+ Our primary ongoing funding requirements are for working capital, investing activities associated with our ongoing ERP and complementary systems implementations, general corporate needs and the expansion of our global operations. At December 31, 2015 , we had total cash and cash equivalents of $369.8 million compared to $413.6 million at December 31, 2014 . In addition, we had short-term investments of $0.6 million at December 31, 2015 compared to $27.3 million at December 31, 2014 . At December 31, 2015 , approximately 56% of our cash and short-term investments were held by our foreign subsidiaries, where a repatriation of those funds to the United States would likely result in a significant tax expense for us. However, based on the capital and liquidity needs of our foreign operations, as well as the status of current tax law, we intend to indefinitely reinvest these funds outside the United States. In addition, our United States operations do not require the repatriation of these funds to meet our currently projected liquidity needs. 
+
+ 37 
+
+ 2015 compared to 2014 
+ Net cash provided by operating activities was $95.1 million in 2015 , compared to $185.8 million in 2014 . The decrease in cash provided by operating activities was primarily driven by increased inventory levels and related payments for accounts payable, increased payments for income taxes, and increased accounts receivable, partially offset by an increase in net income during 2015 compared to 2014 . The increased inventory levels primarily reflect more timely production and receipt of spring 2016 product compared to spring 2015 product at the same time last year. 
+ Net cash used in investing activities was $43.0 million in 2015 , compared to $184.0 million in 2014 . For 2015 , net cash used in investing activities primarily consisted of $69.9 million for capital expenditures, partially offset by $26.8 million of net sales of short-term investments. For 2014 , net cash used in investing activities primarily consisted of $188.5 million for the net cash purchase of prAna, $60.3 million for capital expenditures, partially offset by $64.7 million in proceeds from net sales of short-term investments. 
+ Net cash used in financing activities was $91.2 million in 2015 , compared to $14.6 million in 2014 . For 2015 , net cash used in financing activities primarily consisted of the repurchase of common stock at an aggregate price of $70.1 million and dividend payments of $43.5 million , partially offset by net proceeds of $12.5 million from the issuance of common stock related to our stock compensation programs. For 2014 , net cash used in financing activities primarily consisted of dividend payments of $39.8 million and the repurchase of common stock at an aggregate price of $15.0 million, partially offset by net proceeds of $19.1 million from the issuance of common stock related to our stock compensation programs. 
+ 2014 compared to 2013 
+
+ Net cash provided by operating activities was $185.8 million in 2014, compared to $274.3 million in 2013. The decrease in cash provided by operating activities was primarily due to increases in inventory and accounts receivable for the year ended December 31, 2014 compared to decreases in the prior year, partially offset by an increase in net income and a larger increase in accounts payable and accrued liabilities for the year ended December 31, 2014 compared to the prior year. 
+
+ Net cash used in investing activities was $184.0 million in 2014, compared to $116.1 million in 2013. For 2014, net cash used in investing activities primarily consisted of $188.5 million for the net cash purchase of prAna and $60.3 million for capital expenditures, including development of our ongoing global ERP system and investments in our direct-to-consumer businesses, partially offset by $64.7 million of net sales of short-term investments. For 2013, net cash used in investing activities primarily consisted of $69.4 million for capital expenditures and $46.8 million for net purchases of short-term investments. 
+
+ Net cash used in financing activities was $14.6 million in 2014, compared to $4.7 million in 2013. For 2014, net cash used in financing activities primarily consisted of dividend payments of $39.8 million and the repurchase of common stock at an aggregate price of $15.0 million, partially offset by net proceeds of $19.1 million from the issuance of common stock related to our stock compensation programs and proceeds from a related party note from our China joint venture partner of $16.1 million. For 2013, net cash used in financing activities primarily consisted of dividend payments of $31.3 million, partially offset by net proceeds of $17.2 million from the issuance of common stock and an $8.0 million capital contribution from our China joint venture partner. 
+ Short-term borrowings and credit lines 
+ We have an unsecured, committed $125.0 million revolving line of credit available to fund our domestic working capital requirements. At December 31, 2015 , no balance was outstanding under this line of credit and we were in compliance with all associated covenants. Internationally, our subsidiaries have operating lines of credit in place guaranteed by the parent company with a combined limit of approximately $84.6 million at December 31, 2015 , of which $2.3 million is designated as a European customs guarantee. At December 31, 2015 , there was $1.9 million outstanding under these lines of credit. 
+ We expect to fund our future working capital expenditures with existing cash, operating cash flows and credit facilities. If the need arises, we may need to seek additional funding. Our ability to obtain additional financing will depend on many 
+
+ 38 
+
+ factors, including prevailing market conditions, our financial condition, and our ability to negotiate favorable terms and conditions. Financing may not be available on terms that are acceptable or favorable to us, if at all. 
+ Our operations are affected by seasonal trends typical in the outdoor apparel and footwear industry and have historically resulted in higher sales and profits in the third and fourth calendar quarters. This pattern has resulted primarily from the timing of shipments of fall season products to wholesale customers in the third and fourth quarters and proportionally higher sales in our direct-to-consumer operations in the fourth quarter, combined with an expense base that is more consistent throughout the year. We believe that our liquidity requirements for at least the next 12 months will be adequately covered by existing cash, cash provided by operations and existing short-term borrowing arrangements. 
+ Contractual obligations 
+ The following table presents our estimated significant contractual commitments (in thousands): 
+
+ Year ended December 31, 
+
+ 2016 
+
+ 2017 
+
+ 2018 
+
+ 2019 
+
+ 2020 
+
+ Thereafter 
+
+ Total 
+
+ Inventory purchase obligations (1) 
+ $ 
+ 313,551 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ $ 
+ 313,551 
+
+ Operating lease obligations (2) 
+ 57,664 
+
+ 54,417 
+
+ 49,024 
+
+ 39,857 
+
+ 33,172 
+
+ 111,241 
+
+ 345,375 
+
+ Long-term debt obligations (3) 
+ 1,070 
+
+ 1,067 
+
+ 16,085 
+
+ — 
+
+ — 
+
+ — 
+
+ 18,222 
+
+ Sponsorships and other (4) 
+ 2,230 
+
+ 2,578 
+
+ 2,253 
+
+ 1,855 
+
+ 175 
+
+ 390 
+
+ 9,481 
+
+ Short-term borrowings 
+ 1,940 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ 1,940 
+
+ ————— 
+ (1) See Inventory Purchase Obligations in Note 14 of Notes to Consolidated Financial Statements. 
+ (2) See Operating Leases in Note 14 of Notes to Consolidated Financial Statements. 
+ (3) Amounts represent interest and principal obligations under our related party note with Swire. See Note 22 of Notes to Consolidated Financial Statements. 
+ (4) Amounts represent sponsorship fees and minimum guaranteed royalty fees with professional teams, leagues, events and individual athletes. Some of these sponsorship agreements provide for additional performance incentives, royalty fees and/or product supply obligations. It is not possible to determine the performance incentive amounts we may be required to pay under these agreements because they are primarily subject to athletic achievements, and it is not possible to determine the royalty fee amounts we may be required to pay under these agreements because they are primarily based on product sales in future periods. In addition, it is not possible to determine how much we will spend on product supply obligations because contracts generally do not stipulate specific cash amounts to be spent on products. The amounts listed above are the fixed minimum amounts required to be paid under these agreements. 
+ We have recorded long-term liabilities for net unrecognized tax benefits related to income tax uncertainties in our Consolidated Balance Sheet at December 31, 2015 of approximately $8.8 million ; however, they have not been included in the table above because we are uncertain about whether or when these amounts may be settled. See Note 11 of Notes to Consolidated Financial Statements. 
+ Quantitative and Qualitative Disclosures About Market Risk 
+ In the normal course of business, our financial position and results of operations are subject to a variety of risks, including risks associated with global financial and capital markets, primarily currency exchange rate risk and, to a lesser extent, interest rate risk and equity market risk. We regularly assess these risks and have established policies and business practices designed to mitigate their effects. We do not engage in speculative trading in any financial or capital market. 
+ Our primary currency exchange rate risk management objective is to mitigate the uncertainty of anticipated cash flows attributable to changes in exchange rates. We focus on mitigating changes in functional currency equivalent cash flows resulting from anticipated U.S. dollar denominated inventory purchases by subsidiaries that use European euros, Canadian dollars, Japanese yen or Korean won as their functional currency. We manage this risk primarily by using currency forward contracts. Additionally, we use foreign currency forward contracts to hedge net balance sheet exposures related primarily to non-functional currency denominated monetary assets and liabilities consisting primarily of cash and cash equivalents, short-term investments, payables and intercompany loans for subsidiaries that use euros, Swiss francs, Canadian dollars, yen, won or Chinese renminbi as their functional currency. 
+ The net fair value of our derivative contracts was favorable by approximately $5.4 million at December 31, 2015 . A 10% unfavorable exchange rate change in the euro, franc, Canadian dollar, yen and renminbi against the U.S. dollar would 
+
+ 39 
+
+ have resulted in the net fair value declining by approximately $27.5 million at December 31, 2015 . Changes in fair value resulting from foreign exchange rate fluctuations would be substantially offset by the change in value of the underlying hedged transactions. 
+ Our negotiated credit facilities generally charge interest based on a benchmark rate such as the London Interbank Offered Rate (“LIBOR”). Fluctuations in short-term interest rates cause interest payments on drawn amounts to increase or decrease. At December 31, 2015 , our credit facilities had an outstanding balance of $1.9 million. 
+ Critical Accounting Policies and Estimates 
+ Management’s discussion and analysis of our financial condition and results of operations are based on our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States of America. The preparation of these financial statements requires us to make various estimates and assumptions that affect reported amounts of assets and liabilities and related disclosure of contingent assets and liabilities at the date of the consolidated financial statements and the reported amounts of revenue and expenses during the reporting period. We believe that the estimates and assumptions involved in the accounting policies described below have the greatest potential impact on our financial statements, so we consider these to be our critical accounting policies and estimates. Because of the uncertainty inherent in these matters, actual results may differ from the estimates we use in applying these critical accounting policies. We base our ongoing estimates on historical experience and various other assumptions that we believe to be important in the circumstances. Many of these critical accounting policies affect working capital account balances, including the policy for revenue recognition, the allowance for doubtful accounts, the provision for potential excess, closeout and slow moving inventory, product warranty, income taxes and stock-based compensation. 
+ Management regularly discusses with our Audit Committee each of our critical accounting estimates, the development and selection of these accounting estimates, and the disclosure about each estimate in Management’s Discussion and Analysis of Financial Condition and Results of Operations. These discussions typically occur at our quarterly Audit Committee meetings and include the basis and methodology used in developing and selecting these estimates, the trends in and amounts of these estimates, specific matters affecting the amount of and changes in these estimates, and any other relevant matters related to these estimates, including significant issues concerning accounting principles and financial statement presentation. 
+ Revenue Recognition 
+ We record wholesale, distributor, e-commerce and licensed product revenues when title passes and the risks and rewards of ownership have passed to the customer. Title generally passes upon shipment to or upon receipt by the customer depending on the terms of sale with the customer. Retail store revenues are recorded at the time of sale. Revenue is recorded net of sales taxes, value added taxes or similar taxes, which are collected on behalf of local taxing authorities. 
+ Where title passes upon receipt by the customer, predominantly in our European wholesale business and in certain of our e-commerce operations, precise information regarding the date of receipt by the customer is not readily available. In these cases, we estimate the date of receipt by the customer based on historical and expected delivery times by geographic location. We periodically test the accuracy of these estimates based on actual transactions. Delivery times vary by geographic location, generally from one to five days. To date, we have found these estimates to be materially accurate. 
+ At the time of revenue recognition, we also provide for estimated sales returns and miscellaneous claims from customers as reductions to revenues. The estimates are based on historical rates of product returns and claims, as well as events and circumstances that indicate changes to historical rates of returns and claims. However, actual returns and claims in any future period are inherently uncertain and thus may differ from the estimates. If actual or expected future returns and claims are significantly greater or lower than the reserves that we have established, we will record a reduction or increase to net revenues in the period in which we make such a determination. 
+ Allowance for Uncollectable Accounts Receivable 
+ We make ongoing estimates of the collectability of our accounts receivable and maintain an allowance for estimated losses resulting from the inability of our customers to make required payments. In determining the amount of the allowance, we consider our historical level of credit losses and we make judgments about the creditworthiness of customers based on ongoing credit evaluations. We analyze specific customer accounts, customer concentrations, credit insurance coverage, standby letters of credit and other forms of collateral, current economic trends, and changes in customer payment terms. 
+
+ 40 
+
+ Continued uncertainty in credit and market conditions may slow our collection efforts if customers experience difficulty accessing credit and paying their obligations, leading to higher than normal accounts receivable and increased bad debt expense. Because we cannot predict future changes in the financial stability of our customers, actual future losses from uncollectable accounts may differ from our estimates and may have a material effect on our consolidated financial position, results of operations or cash flows. If the financial condition of our customers deteriorates and results in their inability to make payments, a larger allowance may be required. If we determine that a smaller or larger allowance is appropriate, we will record a credit or a charge to SG&A expense in the period in which we make such a determination. 
+ Excess, Close-Out and Slow Moving Inventory 
+ We make ongoing estimates of potential excess, close-out or slow moving inventory. We evaluate our inventory on hand considering our purchase commitments, sales forecasts, and historical liquidation experience to identify excess, close-out or slow moving inventory and make provisions as necessary to properly reflect inventory value at the lower of cost or estimated market value. If we determine that a smaller or larger reserve is appropriate, we will record a credit or a charge to cost of sales in the period in which we make such a determination. 
+ Product Warranty 
+ We make ongoing estimates of potential future product warranty costs. When we evaluate our reserve for warranty costs, we consider our product warranty policies, historical claim rates by season, product category and mix, current warranty claim trends, and the historical cost to repair, replace, or refund the original sale. If we determine that a smaller or larger reserve is appropriate, we will record a credit or a charge to cost of sales in the period in which we make such a determination. 
+ Impairment of Long-Lived Assets, Intangible Assets and Goodwill 
+ Long-lived assets are amortized over their estimated useful lives and are measured for impairment only when events or circumstances indicate the carrying value may be impaired. In these cases, we estimate the future undiscounted cash flows to be derived from the asset or asset group to determine whether a potential impairment exists. If the sum of the estimated undiscounted cash flows is less than the carrying value of the asset, we recognize an impairment loss, measured as the amount by which the carrying value exceeds the estimated fair value of the asset. 
+ We review and test our intangible assets with indefinite useful lives and goodwill for impairment in the fourth quarter of each year and when events or changes in circumstances indicate that the carrying amount of such assets may be impaired. Our intangible assets with indefinite lives consist of trademarks and trade names. Substantially all of our goodwill is recorded in the United States segment and impairment testing for goodwill is performed at the reporting unit level. In the impairment test for goodwill, the two-step process first compares the estimated fair value of the reporting unit with the carrying amount of that reporting unit. We estimate the fair value of our reporting units using a combination of discounted cash flow analysis, comparisons with the market values of similar publicly traded companies and other operating performance based valuation methods, as necessary. If step one indicates impairment, step two compares the estimated fair value of the reporting unit to the estimated fair value of all reporting unit assets and liabilities, except goodwill, to determine the implied fair value of goodwill. We calculate impairment as the excess of carrying amount of goodwill over the implied fair value of goodwill. In the impairment tests for trademarks and trade names, we compare the estimated fair value of each asset to its carrying amount. The fair values of trademarks and trade names are generally estimated using a relief from royalty method under the income approach. If the carrying amount of a trademark or trade name exceeds its estimated fair value, we calculate impairment as the excess of carrying amount over the estimate of fair value. 
+ If events or circumstances indicate the carrying value of intangible assets with finite lives may be impaired, we estimate the future undiscounted cash flows to be derived from the asset or asset group to determine whether a potential impairment exists. If the sum of the estimated undiscounted cash flows is less than the carrying value of the asset, we recognize an impairment loss, measured as the amount by which the carrying value exceeds the estimated fair value of the asset. 
+ Impairment charges are classified as a component of SG&A expense. The impairment tests and related fair value estimates are based on a number of factors, including assumptions and estimates for projected sales, income, cash flows, discount rates, remaining useful lives and other operating performance measures. Changes in estimates or the application of alternative assumptions could produce significantly different results. These assumptions and estimates may change in the future due to changes in economic conditions, changes in our ability to meet sales and profitability objectives or changes in our business operations or strategic direction. 
+
+ 41 
+
+ Acquisition Accounting 
+ We account for business combinations using the purchase method, which requires us to allocate the cost of an acquired business to the acquired assets and liabilities based on their estimated fair values at the acquisition date. We recognize the excess of an acquired business' cost over the fair value of the acquired assets and liabilities as goodwill. Determining the fair value of certain assets and liabilities acquired is judgmental in nature and often involves the use of significant estimates and assumptions. We use a variety of information sources to determine the fair value of acquired assets and liabilities and we generally use third party appraisers to assist us in the determination of the fair value and useful lives of identifiable intangible assets. 
+ Income Taxes 
+ We use the asset and liability method of accounting for income taxes. Under this method, we recognize income tax expense for the amount of taxes payable or refundable for the current year and for the amount of deferred tax liabilities and assets for the future tax consequences of events that have been recognized in our financial statements or tax returns. We make assumptions, judgments and estimates to determine our current provision for income taxes, our deferred tax assets and liabilities, and our uncertain tax positions. Our judgments, assumptions and estimates relative to the current provision for income tax take into account current tax laws, our interpretation of current tax laws and possible outcomes of current and future audits conducted by foreign and domestic tax authorities. Changes in tax law or our interpretation of tax laws and the resolution of current and future tax audits could significantly affect the amounts provided for income taxes in our consolidated financial statements. Our assumptions, judgments and estimates relative to the value of a deferred tax asset take into account predictions of the amount and category of future taxable income. Actual operating results and the underlying amount and category of income in future years could cause our current assumptions, judgments and estimates of recoverable net deferred taxes to be inaccurate. Changes in any of the assumptions, judgments and estimates mentioned above could cause our actual income tax obligations to differ from our estimates, which could materially affect our financial position and results of operations. 
+ Our tax provision for interim periods is determined using an estimate of our annual effective tax rate, adjusted for discrete items, if any, that are taken into account in the relevant period. As the calendar year progresses, we periodically refine our estimate based on actual events and earnings by jurisdiction. This ongoing estimation process can result in changes to our expected effective tax rate for the full calendar year. When this occurs, we adjust the income tax provision during the quarter in which the change in estimate occurs so that our year-to-date provision equals our expected annual effective tax rate. 
+ Stock-Based Compensation 
+ Stock-based compensation cost is estimated at the grant date based on the award’s fair value and is recognized as expense over the requisite service period using the straight-line attribution method. We estimate stock-based compensation for stock awards granted using the Black-Scholes option pricing model, which requires various highly subjective assumptions, including volatility and expected option life. Further, we estimate forfeitures for stock-based awards granted, but which are not expected to vest. If any of these inputs or assumptions changes significantly, stock-based compensation expense may differ materially in the future from that recorded in the current period. 
+ Recent Accounting Pronouncements 
+ See “Recent Accounting Pronouncements” in Note 2 of Notes to Consolidated Financial Statements. 
+
+ 42

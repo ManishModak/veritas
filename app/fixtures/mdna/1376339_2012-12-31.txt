@@ -1,0 +1,575 @@
+Item 7. 
+
+ Management’s Discussion and Analysis of Financial Condition and Results of Operations 
+
+ You should read the following discussion and analysis of financial condition and results of operations, together with the financial statements and the related notes appearing at the end of this report. Some of the information contained in this discussion and analysis or set forth elsewhere in this report, including information with respect to our plans and related financing, includes forward-looking statements that involve risks and uncertainties. You should read the “Risk Factors” section of this report for a discussion of important factors that could cause actual results to differ materially from the results described in or implied by the forward-looking statements contained in the following discussion and analysis. 
+
+ The discussion and analysis of our financial condition and results of operations are based on the Company’s financial statements, which have been prepared in accordance with U.S. generally accepted accounting principles. The preparation of these financial statements requires making estimates and assumptions that affect the reported amounts of assets and liabilities and the disclosure of contingent assets and liabilities at the date of the financial statements, as well as the reported revenue, and expenses during the reporting periods. On an ongoing basis, we evaluate such estimates and judgments, including those described in greater detail below. We base our estimates on historical experience and on various other factors that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying value of assets and liabilities that are not readily apparent from other sources. Actual results may differ from these estimates under different assumptions or conditions. 
+
+ Overview 
+
+ MiMedx Group, Inc. and subsidiaries (“MiMedx” or the “Company”) is an integrated developer, manufacturer and marketer of patent protected regenerative biomaterial products and allografts processed from human amniotic membrane. “ Innovations in Regenerative Biomaterials" is the framework behind our mission to give physicians products and tissues to help the body heal itself. Our biomaterial platform technologies include the device technologies HydroFix® and CollaFix TM , and our tissue technologies, AmnioFix® and EpiFix®. Our tissue technologies, processed from the human amniotic membrane, utilize our proprietary Purion® process that was developed by our wholly-owned subsidiary, Surgical Biologics LLC, to produce a safe, effective and minimally manipulated implant. Surgical Biologics is the leading supplier of amniotic tissue, having supplied over 120,000 implants to date to distributors and OEMs for application in the Surgical, Ophthalmic, Orthopedics, Spine, Wound Care and Dental sectors of healthcare. 
+
+ 37 
+
+ Our focus is on soft tissue repair. Our largest addressable market is in wound care consisting of diabetic, venous & pressure ulcers. The Orthopedic, General Surgery, Urology & OBIGYN soft tissue repair market represent significant growth opportunities. 
+
+ Our distribution model is currently comprised of direct sales, an evolving network of third party sales agents and stocking distributors managed by regional sales managers marketing MiMedx branded products. We have several OEM relationships targeting several niche markets. We also market our products internationally through stocking distributors. 
+
+ We have organized an advisory panel of leading physicians to provide insight into our primary fields of interest for new products and technology, as well as guidance and advice with respect to ongoing product development programs. 
+
+ Our core focus is on our EpiFix ® and AmnioFix ® platforms. We are continuing to evaluate our HydroFix ® and CollaFix TM products to determine how to exploit this technology. 
+
+ With the acquisition of Surgical Biologics we have added technologies that do not require a 510(K) or PMA clearance as both the EpiFix® and AmnioFix® platforms are regulated by Section 361 of the Public Health Services Act due to the fact that the products are not more than minimally manipulated and are for homologous use only. Our near-term focus for these products is on working with the private payers and Medicare to assure adequate and timely reimbursement. On January 1, 2012, our CMS C-Code went into effect which allows for Medicare reimbursement in Ambulatory Surgery Centers and Hospital Outpatient Centers for EpiFix®. Additionally, we added the permanent position of Chief Medical Officer to lead the efforts related to reimbursement. We filled the position with a doctor who served for many years as Medical Director for a major private payer and has extensive experience working with Medicare. This individual is also responsible for managing our clinical trials. 
+
+ Critical Accounting Policies 
+
+ We believe that of our significant accounting policies, which are described in Note 2 to our financial statements appearing elsewhere in this report, the following accounting policies involve a greater degree of judgment and complexity. Accordingly, these are the policies we believe are the most critical to aid in fully understanding and evaluating our consolidated financial condition and results of operations. 
+
+ Goodwill and Impairment of Long-Lived Assets 
+
+ Goodwill represents the excess of the purchase price over the fair value of net assets acquired. No goodwill impairment has been recognized during 2012 or 2011. 
+
+ 38 
+
+ The Company reviews its long-lived assets for impairment whenever events or changes in circumstances indicate that the carrying amount of an asset may not be recoverable. Recoverability of assets to be held and used is measured by a comparison of the carrying amount of an asset to future undiscounted cash flows expected to be generated by the asset. If such assets are considered to be impaired, the impairment to be recognized is measured by the amount by which the carrying amount of the assets exceeds the fair value of the assets. Because our test indicated that the carrying value of the intangible assets related to HydroFix® exceeded its fair value, an impairment loss of approximately $1,798,000 was recognized and the intangible asset carrying amount was adjusted to its new basis. The Impairment was reported as a separate line item in the Consolidated Statement of Operations and included Loss From Operations. 
+
+ Judgment and complexity related to goodwill and impairment of long-lived assets involve consideration of: 
+
+ · 
+
+ Significant underperformance relative to expected historical or projected future operating results, 
+
+ · 
+
+ Significant negative industry or economic trends, 
+
+ · 
+
+ Significant decline in the Company’s stock price for a sustained period, or 
+
+ · 
+
+ Significant decline in the Company’s market capitalization relative to net book value. 
+
+ Fair Value Measurements 
+
+ The Company records certain financial instruments at fair value, including: cash equivalents and contingent consideration. The Company may make an irrevocable election to measure other financial instruments at fair value on an instrument-by-instrument basis; although as of December 31, 2012 the Company has not chosen to make any such elections. Fair value financial instruments are recorded in accordance with the fair value measurement framework. 
+
+ The Company also measures certain non-financial assets at fair value on a non-recurring basis. These non-recurring valuations include evaluating assets such as long-lived assets, and non-amortizing intangible assets for impairment; allocating value to assets in an acquired asset group; and applying accounting for business combinations. The Company uses the fair value measurement framework to value these assets and reports these fair values in the periods in which they are recorded or written down. 
+
+ The fair value measurement framework includes a fair value hierarchy that prioritizes observable and unobservable inputs used to measure fair values in their broad levels. These levels from highest to lowest priority are as follows: 
+
+ · 
+
+ Level 1: Quoted prices (unadjusted) in active markets that are accessible at the measurement date for identical assets or liabilities; 
+
+ · 
+
+ Level 2: Quoted prices in active markets for similar assets or liabilities or observable prices that are based on inputs not quoted on active markets, but corroborated by market data; and 
+
+ · 
+
+ Level 3: Unobservable inputs or valuation techniques that are used when little or no market data is available. 
+
+ The determination of fair value and the assessment of a measurement’s placement within the hierarchy requires judgment. Level 3 valuations often involve a higher degree of judgment and complexity. Level 3 valuations may require the use of various cost, market, or income valuation methodologies applied to unobservable management estimates and assumptions. Management’s assumptions could vary depending on the asset or liability valued and the valuation method used. Such assumptions could include: estimates of prices, earnings, costs, actions of market participants, market factors, or the weighting of various valuation methods. The Company may also engage external advisors to assist it in determining fair value, as appropriate. 
+
+ 39 
+
+ Although the Company believes that the recorded fair value of its financial instruments is appropriate, these fair values may not be indicative of net realizable value or reflective of future fair values. 
+
+ Share-based Compensation 
+
+ We follow the provisions of FASB Accounting Standards Codification (“ASC”) 718, “Compensation — Stock Compensation” (ASC 718), previously referred to as Statement of Financial Accounting Standards No. 123R — Share-based Payments which requires the measurement and recognition of compensation expense for all share-based payment awards either modified or granted to employees and directors based upon estimated fair values. The Black-Scholes-Merton option-pricing model, consistent with the provisions of ASC 718, was used to determine the fair value of each option granted. Option valuation models require the input of highly subjective assumptions, including the expected stock price volatility. The Company uses projected volatility rates, which are based upon historical volatility rates, trended into future years. Because the Company’s employee stock options have characteristics significantly different from those of traded options, and because changes in the subjective input assumptions can materially affect the fair value estimate, in management’s opinion, the existing models do not necessarily provide a reliable single measure of the fair value of the Company’s options. 
+
+ Debt Instruments with Detachable Warrants and Beneficial Conversion Features 
+
+ According to ASC470 “Debt” Instruments with Detachable Warrants, proceeds from the sale of convertible debt instruments with stock purchase warrants (detachable call options) shall be allocated to the two elements based upon the relative fair values of the debt instrument without the warrants and of the warrants themselves at the time of issuance. The Black-Scholes-Merton pricing model, consistent with the provisions of ASC 470, was used to determine the fair value of each warrant granted. The portion of the proceeds so allocated to the warrants is accounted for as paid-in capital. The remainder of the proceeds is allocated to the debt instrument portion of the transaction. Also, the embedded beneficial conversion feature present in the convertible instrument is recognized separately at issuance by allocating a portion of the proceeds equal to the intrinsic value of that feature to additional paid-in capital. 
+
+ Contingent Consideration 
+
+ The Agreement and Plan of Merger between the Company and the former owners of Surgical Biologics (“the Merger”) dated January 5, 2011 involved the potential for the payment of future contingent consideration in MiMedx common stock. The contingent consideration was originally recorded at the estimated fair value of the contingent milestone payment on the acquisition date. Payment of the additional consideration was contingent on the acquired company reaching sixty percent (60%) of the excess of the amniotic tissue based gross revenues in calendar year 2011 over gross revenues in calendar year 2010 minus any FDA approval costs. The payment was made as the aggregate number of shares of MiMedx common stock per a specified formula in the Agreement and Plan of Merger. At December 31, 2011 the fair value of the contingent consideration tied to 2011 revenue was calculated to be approximately $3,185,000 and resulted in the issuance of approximately 2,632,576 shares of MiMedx common stock in April 2012. In addition the Company shall deliver to the former owners of Surgical Biologics an aggregate number of shares of the Company equal to thirty percent (30%) of the Gross Revenues in calendar year 2012 over the Gross Revenues in calendar year 2011 minus any FDA approval costs. The fair value of the contingent milestone consideration was remeasured at the estimated fair value as of December 31, 2012 with the change in fair value recognized as income or expense within Other Income (Expense) in the consolidated statements of earnings. At December 31, 2012, the fair value of the contingent consideration tied to 2012 revenue was calculated to be approximately $5,792,000 and the liability adjusted and recorded as a non-current liability in the consolidated balance sheet and is due to be paid in MiMedx common stock not more than 30 days following the filing of our Form 10-K. 
+
+ 40 
+
+ Recently Adopted Accounting Pronouncements 
+
+ In January 2012 the Company adopted Accounting Standards Update (“ASU”) 2011-04, Fair Value Measurement (Topic 820): Amendments to Achieve Common Fair Value Measurement and Disclosure Requirements in U.S. GAAP and IFRSs, which clarifies some existing concepts and expands the disclosures for fair value measurements that are estimated using significant unobservable (Level 3) inputs. The adoption of ASU 2011-04 did not have a material effect on the Company’s financial condition, profitability, and/or cash flows. 
+
+ In January 2012 the Company adopted ASU 2011-05, Comprehensive Income (Topic 220): Presentation of Comprehensive Income. The amendments to the Codification in this ASU will require companies to present the components of net income and other comprehensive income either as one continuous statement or as two consecutive statements. It eliminates the option to present components of other comprehensive income as part of the statement of changes in stockholders’ equity. The standard does not change the items which must be reported in other comprehensive income, how such items are measured or when they must be reclassified to net income. This standard is effective for interim and annual periods beginning after December 15, 2011. Because this ASU impacts presentation only, it had no effect on our financial condition, results of operations or cash flows. 
+
+ In January 2012 the Company adopted ASU 2011-08, Intangibles-Goodwill and Other (Topic 350): Testing Goodwill for Impairment, which gives entities testing goodwill for impairment the option of performing a qualitative assessment before calculating the fair value of a reporting unit in step 1 of the goodwill impairment test. The adoption of ASU 2011-08 did not have a material effect on the Company’s financial condition, profitability, and cash flows. 
+
+ In July 2012, the FASB issued ASU No. 2012-02, which amends the guidance in ASC 350-30 on testing indefinite-lived intangible assets, other than goodwill, for impairment. Under the revised guidance, companies testing an indefinite-lived intangible asset for impairment have the option of performing a qualitative assessment before calculating the fair value of the asset (i.e. step 1 of the impairment test). If companies determine, on the basis of qualitative factors, that the fair value of the indefinite-lived intangible asset is more likely than not less than the carrying amount, the two-step impairment test would be required. This update is effective for annual and interim impairment tests performed for fiscal years beginning after September 15, 2012, with early adoption permitted. The Company adopted the revised guidance, and it did not have a material impact on the Company’s Consolidated Financial Statements. 
+
+ 41 
+
+ Results of Operations for the year ended December 31, 2012, compared to the year ended December 31, 2011 
+
+ Revenue 
+
+ Total revenue increased from approximately $7,760,000 in 2011 to $27,054,000 in 2012. The increase in revenue as compared to the prior year is due primarily to increased sales of our amniotic membrane tissue products, EpiFix ® and AmnioFix ® . The Company experienced an approximate increase of $8,508,000 or 189% in demand in the Surgical and Sports Medicine market which is predominantly sold through independent sales agents and distributors. This growth over the prior year was driven by the launch of AmnioFix ® injectable as well as additional surgical applications such as prostatectomy surgery where the anti-scarring properties of the tissue were deemed to be beneficial. The growth in Wound Care market revenue of approximately $10,239,000 or 870% as compared to the prior year was driven by the addition of a direct sales force starting in the third quarter and continuing into the fourth quarter focusing on Government accounts. The sales executives hired have extensive experience in the wound care sector and maintain direct relationships with the physicians. Sales to government accounts are sold through a distributor who handles all of the contracting matters including invoicing and collection. This distributor is also a service disabled veteran owned small business. The Other markets category which includes our Ophthalmic and Dental tissue based products which are sold on an OEM basis as well as our HydroFix ® medical device product sold through distributors increased approximately $546,000 or26% as compared to prior year. 
+
+ Tissue Processing Costs and Cost of Products Sold 
+
+ Cost of products sold as a percentage of revenue improved to 19.2% from 43.3% as compared to prior year. The improvement was due primarily to the increase in direct sales revenue, improved product mix and higher production rates that absorb a greater percentage of fixed manufacturing costs. During the year the Company increased its clean room capacity from one line to three lines, added 32 tissue processors to fully staff the new production lines and tripled the number of tissue recovery technicians. The expansion of production capacity was driven by increased demand for processed tissue. The new hires were given extensive training resulting in increasing daily processing rates over the course of the year. Personnel costs represent approximately $3,087,000 or 42.2% of total manufacturing, quality assurance and recovery spending for the year ended December 31, 2012. 
+
+ Beginning in 2012, the Company decided to allocate both depreciation expense and share-based compensation to each functional area. These expenses were reclassified in the prior year to maintain comparability. The amount of depreciation expense in cost of products sold was approximately $156,000 and $105,000, and the amount of share-based compensation in cost of products sold was $98,000 for the years ended December 31, 2012 and 2011, respectively. 
+
+ Research and Development Expenses 
+
+ Our research and development expenses (“R&D expenses”) decreased approximately $92,000 or 3.1% to $2,885,000 during the year ended December 31, 2012, compared to approximately $2,976,000 in the prior year. The decrease is primarily related to the closure of our Tampa research facility in mid-2011, along with decreased spending on animal studies for our CollaFix™ and HydroFix® products. Approximately $783,000, or 27.1%, of R&D expenses for the year ended December 31, 2012 were attributable to personnel costs, compared to approximately $1,186,000 or 39.8% for the year ended December 31, 2011. Clinical study costs were approximately $667,000 and $761,000 for the years ended December 31, 2012 and 2011, respectively. This decrease of approximately $94,000 is a result of lower costs in animal studies related to our CollaFix™ and HydroFix® products. It is expected that expenses related to clinical studies will increase in subsequent quarters driven by new market opportunities and our reimbursement efforts. Spending on legal costs related to patent filings tripled to $611,000 for the year ended December 31, 2012 from $204,000 for the same period in 2011. The increase was driven by the Company’s focus on building a strong patent portfolio related to our EpiFix® and AmnioFix® platforms. Additionally, as described above in Cost of Products Sold, beginning in 2012, we decided to allocate both depreciation expense and share-based compensation expense to the appropriate functional areas, and have reclassified prior year amounts to maintain comparability. During the years ended December 31, 2012 and 2011, we recorded approximately $120,000 and $119,000 for depreciation expense, respectively, and approximately $289,000 and $255,000 for share-based compensation expense, respectively, to research and development. 
+
+ 42 
+
+ Our research and development expenses consist primarily of internal personnel costs, fees paid to external consultants, and supplies and instruments used in our laboratories. During the current year, the Company filed 3 international patent applications for the amniotic tissue technology and 1 international patent application for the collagen technology. The Company also filed 11 US patent applications, including 6 non-provisional applications for the amnion technology, 4 provisional applications for the amnion technology and 1 non-provisional application for the collagen technology. Additionally, during the current year the Company was granted 1 US patent for the amnion technology, 3 US patents for the hydrogel technology, 1 US patent for the collagen technology, and 2 European patents for the collagen technology. We expect overall R&D spending to increase as we continue to invest in our patent portfolio as well as scientific and clinical studies related to our amnion technology. 
+
+ Selling, General and Administrative Expenses 
+
+ Selling, General and Administrative expenses for the year ended December 31, 2012, increased approximately $9,789,000 or 87.5% to $20,971,000 compared to $11,181,000 for the year ended December 31, 2011. The increase was driven by costs associated with building our direct sales organization for government accounts and commercial accounts for wound care, building a customer service and sales training organization as well as increased commissions due to higher sales volume paid to both company personnel as well as third party representatives and distributors. Total headcount increased by 57 full and part time associates from 23 at the beginning of the year to 80 as of December 31, 2012. Also contributing to the increase was higher spending on support costs related to medical reimbursement including our reimbursement hotline, our information technology infrastructure to help manage the growth of the business, increased marketing costs including trade shows, increased share based compensation expense and a provision for anticipated costs associated with its management incentive program. 
+
+ Selling, General and Administrative expenses consist of personnel costs, professional fees, sales commissions, sales training costs, industry trade show fees and expenses, product promotions and product literature costs, facilities costs and other sales, marketing and administrative costs, depreciation and amortization, and share-based compensation. Personnel costs excluding sales commissions and bonuses represent approximately $6,288,000 or 30.0% of total Selling, General and Administrative expenses for the year ended December 31, 2012, compared to approximately $3,144,000 or 28.1% in the year ended December 31, 2011. Sales commissions to both MiMedx personnel as well as third party representatives and distributors totaled $3,884,000 or 18.5% of total Selling, General and Administrative expenses for the year ended December 31, 2012, compared to $547,000 or 4.9% in the prior year. The increase was driven by higher sales volume and the move to a direct sales model for wound care. 
+
+ 43 
+
+ Historically, the Company has reported depreciation and share-based compensation expense as part of Selling, General and Administrative expense. The Company decided to report these expenses in each functional area in order to more accurately present all of the costs attributable to each functional area. During the years ended December 31, 2012 and 2011, we recorded a total of approximately $465,000 and $447,000 in depreciation expense allocated to each functional area per the table below. The overall $19,000 increase in depreciation was attributable to the purchase of additional production and office equipment and leasehold build-out to support our revenue growth and additional staff. We depreciate our assets on a straight-line basis, principally over five to seven years. 
+
+ The following table shows the allocation of depreciation for the years ended December 31, 2012 and 2011, to operating departments: 
+
+ Year Ended December 31, 
+
+ Depreciation expense included in: 
+
+ 2012 
+
+ 2011 
+
+ Cost of products sold 
+
+ $ 
+ 155,987 
+
+ $ 
+ 104,950 
+
+ Research and development 
+
+ 120,260 
+
+ 118,565 
+
+ Selling, general and administrative 
+
+ 189,120 
+
+ 222,987 
+
+ $ 
+ 465,367 
+
+ $ 
+ 446,502 
+
+ Share-based compensation for the years ended December 31, 2012 and 2011, was approximately $2,539,000 and $1,659,000, respectively, an increase of approximately $880,000 or 53.0%. Increased employee stock option grants reflecting management’s philosophy of aligning employee compensation with investor objectives and the increase in the market price of MiMedx common stock was the primary reason for the increase in expense. The following table shows the allocation of share-based compensation for the years ended December 31, 2012 and 2011, to operating departments: 
+
+ Year Ended December 31, 
+
+ Share-based compensation included in: 
+
+ 2012 
+
+ 2011 
+
+ Cost of products sold 
+
+ $ 
+ 97,970 
+
+ $ 
+ 98,366 
+
+ Research and development 
+
+ 289,341 
+
+ 254,997 
+
+ Selling, general and administrative 
+
+ 2,151,410 
+
+ 1,305,720 
+
+ $ 
+ 2,538,721 
+
+ $ 
+ 1,659,083 
+
+ We recorded approximately $1,380,000 and $1,336,000 in amortization expense related to intangible assets in the years ending December 31, 2012 and 2011, respectively. The increase of approximately $45,000 is the result of additional amortization recognized in the current year related to our development costs of our AmnioFix ® injectable product that we began selling in early 2012. We amortize our intangible assets over a period of three to fourteen years, which we believe represents the remaining useful lives of the patents underlying the licensing rights and intellectual property. We do not amortize goodwill but we test at least annually our goodwill for impairment and periodically evaluate other intangibles for impairment based on events or changes in circumstances as they occur. 
+
+ 44 
+
+ Net Interest Expense 
+
+ We recorded financing and net interest expense of approximately $2,307,000 during the year ended December 31, 2012, compared with approximately $433,000 of financing and net interest expense during the year ended December 31, 2011. The increase of approximately $1,874,000 is primarily due to interest related to our Convertible Senior Secured Promissory Notes, which were issued during the last quarter of 2011. The following table summarizes the interest charges for the yearsended December 31, 2012 and 2011. 
+
+ Year Ended December 31, 
+
+ 2012 
+
+ 2011 
+
+ Amortization of 
+
+ Debt Discount 
+
+ Accrued 
+
+ Interest 
+
+ Interest Expense, 
+
+ net 
+
+ Total 
+
+ Amortization of 
+
+ Debt Discount 
+
+ Accrued 
+
+ Interest 
+
+ Interest Expense, 
+
+ net 
+
+ Total 
+
+ Convertible Line of Credit with Related Party 
+
+ $ 
+ 561,202 
+
+ $ 
+ 60,904 
+
+ $ 
+ — 
+
+ $ 
+ 622,106 
+
+ $ 
+ 33,254 
+
+ $ 
+ 42,726 
+
+ $ 
+ — 
+
+ $ 
+ 75,980 
+
+ Convertible Debt related to acquisition 
+
+ 170,509 
+
+ 21,078 
+
+ — 
+
+ 191,587 
+
+ 266,991 
+
+ 49,315 
+
+ — 
+
+ 316,306 
+
+ Convertible Senior Secured Promissory Notes 
+
+ 961,941 
+
+ 500,000 
+
+ — 
+
+ 1,461,941 
+
+ 14,907 
+
+ 7,732 
+
+ — 
+
+ 22,639 
+
+ Deferred financing related to Senior Secured Promissory Notes 
+
+ 20,449 
+
+ — 
+
+ — 
+
+ 20,449 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ Other 
+
+ — 
+
+ — 
+
+ 10,910 
+
+ 10,910 
+
+ — 
+
+ — 
+
+ 18,045 
+
+ 18,045 
+
+ $ 
+ 1,714,101 
+
+ $ 
+ 581,982 
+
+ $ 
+ 10,910 
+
+ $ 
+ 2,306,993 
+
+ $ 
+ 315,152 
+
+ $ 
+ 99,773 
+
+ $ 
+ 18,045 
+
+ $ 
+ 432,970 
+
+ Contractual Commitments 
+
+ The table below sets forth our known contractual obligations as of December 31, 2012: 
+
+ less than 
+
+ More 
+
+ than 
+
+ Contractual Obligations 
+
+ TOTAL 
+
+ 1 year 
+
+ 1-3 years 
+
+ 3-5 years 
+
+ 5 years 
+
+ Convertible senior secured promissory notes (a) 
+
+ $ 
+ 5,313,645 
+
+ $ 
+ 5,313,645 
+
+ — 
+
+ — 
+
+ Capital lease obligation 
+
+ 87,041 
+
+ 22,510 
+
+ 60,135 
+
+ 4,395 
+
+ — 
+
+ Operating lease obligations 
+
+ 482,886 
+
+ 350,696 
+
+ 132,190 
+
+ — 
+
+ — 
+
+ Royalty payments 
+
+ 600,000 
+
+ 50,000 
+
+ 150,000 
+
+ 150,000 
+
+ 250,000 
+
+ $ 
+ 6,483,572 
+
+ $ 
+ 5,736,851 
+
+ $ 
+ 342,325 
+
+ $ 
+ 154,395 
+
+ $ 
+ 250,000 
+
+ (a) 
+
+ In January and February of 2013 all note holders elected to convert their notes including the Company’s Chairman and CEO, resulting in the issuance of 5,271,963 shares of common stock which represents the face value of their respective notes plus accrued but unpaid interest. The Company’s Chairman and CEO received 532,260 shares of common stock upon conversion of his note. 
+
+ Off-Balance Sheet Arrangements 
+
+ We have no off-balance sheet arrangements. 
+
+ Liquidity and Capital Resources 
+
+ Revenue continues to increase quarter over quarter while management maintains tight controls over spending. As of December 31, 2012, the Company had approximately $6,754,000 of cash and cash equivalents. The Company reported total current assets of approximately $18,089,000 at December 31, 2012 and total current liabilities of approximately $5,071,000 at December 31, 2012. The resulting current ratio for the period improved to 3.6 as compared to 3.0 as of December 31, 2011 when current liabilities are adjusted for approximately $2,425,000 of the current portion of long term debt convertible into MiMedx common stock. Management believes that its anticipated cash from operating and financing activities and existing cash and cash equivalents will enable the Company to meet its operational liquidity needs and fund its planned investing activities for the next year. For our long-term capital requirements, the company may seek additional debt and/or equity financing. 
+
+ 45 
+
+ Discussion of Cash Flows 
+
+ Net cash used in operations during the year ended December 31, 2012, decreased approximately $3,280,000 to $3,385,000 compared to $6,665,000 used in operating activities for the year ended December 31, 2011, primarily attributable to our increased sales activity and improved gross margins. 
+
+ Net cash used in investing activities during the year ended December 31, 2012, decreased approximately $120,000 to $583,000 compared to $703,000 used in investing activities for the year ended December 31, 2011. 2012 activity included higher equipment purchases of approximately $97,000, while 2011 activity included approximately $466,000 related to the Surgical Biologics acquisition offset by a grant from the state of Georgia of $250,000. 
+
+ Net cash flows from financing activities during the year ended December 31, 2012 decreased approximately $3,529,000 to $6,610,000 as compared to $10,139,000 during the year ended December 31, 2011. Cash flows from financing activities during the current year include approximately $6,001,000 received from the exercise of warrants, $1,052,000 received from the exercise of stock options, $427,000 in payments related to the acquisition of Surgical Biologics, and $16,000 in payments on an equipment lease. 
+
+ Due to the material amount of non-cash related items included in the Company results of operations, the Company has developed an Adjusted EBITDA metric which provides management with a clearer view of operational use of cash (see the table below). The Adjusted EBITDA for 2012 was approximately $2,394,000 which is an improvement of approximately $8,708,000 as compared to the prior year. This improvement was the result of increased revenue and improved gross margins. 
+
+ 46 
+
+ We use various numerical measures in investor conference calls, investor meetings and other forums which are or may be considered “Non-GAAP financial measures” under Regulation G. We have provided below for your reference, supplemental financial disclosure for these measures, including the most directly comparable GAAP measure and an associated reconciliation. The following table provides reconciliation of reported Net Loss on a GAAP basis to Adjusted EBITDA defined as Earnings before Interest, Taxes, Depreciation, Amortization and Share-Based Compensation: 
+
+ Year Ended December 31, 
+
+ 2012 
+
+ 2011 
+
+ Net Loss (Per GAAP) 
+
+ $ 
+ (7,662,376 
+ ) 
+
+ $ 
+ (10,193,986 
+ ) 
+
+ Add back: 
+
+ Financing expense associated with beneficial conversion of note payable issued in conjunction with acquisition 
+
+ 170,509 
+
+ 266,991 
+
+ Financing expense associated with beneficial conversion of Line of Credit with Related Party 
+
+ 561,202 
+
+ 33,254 
+
+ Financing expense associated with beneficial conversion of Senior Secured Promissory Notes 
+
+ 982,390 
+
+ 14,907 
+
+ Other interest expense, net 
+
+ 592,891 
+
+ 117,818 
+
+ Depreciation Expense 
+
+ 465,367 
+
+ 446,502 
+
+ Amortization Expense 
+
+ 1,380,241 
+
+ 1,335,908 
+
+ Employee Share Based Compensation 
+
+ 2,075,680 
+
+ 1,307,869 
+
+ Other Share Based Compensation 
+
+ 463,041 
+
+ 351,214 
+
+ Impairment of Intangible Assets 
+
+ 1,798,495 
+
+ - 
+
+ Fair Value Adjustment of Earn-out Liability 
+
+ 1,567,050 
+
+ 5,803 
+
+ Income (Loss) Before Interest, Taxes, Depreciation, Amortization and Share Based Compensation 
+
+ $ 
+ 2,394,490 
+
+ $ 
+ (6,313,720 
+ ) 
+
+ Inflation 
+
+ We do not believe that the rate of inflation has had a material effect on our operating results. However, inflation could adversely affect our future operating results.

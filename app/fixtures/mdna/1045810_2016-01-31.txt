@@ -1,0 +1,1109 @@
+ITEM 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS 
+
+ The following discussion and analysis of our financial condition and results of operations should be read in conjunction with “Item 1A. Risk Factors”, “Item 6. Selected Financial Data”, our Consolidated Financial Statements and related Notes thereto, as well as other cautionary statements and risks described elsewhere in this Annual Report on Form 10-K, before deciding to purchase, hold or sell shares of our common stock. 
+
+ Overview 
+
+ Our Company and Our Businesses 
+
+ NVIDIA is the world leader in visual computing. NVIDIA has transformed into a specialized platform company that targets four large markets - Gaming, Professional Visualization, Datacenter and Automotive - where visual computing is essential and valued. 
+
+ Our two reportable segments - GPU and Tegra Processor - are based on a single underlying graphics architecture. From our proprietary processors, we have created platforms that address the four large markets where our visual computing expertise is critically important. We are focused on delivering value through PC, mobile and cloud architectures. Our vertical integration enables us to bring together hardware, system software, programmable algorithms, systems and services to create unique value for the markets we serve. 
+
+ Our GPU product brands are aimed at specialized markets including GeForce for gamers; Quadro for designers; Tesla for researchers and analysts focused on artificial intelligence, deep learning and big-data; and GRID for cloud-based visual computing users. We also integrate our GPUs into powerful mobile system-on-a-chip (SOC) processors, which drive supercomputing capabilities for tablets and online gaming and entertainment devices, as well as autonomous robots, drones and cars. Our Tegra brand integrates an entire computer onto a single chip, incorporating GPUs and multi-core CPUs with audio, video and input/output capabilities. 
+
+ Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorporated in Delaware in April 1998. 
+
+ 26 
+
+ Table of Contents 
+
+ Recent Developments, Future Objectives and Challenges 
+
+ Fiscal Year 2016 Summary 
+
+ Year Ended 
+
+ January 31, 
+2016 
+
+ January 25, 
+ 2015 
+
+ Change 
+
+ (In millions, except per share data) 
+
+ Revenue 
+ $ 
+ 5,010 
+
+ $ 
+ 4,682 
+
+ up 7% 
+
+ Gross margin 
+ 56.1 
+ % 
+
+ 55.5 
+ % 
+
+ up 60 bps 
+
+ Operating expenses 
+ $ 
+ 2,064 
+
+ $ 
+ 1,840 
+
+ up 12% 
+
+ Income from operations 
+ $ 
+ 747 
+
+ $ 
+ 759 
+
+ down 2% 
+
+ Net income 
+ $ 
+ 614 
+
+ $ 
+ 631 
+
+ down 3% 
+
+ Net income per diluted share 
+ $ 
+ 1.08 
+
+ $ 
+ 1.12 
+
+ down 4% 
+
+ Revenue grew 7% in fiscal year 2016 to a record $5.01 billion. GPU revenue was $4.19 billion, up 9% from the previous year, reflecting growth in GeForce GPUs for gaming and Tesla products for datacenter. Tegra Processor revenue was $559 million, down 3% from the previous year, reflecting a decline in Tegra products for OEMs, partially offset by an increase in Tegra products for automotive and development services. License revenue from our patent license agreement with Intel remained flat at $264 million for fiscal year 2016. 
+
+ Gross margin for fiscal year 2016 was a record 56.1%, up 60 basis points from the previous year, led by the strength in GPU business revenue partially offset by lower Tegra Processor business gross margins. 
+
+ Operating expenses for fiscal year 2016 were $2.06 billion, up from $1.84 billion in the previous year. Income from operations for fiscal year 2016 was $747 million, down from $759 million in the previous year. However, these amounts for fiscal year 2016 included $131 million in restructuring and other charges for the wind-down of our Icera modem operations and $70 million in legal fees associated with our litigation against Samsung and Qualcomm. 
+
+ Net income for fiscal year 2016 was $614 million and net income per diluted share was $1.08, down from $631 million and $1.12, respectively, in the previous year. These decreases were driven by our legal fees and our restructuring and other charges, partially offset by revenue and gross margin growth. 
+
+ We returned $800 million to shareholders in fiscal year 2016 through share repurchases and quarterly cash dividends, and we intend to return approximately $1.00 billion to shareholders in fiscal year 2017. 
+
+ Cash, cash equivalents and marketable securities were $5.04 billion as of January 31, 2016, up from $4.62 billion as of January 25, 2015, and cash flow from operating activities was $1.18 billion for fiscal year 2016, up from $906 million in the previous year. 
+
+ 27 
+
+ Table of Contents 
+
+ GPU Business 
+
+ During fiscal year 2016, we released many new products, including the GeForce GTX TITAN X, GeForce GTX 980 Ti, GeForce GTX 980 for notebook, and the GeForce GTX 950. These GPUs deliver better performance and power efficiency than their predecessors and helped double the number of users of our GeForce Experience PC gaming platform from a year earlier. Additionally, we released NVIDIA GameWorks VR, a software development kit that creates more immersive gameplay on virtual reality-ready desktops and notebooks and enables professional designers to bring virtual reality to applications. We also announced the GeForce GTX VR Ready program to help users discover systems that will provide optimized virtual reality experiences. 
+
+ We introduced the Quadro M6000, a powerful professional GPU, and the Quadro Visual Computing Appliance, which contains eight M6000 GPUs. We also rolled out NVIDIA Iray plugins for Autodesk Maya and Autodesk 3ds Max, which enable users to create designs incorporating real-world lights and materials faster and easier than before, and enabled professional designers to bring virtual reality to applications, with the launch of NVIDIA DesignWorks VR. 
+
+ We announced our next-generation Pascal GPU architecture. This architecture is expected to accelerate deep learning applications faster than our current-generation Maxwell processors. In addition, we unveiled our next generation virtualized graphics platform - NVIDIA GRID 2.0, which delivers graphics-intensive applications to connected devices. We also shipped cuDNN 3.0, which improves performance of deep learning training on GPUs. 
+
+ Further, we announced that the Swiss Federal Office of Meteorology and Climatology was the first major national weather service to use a GPU-accelerated supercomputer to improve daily forecasts. We introduced an end-to-end hyperscale datacenter deep learning platform - consisting of two accelerators, the NVIDIA Tesla M40 and NVIDIA Tesla M4 - that lets web-services companies accelerate deep learning workloads. In addition, we announced that leading web-services companies were increasingly adopting our accelerated service platform to power the machine learning and high performance computing applications. 
+
+ Tegra Processor Business 
+
+ For the automotive market, we are partnering with several companies to use our NVIDIA DRIVE PX platform - a car computer that utilizes deep learning to enable self-driving capabilities - in their autonomous driving efforts. We launched NVIDIA DRIVE™ PX 2, a powerful engine for in-vehicle artificial intelligence and announced that Volvo will use DRIVE PX 2 in their autonomous-car pilot program next year. We were featured in new production vehicles and concept cars with NVIDIA-powered digital cockpits, including Mercedes-Benz, Audi, Porsche, Bentley and Honda, at the International Auto Show in Frankfurt, Germany, and also furthered our relationship with Tesla Motors, which introduced the Model X equipped with an NVIDIA-powered infotainment system and digital instrument cluster. 
+
+ During fiscal year 2016, we launched the NVIDIA SHIELD Android TV device and GeForce NOW, which allows players to stream video games from the cloud to their SHIELD devices. 
+
+ 28 
+
+ Table of Contents 
+
+ Critical Accounting Policies and Estimates 
+
+ Management’s discussion and analysis of financial condition and results of operations are based upon our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States, or U.S. GAAP. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, revenue, cost of revenue, expenses and related disclosure of contingencies. On an on-going basis, we evaluate our estimates, including those related to revenue recognition, inventories, income taxes, goodwill, cash equivalents and marketable securities, stock-based compensation, and litigation, investigation and settlement costs and other contingencies. We base our estimates on historical experience and on various other assumptions that are believed to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities. 
+
+ We believe the following critical accounting policies affect our significant judgments and estimates used in the preparation of our consolidated financial statements. Our management has discussed the development and selection of these critical accounting policies and estimates with the Audit Committee of our Board of Directors. The Audit Committee has reviewed our disclosures relating to our critical accounting policies and estimates in this Annual Report on Form 10-K. 
+
+ Revenue Recognition 
+
+ Product Revenue 
+
+ We recognize revenue from product sales when persuasive evidence of an arrangement exists, the product has been delivered, the price is fixed or determinable and collection of the related receivable is reasonably assured. 
+
+ For sales to certain distributors with rights of return for which the level of returns cannot be reasonably estimated, our policy is to defer recognition of revenue and related cost of revenue until the distributors resell the product and, in some cases, when customer return rights lapse. 
+
+ Our customer programs primarily involve rebates, which are designed to serve as sales incentives to resellers of our products in various target markets. We account for rebates as a reduction of revenue and accrue for 100% of the potential rebates and do not apply a breakage factor. While we have a long history of rebate arrangements with OEMs, we believe we are unable to apply our historical experience to reliably estimate the amount of rebates that will eventually be claimed by individual OEMs. In such cases, the OEMs may not be our direct customers and therefore the quantity and mix of demand they place on their CEMs/ODMs may shift as we introduce new generations and iterations of products and as we experience changes in new competitor offerings. In addition, we typically find that approximately 95% of the rebates we accrue each year are eventually claimed, which is substantially close to 100%, and that this percentage varies by program and by customer. We recognize a liability for these rebates at the later of the date at which we record the related revenue or the date at which we offer the rebate. Rebates typically expire six months from the date of the original sale, unless we reasonably believe that the customer intends to claim the rebate. Unclaimed rebates are reversed to revenue, the amount of which typically represents less than 0.5% of total revenue. 
+
+ Our customer programs also include marketing development funds, or MDFs. MDFs represent monies paid to retailers, system builders, OEMs, distributors, add-in card partners and other channel partners that are earmarked for market segment development and expansion and typically are designed to support our partners’ activities while also promoting NVIDIA products. Depending on market conditions, we may take actions to increase amounts offered under customer programs, possibly resulting in an incremental reduction of revenue at the time such programs are offered. We account for MDFs as a reduction of revenue and apply a breakage factor to certain types of MDF program accruals for which we believe we can make a reasonable and reliable estimate of the amount that will ultimately be unclaimed. 
+
+ We also record a reduction to revenue by establishing a sales return allowance for estimated product returns at the time revenue is recognized, based primarily on historical return rates. However, if product returns for a particular fiscal period exceed historical return rates we may determine that additional sales return allowances are required to properly reflect our estimated exposure for product returns. 
+
+ 29 
+
+ Table of Contents 
+
+ License and Development Revenue 
+
+ For license arrangements that require significant customization of our intellectual property components, we generally recognize the related revenue over the period that services are performed. For most license and service arrangements, we determine progress to completion based on actual cost incurred to date as a percentage of the estimated total cost required to complete the project. We periodically evaluate the actual status of each project to ensure that the estimates to complete each contract remain accurate. Revenue recognized in any period is dependent on our progress toward completion of projects in progress. Significant management judgment and discretion are used to estimate total cost. Any changes in or deviations from these estimates could have a material effect on the amount of revenue we recognize in any period. 
+
+ For license arrangements that do not require significant customization but where we are obligated to provide further deliverables over the term of the license agreement, we record revenue over the life of the license term, with consideration received in advance of the performance period classified as deferred revenue. 
+
+ Please refer to Note 1 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information. 
+
+ Inventories 
+
+ Inventory cost is computed on an adjusted standard basis, which approximates actual cost on an average or first-in, first-out basis. We charge cost of sales for inventory provisions to write down our inventory to the lower of cost or estimated market value or to completely write off obsolete or excess inventory. Most of our inventory provisions relate to the write-off of excess quantities of products, based on our inventory levels and future product purchase commitments compared to assumptions about future demand and market conditions. 
+
+ Situations that may result in excess or obsolete inventory include changes in business and economic conditions, changes in consumer confidence caused by changes in market conditions, sudden and significant decreases in demand for our products, inventory obsolescence because of rapidly changing technology and customer requirements, failure to estimate customer demand properly for older products as newer products are introduced, or unexpected competitive pricing actions by our competition. In addition, cancellation or deferral of customer purchase orders could result in our holding excess inventory. Also, because we often sell a substantial portion of our products in the last month of each quarter, we may not be able to reduce our inventory purchase commitments in a timely manner in response to customer cancellations or deferrals. 
+
+ The overall net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of 1.6%, 0.6% and 0.1% in fiscal years 2016, 2015 and 2014, respectively. The charges we took to cost of sales for inventory provisions during these fiscal years were primarily related to the write-off of excess quantities of products whose inventory levels were higher than our updated forecasts of future demand for those products. As a fabless semiconductor company, we must make commitments to purchase inventory based on forecasts of future customer demand. In doing so, we must account for our third-party manufacturers' lead times and constraints. We also adjust to other market factors, such as product offerings and pricing actions by our competitors, new product transitions, and macroeconomic conditions - all of which may impact demand for our products. 
+
+ Please refer to the Gross Profit and Gross Margin discussion below in this Management's Discussion and Analysis for further discussion. 
+
+ 30 
+
+ Table of Contents 
+
+ Income Taxes 
+
+ We recognize federal, state and foreign current tax liabilities or assets based on our estimate of taxes payable or refundable in the current fiscal year by tax jurisdiction. We recognize federal, state and foreign deferred tax assets or liabilities, as appropriate, for our estimate of future tax effects attributable to temporary differences and carryforwards; and we record a valuation allowance to reduce any deferred tax assets by the amount of any tax benefits that, based on available evidence and judgment, are not expected to be realized. 
+ United States income tax has not been provided on a portion of earnings of our non-U.S. subsidiaries to the extent that such earnings are considered to be indefinitely reinvested. 
+ Our calculation of deferred tax assets and liabilities is based on certain estimates and judgments and involves dealing with uncertainties in the application of complex tax laws. Our estimates of deferred tax assets and liabilities may change based, in part, on added certainty or finality to an anticipated outcome, changes in accounting standards or tax laws in the United States, or foreign jurisdictions where we operate, or changes in other facts or circumstances. In addition, we recognize liabilities for potential United States and foreign income tax contingencies based on our estimate of whether, and the extent to which, additional taxes may be due. If we determine that payment of these amounts is unnecessary or if the recorded tax liability is less than our current assessment, we may be required to recognize an income tax benefit or additional income tax expense in our financial statements accordingly. 
+ As of January 31, 2016, we had a valuation allowance of $272 million related to state and certain foreign deferred tax assets that management determined are not likely to be realized due, in part, to projections of future taxable income and potential utilization limitations of tax attributes acquired as a result of stock ownership changes. To the extent realization of the deferred tax assets becomes more-likely-than-not, we would recognize such deferred tax asset as an income tax benefit during the period. 
+
+ Goodwill 
+
+ Goodwill is subject to our annual impairment test during the fourth quarter of our fiscal year, or earlier if indicators of potential impairment exist, using either a qualitative or a quantitative assessment. Our impairment review process compares the fair value of the reporting unit in which the goodwill resides to its carrying value. We have identified two reporting units, GPU and Tegra Processor, for the purposes of completing our goodwill analysis. Goodwill assigned to these reporting units as of January 31, 2016 was $210 million and $408 million , respectively. Determining the number of reporting units and the fair value of a reporting unit requires us to make judgments and involves the use of significant estimates and assumptions. We also make judgments and assumptions in allocating assets and liabilities to each of our reporting units. We base our fair value estimates on assumptions we believe to be reasonable but that are unpredictable and inherently uncertain. 
+
+ During the fourth quarter of fiscal year 2016, we elected to use the quantitative assessment to test goodwill for impairment for each reporting unit. In applying the fair value based test of each reporting unit, the results from the income approach and the market approach were equally weighted. These valuation approaches consider a number of factors that include, but are not limited to, prospective financial information, growth rates, terminal or residual values, discount rates and comparable multiples from publicly traded companies in our industry and require us to make certain assumptions and estimates regarding industry economic factors and the future profitability of our business. 
+
+ When performing an income approach valuation, we incorporate the use of projected financial information and a discount rate that are developed using market participant based assumptions to our discounted cash flow model. Our estimates of discounted cash flow were based upon, among other things, certain assumptions about our expected future operating performance, such as revenue growth rates, operating margins, risk-adjusted discount rates, and future economic and market conditions. Our estimates may differ from actual cash flow due to, among other things, economic conditions, changes to our business model or changes in operating performance. Additionally, certain estimates of discounted cash flow involve businesses with limited financial history and developing revenue models, which increases the risk of differences between the projected and actual performance. The long-term financial forecasts that we utilize represent the best estimate that we have at this time and we believe that its underlying assumptions are reasonable. Significant differences between our estimates and actual cash flow could materially affect our future financial results, which could impact our future estimates of the fair value of our reporting units. 
+
+ 31 
+
+ Table of Contents 
+
+ During the fourth quarter of fiscal year 2016, we concluded that there was no impairment of our goodwill. The fair values of our GPU and Tegra Processor reporting units significantly exceeded their respective carrying values. As such, even the application of a hypothetical 10% decrease to the fair value of each reporting unit would not have resulted in the fair value of either reporting unit being less than its carrying value. As an overall test of the reasonableness of estimated fair values of our reporting units, we reconciled the combined fair value estimates of our reporting units to our market capitalization as of the valuation date. The reconciliation confirmed that the fair values were relatively representative of the market views when applying a reasonable control premium to the market capitalization. However, any significant reductions in the actual amount of future cash flows realized by our reporting units, reductions in the value of market comparables, or reductions in our market capitalization could impact future estimates of the fair values of our reporting units. Such events could ultimately result in a charge to our earnings in future periods due to the potential for a write-down of the goodwill associated with our reporting units. 
+
+ Our next annual evaluation of the goodwill by reporting unit will be performed during the fourth quarter of fiscal year 2017, or earlier if indicators of potential impairment exist. Such indicators include, but are not limited to, challenging economic conditions, such as a decline in our operating results, an unfavorable industry or macroeconomic environment, a substantial decline in our stock price, or any other adverse change in market conditions. Such conditions could have the effect of changing one of the critical assumptions or estimates we use to calculate the fair value of our reporting units, which could result in a decrease in fair value and require us to record goodwill impairment charges. 
+
+ Cash Equivalents and Marketable Securities 
+
+ Cash equivalents consist of financial instruments which are readily convertible into cash and have original maturities of three months or less at the time of acquisition. Marketable securities consist primarily of highly liquid investments with maturities of greater than three months when purchased. 
+
+ We measure our cash equivalents and marketable securities at fair value. The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets. Our Level 1 assets consist of our money market funds. We classify securities within Level 1 assets when the fair value is obtained from real time quotes for transactions in active exchange markets involving identical assets. Our available-for-sale securities are classified as having Level 2 inputs. Our Level 2 assets are valued utilizing a market approach where the market prices of similar assets are provided by a variety of independent industry standard data providers to our investment custodian. Most of our cash equivalents and marketable securities are valued based on Level 2 inputs. We did not have any investments classified as Level 3 as of January 31, 2016 . 
+
+ All of our available-for-sale investments are subject to a periodic impairment review. We record a charge to earnings when a decline in fair value is significantly below cost basis and judged to be other-than-temporary, or have other indicators of impairments. 
+
+ If the fair value of an available-for-sale debt instrument is less than its amortized cost basis, an other-than-temporary impairment is triggered in circumstances where (1) we intend to sell the instrument, (2) it is more likely than not that we will be required to sell the instrument before recovery of its amortized cost basis, or (3) a credit loss exists where we do not expect to recover the entire amortized cost basis of the instrument. In these situations, we recognize an other-than-temporary impairment in earnings equal to the entire difference between the debt instruments’ amortized cost basis and its fair value. For available-for-sale debt instruments that are considered other-than-temporarily impaired due to the existence of a credit loss, if we do not intend to sell and it is more likely than not that we will not be required to sell the instrument before recovery of its remaining amortized cost basis (amortized cost basis less any current-period credit loss), we separate the amount of the impairment into the amount that is credit related and the amount due to all other factors. The credit loss component is recognized in earnings. 
+
+ We performed an impairment review of our investment portfolio as of January 31, 2016. We concluded that our investments were appropriately valued and that no other than temporary impairment charges were necessary on our portfolio of available-for-sale investments as of January 31, 2016. 
+
+ 32 
+
+ Table of Contents 
+
+ Stock-based Compensation 
+
+ Our stock-based compensation expense is associated with stock options, restricted stock units, or RSUs, performance stock units that are based on our corporate financial performance targets, or PSUs, performance stock units that are based on market conditions, or market-based PSUs, and our employee stock purchase plan, or ESPP. 
+
+ Beginning in fiscal year 2015, we shifted away from granting stock options and toward granting RSUs, PSUs and market-based PSUs to reflect changing market trends for equity incentives at our peer companies. The number of PSUs that will ultimately vest is contingent on the Company’s level of achievement compared with the corporate financial performance target established by our Compensation Committee in the beginning of each fiscal year. The number of shares of our stock to be received at vesting ranges from 0% to 200% of the target amount. 
+
+ We use the closing trading price of our common stock on the date of grant, minus a dividend yield discount, as the fair value of awards of RSUs and PSUs, and we use a Monte Carlo simulation on the date of grant to estimate the fair value of market-based PSUs. We use a Black-Scholes valuation at the commencement of an offering period in March and September of each year to estimate the fair value of the shares to be issued under our ESPP. 
+
+ Stock-based compensation expense for RSUs and market-based PSUs is recognized using a straight-line attribution method over the requisite employee service period, while compensation expense for PSUs and ESPP is recognized using an accelerated amortization model. 
+
+ Our RSU, PSU and market-based PSU awards are not eligible for cash dividends prior to vesting; therefore, the fair value of RSUs, PSUs and market-based PSUs is discounted by the dividend yield. Additionally, we estimate forfeitures annually based on historical experience and revise the estimates of forfeiture in subsequent periods if actual forfeitures differ from those estimates. If factors change, the compensation expense that we record under these accounting standards may differ significantly from what we have recorded in the current period. 
+
+ Litigation, Investigation and Settlement Costs 
+
+ From time to time, we are involved in legal actions and/or investigations by regulatory bodies. We are aggressively defending our current litigation matters. However, there are many uncertainties associated with any litigation or investigations, and we cannot be certain that these actions or other third-party claims against us will be resolved without costly litigation, fines and/or substantial settlement payments. If that occurs, our business, financial condition and results of operations could be materially and adversely affected. If information becomes available that causes us to determine that a loss in any of our pending litigation, investigations or settlements is probable, and we can reasonably estimate the loss associated with such events, we will record the loss in accordance with U.S. GAAP. However, the actual liability in any such litigation or investigation may be materially different from our estimates, which could require us to record additional costs. 
+
+ 33 
+
+ Table of Contents 
+
+ Results of Operations 
+
+ The following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Operations expressed as a percentage of revenue. 
+
+ Year Ended 
+
+ January 31, 2016 
+
+ January 25, 2015 
+
+ January 26, 2014 
+
+ Revenue 
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ 100.0 
+ % 
+
+ Cost of revenue 
+ 43.9 
+
+ 44.5 
+
+ 45.1 
+
+ Gross profit 
+ 56.1 
+
+ 55.5 
+
+ 54.9 
+
+ Operating expenses: 
+
+ Research and development 
+ 26.6 
+
+ 29.0 
+
+ 32.3 
+
+ Sales, general and administrative 
+ 12.0 
+
+ 10.3 
+
+ 10.5 
+
+ Restructuring and other charges 
+ 2.6 
+
+ — 
+
+ — 
+
+ Total operating expenses 
+ 41.2 
+
+ 39.3 
+
+ 42.8 
+
+ Income from operations 
+ 14.9 
+
+ 16.2 
+
+ 12.1 
+
+ Interest income 
+ 0.8 
+
+ 0.6 
+
+ 0.4 
+
+ Interest expense 
+ (0.9 
+ ) 
+
+ (1.0 
+ ) 
+
+ (0.3 
+ ) 
+
+ Other income, net 
+ 0.1 
+
+ 0.3 
+
+ 0.2 
+
+ Income before income taxes 
+ 14.9 
+
+ 16.1 
+
+ 12.4 
+
+ Income tax expense 
+ 2.6 
+
+ 2.6 
+
+ 1.7 
+
+ Net income 
+ 12.3 
+ % 
+
+ 13.5 
+ % 
+
+ 10.7 
+ % 
+
+ Revenue 
+
+ NVIDIA’s products and services are built for three computing platforms - PC, Datacenter/Cloud, and Mobile. For each of fiscal year 2016, 2015 and 2014, approximately 75% of our revenue stemmed from products and services associated with the PC computing platform, of which GPUs for the gaming and professional visualization markets comprised approximately 85%, 80% and 70%, respectively, while PC OEM represented approximately 15%, 20% and 30%, respectively. 
+
+ Revenue by Reportable Segments 
+
+ Year Ended 
+
+ Year Ended 
+
+ January 31, 
+2016 
+
+ January 25, 
+2015 
+
+ $ 
+ Change 
+
+ % 
+ Change 
+
+ January 25, 
+2015 
+
+ January 26, 
+2014 
+
+ $ 
+ Change 
+
+ % 
+ Change 
+
+ (In millions) 
+
+ (In millions) 
+
+ GPU 
+ $ 
+ 4,187 
+
+ $ 
+ 3,839 
+
+ $ 
+ 348 
+
+ 9 
+ % 
+
+ $ 
+ 3,839 
+
+ $ 
+ 3,468 
+
+ $ 
+ 371 
+
+ 11 
+ % 
+
+ Tegra Processor 
+ 559 
+
+ 579 
+
+ (20 
+ ) 
+
+ (3 
+ )% 
+
+ 579 
+
+ 398 
+
+ 181 
+
+ 45 
+ % 
+
+ All Other 
+ 264 
+
+ 264 
+
+ — 
+
+ — 
+ % 
+
+ 264 
+
+ 264 
+
+ — 
+
+ — 
+ % 
+
+ Total 
+ $ 
+ 5,010 
+
+ $ 
+ 4,682 
+
+ $ 
+ 328 
+
+ 7 
+ % 
+
+ $ 
+ 4,682 
+
+ $ 
+ 4,130 
+
+ $ 
+ 552 
+
+ 13 
+ % 
+
+ GPU Business. GPU business revenue increased by 9% in fiscal year 2016 compared to fiscal year 2015. This increase was due primarily to increased revenue from sales of high-end GeForce GPU products for gaming, which increased over 30% reflecting a combination of continued strength in PC gaming and increased sales of our Maxwell-based GPU products. Revenue from Tesla GPUs for Datacenter increased, driven by strong demand from cloud service providers. Revenue from Quadro GPUs for professional visualization declined due to weakness in the overall workstation market. Revenue from GeForce GPU products for mainstream PC OEMs declined compared to last year. 
+
+ 34 
+
+ Table of Contents 
+
+ GPU business revenue increased by 11% in fiscal year 2015 compared to fiscal year 2014. This increase was due primarily to higher revenue from GeForce GPU products and associated memory for gaming, which increased over 30% reflecting a combination of continued strength in PC gaming and increased sales of our Maxwell-based GPU products. Revenue from Tesla for Datacenter computing increased due to large project wins with cloud service providers and revenue from our NVIDIA GRID virtualization products also increased as this platform gained momentum. Revenue from GeForce GPU products for mainstream PC OEMs declined compared to fiscal year 2014. 
+
+ Tegra Processor Business. Tegra Processor business revenue decreased by 3% in fiscal year 2016 compared to fiscal year 2015 . This decrease was driven by a decline in sales of Tegra products for OEM smartphones and tablets of almost 90%, partially offset by an increase in sales of Tegra products serving automotive systems of almost 75%. Revenue also grew from development services and sales of SHIELD devices. 
+
+ Tegra Processor business revenue increased by 45% in fiscal year 2015 compared to fiscal year 2014. This increase was driven by higher sales of Tegra products serving automotive infotainment systems, OEM smartphones and tablet devices, and the onset of SHIELD tablet sales in fiscal year 2015. 
+
+ All Other. License revenue from the patent cross licensing arrangement we entered into with Intel in January 2011 was flat at $264 million for fiscal years 2016, 2015, and 2014. The final payment under this arrangement was received in January 2016, and will be recognized as revenue into the first quarter of fiscal year 2018. 
+
+ Concentration of Revenue 
+
+ Revenue from sales to customers outside of the United States and Other Americas accounted for 79% of total revenue for fiscal year 2016, and 75% of total revenue for both fiscal year 2015 and 2014. Revenue by geographic region is allocated to individual countries based on the location to which the products are initially billed even if the revenue is attributable to end customers in a different location. 
+
+ Revenue from significant customers, those representing 10% or more of total revenue for the respective dates, is summarized as follows: 
+
+ Year Ended 
+
+ January 31, 
+2016 
+
+ January 25, 
+ 2015 
+
+ January 26, 
+ 2014 
+
+ Revenue: 
+
+ Customer A 
+ 11 
+ % 
+
+ 11 
+ % 
+
+ 11 
+ % 
+
+ Customer B 
+ 9 
+ % 
+
+ 9 
+ % 
+
+ 10 
+ % 
+
+ 35 
+
+ Table of Contents 
+
+ Gross Profit and Gross Margin 
+
+ Gross profit consists of total revenue, net of allowances, less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors purchased from subcontractors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions and shipping costs. Cost of revenue also includes development costs for license and service arrangements and stock-based compensation related to personnel associated with manufacturing. Gross margin is the percentage of gross profit to revenue. 
+
+ Our overall gross margin was 56.1% , 55.5% and 54.9% for fiscal years 2016 , 2015 and 2014 , respectively. The increase over these fiscal years was driven primarily by a richer product mix in our GPU business, partially offset by lower Tegra business margins. 
+
+ Charges to cost of sales for inventory provisions totaled $112 million, $59 million and $50 million for fiscal years 2016, 2015 and 2014, unfavorably impacting our gross margin by 2.2%, 1.3% and 1.2%, respectively. Sales of inventory that was previously written-off or written-down totaled $32 million for both fiscal year 2016 and 2015 and $43 million for fiscal year 2014, favorably impacting our gross margin by 0.6%, 0.7% and 1.1%, respectively. As a result, the overall net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of 1.6%, 0.6% and 0.1% in fiscal years 2016, 2015 and 2014, respectively. 
+
+ A discussion of our gross margin results for each of our reportable segments is as follows: 
+
+ GPU Business . The gross margin of our GPU business increased during fiscal year 2016 when compared to fiscal year 2015 primarily due to a richer product mix resulting from stronger sales of our GeForce GPU products for gaming and lower sales of GeForce GPU products for mainstream PC OEMs. The gross margin of our GPU business increased during fiscal year 2015 when compared to fiscal year 2014 due to richer product mix resulting from strong sales of high-end GeForce GTX GPU products based on our Maxwell architecture and the volume increase in our Tesla accelerated computing products. 
+
+ Tegra Processor Business. The gross margin of our Tegra Processor business decreased during fiscal year 2016 when compared to fiscal year 2015 due to inventory provisions, the warranty charge associated with the SHIELD 8-inch tablet product recall, and a less rich product mix resulting from higher automotive and SHIELD product sales and lower sales of OEM smartphone and tablet products. The inventory provisions related primarily to older generation Tegra products, as well as inventory purchase commitments in excess of estimated demand and excess component inventories for SHIELD products. The gross margin of our Tegra Processor business decreased during fiscal year 2015 when compared to fiscal year 2014. These decreases were driven primarily by a combination of an overall decline in margins of our Tegra products and a less rich mix between tablet products, which have had higher gross margins, and smartphone and automotive module products, which have had comparably lower gross margins. 
+
+ 36 
+
+ Table of Contents 
+
+ Operating Expenses 
+
+ Year Ended 
+
+ Year Ended 
+
+ January 31, 
+2016 
+
+ January 25, 
+2015 
+
+ $ 
+ Change 
+
+ % 
+ Change 
+
+ January 25, 
+ 2015 
+
+ January 26, 
+2014 
+
+ $ 
+ Change 
+
+ % 
+ Change 
+
+ (In millions) 
+
+ (In millions) 
+
+ Research and development expenses 
+ $ 
+ 1,331 
+
+ $ 
+ 1,360 
+
+ $ 
+ (29 
+ ) 
+
+ (2 
+ )% 
+
+ $ 
+ 1,360 
+
+ $ 
+ 1,336 
+
+ $ 
+ 24 
+
+ 2 
+ % 
+
+ Sales, general and administrative expenses 
+ 602 
+
+ 480 
+
+ 122 
+
+ 25 
+ % 
+
+ 480 
+
+ 436 
+
+ 44 
+
+ 10 
+ % 
+
+ Restructuring and other charges 
+ 131 
+
+ — 
+
+ 131 
+
+ 100 
+ % 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+ % 
+
+ Total operating expenses 
+ $ 
+ 2,064 
+
+ $ 
+ 1,840 
+
+ $ 
+ 224 
+
+ 12 
+ % 
+
+ $ 
+ 1,840 
+
+ $ 
+ 1,772 
+
+ $ 
+ 68 
+
+ 4 
+ % 
+
+ Research and development as a percentage of net revenue 
+ 26.6 
+ % 
+
+ 29.0 
+ % 
+
+ 29.0 
+ % 
+
+ 32.3 
+ % 
+
+ Sales, general and administrative as a percentage of net revenue 
+ 12.0 
+ % 
+
+ 10.3 
+ % 
+
+ 10.3 
+ % 
+
+ 10.5 
+ % 
+
+ Restructuring and other charges as a percentage of net revenue 
+ 2.6 
+ % 
+
+ — 
+ % 
+
+ — 
+ % 
+
+ — 
+ % 
+
+ Research and Development 
+
+ Research and development expenses decreased by 2% in fiscal year 2016 compared to fiscal year 2015. This decrease was primarily driven by the wind-down of Icera modem operations and other organization efficiencies, partially offset by increases in employee compensation and related costs, including stock-based compensation expense. 
+
+ Research and development expenses remained relatively flat during fiscal year 2015 compared to fiscal year 2014. Compensation and benefits increased by $57 million resulting from employee additions, employee compensation increases and related costs, including stock-based compensation expense. Offsetting this increase was a $39 million decrease in engineering development expenses. 
+
+ Sales, General and Administrative 
+
+ Sales, general and administrative expenses increased by 25% in fiscal year 2016 compared to fiscal year 2015. Outside professional fees increased, primarily due to $70 million of legal fees associated with our litigation against Samsung and Qualcomm. Compensation and benefits increased by $39 million resulting from employee additions, employee compensation increases and related costs, including stock-based compensation expense. Advertising and promotions increased by $9 million resulting from higher print and digital advertising. 
+
+ Sales, general and administrative expenses increased by 10% in fiscal year 2015 compared to fiscal year 2014. Compensation and benefits increased by $54 million resulting from employee additions, employee compensation increases and related costs, including stock-based compensation expense. Facilities costs increased by $10 million as we expanded our offices internationally and leased an office building within the boundaries of our main Santa Clara campus. Offsetting these increases were a decrease in outside professional fees of $9 million as well as more favorable international taxes and government subsidies. 
+
+ 37 
+
+ Table of Contents 
+
+ Restructuring and Other Charges 
+
+ In May 2015, we announced our intent to wind down our Icera modem operations and that we were open to a sale of the technology or operations. We pursued the sale of Icera’s technology and operations but were unable to identify a viable buyer with genuine interest. As a result, we began the wind-down of Icera modem operations in the second quarter of fiscal year 2016. The wind-down of Icera modem operations allows for continued investment in strategic growth areas, including our growth initiatives of deep learning, self-driving cars, and gaming. 
+ Our operating expenses for fiscal year 2016 included $131 million of restructuring and other charges, as follows: 
+
+ Year Ended 
+
+ January 31, 
+
+ 2016 
+
+ (In millions) 
+
+ Employee severance and related costs 
+
+ $ 
+ 82 
+
+ Tax subsidy impairment 
+
+ 17 
+
+ Fixed assets impairment 
+
+ 18 
+
+ Facilities and related costs 
+
+ 9 
+
+ Other exit costs 
+
+ 5 
+
+ Restructuring and other charges 
+
+ $ 
+ 131 
+
+ We expect to incur additional restructuring charges to operating expense of approximately $1 million to $2 million per quarter for each of the first two quarters of fiscal year 2017, after which we expect the restructuring to be substantially complete. Please refer to Note 17 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion. 
+
+ Interest Income and Interest Expense 
+
+ Interest income consists of interest earned on cash, cash equivalents and marketable securities. Interest expense is primarily comprised of coupon interest and debt discount amortization related to the convertible notes issued in the fourth quarter of fiscal year 2014. 
+
+ Interest income was $39 million , $28 million and $17 million in fiscal years 2016 , 2015 and 2014 , respectively. The increase in fiscal year 2016 compared to fiscal year 2015 was primarily due to higher average cash balances invested in interest bearing securities, as well as higher purchased yields. The increase in fiscal year 2015 compared to fiscal year 2014 was primarily due to higher average cash balances as we invested the proceeds from the convertible notes we issued in the fourth quarter of fiscal year 2014 in interest bearing securities. 
+
+ Interest expense was $47 million , $46 million and $10 million in fiscal years 2016 , 2015 and 2014 , respectively. The increases in fiscal years 2016 and 2015 compared to fiscal years 2015 and 2014, respectively, were primarily due to coupon interest and debt discount amortization related to the convertible notes we issued in the fourth quarter of fiscal 2014. 
+
+ Other Income and Expense 
+
+ Other income and expense primarily consists of realized gains and losses from the sale of marketable securities, sales or impairments of investments in non-affiliated companies, and the impact of changes in foreign currency rates. 
+
+ Net other income was $ 4 million , $ 14 million and $ 7 million in fiscal years 2016 , 2015 and 2014 , respectively. The decrease for fiscal year 2016 compared to fiscal year 2015 was primarily due to less gain recognized from sales of non-affiliated investments and more losses from foreign currency remeasurement. The increase for fiscal year 2015 compared to fiscal year 2014 was primarily due to a gain from the sale of a non-affiliated investment, partially offset by the recognition of an impairment loss of a non-affiliated investment and losses from foreign currency remeasurement. 
+
+ 38 
+
+ Table of Contents 
+
+ Income Taxes 
+
+ We recognized income tax expense of $129 million, $124 million and $70 million during fiscal years 2016, 2015 and 2014, respectively. Our annual effective tax rate, was 17.3%, 16.5%, and 13.8% in fiscal years 2016, 2015 and 2014, respectively. The difference in the effective tax rates amongst the three years was primarily due to an increase in the amount of earnings subject to United States tax in fiscal years 2016 and 2015, partially offset by a net income tax benefit related to the Icera modem restructuring in fiscal year 2016, and a higher percentage of research tax credit benefit in fiscal year 2014. 
+
+ Our effective tax rate for each of the fiscal years was lower than the United States federal statutory rate of 35% primarily due to income earned in jurisdictions, including British Virgin Islands, Hong Kong, China, Taiwan and United Kingdom, where the tax rate is lower than the United States federal statutory tax rate of 35%, favorable recognition in these fiscal years of the U.S. federal research tax credit and favorable discrete events primarily attributable to the tax benefit recognized upon the expiration of the applicable statutes of limitations. 
+
+ Please refer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information. 
+
+ Liquidity and Capital Resources 
+
+ January 31, 2016 
+
+ January 25, 2015 
+
+ (In millions) 
+
+ Cash and cash equivalents 
+ $ 
+ 596 
+
+ $ 
+ 497 
+
+ Marketable securities 
+ 4,441 
+
+ 4,126 
+
+ Cash, cash equivalents, and marketable securities 
+ $ 
+ 5,037 
+
+ $ 
+ 4,623 
+
+ Year Ended 
+
+ January 31, 
+2016 
+
+ January 25, 
+2015 
+
+ January 26, 
+2014 
+
+ (In millions) 
+
+ Net cash provided by operating activities 
+ $ 
+ 1,175 
+
+ $ 
+ 906 
+
+ $ 
+ 835 
+
+ Net cash (used in) investing activities 
+ $ 
+ (400 
+ ) 
+
+ $ 
+ (727 
+ ) 
+
+ $ 
+ (806 
+ ) 
+
+ Net cash (used in) provided by financing activities 
+ $ 
+ (676 
+ ) 
+
+ $ 
+ (834 
+ ) 
+
+ $ 
+ 390 
+
+ As of January 31, 2016 , we had $5.04 billion in cash, cash equivalents and marketable securities, an increase of $414 million from the end of fiscal year 2015 . Our portfolio of cash equivalents and marketable securities is managed on our behalf by several financial institutions which are required to follow our investment policy, which requires the purchase of high grade investment securities, the diversification of asset types and includes certain limits on our portfolio duration. 
+
+ Cash provided by operating activities increased in fiscal year 2016 compared to fiscal year 2015 primarily due to changes in working capital and higher non-cash expenses such as stock-based compensation and restructuring and other charges in fiscal 2016, partially offset by a decline in net income. Cash provided by operating activities increased in fiscal year 2015 compared to fiscal year 2014 primarily due to higher net income from revenue growth and contained operating expenses, partially offset by an increase in inventories resulting from the introduction of newly launched Maxwell-based GPUs and certain Tegra SOCs and SHIELD devices, and an increase in accounts receivable. 
+
+ Cash used in investing activities decreased in fiscal year 2016 compared to fiscal year 2015 primarily due to higher proceeds from sales and maturities of marketable securities and lower purchases of property and equipment and intangible assets. Cash used in investing activities for fiscal year 2015 decreased from fiscal year 2014 primarily due to lower purchases of property and equipment and intangible assets. 
+
+ Cash used in financing activities decreased in fiscal year 2016 compared to fiscal year 2015, primarily due to lower share repurchases, partially offset by higher dividends. Cash was provided by financing activities in fiscal year 2014, primarily due to net proceeds of $1.48 billion from the convertible note offering we completed, partially offset by net proceeds of $108 million from the related note hedge and warrant transactions. 
+
+ 39 
+
+ Table of Contents 
+
+ Liquidity 
+
+ Our primary source of liquidity is cash generated by our operations. Our investment portfolio consists principally of cash and cash equivalents, debt securities of corporations and United States government and its agencies, asset-backed securities, mortgage-backed securities issued by government-sponsored enterprises, money market funds and foreign government bonds. These investments are denominated in United States dollars. As of January 31, 2016 , we did not have any investments in auction-rate preferred securities. 
+
+ Please refer to Note 6 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information. 
+
+ As of January 31, 2016 and January 25, 2015 , we had $ 5.04 billion and $ 4.62 billion , respectively, in cash, cash equivalents and marketable securities. Our investment policy requires the purchase of high grade investment securities and the diversification of asset types and includes certain limits on our portfolio duration, as specified in our investment policy guidelines. These guidelines also limit the amount of credit exposure to any one issue, issuer or type of instrument. As of January 31, 2016 , we were in compliance with our investment policy. As of January 31, 2016 , our investments in U.S. government agencies and U.S. government sponsored enterprises represented 47% of our total investment portfolio, while the financial sector accounted for 23% of our total investment portfolio. All of our investments are with A/A3 or better rated securities. 
+
+ We performed an impairment review of our investment portfolio as of January 31, 2016 . Based on our quarterly impairment review, we concluded that our investments were appropriately valued and did not record any impairment during fiscal year 2016 . 
+
+ Net realized gains were $ 2 million for both fiscal year 2016 and 2014 and were not significant for fiscal year 2015. As of January 31, 2016 , the amount of our net unrealized gain was not significant. As of January 25, 2015 , we had a net unrealized gain of $ 8 million , which was comprised of gross unrealized gains of $11 million , offset by $ 3 million of gross unrealized losses. 
+
+ Our accounts receivable are highly concentrated. One customer accounted for 21% of our accounts receivable balance as of January 31, 2016 . We maintain an allowance for doubtful accounts for estimated losses resulting from the inability of our customers to make required payments. This allowance consists of an amount identified for specific customers and an amount based on overall estimated exposure. 
+
+ Our cash balances are held in numerous locations throughout the world, including substantial amounts held outside of the United States. As of January 31, 2016, we had cash, cash equivalents and marketable securities of $1.3 billion held within the United States and $3.7 billion held outside of the United States. Most of the amounts held outside the United States may be repatriated to the United States but, under current law, would be subject to U.S. federal income taxes, less applicable foreign tax credits. Further, repatriation of some foreign balances may be restricted by local laws. As of January 31, 2016, we have not provided for U.S. federal and state income taxes on approximately $2.5 billion of undistributed earnings of non-United States subsidiaries, as such earnings are considered indefinitely reinvested outside the United States. Although we have no current need to do so, if we repatriate foreign earnings for cash requirements in the United States, we would incur U.S. federal and state income tax, less applicable foreign tax credits, and reduced by the current amount of our U.S. federal and state net operating loss and tax credit carryforwards. Further, in addition to the $1.3 billion of cash, cash equivalents and marketable securities held within the United States and available to fund our U.S. operations and any other U.S. cash needs, we have access to external sources of financing if cash is needed in the United States other than by repatriation of foreign earnings where U.S. income tax may otherwise be due. Accordingly, we do not reasonably expect any material effect on our business, as a whole, or to our financial flexibility with respect to our current cash balances held outside of the United States. 
+
+ Dividend payments and any share repurchases must be made from cash held in the United States. For fiscal year 2016, we made total cash dividend payments of $213 million and repurchased $587 million of our common stock, utilizing a significant amount of our U.S. cash balance previously taxed as of January 31, 2016 . 
+
+ 40 
+
+ Table of Contents 
+
+ Convertible Notes 
+
+ On December 2, 2013, we issued $1.50 billion of 1.00% Convertible Senior Notes, or the Notes, due in 2018 and concurrently entered into separate note hedge and warrant transactions. The Notes will mature on December 1, 2018 unless earlier repurchased or converted in accordance with their terms prior to such date. As of January 31, 2016, the conversion threshold had been met and the Notes became convertible at the holders’ option beginning on February 1, 2016 and ending May 1, 2016. As such, the $1.41 billion carrying value of the Notes was classified as a current liability and the $87 million difference between the principal amount and the carrying value of the Notes was reclassified from shareholders’ equity to convertible debt in the mezzanine equity section of our Consolidated Balance Sheet as of January 31, 2016, and will remain there for as long as the Notes are convertible. The determination of whether or not the Notes are convertible must continue to be performed on a quarterly basis. Consequently, the Notes may be reclassified as long-term debt if the conversion threshold is not met in future quarters. Please refer to Note 11 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion. 
+
+ Capital Return to Shareholders 
+
+ During fiscal year 2016, we repurchased a total of 25 million shares for $587 million and paid $213 million in cash dividends to our shareholders, equivalent to $0.085 per share for the three months ended April 26, 2015, $0.0975 per share for the six months ended October 25, 2015, and $0.115 per share for the three months ended January 31, 2016. As a result, we returned $800 million to shareholders during fiscal year 2016 in the form of share repurchases and dividend payments. 
+
+ For fiscal 2017, we intend to return approximately $1.0 billion to shareholders through ongoing quarterly cash dividends and share repurchases. 
+
+ Our cash dividend program and the payment of future cash dividends under that program are subject to continued capital availability and our Board's continuing determination that the dividend program and the declaration of dividends thereunder are in the best interests of our shareholders and are in compliance with all laws and agreements of NVIDIA applicable to the declaration and payment of cash dividends. Please refer to Note 14 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion. 
+
+ Operating Capital and Capital Expenditure Requirements 
+
+ We believe that our existing cash balances and anticipated cash flows from operations will be sufficient to meet our operating, acquisition, share repurchase, cash dividend and capital requirements for at least the next twelve months. However, there is no assurance that we will not need to raise additional equity or debt financing within this time frame. Additional financing may not be available on favorable terms or at all and may be dilutive to our then-current shareholders. We also may require additional capital for other purposes not presently contemplated. If we are unable to obtain sufficient capital, we could be required to curtail capital equipment purchases or research and development expenditures, which could harm our business. Factors that could affect our cash used or generated from operations and, as a result, our need to seek additional borrowings or capital include: 
+
+ • 
+ decreased demand and market acceptance for our products and/or our customers’ products; 
+
+ • 
+ inability to successfully develop and produce in volume production our next-generation products; 
+
+ • 
+ competitive pressures resulting in lower than expected average selling prices; and 
+
+ • 
+ new product announcements or product introductions by our competitors. 
+
+ We expect to spend approximately $100 million to $150 million for capital expenditures during fiscal year 2017, primarily for facilities, emulation equipment, computers and engineering workstations. 
+
+ 41 
+
+ Table of Contents 
+
+ Contractual Obligations 
+
+ The following table summarizes our contractual obligations as of January 31, 2016 : 
+
+ Payment Due By Period 
+
+ Contractual Obligations 
+ Total 
+
+ Less than 
+ 1 Year 
+
+ 1-3 Years 
+
+ 4-5 Years 
+
+ More than 
+ 5 Years 
+
+ All Other 
+
+ (In millions) 
+
+ 1.00% Convertible Senior Notes due 2018 (1) 
+ $ 
+ 1,545 
+
+ $ 
+ 1,515 
+
+ $ 
+ 30 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ $ 
+ — 
+
+ Inventory purchase obligations 
+ 391 
+
+ 391 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ Operating leases (2) (3) 
+ 265 
+
+ 75 
+
+ 123 
+
+ 46 
+
+ 21 
+
+ — 
+
+ Uncertain tax positions, interest and penalties (4) 
+ 78 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ 78 
+
+ Capital purchase obligations 
+ 36 
+
+ 36 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ Capital lease 
+ 17 
+
+ 5 
+
+ 12 
+
+ — 
+
+ — 
+
+ — 
+
+ Restructuring related obligation (5) 
+ 23 
+
+ 23 
+
+ — 
+
+ — 
+
+ — 
+
+ — 
+
+ Total contractual obligations 
+ $ 
+ 2,355 
+
+ $ 
+ 2,045 
+
+ $ 
+ 165 
+
+ $ 
+ 46 
+
+ $ 
+ 21 
+
+ $ 
+ 78 
+
+ (1) 
+ Represents the aggregate principal amount of $1.50 billion and anticipated interest payments of $45 million of the Notes. See Note 11 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K. 
+
+ (2) 
+ Includes facilities leases as well as non-cancelable obligations under certain software licensing arrangements in the operating lease category. 
+
+ (3) 
+ Excludes operating lease payments that we expect to make under an operating lease financing arrangement following construction of a new headquarters building in Santa Clara, California, which is currently targeted for completion in the fourth quarter of fiscal year 2018. The amount of the operating lease payments will be determined after the completion of construction. See the section below titled “Off-Balance Sheet Arrangements” for additional information. 
+
+ (4) 
+ Represents unrecognized tax benefits of $78 million which consists of $67 million plus the related interest and penalties of $11 million recorded in non-current income tax payable as of January 31, 2016. We are unable to reasonably estimate the timing of any potential tax liability or interest/penalty payments in individual years due to uncertainties in the underlying income tax positions and the timing of the effective settlement of such tax positions. 
+
+ (5) 
+ Our operating expenses for the fiscal year 2016 included $131 million of restructuring and other charges related to the wind-down of our Icera modem operations. The $23 million represents the remaining balance of the restructuring liability as of January 31, 2016. 
+
+ Off-Balance Sheet Arrangements 
+
+ During fiscal year 2016, we began to construct a new headquarters building in Santa Clara, California, which is currently targeted for completion in the fourth quarter of fiscal year 2018. We are financing this construction under an off-balance sheet, build-to-suit operating lease arrangement. The banks have committed to fund up to $380 million of costs relating to construction. Once construction is complete, the lease balance will remain static at the completed cost for the remaining duration of the lease term. During construction, accrued interest will be capitalized into the lease balance. Following construction, we will pay rent in the form of interest. The lease has an initial 7.5 year term expiring on December 19, 2022, consisting of an approximately 2.5 year construction period followed by a 5 year lease term. We have the option to renew this lease for up to three additional 5 year periods, subject to approval by the banks. During the term of the lease, we may elect to purchase the headquarters building for the amount of the banks’ investment in the building and any accrued but unpaid rent. At the end of the lease term, we may elect to buy the building for the outstanding balance on the maturity date or arrange for the cash sale of the building to an unaffiliated third party. The aggregate guarantee made by us under the lease is no more than 87.5% of the costs incurred in connection with the construction of the building. Please refer to Note 12 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for further discussion regarding our operating lease financing arrangement. 
+
+ During fiscal years 2015 and 2014 , we had no material off-balance sheet arrangements as defined in Regulation S-K 303(a)(4)(ii). 
+
+ 42 
+
+ Table of Contents 
+
+ Adoption of New and Recently Issued Accounting Pronouncements 
+
+ Please see Note 1 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for a discussion of adoption of new and recently issued accounting pronouncements.

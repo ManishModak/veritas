@@ -24,7 +24,7 @@ Open http://localhost:8788. You get 11 recorded cases, each run 3 times. The hea
 
 To publish a read-only copy of the recorded demo (GitHub Pages or any static host), run `npm run export:static`: it writes `site/` (about 5 MB), and live runs, feedback and search show a "run it locally" note there.
 
-## Check any SEC filer
+## Check any 10-K filer
 
 Type a ticker (or CIK) and the year its fiscal year ended, e.g. `NVDA` and `2025`. It works for companies that file an original 10-K with XBRL financial data, for fiscal years from 2010 on, with the year before also filed (Veritas compares two years). Veritas:
 

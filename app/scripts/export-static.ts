@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile, copyFile, readdir, stat } from 'node:fs/pro
 import { join } from 'node:path';
 import { ROOT } from '../src/paths.ts';
 import { AppRuntime } from '../src/runtime.ts';
-import { CsvSource } from '../src/data/source.ts';
+import { configuredSource } from '../src/data/index.ts';
 
 // Calculate recursive directory size in bytes
 export async function getDirectorySize(dir: string): Promise<number> {
@@ -43,8 +43,10 @@ export async function exportStatic(outDir = join(ROOT, 'site')): Promise<{
   evidenceCount: number;
   totalBytes: number;
 }> {
-  console.log('Booting in-process AppRuntime (sample mode, CSV facts)...');
-  const runtime = await AppRuntime.create({ sampleMode: true, persist: false, source: new CsvSource() });
+  // Same data source as the server: Zetaris when ZETARIS_BRIDGE_URL is set (real industry names), else the CSVs
+  const source = configuredSource();
+  console.log(`Booting in-process AppRuntime (sample mode, ${source.constructor.name})...`);
+  const runtime = await AppRuntime.create({ sampleMode: true, persist: false, source });
 
   await mkdir(outDir, { recursive: true });
   const apiDir = join(outDir, 'api');

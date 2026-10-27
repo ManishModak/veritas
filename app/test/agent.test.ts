@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readdir, readFile, mkdtemp, access } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { resolve } from 'node:path';
+import { setTimeout as delay } from 'node:timers/promises';
 import { ROOT, RUNS } from '../src/paths.ts';
 import * as prompts from '../src/agent/prompts.ts';
 import { MODEL, nimClient, parseAnswer } from '../src/agent/nim.ts';
@@ -87,7 +88,7 @@ test('grounding and agreement reproduce every recorded sample, including off-sch
   assert.equal(stages,99);
 });
 
-test('runCase is independent per sample, preserves the recorded JSON shape, stage order and arbitrary verdict labels', async () => {
+test('runCase runs samples in parallel, preserves the recorded JSON shape, stage order and arbitrary verdict labels', async () => {
   const pack=await evidencePack(new CsvSource(),1336917,'2015-12-31');
   const heads: string[]=[], systems: string[]=[], progress: Progress[]=[], users: string[]=[];
   const result=await runCase(1336917,'2015-12-31',pack,{samples:3,progress:p=>progress.push(p),ask:async (system,user)=>{
@@ -98,15 +99,152 @@ test('runCase is independent per sample, preserves the recorded JSON shape, stag
   assert.equal(heads.length,3); assert(heads.every(h=>h===evidenceHead(pack)));
   const inv={...sample.investigator,verdict:'unknown label'};
   for(let n=0;n<3;n++){
-    assert.equal(users[n*3+1],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}`);
-    assert.equal(users[n*3+2],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}\n\nDefender rebuttals:\n${JSON.stringify(sample.red_team)}`);
+    assert.equal(users[n+3],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}`);
+    assert.equal(users[n+6],`${evidenceHead(pack)}\n\nInvestigator findings:\n${JSON.stringify(inv)}\n\nDefender rebuttals:\n${JSON.stringify(sample.red_team)}`);
   }
-  assert.deepEqual(systems,[prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE,prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE,prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.JUDGE]);
+  assert.deepEqual(systems,[prompts.INVESTIGATOR,prompts.INVESTIGATOR,prompts.INVESTIGATOR,prompts.RED_TEAM,prompts.RED_TEAM,prompts.RED_TEAM,prompts.JUDGE,prompts.JUDGE,prompts.JUDGE]);
   assert.deepEqual(Object.keys(result),Object.keys(recorded));
   assert.deepEqual(result.agreement.investigator,{'unknown label':3});
   assert.equal(progress.length,18);
   assert.deepEqual(agreement(recorded.samples),recorded.agreement);
   assert(result.samples.every(s=>Object.values(s.grounding).every(g=>g.unknown_ids.length===0 && g.uncited===0)));
+});
+
+test('parallel runCase executes 3 samples in about 600ms (< 1200ms) rather than 1800ms sequential', async () => {
+  const pack = await evidencePack(new CsvSource(), 1336917, '2015-12-31');
+  const started = Date.now();
+  const result = await runCase(1336917, '2015-12-31', pack, {
+    samples: 3,
+    ask: async (system) => {
+      await delay(200);
+      const data = system === prompts.INVESTIGATOR ? sample.investigator : system === prompts.RED_TEAM ? sample.red_team : sample.judge;
+      return structuredClone(data) as unknown as Record<string, unknown>;
+    },
+  });
+  const elapsed = Date.now() - started;
+  assert(elapsed >= 500 && elapsed < 1200, `Expected elapsed time around 600ms (< 1200ms), got ${elapsed}ms`);
+  assert.equal(result.samples.length, 3);
+  assert.deepEqual(result.agreement, { investigator: { [sample.investigator.verdict]: 3 }, judge: { [sample.judge.final_verdict]: 3 } });
+});
+
+test('results stay in sample order 1..N even when sample 3 finishes first', async () => {
+  const pack = await evidencePack(new CsvSource(), 1336917, '2015-12-31');
+  let invCount = 0;
+  const result = await runCase(1336917, '2015-12-31', pack, {
+    samples: 3,
+    ask: async (system, user) => {
+      let sampleId: number;
+      if (system === prompts.INVESTIGATOR) {
+        sampleId = ++invCount;
+      } else {
+        const match = user.match(/sample-(\d)/);
+        sampleId = match ? Number(match[1]) : 1;
+      }
+      // Sample 3 is fastest (10ms/call), Sample 2 is medium (50ms/call), Sample 1 is slowest (120ms/call)
+      const waitMs = sampleId === 3 ? 10 : sampleId === 2 ? 50 : 120;
+      await delay(waitMs);
+      const data = system === prompts.INVESTIGATOR
+        ? { ...sample.investigator, verdict: `verdict-sample-${sampleId}`, summary: `sample-${sampleId}` }
+        : system === prompts.RED_TEAM
+        ? sample.red_team
+        : { ...sample.judge, final_verdict: `judge-sample-${sampleId}` };
+      return structuredClone(data) as unknown as Record<string, unknown>;
+    },
+  });
+  assert.equal(result.samples.length, 3);
+  assert.equal(result.samples[0].investigator.verdict, 'verdict-sample-1');
+  assert.equal(result.samples[1].investigator.verdict, 'verdict-sample-2');
+  assert.equal(result.samples[2].investigator.verdict, 'verdict-sample-3');
+  assert.equal(result.samples[0].judge.final_verdict, 'judge-sample-1');
+  assert.equal(result.samples[1].judge.final_verdict, 'judge-sample-2');
+  assert.equal(result.samples[2].judge.final_verdict, 'judge-sample-3');
+});
+
+test('aborting cancels all in-flight samples and leaves no orphaned requests', async () => {
+  const pack = await evidencePack(new CsvSource(), 1336917, '2015-12-31');
+  const controller = new AbortController();
+  let inFlight = 0;
+  let maxConcurrent = 0;
+
+  const runPromise = runCase(1336917, '2015-12-31', pack, {
+    samples: 3,
+    signal: controller.signal,
+    ask: async (system, _user, signal) => {
+      inFlight++;
+      maxConcurrent = Math.max(maxConcurrent, inFlight);
+      try {
+        await delay(200, undefined, { signal });
+        const data = system === prompts.INVESTIGATOR ? sample.investigator : system === prompts.RED_TEAM ? sample.red_team : sample.judge;
+        return structuredClone(data) as unknown as Record<string, unknown>;
+      } finally {
+        inFlight--;
+      }
+    },
+  });
+
+  await delay(50);
+  assert.equal(maxConcurrent, 3);
+  assert.equal(inFlight, 3);
+
+  controller.abort();
+
+  await assert.rejects(runPromise);
+  assert.equal(inFlight, 0, 'All in-flight requests must be aborted and cleaned up');
+});
+
+test('one failing sample fails the run and immediately aborts the other samples', async () => {
+  const pack = await evidencePack(new CsvSource(), 1336917, '2015-12-31');
+  let inFlight = 0;
+  let sampleCallCount = 0;
+
+  await assert.rejects(
+    runCase(1336917, '2015-12-31', pack, {
+      samples: 3,
+      ask: async (system, _user, signal) => {
+        inFlight++;
+        const currentCall = ++sampleCallCount;
+        try {
+          if (currentCall === 2) {
+            await delay(50, undefined, { signal });
+            throw new Error('Sample 2 deliberate failure');
+          }
+          await delay(300, undefined, { signal });
+          const data = system === prompts.INVESTIGATOR ? sample.investigator : system === prompts.RED_TEAM ? sample.red_team : sample.judge;
+          return structuredClone(data) as unknown as Record<string, unknown>;
+        } finally {
+          inFlight--;
+        }
+      },
+    }),
+    /Sample 2 deliberate failure/
+  );
+
+  assert.equal(inFlight, 0, 'All other samples must be aborted with 0 remaining in-flight');
+});
+
+test('NIM rate limit 429 during parallel execution triggers retry with backoff and reports progress', async () => {
+  let attempts429 = 0;
+  const retriedProgress: Progress[] = [];
+  const mockFetch = (async () => {
+    if (++attempts429 <= 2) {
+      return new Response('Rate limited', { status: 429 });
+    }
+    return Response.json({
+      choices: [{ finish_reason: 'stop', message: { content: JSON.stringify(sample.investigator) } }],
+    });
+  }) as typeof fetch;
+
+  const ask = nimClient({
+    apiKey: 'test-key',
+    fetch: mockFetch,
+    backoffMs: 1,
+    onRetry: n => retriedProgress.push({ sample: 1, total: 3, stage: 'investigator', status: 'retry', attempt: n }),
+  });
+
+  const res = await ask('system', 'user');
+  assert.deepEqual(res, sample.investigator);
+  assert.equal(retriedProgress.length, 2);
+  assert.equal(retriedProgress[0].status, 'retry');
 });
 
 test('out-of-range and duplicate finding indices fail',async()=>{

@@ -35,10 +35,14 @@ function validateReferences(value: {finding_index:number}[], count: number): voi
   if (value.length !== count || new Set(value.map(r=>r.finding_index)).size !== count) throw new Error('Every finding needs exactly one rebuttal and ruling');
 }
 
-export async function runOnce(head: string, ids: Set<string>, ask: Ask, onStage?: (stage: Stage, status: 'started' | 'completed', elapsedMs: number) => void): Promise<Sample> {
+// Execute one sample across investigator -> red-team -> judge stages in strict sequence.
+export async function runOnce(head: string, ids: Set<string>, ask: Ask, onStage?: (stage: Stage, status: 'started' | 'completed', elapsedMs: number) => void, signal?: AbortSignal): Promise<Sample> {
   const stage = async (name: Stage, system: string, user: string) => {
+    signal?.throwIfAborted();
     const started = Date.now(); onStage?.(name, 'started', 0);
-    const value = await ask(system, user); validateStage(name, value);
+    const value = await ask(system, user, signal);
+    signal?.throwIfAborted();
+    validateStage(name, value);
     onStage?.(name, 'completed', Date.now() - started);
     return value;
   };
@@ -57,16 +61,45 @@ export function agreement(samples: Sample[]): CaseRun['agreement'] {
   return { investigator: count(samples.map(s => s.investigator.verdict ?? '?')), judge: count(samples.map(s => s.judge.final_verdict ?? '?')) };
 }
 
-// Independent samples share only the immutable evidence pack; case memory is shown alongside, never injected into frozen prompts.
+// Independent samples run in parallel against immutable evidence; failure or abort cancels all in-flight requests.
 export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, options: { samples?: number; ask?: Ask; progress?: (p: Progress) => void; signal?: AbortSignal } = {}): Promise<CaseRun> {
   const total = options.samples ?? 3;
   if (!Number.isInteger(total) || total < 1 || total > 3) throw new Error('Samples must be 1, 2 or 3');
-  const head = evidenceHead(pack), ids = new Set(pack.evidence.map(e=>e.id)), samples: Sample[] = [];
-  for (let sample = 1; sample <= total; sample++) {
+  options.signal?.throwIfAborted();
+  const head = evidenceHead(pack), ids = new Set(pack.evidence.map(e=>e.id));
+  const internal = new AbortController();
+  const combined = options.signal ? AbortSignal.any([options.signal, internal.signal]) : internal.signal;
+  let firstError: unknown = null;
+  const tasks = Array.from({ length: total }, async (_, i) => {
+    const sample = i + 1;
     let activeStage: Stage = 'investigator';
-    const ask = options.ask ?? nimClient({signal:options.signal,onRetry:attempt=>options.progress?.({sample,total,stage:activeStage,status:'retry',attempt})});
-    samples.push(await runOnce(head, ids, ask, (stage,status,elapsedMs) => { activeStage=stage; options.progress?.({sample,total,stage,status,elapsedMs}); }));
-  }
+    const ask = options.ask ?? nimClient({
+      signal: combined,
+      onRetry: attempt => options.progress?.({ sample, total, stage: activeStage, status: 'retry', attempt }),
+    });
+    try {
+      return await runOnce(
+        head,
+        ids,
+        ask,
+        (stage, status, elapsedMs) => {
+          activeStage = stage;
+          options.progress?.({ sample, total, stage, status, elapsedMs });
+        },
+        combined
+      );
+    } catch (err) {
+      if (!firstError) firstError = err;
+      internal.abort();
+      throw err;
+    }
+  });
+  const settled = await Promise.allSettled(tasks);
+  if (firstError) throw firstError;
+  const samples = settled.map(s => {
+    if (s.status === 'fulfilled') return s.value;
+    throw s.reason;
+  });
   return { cik, company: pack.company, fy_end: fyEnd, model: MODEL, evidence: pack.evidence, samples, agreement: agreement(samples) };
 }
 

@@ -1,7 +1,7 @@
 import { setTimeout as delay } from 'node:timers/promises';
 
 export const MODEL = 'nvidia/nemotron-3-ultra-550b-a55b';
-export type Ask = (system: string, user: string) => Promise<Record<string, unknown>>;
+export type Ask = (system: string, user: string, signal?: AbortSignal) => Promise<Record<string, unknown>>;
 
 // Parse only the answer content. The provider's reasoning_content is never used as evidence.
 export function parseAnswer(text: string): Record<string, unknown> {
@@ -39,11 +39,12 @@ export function nimClient(options: NimOptions = {}): Ask {
   if (!key) throw new Error('Live mode requires NVIDIA_API_KEY on the server');
   const transport = options.fetch ?? fetch, attempts = options.attempts ?? 3;
   if (!Number.isInteger(attempts) || attempts < 1 || attempts > 5) throw new Error('NIM attempts must be between 1 and 5');
-  return async (system, user) => {
+  return async (system, user, callSignal?: AbortSignal) => {
+    const effectiveSignal = callSignal && options.signal ? (callSignal === options.signal ? callSignal : AbortSignal.any([options.signal, callSignal])) : (callSignal ?? options.signal);
     for (let attempt = 1; attempt <= attempts; attempt++) {
-      options.signal?.throwIfAborted();
+      effectiveSignal?.throwIfAborted();
       const timeout = AbortSignal.timeout(options.timeoutMs ?? 300_000);
-      const signal = options.signal ? AbortSignal.any([options.signal, timeout]) : timeout;
+      const signal = effectiveSignal ? AbortSignal.any([effectiveSignal, timeout]) : timeout;
       let response: Response;
       try {
         response = await transport(options.endpoint ?? 'https://integrate.api.nvidia.com/v1/chat/completions', {
@@ -52,10 +53,10 @@ export function nimClient(options: NimOptions = {}): Ask {
           body: JSON.stringify({ model: MODEL, temperature: 0.3, max_tokens: 16000, messages: [{ role: 'system', content: system }, { role: 'user', content: user }] }),
         });
       } catch {
-        if (options.signal?.aborted) throw new Error('NIM run cancelled');
+        if (effectiveSignal?.aborted) throw new Error('NIM run cancelled');
         if (attempt === attempts) throw new Error(`NIM ${timeout.aborted ? 'timeout' : 'network failure'} after ${attempts} attempts`);
         options.onRetry?.(attempt);
-        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: options.signal });
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: effectiveSignal });
         continue;
       }
       if (!response.ok) {
@@ -63,16 +64,16 @@ export function nimClient(options: NimOptions = {}): Ask {
         const transient = response.status === 408 || response.status === 429 || response.status >= 500;
         if (!transient || attempt === attempts) throw new Error(`NIM HTTP ${response.status}${transient ? ` after ${attempts} attempts` : ''}`);
         options.onRetry?.(attempt);
-        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: options.signal });
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: effectiveSignal });
         continue;
       }
       let payload: any;
       try { payload = await response.json(); } catch {
-        if (options.signal?.aborted) throw new Error('NIM run cancelled');
+        if (effectiveSignal?.aborted) throw new Error('NIM run cancelled');
         if (!timeout.aborted) throw new Error('NIM returned a non-JSON response');
         if (attempt === attempts) throw new Error(`NIM timeout after ${attempts} attempts`);
         options.onRetry?.(attempt);
-        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, {signal:options.signal});
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: effectiveSignal });
         continue;
       }
       const choice = payload.choices?.[0];
@@ -82,7 +83,7 @@ export function nimClient(options: NimOptions = {}): Ask {
       try { return parseAnswer(content); } catch (error) {
         if (attempt === attempts) throw error;
         options.onRetry?.(attempt);
-        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, {signal:options.signal});
+        await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: effectiveSignal });
       }
     }
     throw new Error('NIM attempts exhausted');

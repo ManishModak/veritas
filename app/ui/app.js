@@ -21,6 +21,7 @@
     requestVersion: 0,
     drawerRequest: 0,
     completedStageKeys: new Set(),
+    runStatuses: {},
     activeJobCaseId: null,
   };
 
@@ -377,7 +378,7 @@
     if(liveJob?.caseId===data.id){
       progressCard.classList.remove('hidden');
       if(state.activeJobId!==liveJob.id){
-        state.activeJobId=liveJob.id;state.activeJobCaseId=data.id;state.completedStageKeys=new Set();state.sseCompletedStages=0;
+        state.activeJobId=liveJob.id;state.activeJobCaseId=data.id;state.completedStageKeys=new Set();state.sseCompletedStages=0;state.runStatuses={};
         document.getElementById('live-status-text').textContent='Live run in progress';
         initEventSource(liveJob.eventsUrl,data.id);
       }
@@ -1021,6 +1022,7 @@
 
     state.sseCompletedStages = 0;
     state.completedStageKeys=new Set();
+    state.runStatuses={};
     document.getElementById('live-status-text').textContent='Live run in progress';
 
     try {
@@ -1063,6 +1065,7 @@
         const payload = JSON.parse(event.data);
         disconnects=0;
         if (payload.type === 'started') {
+          state.runStatuses = {};
           if (details) details.textContent = 'Run started: ' + payload.total + ' samples requested.';
         } else if (payload.type === 'progress') {
           if (payload.status === 'completed') {
@@ -1072,17 +1075,27 @@
           const pct = Math.min(100, Math.round((state.sseCompletedStages / 9) * 100));
           if (fill) fill.style.width = pct + '%';
           if (counter) counter.textContent = 'Stage ' + state.sseCompletedStages + ' of 9 (' + pct + '%)';
-          
-          let stageLabel = payload.stage;
-          if (stageLabel === 'investigator') stageLabel = 'Investigator Examination';
-          else if (stageLabel === 'red_team') stageLabel = 'Red-Team Innocent Defense';
-          else if (stageLabel === 'judge') stageLabel = 'Judicial Ruling';
 
-          let statusMsg = 'Run ' + payload.sample + ' &bull; ' + stageLabel + ' &bull; ' + payload.status;
-          if (payload.elapsedMs) statusMsg += ' (' + Math.round(payload.elapsedMs / 1000) + 's)';
-          if (payload.status==='retry') statusMsg += ' [retry after attempt ' + payload.attempt + ']';
-          if (details) details.innerHTML = statusMsg;
+          state.runStatuses = state.runStatuses || {};
+          const stageName = payload.stage === 'red_team' ? 'red-team' : payload.stage;
+          let statusText = stageName;
+          if (payload.status === 'retry') {
+            statusText += ' (retry ' + payload.attempt + ')';
+          } else if (payload.status === 'completed' && payload.elapsedMs) {
+            statusText += ' (' + Math.round(payload.elapsedMs / 1000) + 's)';
+          }
+          state.runStatuses[payload.sample] = statusText;
+
+          const totalRuns = payload.total || 3;
+          const parts = [];
+          for (let s = 1; s <= totalRuns; s++) {
+            if (state.runStatuses[s]) {
+              parts.push('Run ' + s + ': ' + state.runStatuses[s]);
+            }
+          }
+          if (details && parts.length > 0) details.textContent = parts.join(' · ');
         } else if (payload.type === 'completed') {
+          state.runStatuses = {};
           if (statusText) statusText.textContent = 'Live Run Completed!';
           if (fill) fill.style.width = '100%';
           if (counter) counter.textContent = 'Stage 9 of 9 (100%)';
@@ -1098,6 +1111,7 @@
             else if(state.currentRoute==='#/'||state.currentRoute==='#')loadCohort();
           }, 1200);
         } else if (payload.type === 'failed') {
+          state.runStatuses = {};
           if (statusText) statusText.textContent = 'Run Failed';
           if (details) details.textContent = 'Actionable Error: ' + (payload.error || 'Unknown error occurred');
           sse.close();

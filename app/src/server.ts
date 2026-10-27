@@ -28,6 +28,10 @@ export function appServer(runtime:AppRuntime){
         if(req.method==='GET'&&parts[3]==='memory'&&parts.length===4){only(url.searchParams,['q']);const q=url.searchParams.get('q')??undefined;if(q&&q.length>1000)throw new HttpError(400,'Memory query is too long');return json(res,200,runtime.recall(id,q));}
         if(req.method==='POST'&&parts[3]==='runs'&&parts.length===4){only(url.searchParams,[]);const input=await body(req);if(Object.keys(input).length)throw new HttpError(400,'Runs use three independent samples; no case metadata overrides are accepted.');const job=runtime.startRun(id);return json(res,202,{id:job.id,eventsUrl:`/api/runs/${job.id}/events`});}
       }
+      if(req.method==='POST'&&url.pathname==='/api/companies'){
+        const input=await body(req);if(Object.keys(input).some(k=>!['company','year'].includes(k))||typeof input.company!=='string'||typeof input.year!=='number')throw new HttpError(400,'Expected company (ticker or CIK) and year');
+        const added=await runtime.addCompany(input.company.trim(),input.year);return json(res,added.existing?200:201,added);
+      }
       if(req.method==='POST'&&url.pathname==='/api/feedback'){
         const input=await body(req);if(Object.keys(input).some(k=>!['memoryId','kind'].includes(k))||typeof input.memoryId!=='string'||!['helpful','not_helpful','wrong'].includes(String(input.kind)))throw new HttpError(400,'Expected memoryId and feedback kind');
         return json(res,200,runtime.feedback(input.memoryId,input.kind as 'helpful'|'not_helpful'|'wrong'));

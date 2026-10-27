@@ -76,6 +76,15 @@
         Labels can change from run to run, so each case shows how many of its 3 runs agree.
       </div>
 
+      <!-- Add any company-year from SEC EDGAR -->
+      <form class="add-company-bar" id="add-company-form">
+        <label for="add-company-input" class="add-company-label">Check any company</label>
+        <input type="text" id="add-company-input" class="memory-input add-company-input" placeholder="Ticker or CIK, e.g. NKE" maxlength="10" required autocomplete="off">
+        <input type="number" id="add-company-year" class="memory-input add-company-year" placeholder="Fiscal year" min="2010" max="2030" required aria-label="Year the fiscal year ended">
+        <button type="submit" class="btn btn-primary" id="btn-add-company">Fetch from SEC</button>
+        <span class="add-company-status" id="add-company-status" role="status"></span>
+      </form>
+
       <!-- Cohort Table Container -->
       <div class="table-card">
         <div class="table-responsive">
@@ -145,6 +154,12 @@
       <!-- Caveat Banner -->
       <div class="caveat-box">
         Citations are checked to exist, not to prove a claim. The model may already know these companies from training.
+      </div>
+
+      <!-- Shown for an added company before its first live run -->
+      <div class="not-run-card hidden" id="not-run-card">
+        <h2 class="section-title">Not checked yet</h2>
+        <p id="not-run-text"></p>
       </div>
 
       <!-- Agreement Summary -->

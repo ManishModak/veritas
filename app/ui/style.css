@@ -1591,3 +1591,13 @@ a:hover {
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 .case-badges .badge-mode { color: var(--navy); background: var(--surface-alt); border: 1px solid var(--line); }
 @media (max-width: 768px) { .case-nav-bar, .case-live-action { flex-wrap: wrap; gap: .65rem; } .case-live-action { width: 100%; } .live-hint { max-width: 100%; } }
+
+/* Check any company: ticker/CIK + fiscal year form on the cohort page */
+.add-company-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin: 0 0 1.25rem; padding: 0.85rem 1.15rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.add-company-label { font-weight: 600; font-size: 0.9rem; color: var(--text); margin-right: 0.25rem; }
+.add-company-bar .add-company-input { flex: 0 1 14rem; min-width: 9rem; }
+.add-company-bar .add-company-year { flex: 0 1 8rem; min-width: 6.5rem; }
+.add-company-status { flex: 1 1 14rem; font-size: 0.85rem; color: var(--text-muted); }
+.badge-split-added { background: var(--teal-light); color: var(--teal); border: 1px solid var(--teal-border); }
+.not-run-card { margin: 0 0 1.5rem; padding: 1.1rem 1.4rem; background: var(--white); border: 1px solid var(--teal-border); border-left: 4px solid var(--teal); border-radius: var(--radius-lg); }
+.not-run-card p { margin: 0.4rem 0 0; color: var(--text-muted); }

@@ -59,6 +59,9 @@ export class CaseMemory {
 
   findingMemoryIds(id: string): string[] { this.mustFiling(id); return [...(this.activeFindings.get(id)??[])]; }
 
+  // Register a company-year added at runtime; its filing date comes from the same trusted source data.
+  addFiling(filing: FilingIdentity): void { if(!this.catalogue.has(filing.caseId)) this.catalogue.set(filing.caseId,Object.freeze({...filing})); }
+
   recall(id: string, queryText='receivables revenue cash flow', topN=5) {
     const cutoff=this.mustFiling(id);
     const all=this.hmem.store.snapshotAll();

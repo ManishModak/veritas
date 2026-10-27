@@ -22,6 +22,16 @@ npm start
 
 Open http://localhost:8788. You get 11 recorded cases, each run 3 times.
 
+## Check any company
+
+Type a ticker (or CIK) and the year its fiscal year ended, e.g. `CELH` and `2024`. Veritas:
+
+1. fetches that 10-K's MD&A and the as-first-filed XBRL facts for that year and the year before, straight from SEC EDGAR ([`data/add_company.py`](data/add_company.py));
+2. loads them into Zetaris (or the CSV store) and builds the evidence pack;
+3. shows the numbers and quarter pattern right away. "Run live" then runs the debate (needs `NVIDIA_API_KEY`).
+
+Takes 10–60 seconds. Added companies persist across restarts and appear at the top of the cohort, outside the benchmark counts.
+
 ## How it works
 
 ```mermaid
@@ -136,7 +146,7 @@ Zetaris errors fail loudly; the app never falls back to CSV silently. One case f
 | App ([`app/`](app/)) | Node.js 26+, `tsx`, TypeScript. No frontend framework |
 | Data pipeline ([`data/`](data/)) | Python 3, standard library only. `load_facts.py` builds the facts, quarters and Beneish CSVs; `fetch_mdna.py` extracts MD&A text |
 | Reference agent ([`agent/spike.py`](agent/spike.py)) | Python 3 and `NVIDIA_API_KEY`. Produced the recorded runs in [`runs/`](runs/) |
-| Zetaris host ([`bridge/`](bridge/)) | Zetaris 2.4.3.1 Docker stack, Postgres 16, Python with JayDeBeApi. `setup_vm.sh` loads the tables and starts the SQL bridge |
+| Zetaris host ([`bridge/`](bridge/)) | Zetaris 2.4.3.1 Docker stack, Postgres 16, Python with JayDeBeApi. `setup_vm.sh` loads the tables and starts the SQL bridge (`POST /sql`, and `POST /load` for added companies) |
 
 ## Tests
 

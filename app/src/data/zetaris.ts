@@ -1,6 +1,8 @@
-import type { Row } from './csv.ts';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { parseCsv, type Row } from './csv.ts';
 import type { Query, Table } from './queries.ts';
-import type { FactsSource, QueryResult } from './source.ts';
+import { COMPANY_TABLES, dateColumn, type FactsSource, type QueryResult } from './source.ts';
 
 export const BENEISH_FLOATS=['dsri','gmi','aqi','sgi','depi','sgai','tata','lvgi','m_score'];
 
@@ -71,5 +73,18 @@ export class ZetarisSource implements FactsSource{
     if(!Array.isArray(payload.columns)||!payload.columns.every((c:unknown)=>typeof c==='string')||new Set(payload.columns).size!==payload.columns.length||!Array.isArray(payload.rows)||!payload.rows.every(Array.isArray))throw new Error('Invalid Zetaris bridge response shape');
     if(REQUIRED[q.table].some(c=>!payload.columns.includes(c)))throw new Error(`Zetaris response missing columns for ${q.table}`);
     return {sql:q.sql,rows:normalizeRows(q.table,payload.columns,payload.rows),mode:'zetaris',label:'executed on Zetaris',table:q.table};
+  }
+  // Send each table of an added company-year to the bridge's /load, which replaces that CIK's rows for those dates.
+  async addCompany(dir:string):Promise<void>{
+    for(const table of COMPANY_TABLES){
+      const csv=await readFile(join(dir,`${table}.csv`),'utf8'),rows=parseCsv(csv);
+      if(!rows.length)continue;
+      const body={table,csv,cik:Number(rows[0].cik),dates:[...new Set(rows.map(r=>r[dateColumn(table)]))]};
+      let response:Response;
+      try{response=await(this.options.fetch??fetch)(this.endpoint.replace(/\/sql$/,'/load'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(this.options.timeoutMs??60000)});}
+      catch{throw new Error(`Zetaris bridge unavailable or timed out loading ${table}; check the tunnel and bridge.`);}
+      if(!response.ok){await response.body?.cancel();throw new Error(`Zetaris load failed with HTTP ${response.status} (${table}); check the bridge log.`);}
+      await response.body?.cancel();
+    }
   }
 }

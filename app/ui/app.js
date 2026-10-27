@@ -226,10 +226,13 @@
       return;
     }
 
-    const ordered=[...data.cases].sort((a,b)=>a.id==='1336917_2015-12-31'?-1:b.id==='1336917_2015-12-31'?1:a.company.localeCompare(b.company)||a.fyEnd.localeCompare(b.fyEnd));
+    // Added companies first, then the hero case, then the cohort alphabetically.
+    const rank=c=>c.split==='added'?0:c.id==='1336917_2015-12-31'?1:2;
+    const ordered=[...data.cases].sort((a,b)=>rank(a)-rank(b)||a.company.localeCompare(b.company)||a.fyEnd.localeCompare(b.fyEnd));
     tbody.innerHTML = ordered.map(c => {
       const splitBadge = c.split === 'development'
         ? '<span class="badge badge-split-dev">Tuning</span>'
+        : c.split === 'added' ? '<span class="badge badge-split-added">Added</span>'
         : '<span class="badge badge-split-blind">Blind</span>';
 
       let roleCell = '';
@@ -254,8 +257,9 @@
         }
       }
 
-      const invChips = renderAgreementChips(c.agreement ? c.agreement.investigator : null, c.samples || 3);
-      const judgeChips = renderAgreementChips(c.agreement ? c.agreement.judge : null, c.samples || 3);
+      const notRun = '<span class="text-muted">Not run yet</span>';
+      const invChips = c.agreement ? renderAgreementChips(c.agreement.investigator, c.samples || 3) : notRun;
+      const judgeChips = c.agreement ? renderAgreementChips(c.agreement.judge, c.samples || 3) : notRun;
 
       return '<tr data-case-id="' + escapeHtml(c.id) + '">' +
         '<td>' +
@@ -275,7 +279,7 @@
         '</td>' +
         '<td><div class="chips-group">' + invChips + '</div></td>' +
         '<td><div class="chips-group">' + judgeChips + '</div></td>' +
-        '<td class="col-question"><p class="question-text" title="' + escapeHtml(c.topQuestion || '') + '">' + linkEvidence(c.topQuestion || 'No question recorded', c.id) + '</p></td>' +
+        '<td class="col-question"><p class="question-text" title="' + escapeHtml(c.topQuestion || '') + '">' + linkEvidence(c.topQuestion || (c.agreement ? 'No question recorded' : '—'), c.id) + '</p></td>' +
         '<td><a href="#/case/' + encodeURIComponent(c.id) + '" class="btn btn-outline" style="padding: 0.35rem 0.65rem; font-size: 0.78rem;">Inspect</a></td>' +
       '</tr>';
     }).join('');
@@ -344,9 +348,11 @@
     if (badgesContainer) {
       const splitBadge = data.split === 'development'
         ? '<span class="badge badge-split-dev">Used for prompt tuning</span>'
+        : data.split === 'added' ? '<span class="badge badge-split-added">Added from SEC EDGAR</span>'
         : '<span class="badge badge-split-blind">Blind</span>';
       const modeBadge = data.resultMode === 'live'
-        ? '<span class="badge badge-mode">Live samples</span>'
+        ? '<span class="badge badge-mode">Live runs</span>'
+        : data.resultMode === 'none' ? '<span class="badge badge-mode">Not run</span>'
         : '<span class="badge badge-mode">Recorded</span>';
       const dataModeBadge = '<span class="badge badge-datamode">' + escapeHtml((data.dataMode || 'csv').toUpperCase()) + '</span>';
       badgesContainer.innerHTML = splitBadge + ' ' + modeBadge + ' ' + dataModeBadge;
@@ -376,6 +382,14 @@
         initEventSource(liveJob.eventsUrl,data.id);
       }
     }else progressCard.classList.add('hidden');
+
+    // Before an added company's first run there are no findings: show the evidence count and the next step.
+    const notRun = !data.run;
+    ['.agreement-card', '.findings-section', '.inquiry-grid'].forEach(sel => document.querySelector('#view-case ' + sel)?.classList.toggle('hidden', notRun));
+    document.getElementById('case-key-question').classList.toggle('hidden', notRun);
+    document.getElementById('not-run-card').classList.toggle('hidden', !notRun);
+    if (notRun) document.getElementById('not-run-text').textContent = 'Veritas pulled ' + data.evidenceCount + ' evidence items from this company\'s SEC filings: the numbers below and its MD&A.' +
+      (data.liveEnabled ? ' Click "Run live" to check its growth story. It takes a few minutes.' : '');
 
     // Agreement Chips (Headline)
     const invChipsContainer = document.getElementById('headline-investigator-chips');
@@ -1127,9 +1141,29 @@
   // ----------------------------------------------------
   // INITIALIZATION & EVENT DELEGATION
   // ----------------------------------------------------
+  // Fetch any company-year from SEC EDGAR through the server, then open its case page.
+  async function addCompany(ev) {
+    ev.preventDefault();
+    const status = document.getElementById('add-company-status'), btn = document.getElementById('btn-add-company');
+    const company = document.getElementById('add-company-input').value.trim();
+    const year = Number(document.getElementById('add-company-year').value);
+    btn.disabled = true;
+    status.textContent = 'Fetching the 10-K and XBRL facts from SEC EDGAR...';
+    try {
+      const res = await apiFetch('/api/companies', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ company, year }) });
+      status.textContent = '';
+      location.hash = '#/case/' + encodeURIComponent(res.id);
+    } catch (err) {
+      status.textContent = err.message;
+    } finally {
+      btn.disabled = false;
+    }
+  }
+
   function initApp() {
     // Router bindings
     window.addEventListener('hashchange', handleRoute);
+    document.getElementById('add-company-form')?.addEventListener('submit', addCompany);
 
     // Global click delegation for evidence buttons
     document.addEventListener('click', (e) => {

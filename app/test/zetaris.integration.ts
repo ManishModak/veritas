@@ -5,6 +5,9 @@ import { CsvSource } from '../src/data/source.ts';
 import { evidencePack } from '../src/agent/evidence.ts';
 import { recordedCases } from '../src/cases.ts';
 import { cohortQuery, query } from '../src/data/queries.ts';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { ROOT } from '../src/paths.ts';
 
 if(!process.env.ZETARIS_BRIDGE_URL)throw new Error('Set ZETARIS_BRIDGE_URL to the real bridge for this opt-in integration check');
 const source=new ZetarisSource(),csv=new CsvSource();
@@ -24,7 +27,9 @@ for(const run of await recordedCases())test(`real Zetaris exact evidence parity:
 test('real typed DSRI=0.0 and federated industries preserve missing Arista',{timeout:120000},async()=>{
   const row=(await source.execute(query('beneish',1376339,'2018-12-31'))).rows[0];assert.equal(row.dsri,'0.0');
   assert.deepEqual(row,(await csv.execute(query('beneish',1376339,'2018-12-31'))).rows[0]);
-  const joined=await source.execute(cohortQuery());
+  // The shared database may also hold companies added in the app; count only the cohort's own.
+  const cohortCiks=new Set(JSON.parse(await readFile(join(ROOT,'data/cohort.json'),'utf8')).companies.map((c:{cik:number})=>String(c.cik)));
+  const joined={rows:(await source.execute(cohortQuery())).rows.filter(r=>cohortCiks.has(r.cik))};
   assert.equal(joined.rows.length,148);
   assert(joined.rows.some(r=>r.cik==='1596532'&&r.industry===''));
   assert(joined.rows.some(r=>r.cik==='1336917'&&r.industry.length>0));

@@ -1591,3 +1591,17 @@ a:hover {
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 .case-badges .badge-mode { color: var(--navy); background: var(--surface-alt); border: 1px solid var(--line); }
 @media (max-width: 768px) { .case-nav-bar, .case-live-action { flex-wrap: wrap; gap: .65rem; } .case-live-action { width: 100%; } .live-hint { max-width: 100%; } }
+
+/* Static demo banner */
+.static-notice {
+  display: none;
+}
+html[data-static="true"] .static-notice {
+  display: block;
+  background-color: var(--surface-alt);
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.8rem;
+  padding: 0.4rem 1.5rem;
+  text-align: center;
+}

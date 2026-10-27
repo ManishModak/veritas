@@ -24,9 +24,9 @@ Open http://localhost:8788. You get 11 recorded cases, each run 3 times. The hea
 
 To publish a read-only copy of the recorded demo (GitHub Pages or any static host), run `npm run export:static`: it writes `site/` (about 5 MB), and live runs, feedback and search show a "run it locally" note there.
 
-## Check any company
+## Check any SEC filer
 
-Type a ticker (or CIK) and the year its fiscal year ended, e.g. `CELH` and `2024`. Veritas:
+Type a ticker (or CIK) and the year its fiscal year ended, e.g. `NVDA` and `2025`. It works for companies that file an original 10-K with XBRL financial data, for fiscal years from 2010 on, with the year before also filed (Veritas compares two years). Veritas:
 
 1. fetches that 10-K's MD&A and the as-first-filed XBRL facts for that year and the year before, straight from SEC EDGAR ([`data/add_company.py`](data/add_company.py));
 2. loads them into Zetaris (or the CSV store) and builds the evidence pack;

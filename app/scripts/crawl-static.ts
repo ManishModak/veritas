@@ -4,7 +4,8 @@ import { join } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { ROOT } from '../src/paths.ts';
 
-const outDir = '/run/media/manishm/T7_Shield/Projects/Hackathon/.agent/tasks/open-agent/static-demo/screenshots';
+// Screenshots go to CRAWL_OUT, or app/.generated/crawl (gitignored) by default.
+const outDir = process.env.CRAWL_OUT ?? join(ROOT, 'app/.generated/crawl');
 const port = 8792;
 const cdpPort = 9522;
 const baseUrl = `http://127.0.0.1:${port}/site/`;

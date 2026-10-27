@@ -72,7 +72,8 @@ export async function exportStatic(outDir = join(ROOT, 'site')): Promise<{
     const memory = runtime.recall(c.id);
     await writeFile(join(caseFolder, 'memory.json'), JSON.stringify(memory));
 
-    for (const ev of detail.run.evidence) {
+    // Exported cases are the recorded cohort (persist: false loads no added companies), so each has a run.
+    for (const ev of detail.run?.evidence ?? []) {
       const rawProv = runtime.provenance(c.id, ev.id);
       const prov = pruneProvenance(rawProv, ev.id);
       await writeFile(join(evidenceFolder, `${ev.id}.json`), JSON.stringify(prov));

@@ -49,6 +49,7 @@ test('export writes a file for every case and evidence id, and shim maps api rou
     assert(Array.isArray(memJson.memories));
 
     const detail = runtime.detail(c.id);
+    assert(detail.run, `Exported case ${c.id} has no recorded run`);
     for (const ev of detail.run.evidence) {
       const evFile = join(siteDir, `api/cases/${c.id}/evidence/${ev.id}.json`);
       assert(existsSync(evFile), `Evidence file missing for ${c.id} ${ev.id}`);

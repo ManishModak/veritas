@@ -45,6 +45,22 @@ test('sample server exposes honest cohort, source-backed drawer, guarded recall,
   }finally{await server.close();}
 });
 
+test('a live run traces the SQL behind every evidence item, then H-MEM recall, World Model ingest and H-MEM remember',{timeout:20000},async()=>{
+  const run=(await recordedCases()).find(r=>r.cik===1336917&&r.fy_end==='2015-12-31')!,sample=run.samples[0],events:Record<string,any>[]=[];
+  const runtime=await AppRuntime.create({source:new CsvSource(),sampleMode:false,persist:false,trace:e=>events.push(e),ask:async(system)=>
+    structuredClone(system===INVESTIGATOR?sample.investigator:system===RED_TEAM?sample.red_team:sample.judge) as unknown as Record<string,unknown>});
+  const id='1336917_2015-12-31',job=runtime.startRun(id);
+  for(let i=0;i<200&&job.status==='running';i++)await delay(10);
+  assert.equal(job.status,'completed');
+  const steps=events.map(e=>`${e.agent_name}:${e.action}`),queries=events.filter(e=>e.action==='query');
+  assert.deepEqual(steps.filter(s=>!s.endsWith(':query')),['h_mem:recall','world_model:ingest','h_mem:remember']);
+  assert(steps.indexOf('h_mem:recall')<steps.indexOf(steps.find(s=>s.endsWith(':query'))!));
+  assert(queries.every(q=>q.agent_name==='csv_source'&&q.sql.includes('SELECT')&&q.rows_used>0));
+  assert.deepEqual(new Set(queries.flatMap(q=>q.evidence_ids)),new Set(run.evidence.map(e=>e.id)));
+  assert(events.every(e=>e.company===run.company&&e.fy_end==='2015-12-31'&&e.job===job.id));
+  assert(events.at(-1)!.stored>0&&events.find(e=>e.agent_name==='world_model')!.processed>0);
+});
+
 test('live API completes three samples over replayable SSE, serializes jobs, and surfaces provider failure',{timeout:20000},async()=>{
   const run=(await recordedCases()).find(r=>r.cik===1336917&&r.fy_end==='2015-12-31')!,sample=run.samples[0];
   let fail=false,calls=0;

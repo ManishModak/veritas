@@ -57,7 +57,7 @@ flowchart LR
 4. **Judge.** Rules on each finding and cites the evidence that decides it.
 5. **Three runs.** The whole debate runs 3 times, in parallel (a live check takes a few minutes). The app shows agreement ("2 of 3 runs"), not one confident label.
 
-All three roles run on NVIDIA Nemotron 3 Ultra, served through Meterless Nightshift. Every citation is checked against the evidence pack, and every model request is logged with the model that handled it ([`logs/agent-trace.jsonl`](logs/agent-trace.jsonl)).
+All three roles run on NVIDIA Nemotron 3 Ultra, served through Meterless Nightshift. Every citation is checked against the evidence pack, and every step (Zetaris queries, H-MEM recall, each model request with the model that handled it, World Model ingest) is logged ([`logs/agent-trace.jsonl`](logs/agent-trace.jsonl)).
 
 ## Results
 
@@ -177,7 +177,14 @@ Check the connection first with `curl -s $METERLESS_BASE_URL/chat/completions -H
 
 If Nightshift runs on another machine, forward its port (e.g. `ssh -N -L 18088:127.0.0.1:8088 <host>`) and use `http://127.0.0.1:18088/v1`.
 
-Each live run appends one JSON line per model request to `logs/agent-trace.jsonl` (and stdout): agent, run number, provider, model, latency and Nightshift receipt ID.
+Each live run appends its steps to `logs/agent-trace.jsonl` (and stdout), one JSON line each, tagged with company, year and job ID:
+
+- `h_mem` `recall`: the earlier cases H-MEM may use (eligible vs excluded by filing date) and the memory IDs it returned.
+- `zetaris` `query`: each SQL query behind the evidence pack, the rows the agents get and the evidence IDs that cite them (`csv_source` in CSV mode).
+- `investigator` `investigate` → `red_team` `critique` → `judge` `rule`: one line per model request with run number, provider, model, latency, Nightshift receipt ID and status.
+- `world_model` `ingest` and `h_mem` `remember`: what the run added to the World Model and to memory.
+
+The CLI below logs the queries and model requests.
 
 ## Programmatic use
 
@@ -204,7 +211,7 @@ The server's JSON API does the same: `GET /api/cases`, `GET /api/cases/<CIK>_<FY
 ## Tests
 
 ```bash
-npm test              # 66 pass, 1 optional skip
+npm test              # 67 pass, 1 optional skip
 npm run typecheck
 ZETARIS_BRIDGE_URL=http://localhost:8787 npm run test:bridge
 ```

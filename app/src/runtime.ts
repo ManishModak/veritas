@@ -15,13 +15,15 @@ import { configuredSource } from './data/index.ts';
 import { CaseMemory } from './memory/cases.ts';
 import { WorldEvidenceStore } from './memory/world.ts';
 import { cohortQuery, query } from './data/queries.ts';
+import { traceToLog, type Trace } from './trace.ts';
 
 export class HttpError extends Error { constructor(readonly status:number,message:string){super(message);} }
 // A case is a recorded cohort company-year or one added at runtime; added ones have no recording and run live.
 interface Entry { cik:number; company:string; fyEnd:string; added:boolean; run?:CaseRun; recorded?:CaseRun; pack:EvidencePack; filing:FilingIdentity; score:string; flagged:boolean|null;industry:string }
 export interface RunEvent { type:'started'|'progress'|'completed'|'failed'; [key:string]:unknown }
 export interface Job { id:string; caseId:string; status:'running'|'completed'|'failed'; events:{seq:number;data:RunEvent}[]; listeners:Set<(event:{seq:number;data:RunEvent})=>void>; controller:AbortController }
-export interface RuntimeOptions { source?:FactsSource; sampleMode?:boolean; stateDir?:string; persist?:boolean; ask?:Ask }
+// trace receives each live run's steps; it defaults to logs/agent-trace.jsonl unless a test model is injected (ask).
+export interface RuntimeOptions { source?:FactsSource; sampleMode?:boolean; stateDir?:string; persist?:boolean; ask?:Ask; trace?:Trace }
 const execFileP=promisify(execFile);
 
 // Evidence, filing identity, Beneish screen and industry for one company-year, all from the data source.
@@ -166,13 +168,20 @@ export class AppRuntime {
     for(const [key,old] of this.jobs)if(this.jobs.size>=20&&old.status!=='running')this.jobs.delete(key);
     const job:Job={id:randomUUID(),caseId:id,status:'running',events:[],listeners:new Set(),controller:new AbortController()};
     this.jobs.set(job.id,job);this.activeJob=job;this.emit(job,{type:'started',total:3});
+    const sink=this.options.trace??(this.options.ask?undefined:traceToLog),base={company:entry.company,fy_end:entry.fyEnd};
+    const trace:Trace|undefined=sink&&(event=>sink({...event,job:job.id}));
     void (async()=>{
       try{
-        this.memory.recall(id);
-        const result=await runCase(entry.cik,entry.fyEnd,entry.pack,{samples:3,ask:this.options.ask,signal:job.controller.signal,progress:p=>this.emit(job,{type:'progress',...p})});
+        const recalled=this.memory.recall(id);
+        trace?.({agent_name:'h_mem',action:'recall',...base,eligible:recalled.trace.eligible,excluded:recalled.trace.excluded,returned:recalled.memories.map(m=>m.memoryId)});
+        const result=await runCase(entry.cik,entry.fyEnd,entry.pack,{samples:3,ask:this.options.ask,trace,signal:job.controller.signal,progress:p=>this.emit(job,{type:'progress',...p})});
         assertRunGrounded(result);
         if(this.options.persist!==false)await saveRun(join(this.stateDir,'runs',`${id}.json`),result);
-        await this.world.ingest(result,entry.pack);this.memory.remember(result);entry.run=result;
+        const ingest=await this.world.ingest(result,entry.pack);
+        trace?.({agent_name:'world_model',action:'ingest',...base,changed:ingest.changed,processed:ingest.processed,skipped_unchanged:ingest.skippedUnchanged});
+        const stored=this.memory.remember(result);
+        trace?.({agent_name:'h_mem',action:'remember',...base,stored:stored.length});
+        entry.run=result;
         job.status='completed';this.emit(job,{type:'completed'});
       }catch(error){job.status='failed';this.emit(job,{type:'failed',error:error instanceof Error?error.message:'Live run failed'});}
     })();

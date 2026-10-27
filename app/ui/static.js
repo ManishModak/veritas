@@ -47,7 +47,11 @@
       }
     }
     if (typeof window !== 'undefined' && window.location && window.location.href) {
-      return new URL('./', window.location.href).href;
+      let pathname = window.location.pathname;
+      if (!pathname.endsWith('/')) {
+        pathname += '/';
+      }
+      return new URL(pathname, window.location.origin).href;
     }
     return 'http://localhost/';
   }
@@ -120,10 +124,11 @@
     return null;
   }
 
-  // Intercept window.fetch if window exists
-  if (typeof window !== 'undefined' && typeof window.fetch === 'function') {
-    const originalFetch = window.fetch;
-    window.fetch = async function(input, init) {
+  // Helper to wrap a fetch implementation
+  function installFetchShim(target = (typeof window !== 'undefined' ? window : global)) {
+    if (!target || typeof target.fetch !== 'function') return null;
+    const originalFetch = target.fetch;
+    const wrappedFetch = async function(input, init) {
       const method = (init?.method || (typeof input === 'object' && input && 'method' in input ? input.method : 'GET')).toUpperCase();
       const urlString = typeof input === 'string' ? input : input instanceof URL ? input.href : (input && input.url ? input.url : '');
 
@@ -152,13 +157,22 @@
 
       return originalFetch.call(this, input, init);
     };
+
+    target.fetch = wrappedFetch;
+    return wrappedFetch;
+  }
+
+  // Intercept window.fetch if window exists in a browser
+  if (typeof window !== 'undefined') {
+    installFetchShim(window);
   }
 
   // Expose for testing and inspection
   const VeritasStatic = {
     STATIC_ERROR,
     mapApiUrl,
-    getSiteBase
+    getSiteBase,
+    installFetchShim
   };
 
   global.VeritasStatic = VeritasStatic;

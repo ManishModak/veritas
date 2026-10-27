@@ -28,7 +28,7 @@ async function cleanup() {
 process.on('SIGINT', async () => { await cleanup(); process.exit(1); });
 process.on('SIGTERM', async () => { await cleanup(); process.exit(1); });
 
-async function waitForUrl(url: string, timeoutMs = 10000): Promise<boolean> {
+async function waitForUrl(url: string, timeoutMs = 25000): Promise<boolean> {
   const start = Date.now();
   while (Date.now() - start < timeoutMs) {
     try {
@@ -135,7 +135,7 @@ try {
     return result.result.value;
   }
 
-  async function until(expression: string, timeoutMs = 10000) {
+  async function until(expression: string, timeoutMs = 25000) {
     const start = Date.now();
     while (Date.now() - start < timeoutMs) {
       if (await evaluate(expression)) return;

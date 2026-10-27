@@ -63,7 +63,7 @@ test('export writes a file for every case and evidence id, and shim maps api rou
   // Verify fetch shim mapping
   const shim = (globalThis as any).VeritasStatic;
   assert(shim, 'VeritasStatic must be defined by static.js');
-  const { mapApiUrl, STATIC_ERROR } = shim;
+  const { mapApiUrl, STATIC_ERROR, installFetchShim } = shim;
 
   // 1. Evidence route mapping
   const mappedEv = mapApiUrl('/api/cases/1336917_2015-12-31/evidence/E30');
@@ -94,4 +94,24 @@ test('export writes a file for every case and evidence id, and shim maps api rou
   const mappedMemCustom = mapApiUrl('/api/cases/1336917_2015-12-31/memory?q=receivables');
   assert.equal(mappedMemCustom?.isBlocked, true);
   assert.equal(mappedMemCustom?.error, STATIC_ERROR);
+
+  // 7. Test fetch wrapping behavior on writes and blocked queries
+  const fetchMockTarget: any = { fetch: async () => new Response('ok') };
+  const wrappedFetch = installFetchShim(fetchMockTarget);
+  assert(typeof wrappedFetch === 'function');
+
+  // Blocked POST runs
+  const postRunsRes = await wrappedFetch('/api/cases/1336917_2015-12-31/runs', { method: 'POST' });
+  assert.equal(postRunsRes.status, 400);
+  assert.deepEqual(await postRunsRes.json(), { error: STATIC_ERROR });
+
+  // Blocked POST feedback
+  const postFbRes = await wrappedFetch('/api/feedback', { method: 'POST', body: JSON.stringify({ memoryId: 'm1', kind: 'helpful' }) });
+  assert.equal(postFbRes.status, 400);
+  assert.deepEqual(await postFbRes.json(), { error: STATIC_ERROR });
+
+  // Blocked custom search GET
+  const searchRes = await wrappedFetch('/api/cases/1336917_2015-12-31/memory?q=revenue', { method: 'GET' });
+  assert.equal(searchRes.status, 400);
+  assert.deepEqual(await searchRes.json(), { error: STATIC_ERROR });
 });

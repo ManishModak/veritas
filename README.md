@@ -20,7 +20,9 @@ npm run setup
 npm start
 ```
 
-Open http://localhost:8788. You get 11 recorded cases, each run 3 times.
+Open http://localhost:8788. You get 11 recorded cases, each run 3 times. The header has a light/dark theme toggle.
+
+To publish a read-only copy of the recorded demo (GitHub Pages or any static host), run `npm run export:static`: it writes `site/` (about 5 MB), and live runs, feedback and search show a "run it locally" note there.
 
 ## Check any company
 
@@ -51,7 +53,7 @@ flowchart LR
 2. **Investigator.** Lists what management says drove growth, checks each claim against the numbers and writes questions for management.
 3. **Red-team.** Argues the strongest innocent explanation for each finding.
 4. **Judge.** Rules on each finding and cites the evidence that decides it.
-5. **Three runs.** The whole debate runs 3 times. The app shows agreement ("2 of 3 runs"), not one confident label.
+5. **Three runs.** The whole debate runs 3 times, in parallel (a live check takes a few minutes). The app shows agreement ("2 of 3 runs"), not one confident label.
 
 All three roles run on NVIDIA Nemotron 3 Ultra. Every citation is checked against the evidence pack.
 
@@ -151,7 +153,7 @@ Zetaris errors fail loudly; the app never falls back to CSV silently. One case f
 ## Tests
 
 ```bash
-npm test              # 56 pass, 1 optional skip
+npm test              # 65 pass, 1 optional skip
 npm run typecheck
 ZETARIS_BRIDGE_URL=http://localhost:8787 npm run test:bridge
 ```

@@ -77,16 +77,20 @@ The sample is small and hand-picked, so this is not an accuracy rate.
 - All 3 runs ask management about Q4 shipment timing. One asks how much Q4 2015 revenue came from shipments **pulled forward from Q1 2016**.
 - In 2021 the [SEC charged Under Armour](https://www.sec.gov/newsroom/press-releases/2021-78) for not disclosing that pulled-forward sales were propping up its growth. The agent never sees the SEC action.
 
-### Name-masked control
+### Disguised controls
 
-Does the model just recognise companies with a later scandal? We reran the two blind hits with the company and product names replaced ("the Company", "Product A").
+Does the model just recognise companies with a later scandal? We reran the two blind hits in disguise, twice:
 
-| Case | Investigator, named | Investigator, masked |
-| --- | --- | --- |
-| MiMedx FY2015 | does not fit 3/3 | does not fit 3/3 |
-| Super Micro FY2015 | does not fit 2/3 | does not fit 3/3 |
+- **Names masked:** company and product names replaced ("the Company", "Product A").
+- **Names, years and amounts:** names masked, every year moved 7 years later, every dollar amount scaled by 1.37. Ratios, growth rates and days are unchanged, so the evidence means the same thing.
 
-The verdicts held. Caveat: years and amounts were still visible. Script: [`agent/anon_control.py`](agent/anon_control.py); results and judge verdicts: [`runs/anon/`](runs/anon/).
+| Case | Investigator, named | Names masked | Names, years, amounts |
+| --- | --- | --- | --- |
+| MiMedx FY2015 | does not fit 3/3 | does not fit 3/3 | does not fit 3/3 |
+| Super Micro FY2015 | does not fit 2/3 | does not fit 3/3 | does not fit 2/3 |
+| Nike FY2015 (peer, control) | fits 3/3 | — | unverified 2/3, fits 1/3 |
+
+The verdicts held. The Nike control shows the disguise makes the model more cautious but does not invent a mismatch. Every run cited only in-pack IDs. Scripts: [`agent/anon_control.py`](agent/anon_control.py), [`agent/shifted_control.py`](agent/shifted_control.py); results and judge verdicts: [`runs/anon/`](runs/anon/).
 
 ### Labels drift between runs
 

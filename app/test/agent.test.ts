@@ -46,6 +46,22 @@ test('NIM sends frozen call settings, retries transient errors and reads content
   assert.deepEqual(calls[0],{model:MODEL,temperature:0.3,max_tokens:16000,messages:[{role:'system',content:'system'},{role:'user',content:'user'}]});
 });
 
+test('Nightshift is the primary provider: Meterless endpoint, token and headers; inline reasoning dropped; routed model reported', async () => {
+  let url = '', init: any = null, n = 0; const seen: any[] = [];
+  const mock = (async (u: any, i: any) => { url = String(u); init = i; n++;
+    const content = n === 1 ? 'no answer here' : `{"verdict":"DO NOT PARSE"}</think>${JSON.stringify(sample.investigator)}`;
+    return Response.json({model:MODEL,meterless:{routed_model:MODEL,receipt_id:`rcpt_${n}`},choices:[{finish_reason:'stop',message:{content}}]});
+  }) as typeof fetch;
+  const env = {METERLESS_BASE_URL:'http://127.0.0.1:8088/v1/',METERLESS_RUNTIME_TOKEN:'runtime-secret',NVIDIA_API_KEY:'unused'};
+  const result = await nimClient({env,fetch:mock,backoffMs:1,onResponse:c=>seen.push(c)})('system','user');
+  assert.deepEqual(result,sample.investigator);
+  assert.equal(url,'http://127.0.0.1:8088/v1/chat/completions');
+  assert.equal(init.headers.Authorization,'Bearer runtime-secret'); assert.equal(init.headers['meterless-app'],'veritas'); assert.equal(init.headers['meterless-scope'],'user');
+  assert.equal(JSON.parse(init.body).model,MODEL);
+  assert.deepEqual(seen.map(c=>[c.status,c.receipt]),[['invalid_answer','rcpt_1'],['ok','rcpt_2']]); assert.equal(seen[1].provider,'meterless-nightshift'); assert.equal(seen[1].model,MODEL);
+  assert.throws(()=>nimClient({env:{METERLESS_BASE_URL:'http://127.0.0.1:8088/v1'}}),/METERLESS_RUNTIME_TOKEN/);
+});
+
 test('NIM bounds timeouts and redacts provider bodies and network errors; permanent failures never retry', async () => {
   let calls=0;
   const unauthorized = (async()=>{calls++;return new Response('test-secret provider body',{status:401});}) as typeof fetch;

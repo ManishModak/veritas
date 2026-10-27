@@ -356,7 +356,11 @@
         : data.resultMode === 'none' ? '<span class="badge badge-mode">Not run</span>'
         : '<span class="badge badge-mode">Recorded</span>';
       const dataModeBadge = '<span class="badge badge-datamode">' + escapeHtml((data.dataMode || 'csv').toUpperCase()) + '</span>';
-      badgesContainer.innerHTML = splitBadge + ' ' + modeBadge + ' ' + dataModeBadge;
+      // Which provider and model answered the shown live run (recorded from each Nightshift receipt).
+      const viaBadge = data.run && data.run.provider === 'meterless-nightshift'
+        ? ' <span class="badge badge-datamode" title="Every model request in this run went through Meterless Nightshift">' + escapeHtml(String(data.run.model || '').replace(/^nvidia\//, '')) + ' · via Meterless Nightshift</span>'
+        : '';
+      badgesContainer.innerHTML = splitBadge + ' ' + modeBadge + ' ' + dataModeBadge + viaBadge;
     }
 
     // Live Run button & hints
@@ -371,7 +375,7 @@
       } else if(liveJob) {
         liveHint.textContent='A live case is running. Its progress survives navigation and reload.';
       } else {
-        liveHint.textContent = 'Runs the debate 3 times (9 Nemotron calls)';
+        liveHint.textContent = data.liveVia === 'meterless-nightshift' ? 'Runs the debate 3 times (9 Nemotron calls through Meterless Nightshift)' : 'Runs the debate 3 times (9 Nemotron calls)';
       }
     }
     const progressCard=document.getElementById('live-progress-card');

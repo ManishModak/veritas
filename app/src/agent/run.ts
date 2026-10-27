@@ -1,9 +1,10 @@
-import { mkdir, writeFile, rename } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import { appendFile, mkdir, writeFile, rename } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
+import { ROOT } from '../paths.ts';
 import type { EvidencePack } from './evidence.ts';
 import { INVESTIGATOR, RED_TEAM, JUDGE } from './prompts.ts';
-import { MODEL, nimClient, type Ask } from './nim.ts';
-import type { CaseRun, Grounding, Investigator, Judge, Progress, RedTeam, Sample, Stage } from './types.ts';
+import { MODEL, nimClient, provider, type Ask } from './nim.ts';
+import type { CallRecord, CaseRun, Grounding, Investigator, Judge, Progress, RedTeam, Sample, Stage } from './types.ts';
 
 export function grounding(result: Record<string, any>, key: string, ids: Set<string>): Grounding {
   const cited = (result[key] ?? []).flatMap((item: { evidence?: string[] }) => item.evidence ?? []);
@@ -61,6 +62,16 @@ export function agreement(samples: Sample[]): CaseRun['agreement'] {
   return { investigator: count(samples.map(s => s.investigator.verdict ?? '?')), judge: count(samples.map(s => s.judge.final_verdict ?? '?')) };
 }
 
+export const TRACE = resolve(ROOT, 'logs/agent-trace.jsonl');
+
+// Append one JSONL trace line per answered model request (stdout too), so the log shows which model did each agent's work.
+async function trace(company: string, fyEnd: string, call: CallRecord): Promise<void> {
+  const line = JSON.stringify({ timestamp: new Date().toISOString(), agent_name: call.stage, sample: call.sample, company, fy_end: fyEnd,
+    provider: call.provider, model: call.model, latency_ms: call.ms, receipt: call.receipt, status: call.status });
+  console.log(line);
+  try { await mkdir(dirname(TRACE), { recursive: true }); await appendFile(TRACE, line + '\n'); } catch { /* tracing never fails a run */ }
+}
+
 // Independent samples run in parallel against immutable evidence; failure or abort cancels all in-flight requests.
 export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, options: { samples?: number; ask?: Ask; progress?: (p: Progress) => void; signal?: AbortSignal } = {}): Promise<CaseRun> {
   const total = options.samples ?? 3;
@@ -70,12 +81,14 @@ export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, op
   const internal = new AbortController();
   const combined = options.signal ? AbortSignal.any([options.signal, internal.signal]) : internal.signal;
   let firstError: unknown = null;
+  const calls: CallRecord[] = [];
   const tasks = Array.from({ length: total }, async (_, i) => {
     const sample = i + 1;
     let activeStage: Stage = 'investigator';
     const ask = options.ask ?? nimClient({
       signal: combined,
       onRetry: attempt => options.progress?.({ sample, total, stage: activeStage, status: 'retry', attempt }),
+      onResponse: call => { const record = { sample, stage: activeStage, ...call }; calls.push(record); void trace(pack.company, fyEnd, record); },
     });
     try {
       return await runOnce(
@@ -100,7 +113,9 @@ export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, op
     if (s.status === 'fulfilled') return s.value;
     throw s.reason;
   });
-  return { cik, company: pack.company, fy_end: fyEnd, model: MODEL, evidence: pack.evidence, samples, agreement: agreement(samples) };
+  const models = [...new Set(calls.map(c => c.model))];
+  return { cik, company: pack.company, fy_end: fyEnd, model: models.length === 1 ? models[0] : options.ask ? MODEL : models.join(', ') || provider().model,
+    evidence: pack.evidence, samples, agreement: agreement(samples), ...(calls.length ? { provider: calls[0].provider, calls } : {}) };
 }
 
 export async function saveRun(file: string, run: CaseRun): Promise<void> {

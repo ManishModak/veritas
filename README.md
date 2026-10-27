@@ -32,7 +32,7 @@ Type a ticker (or CIK) and the year its fiscal year ended, e.g. `NVDA` and `2025
 
 1. fetches that 10-K's MD&A and the as-first-filed XBRL facts for that year and the year before, straight from SEC EDGAR ([`data/add_company.py`](data/add_company.py));
 2. loads them into Zetaris (or the CSV store) and builds the evidence pack;
-3. shows the numbers and quarter pattern right away. "Run live" then runs the debate (needs `NVIDIA_API_KEY`).
+3. shows the numbers and quarter pattern right away. "Run live" then runs the debate through Meterless Nightshift (see [Live runs](#live-runs-through-meterless-nightshift)).
 
 Takes 10–60 seconds. Added companies persist across restarts and appear at the top of the cohort, outside the benchmark counts.
 
@@ -57,7 +57,7 @@ flowchart LR
 4. **Judge.** Rules on each finding and cites the evidence that decides it.
 5. **Three runs.** The whole debate runs 3 times, in parallel (a live check takes a few minutes). The app shows agreement ("2 of 3 runs"), not one confident label.
 
-All three roles run on NVIDIA Nemotron 3 Ultra. Every citation is checked against the evidence pack.
+All three roles run on NVIDIA Nemotron 3 Ultra, served through Meterless Nightshift. Every citation is checked against the evidence pack, and every model request is logged with the model that handled it ([`logs/agent-trace.jsonl`](logs/agent-trace.jsonl)).
 
 ## Results
 
@@ -120,10 +120,16 @@ LEFT JOIN company_dns.sic_names s ON b.sic = s.code
 - **H-MEM** ([`cases.ts`](app/src/memory/cases.ts)) recalls similar past cases and stores analyst feedback. It only recalls cases **filed before** the current one, so later filings can't leak in.
 - Engines are vendored unchanged under Apache-2.0 ([attribution](app/vendor/README.md)).
 
+### Meterless Nightshift: the AI provider
+
+- Every live model request goes to the Nightshift Runtime (`POST {METERLESS_BASE_URL}/chat/completions`, with the Console API key as `Authorization: Bearer` and the `meterless-app: veritas` and `meterless-scope: user` headers) ([`nim.ts`](app/src/agent/nim.ts)). Nightshift calls NVIDIA with the key stored in its Providers tab, so Veritas never holds an NVIDIA key.
+- Veritas pins the route to `nvidia/nemotron-3-ultra-550b-a55b` and records the model Nightshift reports for each answer (`meterless.routed_model`) plus its receipt ID, in the saved run (`calls`) and in [`logs/agent-trace.jsonl`](logs/agent-trace.jsonl).
+- Direct NVIDIA NIM (`NVIDIA_API_KEY`) remains only as a fallback when `METERLESS_BASE_URL` is unset.
+
 ### NVIDIA Nemotron
 
-- `nvidia/nemotron-3-ultra-550b-a55b` via NVIDIA NIM plays investigator, red-team and judge.
-- Temperature 0.3, up to 16,000 tokens, 3 attempts per call. The model's reasoning text is not saved.
+- `nvidia/nemotron-3-ultra-550b-a55b`, reached through Nightshift's NVIDIA provider, plays investigator, red-team and judge.
+- Temperature 0.3, up to 16,000 tokens, 3 attempts per call. The model's reasoning text (Nightshift returns it before `</think>`) is dropped and never saved or used as evidence.
 
 ### What is different
 
@@ -143,17 +149,54 @@ All settings are environment variables; [`.env.example`](.env.example) lists the
 | `ZETARIS_BRIDGE_URL=http://localhost:8787` | Use Zetaris instead of the bundled CSVs |
 | `ZETARIS_SCHEMA` | Zetaris schema for the five tables (default `veritas_pg`) |
 | `FACTS_SOURCE=csv` or `zetaris` | Force a data source |
-| `SAMPLE_MODE=false` + `NVIDIA_API_KEY` | Enable live runs (3 runs = 9 model calls) |
+| `SAMPLE_MODE=false` + `METERLESS_BASE_URL` + `METERLESS_RUNTIME_TOKEN` | Enable live runs through Meterless Nightshift (3 runs = 9 model calls) |
+| `METERLESS_MODEL` | Nightshift route to request (default `nvidia/nemotron-3-ultra-550b-a55b`) |
+| `NVIDIA_API_KEY` | Fallback only: call NVIDIA NIM directly when `METERLESS_BASE_URL` is unset |
 | `PORT` | Server port (default 8788) |
 | `VERITAS_STATE_DIR` | Where live results and memory are saved (default `app/.state`) |
 
 Zetaris errors fail loudly; the app never falls back to CSV silently. One case from the command line: `npm run live -- CIK YYYY-MM-DD [samples=1]`.
+
+## Live runs through Meterless Nightshift
+
+The recorded demo needs none of this. For live runs ([Participant Setup Guide](https://hackathon.genai.works/resources), section 4):
+
+1. Install Nightshift from [meterless.ai](https://meterless.ai/#download) (Mac M1+, Windows or DGX edition) and leave it running.
+2. In Nightshift, **Setup → Providers → NVIDIA**: paste your NVIDIA API key ([build.nvidia.com](https://build.nvidia.com)) and save.
+3. Open **Console** (top right) and copy the Runtime URL and API key.
+4. Start Veritas with them:
+
+```bash
+export SAMPLE_MODE=false
+export METERLESS_BASE_URL=http://127.0.0.1:8088/v1      # the Console URL
+export METERLESS_RUNTIME_TOKEN=<Nightshift Console API key>
+npm start
+```
+
+Check the connection first with `curl -s $METERLESS_BASE_URL/chat/completions -H "Authorization: Bearer $METERLESS_RUNTIME_TOKEN" -H "content-type: application/json" -H "meterless-app: veritas" -H "meterless-scope: user" -d '{"model":"nvidia/nemotron-3-ultra-550b-a55b","messages":[{"role":"user","content":"Reply ok."}]}'`. The answer's `meterless.routed_model` names the model that handled it.
+
+If Nightshift runs on another machine, forward its port (e.g. `ssh -N -L 18088:127.0.0.1:8088 <host>`) and use `http://127.0.0.1:18088/v1`.
+
+Each live run appends one JSON line per model request to `logs/agent-trace.jsonl` (and stdout): agent, run number, provider, model, latency and Nightshift receipt ID.
+
+## Programmatic use
+
+No UI needed. Each command takes a CIK and fiscal year end, runs the three debates through Nightshift, prints progress and trace lines as JSON, and saves the run as JSON (`app/.state/live-run.json` by default):
+
+```bash
+npm run live -- 1336917 2015-12-31 3   # Under Armour FY2015; recorded output: runs/1336917_2015-12-31.json
+npm run live -- 320187 2015-05-31 3    # Nike FY2015 (peer); recorded output: runs/320187_2015-05-31.json
+npm run live -- 1045810 2016-01-31 3   # Nvidia FY2016; recorded output: runs/1045810_2016-01-31.json
+```
+
+The server's JSON API does the same: `GET /api/cases`, `GET /api/cases/<CIK>_<FY end>`, `POST /api/cases/<CIK>_<FY end>/runs` (progress as server-sent events at `/api/runs/<run id>/events`).
 
 ## Dependencies
 
 | Part | Needs |
 | --- | --- |
 | App ([`app/`](app/)) | Node.js 26+, `tsx`, TypeScript. No frontend framework |
+| Live runs | Meterless Nightshift with its NVIDIA provider connected (see [Live runs](#live-runs-through-meterless-nightshift)) |
 | Data pipeline ([`data/`](data/)) | Python 3, standard library only. `load_facts.py` builds the facts, quarters and Beneish CSVs; `fetch_mdna.py` extracts MD&A text |
 | Reference agent ([`agent/spike.py`](agent/spike.py)) | Python 3 and `NVIDIA_API_KEY`. Produced the recorded runs in [`runs/`](runs/) |
 | Zetaris host ([`bridge/`](bridge/)) | Zetaris 2.4.3.1 Docker stack, Postgres 16, Python with JayDeBeApi. `setup_vm.sh` loads the tables and starts the SQL bridge (`POST /sql`, and `POST /load` for added companies) |
@@ -161,7 +204,7 @@ Zetaris errors fail loudly; the app never falls back to CSV silently. One case f
 ## Tests
 
 ```bash
-npm test              # 65 pass, 1 optional skip
+npm test              # 66 pass, 1 optional skip
 npm run typecheck
 ZETARIS_BRIDGE_URL=http://localhost:8787 npm run test:bridge
 ```
@@ -181,4 +224,4 @@ Checked on Oct 26, 2026:
 
 ## Where the code came from
 
-The Python pipeline, reference agent and recorded runs were built Oct 25–26, 2026, inside the hackathon window. The TypeScript app reuses their frozen prompts and data unchanged. Meterless engine files are copied unchanged from commit `1742dec`.
+The Python pipeline, reference agent and recorded runs were built Oct 25–26, 2026, inside the hackathon window. The TypeScript app reuses their frozen prompts and data unchanged. The Nightshift provider was added Oct 27. Meterless engine files are copied unchanged from commit `1742dec`.

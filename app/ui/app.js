@@ -1152,6 +1152,78 @@
     }
   }
 
+  // ====================================================
+  // THEME CONTROLLER (Dark mode toggle, system sync & storage)
+  // ====================================================
+  function initTheme() {
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    function getSystemTheme() {
+      try {
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+      } catch (_) {}
+      return "light";
+    }
+
+    function getSavedTheme() {
+      try {
+        return localStorage.getItem("theme") || localStorage.getItem("veritas-theme");
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function saveTheme(theme) {
+      try {
+        localStorage.setItem("theme", theme);
+        localStorage.setItem("veritas-theme", theme);
+      } catch (_) {
+        // storage blocked or throwing
+      }
+    }
+
+    function updateToggleButton(theme) {
+      if (!toggleBtn) return;
+      const isDark = theme === "dark";
+      toggleBtn.setAttribute("aria-pressed", isDark ? "true" : "false");
+      toggleBtn.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+      toggleBtn.setAttribute("title", isDark ? "Switch to light theme" : "Switch to dark theme");
+    }
+
+    function applyTheme(theme, save) {
+      document.documentElement.setAttribute("data-theme", theme);
+      if (save) {
+        saveTheme(theme);
+      }
+      updateToggleButton(theme);
+    }
+
+    // Initialize toggle state to match currently active theme
+    const activeTheme = document.documentElement.getAttribute("data-theme") || getSavedTheme() || getSystemTheme();
+    applyTheme(activeTheme, false);
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        const nextTheme = current === "dark" ? "light" : "dark";
+        applyTheme(nextTheme, true);
+      });
+    }
+
+    try {
+      if (window.matchMedia) {
+        const mq = window.matchMedia("(prefers-color-scheme: dark)");
+        mq.addEventListener("change", (e) => {
+          if (!getSavedTheme()) {
+            applyTheme(e.matches ? "dark" : "light", false);
+          }
+        });
+      }
+    } catch (_) {}
+  }
+
   // ----------------------------------------------------
   // INITIALIZATION & EVENT DELEGATION
   // ----------------------------------------------------
@@ -1233,6 +1305,9 @@
     quarterLink.addEventListener('click',e=>{e.preventDefault();document.querySelector('.quarter-section').scrollIntoView({block:'start',behavior:'smooth'});});
     // Keep the explanation scorecard above the detailed quarterly exhibit.
     document.querySelector('.findings-section').after(document.querySelector('.quarter-section'));
+
+    // Theme initialization
+    initTheme();
 
     // Initial Route Execution
     handleRoute();

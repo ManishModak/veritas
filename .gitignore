@@ -8,3 +8,4 @@ app/.generated/
 app/.state/
 data/out/mdna_paragraphs.csv
 __pycache__/
+site/

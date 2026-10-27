@@ -1,0 +1,717 @@
+{
+  "cik": 1376339,
+  "company": "MiMedx Group",
+  "fy_end": "2015-12-31",
+  "anonymized": true,
+  "year_shift": 7,
+  "amount_scale": 1.37,
+  "masks": [
+    [
+      "MiMedx(?: Group)?(?:, Inc\\.)?",
+      "the Company"
+    ],
+    [
+      "EpiFix",
+      "Product A"
+    ],
+    [
+      "AmnioFix",
+      "Product B"
+    ]
+  ],
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2021-12-31 = $161.9M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2021-12-31 = $17.4M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2021-12-31 = $124.0M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2021-12-31 = $1.6M (XBRL tag Depreciation)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2021-12-31 = $8.5M (XBRL tag NetIncomeLoss)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2021-12-31 = $23.0M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2021-12-31 = $36.6M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2021-12-31 = $117.4M (XBRL tag AssetsCurrent)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2021-12-31 = $7.4M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2021-12-31 = $149.7M (XBRL tag Assets)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2021-12-31 = $25.2M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K filing, filed 2022-03-13",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2022-12-31 = $256.6M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2022-12-31 = $27.7M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2022-12-31 = $182.8M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2022-12-31 = $2.5M (XBRL tag Depreciation)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2022-12-31 = $40.3M (XBRL tag NetIncomeLoss)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2022-12-31 = $25.8M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2022-12-31 = $73.7M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2022-12-31 = $131.9M (XBRL tag AssetsCurrent)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2022-12-31 = $13.0M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2022-12-31 = $186.2M (XBRL tag Assets)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2022-12-31 = $36.7M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K filing, filed 2023-02-29",
+      "id": "E22"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 58.4% vs receivables growth 101.5%; days sales outstanding 82 -> 105 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E23"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $8.5M -> $40.3M while operating cash flow $23.0M -> $25.8M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2022-03-31): revenue $55.9M vs $26.9M a year earlier (+108.4%); quarter-end receivables $42.5M vs $26.0M (+63.5%); quarter-end DSO 88 -> 69 days",
+      "source": "10-Q/10-K filing",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2022-06-30): revenue $62.6M vs $35.1M a year earlier (+78.6%); quarter-end receivables $54.0M vs $28.1M (+92.4%); quarter-end DSO 73 -> 79 days",
+      "source": "10-Q/10-K filing",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2022-09-30): revenue $67.1M vs $45.9M a year earlier (+46.2%); quarter-end receivables $64.1M vs $31.9M (+100.7%); quarter-end DSO 63 -> 87 days",
+      "source": "10-Q/10-K filing",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2022-12-31): revenue $71.0M vs $54.3M a year earlier (+31.0%); quarter-end receivables $73.7M vs $36.6M (+101.5%); quarter-end DSO 61 -> 94 days",
+      "source": "10-Q/10-K filing",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -1.2349 (flag threshold -1.78; flagged=True). Indices: DSRI=1.2721 GMI=1.0008 AQI=1.3355 SGI=1.5843 DEPI=1.129 SGAI=0.9305 TATA=0.0783 LVGI=1.1696",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E29"
+    },
+    {
+      "kind": "mdna",
+      "text": "On December 22, 2021, the FDA issued for comment \u201cDraft Guidance for Industry and FDA Staff: Minimal Manipulation of Human Cells, Tissues, and Cellular and Tissue-Based Products.\u201d Essentially, the Minimal Manipulation draft guidance takes the same position with respect to micronized amniotic tissue that it took in the Untitled Letter to the Company 16 months earlier. The Company submitted comments to the Minimal Manipulation draft guidance asserting that the Minimal Manipulation draft guidance represents agency action that goes far beyond the FDA\u2019s statutory authority, is inconsistent with existing HCT/ P regulations and the FDA\u2019s prior positions, and is internally inconsistent and scientifically unsound. On October 28, 2022, the FDA issued for comment, \"Draft Guidance for Industry and FDA Staff: Homologous Use of Human Cells, Tissues, and Cellular and Tissue-Based Products.\" The Company submitted comments on this Homologous Use draft guidance. The FDA has also indicated that it will hold a public hearing on a date in 2023 to be determined to obtain input on the Homologous Use draft guidance and the previously released Minimal Manipulation draft guidance, as well as other recently issued guidance documents on HCT/Ps. The Company has requested, and has been granted an opportunity to speak at this hearing.",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E30"
+    },
+    {
+      "kind": "mdna",
+      "text": "On January 13, 2023, the Company completed the acquisition of Stability Inc., d/b/a Stability Biologics, a provider of human tissue products to surgeons, facilities, and distributors serving the surgical, spine, and orthopedic sectors of the healthcare industry. The acquisition of Stability was effected by the merger of Stability Inc. into a newly created wholly owned subsidiary of the Company. The new subsidiary was the surviving company in the merger and was subsequently renamed Stability Biologics, LLC (\"Stability\"). The Company paid $13.7 million at the closing, comprised of 60% cash and 40% in shares of common stock of the Company, assumed approximately $1,096,000 in debt and eliminated a $3.3 million receivable related to Company products sold to Stability prior to the acquisition. The Company will also pay future contingent consideration through a two-year earn out arrangement based on the 2023 and 2024 performance of Stability's business. The Company expects the earn out will be the larger portion of the overall consideration for the transaction. The earn out will also be paid in the form of 60% cash and 40% in shares of stock of the Company",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "Critical Accounting Policies \n We believe that of our significant accounting policies, which are described in Note 2 to our financial statements appearing elsewhere in this report, the following accounting policies involve a greater degree of judgment and complexity. \n Revenue Recognition and Sales Returns, Discounts, and Allowances Accruals \n The Company sells its products primarily through a combination of a direct sales force, independent stocking distributors and third - party representatives in the U.S. and independent distributors in international markets. The Company recognizes revenue when title to the goods and risk of loss transfers to customers, provided there are no material remaining performance obligations required of the Company or any matters of customer acceptance. In cases where the Company utilizes distributors or ships products directly to the end user, it recognizes revenue according to the shipping terms of the agreement provided all revenue recognition criteria have been met. A portion of the Company\u2019s revenue is generated from inventory maintained at hospitals or with field representatives. For these products, revenue is recognized at the time the product has been",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "Off-Balance Sheet Arrangements \n We have no off-balance sheet arrangements. \n Liquidity and Capital Resources \n Our net working capital at December 31, 2022, increased $3.0 million to $95.2 million from $92.2 million at December 31, 2021. The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases. The current ratio (current assets divided by current liabilities) decreased to 3.6 as of December 31, 2022, as compared to 4.6 at December 31, 2021. \n On October 12, 2022, the Company and its subsidiaries entered into a Credit Agreement (the \"Credit Agreement\") with certain lenders and Bank of America, N.A., as administrative agent. The Credit Agreement establishes a senior secured revolving credit facility in favor of the Company, with an aggregate lender commitment of up to $68.5 million at any time",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E33"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the receivables increase solely to revenue growth, but receivables grew 101.5% versus 58.4% revenue growth, pushing DSO from 82 to 105 days. Quarterly signals show receivables growth accelerating and DSO deteriorating sharply in H2 (Q3 DSO 87, Q4 DSO 94) while revenue growth decelerated, a pattern consistent with channel loading or extended terms rather than pure demand growth. Operating cash flow grew only 12% while net income quadrupled, confirming receivables absorbed cash.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable (E33).",
+            "numbers_show": "Receivables grew 101.5% ($36.6M to $73.7M) vs revenue 58.4% ($161.9M to $256.6M); DSO rose from 82 to 105 days (E23). Quarterly DSO deteriorated from 69 (Q1) to 94 (Q4) while revenue growth slowed from +108% to +31% (E25-E28).",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Revenue growth drivers are not explicitly stated in the provided MD&A excerpts; regulatory discussion (E30) and post-year-end acquisition (E31) do not explain FY2022 growth.",
+            "numbers_show": "Revenue grew 58.4% with decelerating quarterly growth rates (E25-E28). Beneish M-score flagged (DSRI=1.27, SGI=1.58, AQI=1.34) indicating manipulation risk from sales growth and receivables deterioration (E29).",
+            "fit": "unverified",
+            "evidence": [
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation for why operating cash flow grew only $2.8M (12%) while net income rose $31.8M (374%).",
+            "numbers_show": "CFO $23.0M to $25.8M (E6, E17) vs net income $8.5M to $40.3M (E5, E16). Receivables increased $37.1M (E7, E18), roughly matching the cash flow shortfall relative to earnings.",
+            "fit": "unverified",
+            "evidence": [
+              "E5",
+              "E6",
+              "E7",
+              "E16",
+              "E17",
+              "E18",
+              "E24"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific factors caused receivables to grow 101% versus 58% revenue growth and DSO to jump from 82 to 105 days?",
+          "Why did DSO deteriorate sharply in Q3 (87 days) and Q4 (94 days) while revenue growth was decelerating?",
+          "What portion of Q4 revenue was shipped in the final month of the quarter, and were any shipments made under extended payment terms?",
+          "Were payment terms to distributors or customers lengthened during FY2022, and if so, by how much?",
+          "How does the FDA draft guidance on minimal manipulation and homologous use (E30) affect revenue recognition timing and collectibility for your products?"
+        ],
+        "what_would_change_my_mind": [
+          "Disclosure of monthly or weekly shipment data showing Q4 revenue was not back-loaded.",
+          "Evidence that payment terms were unchanged and the DSO increase reflects a temporary mix shift (e.g., higher distributor sales) with quantified impact.",
+          "A segment breakdown showing the revenue mix shift and its DSO impact that mathematically accounts for the 23-day DSO increase.",
+          "Independent confirmation that the FDA guidance changes do not create revenue recognition uncertainty or collection risk."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The disproportionate receivables growth and DSO increase reflect a shift in sales mix toward independent distributors (who typically have longer payment terms) and/or quarter-end shipment timing, consistent with the company's revenue recognition policy (E32) which notes sales through distributors and inventory at hospitals/field representatives. The quarterly signals (E25-E28) show DSO rising each quarter as revenue growth decelerated, which could indicate increasing distributor mix or back-loaded shipments. However, the pack lacks segment-level data to quantify the mix shift or shipment timing, so this explanation requires facts outside the pack.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E32"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 58.4% revenue growth (E12 vs E1) with decelerating quarterly rates (E25-E28) likely reflects organic demand expansion in the surgical, spine, and orthopedic markets, possibly aided by post-pandemic procedure recovery. The FDA draft guidance discussions (E30) represent regulatory uncertainty but do not directly drive FY2022 revenue. The Beneish M-score flag (E29) is a statistical indicator that can be triggered by high growth and receivables changes without implying manipulation. The pack does not contain segment breakdowns or market data to quantify specific drivers, so this explanation relies on facts outside the pack.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The modest 12% CFO growth (E6 to E17) versus 374% net income growth (E5 to E16) is mechanically explained by the $37.1M increase in accounts receivable (E7 to E18), which absorbed cash from earnings. The receivables increase is consistent with the 58.4% revenue growth and the DSO rise from 82 to 105 days (E23). No other working capital changes are detailed in the pack, but the receivables change alone is of sufficient magnitude to account for the cash flow shortfall relative to earnings.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E7",
+              "E16",
+              "E17",
+              "E18",
+              "E23",
+              "E24"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict stands because management's stated explanation for the receivables increase is contradicted by the disproportionate growth rates and DSO deterioration shown in the numbers (E23, E25-E28). While alternative innocent explanations exist, they are not corroborated by reported numbers in the pack."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.9,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Management states the working capital increase was primarily due to revenue growth resulting in an increase in accounts receivable (E33). However, receivables grew 101.5% ($36.6M to $73.7M) while revenue grew only 58.4% ($161.9M to $256.6M), and DSO increased from 82 to 105 days (E23). Quarterly data shows DSO deteriorating from 69 days in Q1 to 94 days in Q4 while revenue growth decelerated from +108% to +31% (E25-E28). The named driver (revenue growth) is too small to explain the receivables pattern; the numbers contradict the explanation.",
+            "evidence": [
+              "E23",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management does not explicitly state revenue growth drivers in the provided MD&A excerpts (E30, E31, E32, E33). The numbers show 58.4% revenue growth with decelerating quarterly rates (E25-E28) and a flagged Beneish M-score (E29). The defender's alternative explanation (organic demand expansion, post-pandemic recovery) relies on facts outside the pack (market data, segment breakdowns). No reported numbers in the pack corroborate a specific driver at the right size.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "Management provides no explicit explanation for the divergence between operating cash flow growth (12%) and net income growth (374%). The numbers show CFO increased $2.8M (E6 to E17) while net income increased $31.8M (E5 to E16), and receivables increased $37.1M (E7 to E18). The defender's mechanical explanation (receivables increase absorbed cash) is supported by the numbers (E23, E24), but this explanation is not management's; management offered no explanation. Since the explanation rests on management's silence (no named driver), it remains unverified per the rubric.",
+            "evidence": [
+              "E5",
+              "E6",
+              "E7",
+              "E16",
+              "E17",
+              "E18",
+              "E23",
+              "E24"
+            ]
+          }
+        ],
+        "deciding_evidence": "E23 (receivables growth 101.5% vs revenue growth 58.4%, DSO 82->105) and E25-E28 (quarterly DSO deterioration while revenue growth decelerated)",
+        "evidence_that_would_settle_it": [
+          "Segment-level revenue breakdown by channel (direct vs distributor) with associated DSO for each segment, to quantify mix-shift impact on overall DSO.",
+          "Monthly or weekly shipment data for Q4 2022 to test whether revenue was back-loaded into the final month.",
+          "Disclosure of any changes to payment terms offered to distributors or customers during FY2022.",
+          "Independent confirmation that FDA guidance changes (E30) do not create revenue recognition uncertainty or collection risk."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 21,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 21,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 23,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the receivables increase solely to revenue growth, but receivables grew 101.5% vs 58.4% revenue growth and DSO rose from 82 to 105 days, indicating a significant timing/terms component. Operating cash flow grew only 12% while net income quadrupled, a divergence management does not explain.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases.",
+            "numbers_show": "Revenue grew 58.4% but receivables grew 101.5%, DSO rose from 82 to 105 days (E23). Quarterly DSO deteriorated sharply in Q2-Q4 (E26-E28), with Q4 DSO jumping from 61 to 94 days (E28). Excess receivables ~$16M above constant-DSO expectation.",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E26",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Cash used for share repurchases offset the working capital increase.",
+            "numbers_show": "Operating cash flow grew only 12% ($23.0M to $25.8M) while net income rose 374% ($8.5M to $40.3M) (E24). The large receivables increase ($37.1M) consumed operating cash. Share repurchases are a financing outflow, not an operating cash flow explanation.",
+            "fit": "unverified",
+            "evidence": [
+              "E17",
+              "E16",
+              "E6",
+              "E5",
+              "E24",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "No explicit statement on why revenue grew is provided in the evidence pack.",
+            "numbers_show": "Revenue grew 58.4% YoY (E12 vs E1). Quarterly growth decelerated from +108% in Q1 to +31% in Q4 (E25-E28).",
+            "fit": "unverified",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific factors drove the disproportionate increase in receivables relative to revenue, and the rise in DSO from 82 to 105 days?",
+          "Were there changes to payment terms, channel loading, or shipment timing in the second half of FY2022?",
+          "Why did operating cash flow not keep pace with net income growth, and what working capital changes besides receivables contributed?",
+          "What are the demand drivers for the 58% revenue growth, and how much is attributable to timing or term changes?"
+        ],
+        "what_would_change_my_mind": [
+          "Disclosure of extended payment terms or distributor agreement changes that explain the DSO increase.",
+          "Breakdown of revenue by segment showing organic vs acquired growth (though acquisition closed after year-end).",
+          "Quarterly cash flow statements showing operating cash flow per quarter to see if Q4 operating cash flow was negative.",
+          "Explanation of the Q4 receivables surge and whether it reflects pull-forward of shipments."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The sharp DSO increase in Q4 (from 61 to 94 days) reflects a year-end shipment timing effect visible in the quarterly signals (E28), where a concentration of shipments late in the quarter temporarily inflated receivables relative to revenue; this timing effect is consistent with the company's distributor-based revenue recognition policy (E32).",
+            "evidence": [
+              "E28",
+              "E32"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "Management's statement that share repurchases offset the working capital increase refers to the balance sheet change in net working capital (E33), not operating cash flow; the $3.0M working capital increase (E33) is consistent with a $37.1M receivables increase (E7, E18) partially offset by a $11.5M current liabilities increase (E11, E22) and cash used for share repurchases reducing cash (a current asset), which is a financing activity that does not appear in operating cash flow (E17, E6).",
+            "evidence": [
+              "E33",
+              "E7",
+              "E18",
+              "E11",
+              "E22",
+              "E17",
+              "E6"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The 58.4% revenue growth is evidenced by consistent quarterly year-over-year increases across all four quarters (E25-E28), indicating sustained organic demand; the deceleration from +108% in Q1 to +31% in Q4 reflects a normalization from a low prior-year base rather than a change in underlying drivers.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that management's explanation does not fit the numbers is partially overstated: the receivables surge can be explained by a year-end timing effect visible in quarterly data, and the share repurchase comment pertains to working capital not operating cash flow. However, the lack of segment disclosure leaves the exact drivers of the DSO increase unverified."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.85,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Revenue grew 58.4% but receivables grew 101.5% and DSO rose from 82 to 105 days (E23). Quarterly DSO increased in Q2-Q4 (E26-E28), showing the receivables increase is not fully explained by revenue growth. The defender's timing effect only addresses Q4 and is not directly evidenced in the pack.",
+            "evidence": [
+              "E23",
+              "E26",
+              "E27",
+              "E28"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "The working capital increase of $3.0M (E33) is consistent with a $37.1M receivables increase (E7, E18) partially offset by an $11.5M current liabilities increase (E11, E22) and a decrease in cash (likely from share repurchases) as shown by the change in current assets (E8, E19). Management's statement about working capital is corroborated by the balance sheet numbers.",
+            "evidence": [
+              "E33",
+              "E7",
+              "E18",
+              "E11",
+              "E22",
+              "E8",
+              "E19"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "Management provided no explicit explanation for revenue growth in the evidence pack. The defender's explanation of organic demand is not a management statement and lacks segment disclosure to verify.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28"
+            ]
+          }
+        ],
+        "deciding_evidence": "E23 (revenue growth 58.4% vs receivables growth 101.5%, DSO 82->105) and E26-E28 (quarterly DSO deterioration in Q2-Q4)",
+        "evidence_that_would_settle_it": [
+          "Disclosure of changes to payment terms or distributor agreements that could explain DSO increase",
+          "Quarterly cash flow statements to see operating cash flow per quarter",
+          "Revenue breakdown by segment showing organic vs acquired growth"
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 17,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 13,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 17,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the receivables increase to revenue growth (E33), but receivables grew 101.5% versus 58.4% revenue growth, pushing DSO from 82 to 105 days (E23). Quarterly data show DSO deteriorating sharply in the second half (E27, E28) while revenue growth decelerated, a pattern consistent with extended terms or channel loading rather than pure demand growth. Operating cash flow rose only 12% despite a 374% jump in net income (E24), and the share-repurchase offset cited by management (E33) is a financing activity that does not explain the operating cash flow shortfall.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases. (E33)",
+            "numbers_show": "Receivables grew 101.5% vs revenue 58.4%; DSO rose from 82 to 105 days (E23). Quarterly DSO jumped from 63 to 87 days in Q3 and 61 to 94 days in Q4 while revenue growth slowed to 46% and 31% (E27, E28). Operating cash flow increased only $2.8M (12%) while net income rose $31.8M (374%) (E24). Share repurchases are financing cash outflows, not operating (E33).",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E24",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "No explicit driver for revenue growth is stated in the provided MD&A; the FDA guidance discussion (E30) and the Stability acquisition (E31, closed Jan 2023) do not explain FY2022 growth.",
+            "numbers_show": "Revenue grew 58.4% year-over-year (E1, E12). Quarterly growth rates were 108%, 79%, 46%, 31% (E25-E28). No segment or product-line breakdown is provided to corroborate a demand-driven story.",
+            "fit": "unverified",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific demand drivers (new customers, volume, price, product mix) caused the 58% revenue increase, and can you quantify each?",
+          "Why did DSO increase 23 days year-over-year, and why did it accelerate in Q3 and Q4 while revenue growth decelerated?",
+          "Were payment terms extended or were there large end-of-period shipments to distributors in the second half?",
+          "How much of the FY2022 revenue was recognized from shipments where collection is not yet assured (e.g., consignment, extended terms)?",
+          "Why did operating cash flow grow only 12% when net income quadrupled, and what working capital components (besides receivables) absorbed cash?"
+        ],
+        "what_would_change_my_mind": [
+          "A segment or product-line revenue breakdown showing that the fastest-growing segments have normal DSO trends.",
+          "Disclosure of the amount of revenue recognized under extended payment terms or consignment arrangements in each quarter.",
+          "A reconciliation showing that the receivables increase is fully explained by the revenue increase at a constant DSO, with the DSO rise attributable to a one-time change in payment terms that is quantified and matched to specific contracts.",
+          "Evidence that the Stability acquisition contributed revenue in FY2022 (it closed in Jan 2023, so it did not)."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The disproportionate receivables growth and rising DSO may reflect a shift in sales mix toward distributor channels with longer contractual payment terms, a normal business evolution. The quarterly DSO increase in H2 could stem from seasonal shipment timing (e.g., year-end distributor stocking). The operating cash flow lagging net income may be due to inventory builds or other working capital investments to support growth, which are not shown in the provided signals. Management's comment about share repurchases offsetting working capital (E33) refers to the net working capital change, not operating cash flow, and correctly classifies repurchases as financing.",
+            "evidence": [
+              "E23",
+              "E24",
+              "E27",
+              "E28",
+              "E33"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 58% revenue growth could be driven by organic volume increases from existing products due to market penetration and higher procedure volumes, which does not require segment disclosure. The decelerating quarterly growth rates are consistent with a larger revenue base. The FDA guidance discussions (E30) reflect regulatory engagement but do not directly drive revenue. The Stability acquisition (E31) closed after FY2022, though pre-acquisition sales to Stability (noted in E31) may have contributed modestly.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ],
+            "support": "outside the pack"
+          }
+        ],
+        "overall": "The investigator's verdict stands because the evidence pack shows receivables grew 101.5% versus 58.4% revenue growth and DSO deteriorated from 82 to 105 days, contradicting management's claim that revenue growth alone explains the receivables increase; no alternative driver is visible in the reported numbers."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.95,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Management claims the working capital increase was primarily due to revenue growth driving higher receivables (E33). However, receivables grew 101.5% while revenue grew only 58.4%, and DSO rose from 82 to 105 days (E23). Quarterly data show DSO deteriorating sharply in Q3 (63\u219287 days) and Q4 (61\u219294 days) even as revenue growth decelerated to 46% and 31% (E27, E28). This pattern contradicts the claim that revenue growth alone explains the receivables increase. The defender's alternative explanations (sales mix shift, seasonal distributor stocking) are not supported by any reported numbers in the evidence pack.",
+            "evidence": [
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management's MD&A does not identify a specific driver for the 58.4% revenue growth (E30, E31). The quarterly growth rates (108%, 79%, 46%, 31%) are documented (E25-E28), but no segment or product-line breakdown is provided to corroborate a demand-driven story. The defender's suggestion of organic volume increases from existing products is not visible in the pack. Since the explanation rests on facts outside the evidence pack, it remains unverified.",
+            "evidence": [
+              "E1",
+              "E12",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          }
+        ],
+        "deciding_evidence": "Receivables grew 101.5% vs revenue 58.4% (E23), and DSO rose from 82 to 105 days (E23), with quarterly DSO jumping in Q3 and Q4 while revenue growth slowed (E27, E28).",
+        "evidence_that_would_settle_it": [
+          "A segment or product-line revenue breakdown showing that the fastest-growing segments have normal DSO trends.",
+          "Disclosure of the amount of revenue recognized under extended payment terms or consignment arrangements in each quarter.",
+          "A reconciliation showing that the receivables increase is fully explained by the revenue increase at a constant DSO, with the DSO rise attributable to a one-time change in payment terms that is quantified and matched to specific contracts.",
+          "Evidence that the Stability acquisition contributed revenue in FY2022 (it closed in Jan 2023, so it did not)."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 13,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 13,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 12,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation does not fit the numbers": 3
+    },
+    "judge": {
+      "explanation does not fit the numbers": 3
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 **Does management's growth story match the numbers?**
 
+*Open Agent Hackathon 2026 · Track 02: The Agent That Can Explain Why. Built for investors, auditors and journalists, on real, public SEC filings.*
+
 Every 10-K explains why revenue grew. Veritas checks that explanation against the numbers the company first filed with the SEC, and shows:
 
 - which explanations the numbers back up, contradict, or leave unverified

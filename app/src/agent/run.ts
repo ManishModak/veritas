@@ -1,9 +1,9 @@
-import { appendFile, mkdir, writeFile, rename } from 'node:fs/promises';
-import { dirname, resolve } from 'node:path';
-import { ROOT } from '../paths.ts';
+import { mkdir, writeFile, rename } from 'node:fs/promises';
+import { dirname } from 'node:path';
 import type { EvidencePack } from './evidence.ts';
 import { INVESTIGATOR, RED_TEAM, JUDGE } from './prompts.ts';
 import { MODEL, nimClient, provider, type Ask } from './nim.ts';
+import { traceEvidence, traceToLog, type Trace } from '../trace.ts';
 import type { CallRecord, CaseRun, Grounding, Investigator, Judge, Progress, RedTeam, Sample, Stage } from './types.ts';
 
 export function grounding(result: Record<string, any>, key: string, ids: Set<string>): Grounding {
@@ -62,22 +62,20 @@ export function agreement(samples: Sample[]): CaseRun['agreement'] {
   return { investigator: count(samples.map(s => s.investigator.verdict ?? '?')), judge: count(samples.map(s => s.judge.final_verdict ?? '?')) };
 }
 
-export const TRACE = resolve(ROOT, 'logs/agent-trace.jsonl');
-
-// Append one JSONL trace line per answered model request (stdout too), so the log shows which model did each agent's work.
-async function trace(company: string, fyEnd: string, call: CallRecord): Promise<void> {
-  const line = JSON.stringify({ timestamp: new Date().toISOString(), agent_name: call.stage, sample: call.sample, company, fy_end: fyEnd,
-    provider: call.provider, model: call.model, latency_ms: call.ms, receipt: call.receipt, status: call.status });
-  console.log(line);
-  try { await mkdir(dirname(TRACE), { recursive: true }); await appendFile(TRACE, line + '\n'); } catch { /* tracing never fails a run */ }
-}
+// Model-call trace lines name each agent's step and who receives its output, so the handoffs read from the log.
+const STEP: Record<Stage, { action: string; target_agent: string }> = {
+  investigator: { action: 'investigate', target_agent: 'red_team' }, red_team: { action: 'critique', target_agent: 'judge' }, judge: { action: 'rule', target_agent: 'final' },
+};
 
 // Independent samples run in parallel against immutable evidence; failure or abort cancels all in-flight requests.
-export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, options: { samples?: number; ask?: Ask; progress?: (p: Progress) => void; signal?: AbortSignal } = {}): Promise<CaseRun> {
+// Runs with an injected model (tests) trace only when given a sink, so logs/agent-trace.jsonl holds real runs only.
+export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, options: { samples?: number; ask?: Ask; progress?: (p: Progress) => void; signal?: AbortSignal; trace?: Trace } = {}): Promise<CaseRun> {
   const total = options.samples ?? 3;
   if (!Number.isInteger(total) || total < 1 || total > 3) throw new Error('Samples must be 1, 2 or 3');
   options.signal?.throwIfAborted();
   const head = evidenceHead(pack), ids = new Set(pack.evidence.map(e=>e.id));
+  const trace = options.trace ?? (options.ask ? undefined : traceToLog), base = { company: pack.company, fy_end: fyEnd };
+  if (trace) traceEvidence(trace, pack, base);
   const internal = new AbortController();
   const combined = options.signal ? AbortSignal.any([options.signal, internal.signal]) : internal.signal;
   let firstError: unknown = null;
@@ -88,7 +86,10 @@ export async function runCase(cik: number, fyEnd: string, pack: EvidencePack, op
     const ask = options.ask ?? nimClient({
       signal: combined,
       onRetry: attempt => options.progress?.({ sample, total, stage: activeStage, status: 'retry', attempt }),
-      onResponse: call => { const record = { sample, stage: activeStage, ...call }; calls.push(record); void trace(pack.company, fyEnd, record); },
+      onResponse: call => {
+        const record = { sample, stage: activeStage, ...call }; calls.push(record);
+        trace?.({ agent_name: record.stage, ...STEP[record.stage], sample, ...base, provider: record.provider, model: record.model, latency_ms: record.ms, receipt: record.receipt, status: record.status });
+      },
     });
     try {
       return await runOnce(

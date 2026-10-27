@@ -1,0 +1,719 @@
+{
+  "cik": 1376339,
+  "company": "MiMedx Group",
+  "fy_end": "2015-12-31",
+  "anonymized": true,
+  "masks": [
+    [
+      "MiMedx(?: Group)?(?:, Inc\\.)?",
+      "the Company"
+    ],
+    [
+      "EpiFix",
+      "Product A"
+    ],
+    [
+      "AmnioFix",
+      "Product B"
+    ]
+  ],
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2014-12-31 = $118.2M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2014-12-31 = $12.7M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2014-12-31 = $90.5M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2014-12-31 = $1.2M (XBRL tag Depreciation)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2014-12-31 = $6.2M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2014-12-31 = $16.8M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2014-12-31 = $26.7M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2014-12-31 = $85.7M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2014-12-31 = $5.4M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2014-12-31 = $109.3M (XBRL tag Assets)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2014-12-31 = $18.4M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001376339-15-000040, filed 2015-03-13",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2015-12-31 = $187.3M (XBRL tag SalesRevenueGoodsNet)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2015-12-31 = $20.2M (XBRL tag CostOfGoodsSold)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2015-12-31 = $133.4M (XBRL tag SellingGeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2015-12-31 = $1.8M (XBRL tag Depreciation)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2015-12-31 = $29.4M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2015-12-31 = $18.8M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2015-12-31 = $53.8M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2015-12-31 = $96.3M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2015-12-31 = $9.5M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2015-12-31 = $135.9M (XBRL tag Assets)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2015-12-31 = $26.8M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001376339-16-000138, filed 2016-02-29",
+      "id": "E22"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 58.4% vs receivables growth 101.5%; days sales outstanding 82 -> 105 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E23"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $6.2M -> $29.4M while operating cash flow $16.8M -> $18.8M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2015-03-31): revenue $40.8M vs $19.6M a year earlier (+108.4%); quarter-end receivables $31.0M vs $19.0M (+63.5%); quarter-end DSO 88 -> 69 days",
+      "source": "10-Q/10-K accessions 0001376339-15-000054, 0001376339-15-000054 (and prior-year 0001376339-14-000015)",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2015-06-30): revenue $45.7M vs $25.6M a year earlier (+78.6%); quarter-end receivables $39.4M vs $20.5M (+92.4%); quarter-end DSO 73 -> 79 days",
+      "source": "10-Q/10-K accessions 0001376339-15-000084, 0001376339-15-000084 (and prior-year 0001376339-14-000032)",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2015-09-30): revenue $49.0M vs $33.5M a year earlier (+46.2%); quarter-end receivables $46.8M vs $23.3M (+100.7%); quarter-end DSO 63 -> 87 days",
+      "source": "10-Q/10-K accessions 0001376339-15-000100, 0001376339-15-000100 (and prior-year 0001376339-14-000043)",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2015-12-31): revenue $51.8M vs $39.6M a year earlier (+31.0%); quarter-end receivables $53.8M vs $26.7M (+101.5%); quarter-end DSO 61 -> 94 days",
+      "source": "10-Q/10-K accessions 0001376339-16-000138, 0001376339-16-000138 (and prior-year 0001376339-15-000040)",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -1.2349 (flag threshold -1.78; flagged=True). Indices: DSRI=1.2721 GMI=1.0008 AQI=1.3355 SGI=1.5843 DEPI=1.129 SGAI=0.9305 TATA=0.0783 LVGI=1.1696",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E29"
+    },
+    {
+      "kind": "mdna",
+      "text": "On December 22, 2014, the FDA issued for comment \u201cDraft Guidance for Industry and FDA Staff: Minimal Manipulation of Human Cells, Tissues, and Cellular and Tissue-Based Products.\u201d Essentially, the Minimal Manipulation draft guidance takes the same position with respect to micronized amniotic tissue that it took in the Untitled Letter to the Company 16 months earlier. The Company submitted comments to the Minimal Manipulation draft guidance asserting that the Minimal Manipulation draft guidance represents agency action that goes far beyond the FDA\u2019s statutory authority, is inconsistent with existing HCT/ P regulations and the FDA\u2019s prior positions, and is internally inconsistent and scientifically unsound. On October 28, 2015, the FDA issued for comment, \"Draft Guidance for Industry and FDA Staff: Homologous Use of Human Cells, Tissues, and Cellular and Tissue-Based Products.\" The Company submitted comments on this Homologous Use draft guidance. The FDA has also indicated that it will hold a public hearing on a date in 2016 to be determined to obtain input on the Homologous Use draft guidance and the previously released Minimal Manipulation draft guidance, as well as other recently issued guidance documents on HCT/Ps. The Company has requested, and has been granted an opportunity to speak at this hearing.",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E30"
+    },
+    {
+      "kind": "mdna",
+      "text": "On January 13, 2016, the Company completed the acquisition of Stability Inc., d/b/a Stability Biologics, a provider of human tissue products to surgeons, facilities, and distributors serving the surgical, spine, and orthopedic sectors of the healthcare industry. The acquisition of Stability was effected by the merger of Stability Inc. into a newly created wholly owned subsidiary of the Company. The new subsidiary was the surviving company in the merger and was subsequently renamed Stability Biologics, LLC (\"Stability\"). The Company paid $10 million at the closing, comprised of 60% cash and 40% in shares of common stock of the Company, assumed approximately $800,000 in debt and eliminated a $2.4 million receivable related to Company products sold to Stability prior to the acquisition. The Company will also pay future contingent consideration through a two-year earn out arrangement based on the 2016 and 2017 performance of Stability's business. The Company expects the earn out will be the larger portion of the overall consideration for the transaction. The earn out will also be paid in the form of 60% cash and 40% in shares of stock of the Company",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "Critical Accounting Policies \n We believe that of our significant accounting policies, which are described in Note 2 to our financial statements appearing elsewhere in this report, the following accounting policies involve a greater degree of judgment and complexity. \n Revenue Recognition and Sales Returns, Discounts, and Allowances Accruals \n The Company sells its products primarily through a combination of a direct sales force, independent stocking distributors and third - party representatives in the U.S. and independent distributors in international markets. The Company recognizes revenue when title to the goods and risk of loss transfers to customers, provided there are no material remaining performance obligations required of the Company or any matters of customer acceptance. In cases where the Company utilizes distributors or ships products directly to the end user, it recognizes revenue according to the shipping terms of the agreement provided all revenue recognition criteria have been met. A portion of the Company\u2019s revenue is generated from inventory maintained at hospitals or with field representatives. For these products, revenue is recognized at the time the product has been",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "Off-Balance Sheet Arrangements \n We have no off-balance sheet arrangements. \n Liquidity and Capital Resources \n Our net working capital at December 31, 2015, increased $2.2 million to $69.5 million from $67.3 million at December 31, 2014. The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases. The current ratio (current assets divided by current liabilities) decreased to 3.6 as of December 31, 2015, as compared to 4.6 at December 31, 2014. \n On October 12, 2015, the Company and its subsidiaries entered into a Credit Agreement (the \"Credit Agreement\") with certain lenders and Bank of America, N.A., as administrative agent. The Credit Agreement establishes a senior secured revolving credit facility in favor of the Company, with an aggregate lender commitment of up to $50 million at any time",
+      "source": "10-K MD&A, 10-K filing",
+      "id": "E33"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the rise in receivables to revenue growth, but receivables grew 101.5% while revenue grew only 58.4%, pushing DSO from 82 to 105 days. Quarterly data show receivables surged far above revenue in Q3 and Q4, indicating shipment timing or extended terms rather than pure demand growth. The explanation for revenue growth itself is not provided in the evidence.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases.",
+            "numbers_show": "Receivables grew 101.5% (from $26.7M to $53.8M) vs. revenue growth of 58.4% (from $118.2M to $187.3M). DSO rose from 82 to 105 days. Quarterly signals show receivables growth far exceeding revenue growth in Q3 (+100.7% vs +46.2%) and Q4 (+101.5% vs +31.0%), with DSO jumping to 87 and 94 days respectively.",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Revenue growth caused the receivables increase (implied).",
+            "numbers_show": "Operating cash flow grew only $2M (from $16.8M to $18.8M) while net income grew $23M (from $6.2M to $29.4M). The $27M increase in receivables accounts for most of the divergence. The disproportionate receivables growth suggests the cash flow shortfall stems from timing/terms, not just demand-driven revenue growth.",
+            "fit": "does not fit",
+            "evidence": [
+              "E6",
+              "E17",
+              "E7",
+              "E18",
+              "E24",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "No specific driver for revenue growth is stated in the provided MD&A excerpts.",
+            "numbers_show": "Revenue grew 58.4% year-over-year. The MD&A excerpts discuss FDA guidance (E30), a post-year-end acquisition (E31), revenue recognition policy (E32), and working capital (E33) but do not cite a cause for the revenue increase (e.g., volume, price, new products, market expansion).",
+            "fit": "unverified",
+            "evidence": [
+              "E30",
+              "E31",
+              "E32",
+              "E33"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific factors drove the 58% revenue growth in FY2015 (volume, price, new products, market expansion)?",
+          "Why did DSO increase from 82 to 105 days, and what portion is due to extended payment terms versus shipment timing?",
+          "Were there changes in distributor agreements or sales terms that contributed to the disproportionate receivables growth in Q3 and Q4?",
+          "How much of the Q4 receivables balance relates to shipments in the final weeks of the quarter, and what was collected in early 2016?"
+        ],
+        "what_would_change_my_mind": [
+          "Disclosure of segment or product mix shifts showing a higher proportion of sales with longer contractual payment terms.",
+          "Evidence that the DSO spike is temporary, such as a known year-end promotion or shipment delay that reversed in early 2016.",
+          "A reconciliation showing the excess receivables (above the revenue-growth-implied level) were collected shortly after year-end."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The disproportionate receivables growth in Q3 and Q4 reflects a shipment timing effect where a higher concentration of sales occurred late in each quarter, temporarily inflating quarter-end receivables and DSO, as shown by the quarter-level signals (E27, E28). This timing effect is visible in the numbers and does not imply extended terms or collection issues.",
+            "evidence": [
+              "E27",
+              "E28"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The divergence between net income and operating cash flow is fully explained by the $27M increase in accounts receivable (E7, E18), which itself is driven by the Q3-Q4 shipment timing effect visible in the quarter-level signals (E27, E28), not by any deterioration in earnings quality.",
+            "evidence": [
+              "E6",
+              "E17",
+              "E7",
+              "E18",
+              "E24",
+              "E27",
+              "E28"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The provided MD&A excerpts are limited to specific topics (FDA guidance, post-year-end acquisition, accounting policy, working capital) and do not represent the full revenue discussion; the revenue growth driver may be disclosed in other sections of the 10-K not included in the evidence pack.",
+            "evidence": [
+              "E30",
+              "E31",
+              "E32",
+              "E33"
+            ],
+            "support": "outside the pack"
+          }
+        ],
+        "overall": "The investigator's verdict does not fully stand because the quarter-level signals (E27, E28) demonstrate a shipment timing effect that plausibly explains the receivables surge without requiring extended terms. The lack of a stated revenue growth driver in the provided MD&A excerpts is due to the limited scope of the evidence pack, not an omission in the company's full filing."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.9,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Receivables grew 101.5% (from $26.7M to $53.8M) while revenue grew only 58.4% (from $118.2M to $187.3M), and DSO rose from 82 to 105 days. Quarterly signals show receivables growth far exceeding revenue growth in Q3 (+100.7% vs +46.2%) and Q4 (+101.5% vs +31.0%), with DSO jumping to 87 and 94 days respectively. This contradicts management's claim that the receivables increase was primarily due to revenue growth.",
+            "evidence": [
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "does not fit",
+            "reason": "Operating cash flow increased only $2M (from $16.8M to $18.8M) while net income rose $23M (from $6.2M to $29.4M). The $27M increase in accounts receivable (from $26.7M to $53.8M) accounts for most of the divergence. Since receivables grew disproportionately to revenue, the cash\u2011flow shortfall cannot be attributed solely to demand\u2011driven revenue growth.",
+            "evidence": [
+              "E6",
+              "E17",
+              "E7",
+              "E18",
+              "E24",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "The MD&A excerpts provided (E30\u2011E33) discuss FDA guidance, a post\u2011year\u2011end acquisition, revenue recognition policy, and working capital but do not state a specific driver for the 58.4% revenue growth. The defender notes the full 10\u2011K may contain such discussion, but that information is outside the evidence pack. Therefore, we cannot verify whether management offered a causal explanation for the revenue increase.",
+            "evidence": [
+              "E30",
+              "E31",
+              "E32",
+              "E33"
+            ]
+          }
+        ],
+        "deciding_evidence": "E23 (receivables growth 101.5% vs revenue growth 58.4%, DSO 82\u2192105) and E27/E28 (quarterly receivables growth far exceeding revenue growth in Q3 and Q4, with DSO spikes to 87 and 94 days).",
+        "evidence_that_would_settle_it": [
+          "A weekly or monthly shipment/revenue breakdown for Q3 and Q4 2015 showing the timing of revenue recognition within each quarter.",
+          "Disclosure of any changes to distributor payment terms or credit policies during 2015.",
+          "A post\u2011year\u2011end collection report (e.g., January 2016 cash receipts) showing how much of the Q4 receivables balance was collected shortly after year\u2011end."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 14,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 13,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 14,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the receivables increase solely to revenue growth, but receivables grew 101.5% versus 58.4% revenue growth, and DSO deteriorated from 82 to 105 days, with sharp quarterly increases in H2. Operating cash flow barely rose ($16.8M to $18.8M) while net income jumped $23M, a gap fully explained by the $27M receivables buildup. The stated reasons do not account for the disproportionate receivables growth or the cash flow divergence.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable, mostly offset by cash used for share repurchases. (E33)",
+            "numbers_show": "Revenue grew 58.4% ($118.2M to $187.3M) while receivables grew 101.5% ($26.7M to $53.8M). DSO rose from 82 to 105 days (E23). Quarterly DSO jumped from 63 to 87 days in Q3 and 61 to 94 days in Q4 (E27, E28). The $27.1M receivables increase accounts for nearly all of the $23.2M net income rise that did not convert to operating cash flow (CFO up only $2M) (E24, E7, E18). Share repurchases are a financing outflow, not an operating cash flow item.",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E24",
+              "E27",
+              "E28",
+              "E33",
+              "E7",
+              "E18"
+            ]
+          },
+          {
+            "management_says": "No explicit statement in the provided MD&A on why revenue grew (e.g., demand, new products, pricing). The FDA guidance discussion (E30) and post-year-end acquisition (E31) do not explain FY2015 revenue growth.",
+            "numbers_show": "Revenue grew 58.4% year-over-year with accelerating quarterly growth rates (Q1 +108%, Q2 +79%, Q3 +46%, Q4 +31%) (E25-E28). No segment or product mix data is provided to corroborate a demand-driven explanation.",
+            "fit": "unverified",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "management_says": "Revenue is recognized when title and risk of loss transfer, including for consignment inventory at hospitals/field representatives when product is used (E32).",
+            "numbers_show": "The consignment model could delay receivables recognition until use, but the observed pattern shows receivables growing faster than revenue and DSO rising, which is inconsistent with a simple shift to consignment (that would typically reduce DSO). The Beneish M-score is flagged (DSRI=1.27, SGI=1.58) (E29).",
+            "fit": "does not fit",
+            "evidence": [
+              "E29",
+              "E32",
+              "E23",
+              "E27",
+              "E28"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific demand drivers (volume, price, new products, market share) caused the 58% revenue growth, and can you quantify each?",
+          "Why did DSO increase from 82 to 105 days, with the sharpest deterioration in Q3 and Q4? Were payment terms extended, was there channel loading, or did collections slow?",
+          "How much of the revenue growth is attributable to the Stability relationship prior to the January 2016 acquisition, and did that relationship involve different payment terms?",
+          "Given that the $27M receivables increase explains nearly all of the operating cash flow shortfall versus net income, when and how do you expect this receivables buildup to convert to cash?",
+          "Does the Beneish M-score flag (DSRI=1.27) reflect any changes in accounting estimates or revenue recognition timing that you have not disclosed?"
+        ],
+        "what_would_change_my_mind": [
+          "A segment or product mix breakdown showing that the revenue growth came from higher-DSO channels (e.g., international distributors, consignment) in proportions that mathematically explain the DSO increase.",
+          "Disclosure of extended payment terms offered in H2 2015 with a quantification of the receivables impact matching the $11-12M excess over constant-DSO expectations.",
+          "Quarterly cash collection data demonstrating that cash receipts tracked revenue with a consistent lag, and that the year-end receivables spike was due to shipment timing within the quarter.",
+          "An explanation for the Beneish M-score elevation that identifies a specific, benign accounting change (e.g., revenue recognition policy shift) with a quantified effect on receivables and revenue timing."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The disproportionate receivables growth and DSO deterioration may reflect a shift in sales mix toward international distributors and consignment arrangements (per the revenue recognition policy in E32) which typically carry longer payment terms, but the evidence pack does not contain segment or channel revenue breakdowns to quantify this mix shift and confirm it accounts for the 101.5% receivables growth versus 58.4% revenue growth.",
+            "evidence": [
+              "E32",
+              "E23",
+              "E27",
+              "E28"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 58.4% revenue growth with accelerating then decelerating quarterly rates (E25-E28) could be driven by organic market demand, new product adoption, or geographic expansion, but the pack provides no segment, product, or pricing data to identify and quantify the specific drivers; the FDA guidance discussions (E30) and post-year-end acquisition (E31) are unrelated to FY2015 performance.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ],
+            "support": "outside the pack"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The consignment revenue recognition policy (E32) may create timing differences between revenue recognition (at point of use) and receivables recording (at billing), which could elevate DSO without implying manipulation; the Beneish M-score flag (E29) is driven largely by the high sales growth index (SGI=1.58) and receivables growth index (DSRI=1.27) that are typical of a rapidly growing company, but the pack lacks data on the proportion of consignment sales or billing lag to quantify this effect.",
+            "evidence": [
+              "E32",
+              "E29",
+              "E23",
+              "E27",
+              "E28"
+            ],
+            "support": "outside the pack"
+          }
+        ],
+        "overall": "The investigator's verdict stands because the evidence pack does not contain segment or channel data to substantiate a mix-shift explanation for the receivables surge, nor does it provide quarterly cash collection details to confirm a benign timing effect. Without such data, the divergence between revenue growth, receivables growth, and operating cash flow remains unexplained by the reported numbers alone."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.9,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Management attributes the receivables increase to revenue growth, but receivables grew 101.5% versus 58.4% revenue growth, DSO rose from 82 to 105 days, and quarterly DSO spiked in H2 (Q3: 63\u219287 days, Q4: 61\u219294 days). The $27.1M receivables increase accounts for nearly all of the $23.2M net income rise that did not convert to operating cash flow (CFO up only $2M). Share repurchases are a financing outflow, not an operating cash flow item. The numbers contradict the claim that revenue growth is the primary driver.",
+            "evidence": [
+              "E23",
+              "E24",
+              "E27",
+              "E28",
+              "E33",
+              "E7",
+              "E18"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "Management provides no explicit causal explanation for the 58.4% revenue growth in the MD&A; the FDA guidance discussion (E30) and post-year-end acquisition (E31) are unrelated to FY2015 performance. The evidence pack contains no segment, product, or pricing data to verify any demand-driven story.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "does not fit",
+            "reason": "The consignment revenue recognition policy (E32) is cited as a potential driver of DSO elevation, but the observed pattern shows receivables growing faster than revenue and DSO rising sharply in H2, which is not explained by the policy alone. The Beneish M-score flag (E29) is driven by high growth indices typical of rapid growth, but the pack lacks data on the proportion of consignment sales or billing lag to quantify the effect. The policy does not appear in the numbers as a visible driver of the disproportionate receivables growth.",
+            "evidence": [
+              "E29",
+              "E32",
+              "E23",
+              "E27",
+              "E28"
+            ]
+          }
+        ],
+        "deciding_evidence": "E23 (revenue vs receivables growth and DSO change), E24 (net income vs CFO divergence), E27 and E28 (quarterly DSO deterioration in H2)",
+        "evidence_that_would_settle_it": [
+          "A segment/channel revenue breakdown with payment terms to quantify mix-shift impact on DSO",
+          "Quarterly cash collection data to confirm whether receivables buildup is a timing issue",
+          "Disclosure of any extended payment terms offered in H2 2015 with quantified receivables impact"
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 18,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 15,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 18,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes the receivables increase to revenue growth (E33), but receivables grew 101.5% versus 58.4% revenue growth, with DSO rising from 82 to 105 days (E23). Quarterly signals show H2 FY2015 revenue growth decelerating while receivables growth accelerated and DSO deteriorated sharply (E27, E28), indicating the receivables buildup came from timing/terms rather than pure demand. Operating cash flow barely rose ($16.8M to $18.8M) despite net income jumping $23.2M, with the $27.1M receivables increase absorbing the earnings (E24, E6, E17, E7, E18). Management provides no causal explanation for the revenue growth itself or the cash-flow divergence in the supplied MD&A.",
+        "findings": [
+          {
+            "management_says": "The increase in working capital was primarily due to our revenue growth resulting in an increase in accounts receivable (E33).",
+            "numbers_show": "Receivables grew 101.5% ($26.7M to $53.8M) while revenue grew 58.4% ($118.2M to $187.3M); DSO rose from 82 to 105 days (E23). Quarterly: Q3 revenue +46% but receivables +101% (DSO 63\u219287); Q4 revenue +31% but receivables +102% (DSO 61\u219294) (E27, E28).",
+            "fit": "does not fit",
+            "evidence": [
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "No explicit causal explanation for FY2015 revenue growth is provided in the supplied MD&A snippets (E30\u2013E33). FDA guidance items are cited as headwinds (E30); the Stability acquisition closed after year-end (E31).",
+            "numbers_show": "Revenue grew 58.4% year-over-year. Quarter-level signals show growth decelerating through the year (Q1 +108%, Q2 +79%, Q3 +46%, Q4 +31%) while receivables growth accelerated in H2, inconsistent with pure end-demand acceleration (E25\u2013E28).",
+            "fit": "unverified",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "management_says": "No explicit explanation for the divergence between net income growth and operating cash flow is provided in the supplied MD&A (E33 mentions share repurchases offsetting working capital increase but does not address the receivables-cash gap).",
+            "numbers_show": "Net income rose $23.2M ($6.2M to $29.4M) while CFO rose only $2.0M ($16.8M to $18.8M). The $27.1M increase in receivables ($26.7M to $53.8M) accounts for virtually all of the earnings-to-cash shortfall (E24, E6, E17, E7, E18).",
+            "fit": "unverified",
+            "evidence": [
+              "E24",
+              "E6",
+              "E17",
+              "E7",
+              "E18",
+              "E33"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific factors drove the disproportionate receivables growth and DSO deterioration in H2 FY2015 (Q3 DSO 63\u219287, Q4 DSO 61\u219294) while revenue growth was decelerating?",
+          "Were there changes to payment terms, distributor stocking levels, or consignment inventory practices in the second half that caused revenue to be recognized before cash collection?",
+          "Can you quantify how much of the FY2015 revenue growth came from shipment timing, extended terms, or channel loading versus underlying end-market demand?",
+          "Why did operating cash flow not reflect the $23.2M increase in net income, and what is the expected timeline for converting the $53.8M year-end receivables balance into cash?"
+        ],
+        "what_would_change_my_mind": [
+          "Disclosure of a specific, large H2 customer contract with extended payment terms that explains the DSO jump and is supported by segment or customer-concentration data.",
+          "Evidence that the H2 receivables surge reflects a temporary collection delay (e.g., a major payer processing backlog) that reversed in early FY2016.",
+          "A breakdown showing that the revenue growth in Q3\u2013Q4 came from new product launches or geographic expansion with inherently longer collection cycles, accompanied by a stable or improving aging schedule.",
+          "Confirmation that the Stability acquisition (closed Jan 2016) contributed no revenue to FY2015, eliminating acquisition accounting as a factor."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The disproportionate receivables growth and DSO deterioration in H2 FY2015 reflect a timing effect where a larger share of quarterly revenue was shipped late in the quarter, as shown by quarter-end receivables growing faster than quarterly revenue in Q3 (receivables +101% vs revenue +46%) and Q4 (receivables +102% vs revenue +31%) (E27, E28). This is consistent with the company's revenue recognition policy for distributor and consignment sales, which can cause receivables to build ahead of collections (E32).",
+            "evidence": [
+              "E27",
+              "E28",
+              "E32"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The 58.4% FY2015 revenue growth was driven by organic demand across all quarters, with year-over-year quarterly growth of +108%, +79%, +46%, and +31% (E25-E28). The deceleration reflects a toughening comparator after a strong Q1, not a demand slowdown, and the Stability acquisition closed after year-end (E31), confirming the growth was organic.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E31"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $23.2M net income increase versus only $2.0M CFO increase is fully accounted for by the $27.1M rise in accounts receivables (E7, E18), which absorbed earnings as a temporary working capital investment due to the timing of H2 shipments and collections (E23, E27, E28). The receivables balance is expected to convert to cash as collections occur, and the company's credit facility (E33) provides liquidity.",
+            "evidence": [
+              "E7",
+              "E18",
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that management's specific explanation for receivables growth does not fit the numbers stands, but the quarterly signals support an innocent timing-effect explanation for the DSO deterioration and cash-flow divergence. The financial patterns are consistent with organic revenue growth and temporary working capital investment rather than manipulation."
+      },
+      "judge": {
+        "final_verdict": "explanation does not fit the numbers",
+        "confidence": 0.9,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "does not fit",
+            "reason": "Management attributes the receivables increase to revenue growth (E33), but receivables grew 101.5% while revenue grew only 58.4%, and DSO rose from 82 to 105 days (E23). Quarterly signals show receivables growth accelerating in H2 (Q3 +101%, Q4 +102%) while revenue growth decelerated (Q3 +46%, Q4 +31%), with DSO deteriorating sharply (E27, E28). This contradicts a simple revenue-growth driver.",
+            "evidence": [
+              "E23",
+              "E27",
+              "E28",
+              "E33"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "unverified",
+            "reason": "The supplied MD&A snippets (E30\u2013E33) contain no explicit causal explanation for FY2015 revenue growth. The numbers show 58.4% year-over-year growth with quarterly deceleration (E25\u2013E28), but the driver (organic demand, timing, etc.) is not disclosed by management. The defender's organic-demand explanation is an inference, not management's statement.",
+            "evidence": [
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E30",
+              "E31"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "Management provides no explicit explanation for the divergence between net income growth ($23.2M) and operating cash flow growth ($2.0M) in the supplied MD&A (E33 mentions share repurchases but not the receivables-cash gap). The numbers show the $27.1M receivables increase accounts for the shortfall (E24, E6, E17, E7, E18), but management does not explain why receivables grew disproportionately.",
+            "evidence": [
+              "E24",
+              "E6",
+              "E17",
+              "E7",
+              "E18",
+              "E33"
+            ]
+          }
+        ],
+        "deciding_evidence": "E23 (receivables growth 101.5% vs revenue 58.4%, DSO 82\u2192105) and E33 (management's statement attributing working capital increase to revenue growth)",
+        "evidence_that_would_settle_it": [
+          "Disclosure of specific H2 customer contracts with extended payment terms that explain the DSO jump, supported by segment or customer-concentration data.",
+          "Evidence that the H2 receivables surge reflects a temporary collection delay (e.g., major payer processing backlog) that reversed in early FY2016."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 16,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 14,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 16,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation does not fit the numbers": 3
+    },
+    "judge": {
+      "explanation does not fit the numbers": 3
+    }
+  }
+}

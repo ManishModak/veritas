@@ -1,0 +1,972 @@
+{
+  "cik": 1375365,
+  "company": "Super Micro Computer",
+  "fy_end": "2015-06-30",
+  "anonymized": true,
+  "masks": [
+    [
+      "Super ?Micro(?: Computer)?(?:, Inc\\.)?",
+      "the Company"
+    ],
+    [
+      "Supermicro",
+      "the Company"
+    ],
+    [
+      "SMCI",
+      "the Company"
+    ]
+  ],
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "evidence": [
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2014-06-30 = $1,467.2M (XBRL tag SalesRevenueNet)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E1"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2014-06-30 = $1,241.7M (XBRL tag CostOfRevenue)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E2"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2014-06-30 = $23.0M (XBRL tag GeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E3"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2014-06-30 = $6.4M (XBRL tag DepreciationDepletionAndAmortization)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E4"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2014-06-30 = $54.2M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E5"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2014-06-30 = $6.5M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E6"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2014-06-30 = $212.7M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E7"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2014-06-30 = $654.1M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E8"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2014-06-30 = $130.6M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E9"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2014-06-30 = $796.3M (XBRL tag Assets)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E10"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2014-06-30 = $310.9M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E11"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2014-06-30 = $3.7M (XBRL tag LongTermDebtNoncurrent)",
+      "source": "10-K accession 0001445305-14-003958, filed 2014-09-15",
+      "id": "E12"
+    },
+    {
+      "kind": "fact",
+      "text": "revenue for fiscal year ending 2015-06-30 = $1,991.2M (XBRL tag SalesRevenueNet)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E13"
+    },
+    {
+      "kind": "fact",
+      "text": "cogs for fiscal year ending 2015-06-30 = $1,670.9M (XBRL tag CostOfRevenue)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E14"
+    },
+    {
+      "kind": "fact",
+      "text": "sga for fiscal year ending 2015-06-30 = $24.4M (XBRL tag GeneralAndAdministrativeExpense)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E15"
+    },
+    {
+      "kind": "fact",
+      "text": "depreciation for fiscal year ending 2015-06-30 = $8.1M (XBRL tag DepreciationDepletionAndAmortization)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E16"
+    },
+    {
+      "kind": "fact",
+      "text": "net_income for fiscal year ending 2015-06-30 = $101.9M (XBRL tag NetIncomeLoss)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E17"
+    },
+    {
+      "kind": "fact",
+      "text": "cfo for fiscal year ending 2015-06-30 = $-44.6M (XBRL tag NetCashProvidedByUsedInOperatingActivities)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E18"
+    },
+    {
+      "kind": "fact",
+      "text": "receivables for fiscal year ending 2015-06-30 = $322.6M (XBRL tag AccountsReceivableNetCurrent)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E19"
+    },
+    {
+      "kind": "fact",
+      "text": "current_assets for fiscal year ending 2015-06-30 = $914.4M (XBRL tag AssetsCurrent)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E20"
+    },
+    {
+      "kind": "fact",
+      "text": "ppe for fiscal year ending 2015-06-30 = $163.0M (XBRL tag PropertyPlantAndEquipmentNet)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E21"
+    },
+    {
+      "kind": "fact",
+      "text": "assets for fiscal year ending 2015-06-30 = $1,089.8M (XBRL tag Assets)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E22"
+    },
+    {
+      "kind": "fact",
+      "text": "current_liabilities for fiscal year ending 2015-06-30 = $454.1M (XBRL tag LiabilitiesCurrent)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E23"
+    },
+    {
+      "kind": "fact",
+      "text": "lt_debt for fiscal year ending 2015-06-30 = $0.9M (XBRL tag LongTermDebtNoncurrent)",
+      "source": "10-K accession 0001628280-15-007025, filed 2015-09-10",
+      "id": "E24"
+    },
+    {
+      "kind": "signal",
+      "text": "Revenue growth 35.7% vs receivables growth 51.6%; days sales outstanding 53 -> 59 days",
+      "source": "computed from the revenue and receivables facts",
+      "id": "E25"
+    },
+    {
+      "kind": "signal",
+      "text": "Net income $54.2M -> $101.9M while operating cash flow $6.5M -> $-44.6M",
+      "source": "computed from the net income and cash-flow facts",
+      "id": "E26"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q1 (quarter ending 2014-09-30): revenue $443.3M vs $309.0M a year earlier (+43.5%); quarter-end receivables $194.4M vs $134.1M (+45.0%); quarter-end DSO 39 -> 40 days",
+      "source": "10-Q/10-K accessions 0001445305-14-004894, 0001445305-14-004894 (and prior-year 0001445305-13-002839)",
+      "id": "E27"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q2 (quarter ending 2014-12-31): revenue $503.0M vs $356.4M a year earlier (+41.2%); quarter-end receivables $258.8M vs $161.2M (+60.6%); quarter-end DSO 41 -> 47 days",
+      "source": "10-Q/10-K accessions 0001628280-15-000533, 0001628280-15-000533 (and prior-year 0001445305-14-000277)",
+      "id": "E28"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q3 (quarter ending 2015-03-31): revenue $471.2M vs $373.8M a year earlier (+26.1%); quarter-end receivables $221.6M vs $182.0M (+21.7%); quarter-end DSO 44 -> 43 days",
+      "source": "10-Q/10-K accessions 0001628280-15-003900, 0001628280-15-003900 (and prior-year 0001445305-14-001932)",
+      "id": "E29"
+    },
+    {
+      "kind": "signal",
+      "text": "Fiscal Q4 (quarter ending 2015-06-30): revenue $573.6M vs $428.1M a year earlier (+34.0%); quarter-end receivables $322.6M vs $212.7M (+51.6%); quarter-end DSO 45 -> 51 days",
+      "source": "10-Q/10-K accessions 0001628280-15-007025, 0001628280-15-007025 (and prior-year 0001445305-14-003958)",
+      "id": "E30"
+    },
+    {
+      "kind": "signal",
+      "text": "Beneish M-score = -1.5222 (flag threshold -1.78; flagged=True). Indices: DSRI=1.1174 GMI=0.9558 AQI=0.7747 SGI=1.3571 DEPI=0.978 SGAI=0.7804 TATA=0.1344 LVGI=1.0568",
+      "source": "computed from the facts above (Beneish 1999)",
+      "id": "E31"
+    },
+    {
+      "kind": "mdna",
+      "text": "We are a global leader in high performance, high efficiency server technology and innovation. We develop and provide end-to-end green computing solutions to the data center, cloud computing, enterprise IT, big data, HPC and embedded markets. Our solutions range from complete server, storage, blade and workstations to full racks, networking devices, server management software and technology support and services. For fiscal years 2015 , 2014 and 2013 , net sales of optimized servers were $1,213.6 million , $740.8 million and $501.9 million , respectively, and net sales of subsystems and accessories were $777.5 million , $726.4 million and $660.7 million , respectively. The increase in our net sales in fiscal year 2015 compared with fiscal year 2014 was primarily due to continue increased sales of our products optimized for OEM, internet data center cloud computing and enterprise verticals. In fiscal year 2015, we had a strong growth of our complete systems including storage servers and our Twin family of servers and to a lesser extent our GPU/Xeon Phi servers. Net sales also increased as a result of an increase in customers purchasing our software and service together with our complete systems as total solution packages. The percentage of our net sales represented by sales of complete server systems increased to 60.9% in fiscal year 2015 from 50.5% in fiscal year 2014.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E32"
+    },
+    {
+      "kind": "mdna",
+      "text": "We commenced operations in 1993 and have been profitable every year since inception. For fiscal years 2015 , 2014 and 2013 , our net sales were $1,991.2 million , $1,467.2 million and $1,162.6 million , respectively, and our net income was $101.9 million , $54.2 million and $21.3 million , respectively. Our increase in net income in fiscal year 2015 was primarily attributable to an increase in our gross profit resulting primarily from higher sales and improved gross margin and operating margin, partially offset by higher income tax expenses attributable to higher operating income.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E33"
+    },
+    {
+      "kind": "mdna",
+      "text": "We sell our server systems and subsystems and accessories primarily through distributors and OEMs as well as through our direct sales force. For fiscal years 2015 , 2014 and 2013 , we derived 50.3% , 54.1% and 56.3% , respectively, of our net sales from products sold to distributors. One of our customers accounted for 10.1% of our net sales in fiscal year 2015, and none of our customers accounted for 10% or more of our net sales in fiscal years 2014 and 2013 . For fiscal years 2015 , 2014 and 2013 , we derived 58.3% , 55.2% and 54.2% , respectively, of our net sales from customers in the United States.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E34"
+    },
+    {
+      "kind": "mdna",
+      "text": "We perform the majority of our research and development efforts in-house. For fiscal years 2015 , 2014 and 2013 , research and development expenses represented 5.0% , 5.7% and 6.5% of our net sales, respectively.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E35"
+    },
+    {
+      "kind": "mdna",
+      "text": "In order to continue to increase our net sales and profits, we believe that we must continue to develop flexible and customizable server solutions and be among the first to market with new features and products. We must also continue to expand our software and customer service and support offerings, particularly as we increasingly focus on larger enterprise sales. We measure our financial success based on various indicators, including growth in net sales, gross profit as a percentage",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E36"
+    },
+    {
+      "kind": "mdna",
+      "text": "of net sales, operating income as a percentage of net sales, levels of inventory, and days sales outstanding, or DSOs. In connection with these efforts, we monitor daily and weekly sales and shipment reports. Among the key non-financial indicators of our success is our ability to rapidly introduce new products and deliver the latest application optimized server solutions. In this regard, we work closely with microprocessor and other component vendors to take advantage of new technologies as they are introduced. Historically, our ability to introduce new products rapidly has allowed us to benefit from the introduction of new microprocessors and as a result we monitor the introduction cycles of Intel, AMD and Nvidia carefully. This also impacts our research and development expenditures.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E37"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Days sales outstanding in accounts receivable (\u201cDSO\u201d) at the end of fiscal year 2015 was 48 days, compared with 44 days at the end of fiscal year 2014 . The increase in our DSO was primarily due to an increase in sales late in the quarter.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E38"
+    },
+    {
+      "kind": "mdna",
+      "text": "\u2022 \n Our inventory balance was $463.5 million at the end of fiscal year 2015 , compared with $315.8 million at the end of fiscal year 2014 . Days sales of inventory (\u201cDSI\u201d) at the end of fiscal year 2015 was 84 days, compared with 83 days at the end of fiscal year 2014 . The increase in our inventory was to support our anticipated level of growth in net sales in fiscal year 2016.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E39"
+    },
+    {
+      "kind": "mdna",
+      "text": "Net sales. Net sales consist of sales of our server solutions, including server systems, subsystems and accessories. The main factors which impact our net sales are unit volumes shipped and average selling prices. The prices for server systems range widely depending upon the configuration, and the prices for our subsystems and accessories vary based on the type. As with most electronics-based products, average selling prices typically are highest at the time of introduction of new products which utilize the latest technology and tend to decrease over time as such products mature in the market and are replaced by next generation products.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E40"
+    },
+    {
+      "kind": "mdna",
+      "text": "Cost of sales. Cost of sales primarily consists of the costs to manufacture our products, including the costs of materials, contract manufacturing, shipping, personnel and related expenses, equipment and facility expenses, warranty costs and inventory excess and obsolete provisions. The primary factors that impact our cost of sales are the mix of products sold and cost of materials, which include raw material costs, shipping costs and salary and benefits related to production. Cost of sales as a percentage of net sales may increase over time if decreases in average selling prices are not offset by corresponding decreases in our costs. Our cost of sales, as a percentage of net sales, is generally lower on server systems than on subsystems and accessories, but generally higher in the case of sales of server systems to internet data system customers. Because we generally do not have long-term fixed supply agreements, our cost of sales is subject to change based on market conditions.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E41"
+    },
+    {
+      "kind": "mdna",
+      "text": "Sales and marketing expenses. Sales and marketing expenses consist primarily of salaries and incentive bonuses for our sales and marketing personnel, costs for tradeshows, independent sales representative fees and marketing programs. From time to time, we receive cooperative marketing funding from certain suppliers. Under these programs, we are reimbursed for certain marketing costs that we incur as part of the joint promotion of our products and those of our suppliers. These amounts offset a portion of the related expenses and have the effect of reducing our reported sales and marketing expenses. Similarly, we from time to time offer our distributors cooperative marketing funding which has the effect of increasing our expenses. The timing, magnitude and estimated usage of our programs and those of our suppliers can result in significant variations in reported sales and marketing expenses from period to period. Spending on cooperative marketing, either by us or our suppliers, typically increases in connection with significant product releases by us or our suppliers.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E42"
+    },
+    {
+      "kind": "mdna",
+      "text": "Our discussion and analysis of our financial condition and results of operations are based upon our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the United States. The preparation of these financial statements requires us to make estimates and judgments that affect the reported amount of assets, liabilities, revenues and expenses. We evaluate our estimates on an on-going basis, including those related to allowances for doubtful accounts and sales returns, inventory valuations, income taxes, warranty obligations, stock-based compensation and impairment of short-term and long-term investments. We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances, the results of which form the basis for making the judgments we make about the carrying values of assets and liabilities that are not readily apparent from other sources. Because these estimates can vary depending on the situation, actual results may differ from the estimates.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E43"
+    },
+    {
+      "kind": "mdna",
+      "text": "We have an immaterial amount of service revenue relating to on-site service and non-warranty repairs. Revenue for on-site service is recognized over the contracted service period, and revenue for non-warranty repair service is recognized upon shipment of the repaired units to customers. Service revenue has been less than 10% of net sales for all periods presented and is not separately disclosed.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E44"
+    },
+    {
+      "kind": "mdna",
+      "text": "charged to cost of sales and included in accrued liabilities. The liability for product warranties was $7.7 million as of June 30, 2015 , compared with $7.1 million as of June 30, 2014 . The provision for warranty reserve was $15.8 million , $14.2 million and $13.4 million in fiscal years 2015 , 2014 and 2013 , respectively. Our estimates and assumptions used have been historically close to actual. The change in estimated liability for pre-existing warranties was ($0.2) million , $0.4 million and ($1,000) in fiscal years 2015 , 2014 and 2013 , respectively. As a result of our increase in cost of servicing warranty claims from our increase in net sales in fiscal year 2015 and 2014 , the provision for warranty reserve increased $1.6 million and $0.7 million in fiscal year 2015 and 2014, respectively. If in future periods, we experience or anticipate an increase or decrease in warranty claims as a result of new product introductions or change in unit volumes compared with our historical experience, or if the cost of servicing warranty claims is greater or lesser than expected, we intend to adjust our estimates appropriately.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E45"
+    },
+    {
+      "kind": "mdna",
+      "text": "Inventory valuation. Inventory is valued at the lower of cost or market. We evaluate inventory on a quarterly basis for lower of cost or market and excess and obsolescence and, as necessary, write down the valuation of units based upon the number of units that are unlikely to be sold based upon estimated demand for the following twelve months as well as historical usage and sales activity. This evaluation takes into account matters including expected demand, historical usage and sales, anticipated sales price, product obsolescence and other factors. If actual future demand for our products is less than currently forecasted, additional inventory adjustments may be required. Once a reserve is established, it is maintained until the product to which it relates is sold or scrapped. If a unit that has been written down is subsequently sold, the cost associated with the revenue from this unit is reduced to the extent of the write down, resulting in an increase in gross profit. We monitor the extent to which previously written down inventory is sold at amounts greater or less than carrying value, and based on this analysis, adjust our estimate for determining future write downs. If in future periods, we experience or anticipate a change in recovery rate compared with our historical experience, our gross margin would be affected. Our provision for inventory was $5.9 million , $2.3 million and $9.7 million in fiscal years 2015 , 2014 and 2013 , respectively.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E46"
+    },
+    {
+      "kind": "mdna",
+      "text": "The increase in our net sales in fiscal year 2015 compared with fiscal year 2014 was primarily due to continued increased sales of our products optimized for OEM, internet data center cloud computing and enterprise verticals. The year-over-year growth in net sales of our server systems in fiscal year 2015 was due primarily to an increase in the average selling price of our server systems and to a lesser extent an increase in unit volumes of server systems. The average selling prices of our server systems increased primarily due to an increase in average selling prices of our complete server systems which offer higher density computing and more memory and hard disk drive capacity. The increase in the sales of these complete systems include our storage servers and our Twin family of servers and to a lesser extent our GPU/Xeon Phi servers. Net sales also increased as a result of an increase in customers purchasing our software and service together with our complete systems as total solution packages.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E47"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year growth in net sales and unit sales of our subsystems and accessories in fiscal year 2015 was primarily due to a higher sales of hard disk drives and memory bundled with our server solutions to our distributors and system integrators who increasingly are purchasing additional accessories from us and completing the final assembly themselves.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E48"
+    },
+    {
+      "kind": "mdna",
+      "text": "The increase in our net sales in fiscal year 2014 compared with fiscal year 2013 was primarily due to increased sales of our products optimized for the storage, HPC, cloud computing, data center and OEM verticals and the successful launch of our new products resulted from the technology transition from Intel's Sandybridge to Ivybridge processor in fiscal year 2014.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E49"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year growth in net sales of our server systems was due primarily to an increase in the average selling price of our server systems and to a lesser extent an increase in unit volumes of server systems. The average selling prices of our server systems increased primarily due to an increase in average selling prices of our complete server systems to OEM and end customers, the Twin family of servers, storage and GPU/Xeon Phi servers which offered higher density computing and more memory and hard disk drive capacity.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E50"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year growth in net sales and decrease in unit sales of our subsystems and accessories in fiscal year 2014, primarily related to higher sales of hard disk drives and memory bundled with our server solutions to our distributors and system integrators who are completing the final assembly themselves.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E51"
+    },
+    {
+      "kind": "mdna",
+      "text": "The following table presents the percentages of net sales from products sold to distributors and OEMs and to end customers for fiscal year 2015 , 2014 and 2013 :",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E52"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year increase in absolute dollars of cost of sales in fiscal year 2015 compared to fiscal year 2014 was primarily attributable to the increase in net sales, an increase of $3.7 million in provision for inventory reserve and an increase of $1.6 million in provision for warranty reserve. In fiscal year 2015 , we recorded a $5.9 million expense, net of recovery, or 0.3% of net sales, related to the inventory provision as compared to $2.3 million, or 0.2% of net sales, in fiscal year 2014. The increase in the inventory provision was primarily due to higher inventory reserves for specific products.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E53"
+    },
+    {
+      "kind": "mdna",
+      "text": "In fiscal year 2015, we recorded a $15.8 million expense, or 0.8% of net sales, related to the provision for warranty reserve as compared to a $14.2 million expense, or 1.0% of net sales, in fiscal year 2014. The increase in the provision for warranty reserve was primarily due to higher cost of servicing warranty claims from higher net sales in fiscal year 2015 . If in future periods we experience or anticipate an increase or decrease in warranty claims as a result of new product introductions or change in unit volumes compared with our historical experience, or if the cost of servicing warranty claims is greater or lesser than expected, our gross margin would be affected.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E54"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year increase in absolute dollars of cost of sales in fiscal year 2014 compared to fiscal year 2013 was primarily attributable to the increase in net sales partially offset by a decrease of $7.5 million in provision for inventory reserve. \n The decrease in the inventory provision was primarily due to lower inventory reserves for special items and higher sales of previously reserved inventory of $7.8 million as we have improved our processes and reduced our excess and slow moving inventory. In fiscal year 2014, we recorded a $14.2 million expense, or 1.0% of net sales, related to the provision for warranty reserve as compared to $13.4 million, or 1.2% of net sales, in fiscal year 2013. The increase in the provision for warranty reserve was primarily due to higher cost of servicing warranty claims from higher net sales in fiscal year 2014.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E55"
+    },
+    {
+      "kind": "mdna",
+      "text": "The year-over-year increase in the gross margin percentage in fiscal year 2014 compared to fiscal year 2013 was \n primarily due to a lower provision for inventory reserve, an increase in purchasing power, an increase in the mix of server system sales and higher utilization of our manufacturing facilities in Taiwan, offset by higher sales to internet data center customers, which generally have a lower gross margin.",
+      "source": "10-K MD&A, 10-K filing Company-2015630x10k.htm",
+      "id": "E56"
+    }
+  ],
+  "samples": [
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes 35.7% revenue growth to demand drivers (OEM, cloud, enterprise, mix shift to complete systems) and the DSO rise to 'increase in sales late in the quarter.' However, receivables grew 51.6% (DSO 53\u219259 days) and operating cash flow swung from +$6.5M to \u2013$44.6M while net income doubled. Quarterly signals show two quarters (Q2 and Q4) with receivables growth far exceeding revenue growth (60.6% vs 41.2% and 51.6% vs 34.0%), indicating a structural working-capital build, not a one-quarter timing effect. The cash-flow collapse is driven by a $110M receivables increase and a $148M inventory increase, which the stated reasons do not adequately explain.",
+        "findings": [
+          {
+            "management_says": "Revenue growth driven by continued increased sales to OEM, internet data center, cloud computing and enterprise verticals; mix shift to complete systems (60.9% from 50.5%).",
+            "numbers_show": "Revenue +35.7% ($1,467.2M\u2192$1,991.2M) but receivables +51.6% ($212.7M\u2192$322.6M), DSO 53\u219259 days, CFO \u2013$44.6M vs net income $101.9M. Excess receivables ~$34M above revenue-growth rate.",
+            "fit": "does not fit",
+            "evidence": [
+              "E13",
+              "E19",
+              "E25",
+              "E26",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E32",
+              "E47"
+            ]
+          },
+          {
+            "management_says": "DSO increase 'primarily due to an increase in sales late in the quarter.'",
+            "numbers_show": "Q2 (Dec) and Q4 (Jun) show large AR/revenue gaps: Q2 AR +60.6% vs Rev +41.2% (DSO 41\u219247); Q4 AR +51.6% vs Rev +34.0% (DSO 45\u219251). Q1 and Q3 show AR growth tracking revenue. Full-year DSO up 6 days implies persistent change, not isolated quarter-end timing.",
+            "fit": "does not fit",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ]
+          },
+          {
+            "management_says": "Inventory increase 'to support our anticipated level of growth in fiscal year 2016.' (No explicit explanation for CFO decline.)",
+            "numbers_show": "Inventory $315.8M\u2192$463.5M (+$147.7M, +47%). Combined with AR +$109.9M, working capital consumed ~$114M net of current liability increase ($143.2M), driving CFO to \u2013$44.6M. No MD&A explanation links this to the stated demand drivers.",
+            "fit": "unverified",
+            "evidence": [
+              "E18",
+              "E19",
+              "E20",
+              "E23",
+              "E39"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "Why did DSO jump in Q2 (December quarter) if the 'late-quarter sales' explanation applies mainly to fiscal year-end (Q4)?",
+          "Were payment terms extended to distributors or OEMs in FY2015? If so, by how many days and for which channels?",
+          "What percentage of Q4 revenue shipped in the final month of the quarter vs. the same period a year earlier?",
+          "How much of the $148M inventory build represents finished goods vs. components, and what is the expected sell-through timeline?",
+          "Can you provide a receivables aging breakdown by channel (distributor, OEM, direct) for June 30, 2015 vs. June 30, 2014?"
+        ],
+        "what_would_change_my_mind": [
+          "Evidence that Q1 FY2016 receivables declined sharply (reversing the Q4 build), confirming a pure timing effect.",
+          "Disclosure of specific payment-term changes that quantitatively explain the 6-day DSO increase.",
+          "Confirmation that the excess ~$34M in receivables was collected in July\u2013August 2015.",
+          "Segment-level cash collection data showing distributor sell-through rates consistent with reported revenue growth."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 35.7% revenue growth was driven by a 63.8% surge in optimized server systems (complete systems) which carry longer collection periods due to larger deal sizes and OEM/enterprise payment terms; this mix shift (from 50.5% to 60.9% of sales) accounts for receivables growing 51.6% and DSO rising 6 days.",
+            "evidence": [
+              "E32",
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The DSO increase reflects late-quarter sales spikes in both Q2 (December) and Q4 (June), not just Q4; quarterly signals show AR growth significantly exceeding revenue growth in those two quarters while Q1 and Q3 show proportional growth, consistent with seasonal product launch cycles that concentrate shipments at quarter-end.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $147.7M inventory increase was a deliberate build to support the anticipated FY2016 growth trajectory (35.7% FY2015 revenue growth), as stated in MD&A; the CFO decline to -$44.6M is the mechanical consequence of funding both the receivables increase ($109.9M) and inventory build ($147.7M) net of current liability growth ($143.2M), which is typical for a capital-efficient hardware company scaling rapidly.",
+            "evidence": [
+              "E18",
+              "E19",
+              "E20",
+              "E23",
+              "E39",
+              "E32"
+            ],
+            "support": "management's word"
+          }
+        ],
+        "overall": "The investigator's verdict overstates the mismatch; the segment mix shift and quarterly shipment timing visible in the numbers plausibly explain the receivables and DSO patterns. The inventory build and CFO decline are consistent with the working capital demands of 35.7% revenue growth as described in the MD&A."
+      },
+      "judge": {
+        "final_verdict": "explanation unverified",
+        "confidence": 0.75,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "unverified",
+            "reason": "The mix shift to complete systems is visible in segment sales (E32), but the claim that complete systems carry longer collection periods is not supported by any reported numbers in the pack. The MD&A attributes the DSO increase to late-quarter sales (E38), not to mix shift. Therefore the explanation for receivables growing faster than revenue rests on an assumption outside the evidence pack.",
+            "evidence": [
+              "E32",
+              "E25",
+              "E38"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "Quarterly signals show that in Q2 and Q4, receivables growth far exceeded revenue growth (E28, E30), with quarter-end DSO jumping 6 days in each of those quarters. This pattern is consistent with management's statement that the DSO increase was primarily due to an increase in sales late in the quarter (E38). The numbers corroborate the named driver and its timing.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "unverified",
+            "reason": "Management explains the inventory build as supporting anticipated FY2016 growth (E39), a forward-looking statement that cannot be verified from FY2015 numbers. The CFO decline is not explained in the MD&A; the defender's mechanical explanation is not management's own explanation. Thus the management's explanation for the inventory increase and the lack of explanation for CFO decline rest on management's word about future plans.",
+            "evidence": [
+              "E39",
+              "E18",
+              "E19",
+              "E20",
+              "E23"
+            ]
+          }
+        ],
+        "deciding_evidence": "E32 (segment sales mix shift) without evidence of longer collection periods for complete systems; E27-E30 (quarterly AR/revenue patterns) supporting the late-quarter sales explanation for DSO.",
+        "evidence_that_would_settle_it": [
+          "Segment-level receivables or DSO breakdown (complete systems vs. subsystems) to test whether the mix shift quantitatively explains the receivables growth.",
+          "Receivables aging by channel (distributor, OEM, direct) for June 30, 2015 vs. June 30, 2014 to distinguish late-quarter shipments from extended payment terms.",
+          "FY2016 Q1 receivables and inventory data to see if the Q4 build reverses, confirming a pure timing effect."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 20,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 17,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 13,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management attributes revenue growth to demand for complete systems in OEM/cloud/enterprise channels and explains the DSO rise as a timing effect from late-quarter shipments. However, receivables grew 51.6% versus 35.7% revenue growth, with full-year DSO rising 6 days (computed) and quarter-end DSO jumping sharply in Q2 and Q4. Operating cash flow swung from +$6.5M to -$44.6M while net income nearly doubled, driven by a $110M receivables build and a $148M inventory build (the latter explicitly for FY2016, not current demand). The 'late-quarter sales' explanation accounts for quarter-end spikes but not the sustained full-year DSO increase or the cash-flow collapse, which remains unaddressed in the MD&A.",
+        "findings": [
+          {
+            "management_says": "Revenue growth was primarily due to continued increased sales of products optimized for OEM, internet data center, cloud computing and enterprise verticals, with a shift to higher-ASP complete systems (storage, Twin, GPU/Xeon Phi) and more software/service attach.",
+            "numbers_show": "Revenue rose 35.7% ($1,467.2M to $1,991.2M). Complete-systems share of revenue rose from 50.5% to 60.9% (E32, E47). Segment mix shift is visible and large enough to support the growth narrative.",
+            "fit": "fits",
+            "evidence": [
+              "E13",
+              "E1",
+              "E32",
+              "E47"
+            ]
+          },
+          {
+            "management_says": "The increase in DSO (reported as 44 to 48 days) was primarily due to an increase in sales late in the quarter.",
+            "numbers_show": "Computed full-year DSO rose from 53 to 59 days (E25). Receivables grew 51.6% vs revenue 35.7%. Quarterly: Q2 receivables +60.6% vs revenue +41.2% (DSO 41\u219247); Q4 receivables +51.6% vs revenue +34.0% (DSO 45\u219251) (E28, E30). The timing explanation fits quarter-end spikes but does not account for the full-year DSO step-up, which implies a structural lengthening of collection periods or looser terms.",
+            "fit": "does not fit",
+            "evidence": [
+              "E25",
+              "E28",
+              "E30",
+              "E38"
+            ]
+          },
+          {
+            "management_says": "Inventory increased to $463.5M (from $315.8M) to support anticipated FY2016 growth; DSI roughly flat at 83-84 days.",
+            "numbers_show": "Inventory rose $147.7M (E39). This build was a deliberate use of cash for future sales, not a consequence of current demand. It contributed heavily to the CFO decline.",
+            "fit": "fits",
+            "evidence": [
+              "E39",
+              "E20",
+              "E8"
+            ]
+          },
+          {
+            "management_says": "Net income increase was primarily attributable to higher gross profit from higher sales and improved margins.",
+            "numbers_show": "Net income rose $47.7M (88%) to $101.9M (E17, E5). Operating cash flow fell $51.1M to -$44.6M (E18, E6). The divergence was driven by a $109.9M receivables increase, $147.7M inventory increase, and only a $143.2M current-liabilities increase (E7, E19, E39, E11, E23). No MD&A explanation is provided for the CFO collapse.",
+            "fit": "does not fit",
+            "evidence": [
+              "E5",
+              "E17",
+              "E6",
+              "E18",
+              "E7",
+              "E19",
+              "E39",
+              "E11",
+              "E23",
+              "E26"
+            ]
+          },
+          {
+            "management_says": "Beneish M-score flagged (-1.52 vs -1.78 threshold) with elevated DSRI (1.12), SGI (1.36), and TATA (0.13).",
+            "numbers_show": "The M-score components are consistent with aggressive revenue recognition or working-capital management: receivables growing faster than sales (DSRI), high sales growth (SGI), and positive total accruals (TATA) (E31).",
+            "fit": "unverified",
+            "evidence": [
+              "E31"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific changes in payment terms or customer mix caused the full-year DSO to rise 6 days (computed) if the only driver was 'late-quarter shipments'?",
+          "Why did operating cash flow decline $51M while net income rose $48M, and what portion of the receivables increase is attributable to extended terms versus timing?",
+          "The inventory build of $148M was for FY2016 demand; what visibility supports that forecast, and what is the risk of obsolescence given rapid technology cycles?",
+          "One customer reached 10.1% of revenue in FY2015 (E34). Did that customer's payment terms or concentration contribute to the receivables surge?",
+          "Can you reconcile the reported DSO of 48 days (E38) with the computed 59 days (E25), and which figure reflects your internal monitoring?"
+        ],
+        "what_would_change_my_mind": [
+          "A quarterly breakdown of receivables by customer type (distributor vs OEM vs direct) showing that the DSO increase is concentrated in a known, creditworthy OEM with extended but reliable terms.",
+          "Evidence that the Q2 and Q4 receivables spikes reversed in the following quarters (i.e., cash collected in Q3 and Q1), confirming a pure timing effect.",
+          "A cash-flow bridge in the MD&A that quantifies the working-capital components (receivables, inventory, payables) and shows the CFO decline was expected and temporary.",
+          "Disclosure that the 10% customer paid on time and the receivables growth was broad-based, not concentrated in a single channel."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The 35.7% revenue growth is corroborated by a visible segment mix shift: complete-system share rose from 50.5% to 60.9% (E32, E47), driven by higher-ASP storage, Twin, and GPU/Xeon Phi servers, which is large enough to account for the growth.",
+            "evidence": [
+              "E13",
+              "E1",
+              "E32",
+              "E47"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The computed full-year DSO rise (53\u219259 days) is mechanically driven by Q4 revenue concentration (28.8% of annual revenue) and late-quarter shipments that elevate year-end receivables; quarterly DSO spikes in Q2 (41\u219247) and Q4 (45\u219251) reverse in Q3 (44\u219243), confirming a timing effect. Management's reported DSO (44\u219248 days) uses an average-receivables methodology that smooths quarter-end spikes, so the difference is methodological, not structural.",
+            "evidence": [
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $147.7M inventory build was a deliberate, disclosed strategy to support anticipated FY2016 growth, with DSI stable at 83-84 days indicating disciplined inventory management relative to sales.",
+            "evidence": [
+              "E39",
+              "E20",
+              "E8"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "The CFO decline from +$6.5M to -$44.6M is fully accounted for by working-capital investments to fund 35.7% revenue growth: $110M receivables increase (higher sales + Q4 timing), $148M inventory increase (for FY2016), partially offset by $143M current-liabilities increase. This cash-conversion-cycle expansion is typical for rapid growth and is reflected in the MD&A's discussion of inventory and DSO.",
+            "evidence": [
+              "E5",
+              "E17",
+              "E6",
+              "E18",
+              "E7",
+              "E19",
+              "E39",
+              "E11",
+              "E23",
+              "E26",
+              "E38",
+              "E39"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 4,
+            "innocent_explanation": "The Beneish M-score elevation reflects high-growth dynamics: SGI=1.36 from 35.7% sales growth, DSRI=1.12 from receivables growing faster due to timing and mix shift, and TATA=0.13 from accruals related to revenue recognition and inventory buildup \u2014 all consistent with legitimate growth, not manipulation.",
+            "evidence": [
+              "E31",
+              "E32",
+              "E47"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict that the explanation does not fit the numbers does not stand. The company's explanations for revenue growth, DSO increase, inventory build, and CFO decline are corroborated by the reported numbers and quarterly patterns, and the Beneish M-score reflects high-growth dynamics rather than manipulation."
+      },
+      "judge": {
+        "final_verdict": "explanation fits the numbers",
+        "confidence": 0.85,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Revenue growth of 35.7% is corroborated by segment data showing optimized server sales grew $472.8M (from $740.8M to $1,213.6M) and complete-systems share rose from 50.5% to 60.9%, which is large enough to drive the overall revenue increase.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E32",
+              "E47"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "The year-end DSO increase (computed 53 to 59 days) is driven by Q4 where revenue grew 34.0% but receivables grew 51.6%, causing DSO to jump from 45 to 51 days. Management's explanation that the DSO rise was primarily due to late-quarter sales aligns with this Q4 spike. The difference between computed DSO and reported DSO (44 to 48) is methodological (average vs. year-end receivables), but the causal driver is the same.",
+            "evidence": [
+              "E25",
+              "E28",
+              "E30",
+              "E38"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Inventory increased $147.7M to $463.5M while DSI remained stable at 83-84 days, consistent with management's statement that the build was to support anticipated FY2016 growth.",
+            "evidence": [
+              "E8",
+              "E20",
+              "E39"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "fits",
+            "reason": "Net income rose 88% to $101.9M. Gross profit increased $94.8M (revenue up $524M, COGS up $429.2M) and gross margin improved from 15.4% to 16.1%, corroborating management's attribution to higher sales and improved margins. The CFO decline is a separate working-capital effect, not a contradiction of the net income explanation.",
+            "evidence": [
+              "E1",
+              "E2",
+              "E5",
+              "E13",
+              "E14",
+              "E17"
+            ]
+          },
+          {
+            "finding_index": 4,
+            "ruling": "unverified",
+            "reason": "The Beneish M-score and its components are computed from the financials; whether they indicate aggressive accounting or simply reflect high-growth dynamics (high SGI, DSRI from timing/mix, TATA from inventory/receivables buildup) is an interpretation not directly corroborated or refuted by the numbers alone. No management explanation exists in the pack for the M-score.",
+            "evidence": [
+              "E31"
+            ]
+          }
+        ],
+        "deciding_evidence": "Segment sales mix shift (E32, E47) confirms revenue growth driver; Q4 receivables surge relative to revenue (E30) confirms late-quarter sales drove year-end DSO increase.",
+        "evidence_that_would_settle_it": [
+          "A detailed breakdown of receivables by customer type (distributor vs OEM vs direct) for each quarter of FY2015 to verify if the DSO increase is concentrated in a specific channel.",
+          "A cash flow bridge in the MD&A quantifying the working capital components (receivables, inventory, payables) and showing the CFO decline was expected and temporary."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 22,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 28,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 18,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    },
+    {
+      "investigator": {
+        "verdict": "explanation does not fit the numbers",
+        "summary": "Management's revenue growth drivers (product mix shift to complete systems, higher ASPs, OEM/cloud demand) are corroborated by segment sales data. However, the explanation for the DSO increase ('sales late in the quarter') does not match the quarterly pattern, which shows a large receivables surge in Q2 as well as Q4. Operating cash flow turned deeply negative (-$44.6M) despite net income doubling, driven by a $110M receivables build and $148M inventory build that management does not adequately explain.",
+        "findings": [
+          {
+            "management_says": "Revenue growth was primarily due to increased sales of optimized servers for OEM, internet data center, cloud computing and enterprise verticals; complete systems rose to 60.9% of sales from 50.5%.",
+            "numbers_show": "Optimized server sales grew 63.8% ($740.8M to $1,213.6M) while subsystems grew only 7.0% ($726.4M to $777.5M), confirming the mix shift and volume/ASP drivers cited.",
+            "fit": "fits",
+            "evidence": [
+              "E13",
+              "E1",
+              "E32",
+              "E47"
+            ]
+          },
+          {
+            "management_says": "The DSO increase (44 to 48 days per management, 53 to 59 days per computed) was primarily due to an increase in sales late in the quarter.",
+            "numbers_show": "Quarter-end DSO jumped in Q2 (41 to 47 days) and Q4 (45 to 51 days), not just Q4. Receivables grew 51.6% vs revenue 35.7% for the full year. The Q2 surge cannot be explained by year-end timing.",
+            "fit": "does not fit",
+            "evidence": [
+              "E25",
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ]
+          },
+          {
+            "management_says": "Net income increase was primarily attributable to higher sales and improved gross/operating margins.",
+            "numbers_show": "Net income rose $47.7M (88%) but operating cash flow fell $51.1M (from +$6.5M to -$44.6M). The divergence was driven by a $109.9M increase in receivables and a $147.7M increase in inventory (per MD&A), partially offset by a $143.2M rise in current liabilities. Management does not explain the cash flow decline or link it to the receivables/inventory build.",
+            "fit": "does not fit",
+            "evidence": [
+              "E5",
+              "E17",
+              "E6",
+              "E18",
+              "E7",
+              "E19",
+              "E39",
+              "E11",
+              "E23",
+              "E33"
+            ]
+          },
+          {
+            "management_says": "Inventory increased to $463.5M (from $315.8M) to support anticipated FY2016 growth.",
+            "numbers_show": "Inventory rose $147.7M (46.8%) while revenue grew 35.7%. DSI was flat (83 to 84 days), indicating the build roughly matched sales growth, but the absolute increase consumed significant cash and contributed to negative CFO.",
+            "fit": "unverified",
+            "evidence": [
+              "E39",
+              "E13",
+              "E1"
+            ]
+          }
+        ],
+        "questions_for_management": [
+          "What specific changes in payment terms or customer mix caused the Q2 receivables surge (60.6% AR growth vs 41.2% revenue growth) and the Q4 surge (51.6% vs 34.0%)?",
+          "Why did operating cash flow decline $51M while net income rose $48M? Please quantify the working capital components (receivables, inventory, payables) that drove the divergence.",
+          "Is the 10.1% customer concentration in FY2015 (vs none >10% in FY2014) related to extended payment terms that inflated receivables?",
+          "What is the expected timeline for conversion of the $110M receivables increase and $148M inventory increase into cash?"
+        ],
+        "what_would_change_my_mind": [
+          "A breakdown showing that the Q2 and Q4 receivables spikes were due to identifiable, one-time large deals with documented payment terms that have since been collected.",
+          "Evidence that the inventory build was for confirmed backlog that shipped and was collected in early FY2016, with corresponding CFO recovery.",
+          "Disclosure of whether distributor payment terms were extended in FY2015, and if so, the estimated impact on DSO and CFO."
+        ]
+      },
+      "red_team": {
+        "rebuttals": [
+          {
+            "finding_index": 0,
+            "innocent_explanation": "The segment sales data confirms management's stated drivers: optimized server sales grew 63.8% ($740.8M to $1,213.6M) while subsystems grew only 7.0%, and the complete-system mix rose to 60.9% from 50.5%, fully accounting for the revenue surge.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E32",
+              "E47"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 1,
+            "innocent_explanation": "The DSO jumps in both Q2 (41 to 47 days) and Q4 (45 to 51 days) reflect a recurring seasonal pattern where a disproportionate share of each half-year's revenue ships in the final month (December and June), causing receivables to peak at both quarter-ends \u2014 not just at year-end.",
+            "evidence": [
+              "E27",
+              "E28",
+              "E29",
+              "E30",
+              "E38"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 2,
+            "innocent_explanation": "The $51.1M CFO decline is explained by deliberate working capital investment to fund 35.7% revenue growth: receivables rose $109.9M and inventory $147.7M (per MD&A), partially offset by a $143.2M increase in current liabilities; this is a timing difference from scaling operations, not an earnings quality issue.",
+            "evidence": [
+              "E5",
+              "E17",
+              "E6",
+              "E18",
+              "E7",
+              "E19",
+              "E39",
+              "E11",
+              "E23",
+              "E33"
+            ],
+            "support": "numbers"
+          },
+          {
+            "finding_index": 3,
+            "innocent_explanation": "Inventory grew 46.8% while revenue grew 35.7%, but DSI remained flat at 83-84 days, showing the build was proportional to sales growth and not speculative; the cash consumed is a normal consequence of expanding a hardware business with lead times.",
+            "evidence": [
+              "E39",
+              "E13",
+              "E1"
+            ],
+            "support": "numbers"
+          }
+        ],
+        "overall": "The investigator's verdict overstates the mismatch: the quarterly DSO pattern is consistent with seasonal late-quarter shipments in both half-years, and the cash flow decline is fully explained by working capital investments visible in the balance sheet that support verified revenue growth."
+      },
+      "judge": {
+        "final_verdict": "explanation fits the numbers",
+        "confidence": 0.85,
+        "rulings": [
+          {
+            "finding_index": 0,
+            "ruling": "fits",
+            "reason": "Segment sales data shows optimized server sales grew 63.8% ($740.8M to $1,213.6M) while subsystems grew only 7.0%, and the complete-system mix rose to 60.9% from 50.5%, fully corroborating management's stated revenue drivers.",
+            "evidence": [
+              "E1",
+              "E13",
+              "E32",
+              "E47"
+            ]
+          },
+          {
+            "finding_index": 1,
+            "ruling": "fits",
+            "reason": "Management's explanation for the year-end DSO increase (E38) is supported by Q4 quarter-level signals: receivables grew 51.6% vs revenue 34.0% and DSO rose from 45 to 51 days (E30), consistent with late-quarter shipments. The Q2 DSO jump (E28) reflects a separate half-year seasonal pattern and does not contradict the year-end explanation.",
+            "evidence": [
+              "E38",
+              "E30",
+              "E28",
+              "E27",
+              "E29"
+            ]
+          },
+          {
+            "finding_index": 2,
+            "ruling": "fits",
+            "reason": "Net income increased from $54.2M to $101.9M (E5, E17) while gross margin improved from 15.4% to 16.1% (computed from E1, E2, E13, E14), corroborating management's claim that higher sales and improved margins drove the increase. The operating cash flow decline is a working capital timing effect (receivables +$109.9M, inventory +$147.7M, current liabilities +$143.2M) and does not contradict the net income explanation.",
+            "evidence": [
+              "E5",
+              "E17",
+              "E1",
+              "E2",
+              "E13",
+              "E14",
+              "E6",
+              "E18",
+              "E7",
+              "E19",
+              "E39",
+              "E11",
+              "E23"
+            ]
+          },
+          {
+            "finding_index": 3,
+            "ruling": "unverified",
+            "reason": "Management states the inventory build was to support anticipated FY2016 growth (E39). While inventory grew 46.8% and DSI remained flat (83 to 84 days), indicating the build was proportional to sales growth, the forward-looking rationale cannot be verified from the current evidence pack.",
+            "evidence": [
+              "E39",
+              "E13",
+              "E1"
+            ]
+          }
+        ],
+        "deciding_evidence": "The segment sales breakdown (E32, E47) confirms the revenue mix shift; Q4 quarter-level receivables and revenue (E30) confirm the late-quarter shipment timing for the year-end DSO increase; gross margin improvement computed from revenue and COGS (E1, E2, E13, E14) supports the net income explanation.",
+        "evidence_that_would_settle_it": [
+          "Monthly sales data for Q4 FY2015 to quantify the late-quarter shipment effect on DSO.",
+          "A detailed cash flow statement reconciliation showing the exact working capital components (receivables, inventory, payables) driving the CFO decline.",
+          "Inventory aging and product-category breakdown, or confirmation of FY2016 backlog that shipped and was collected early, to verify the inventory build rationale."
+        ]
+      },
+      "grounding": {
+        "investigator": {
+          "citations": 23,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "red_team": {
+          "citations": 22,
+          "unknown_ids": [],
+          "uncited": 0
+        },
+        "judge": {
+          "citations": 25,
+          "unknown_ids": [],
+          "uncited": 0
+        }
+      }
+    }
+  ],
+  "agreement": {
+    "investigator": {
+      "explanation does not fit the numbers": 3
+    },
+    "judge": {
+      "explanation unverified": 1,
+      "explanation fits the numbers": 2
+    }
+  }
+}

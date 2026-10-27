@@ -853,6 +853,7 @@ a:hover {
   color: #633C08;
   line-height: 1.45;
 }
+.hero-divergence-prompt ul { margin: 0.3rem 0 0; padding-left: 1.25rem; }
 
 /* Evidence Badges & Interactive Citation Links */
 .ev-badge, .ev-link {

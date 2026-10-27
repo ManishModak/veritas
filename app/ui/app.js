@@ -58,9 +58,11 @@
       } else if (lower === 'explanation does not fit the numbers') {
         badgeClass = 'chip-contradicted';
       }
-      return '<span class="chip ' + badgeClass + '">' +
-        '<span class="chip-count">' + count + ' of ' + totalSamples + ' runs:</span> ' +
-        escapeHtml(label) +
+      // Display "explanation X the numbers" as just "X"; other labels render as supplied.
+      const short = label.replace(/^explanation\s+/i, '').replace(/\s+the numbers$/i, '');
+      return '<span class="chip ' + badgeClass + '" title="' + escapeHtml(label) + '">' +
+        '<span class="chip-count">' + count + '/' + totalSamples + '</span> ' +
+        escapeHtml(short) +
         '</span>';
     }).join(' ');
   }
@@ -175,7 +177,7 @@
     // Header badges
     const modeBadge = document.getElementById('mode-badge');
     if (modeBadge) {
-      modeBadge.textContent = data.mode === 'live' ? 'Live Mode' : 'Sample Mode (Recorded)';
+      modeBadge.textContent = data.mode === 'live' ? 'Live Mode' : 'Recorded runs';
     }
     const dataModeBadge = document.getElementById('datamode-badge');
     if (dataModeBadge) {
@@ -208,11 +210,11 @@
     if (state.revealRoles) {
       if (thRole) thRole.classList.remove('hidden');
       if (revealBtn) revealBtn.setAttribute('aria-pressed', 'true');
-      if (revealBtnText) revealBtnText.textContent = 'Hide ground-truth roles';
+      if (revealBtnText) revealBtnText.textContent = 'Hide SEC cases';
     } else {
       if (thRole) thRole.classList.add('hidden');
       if (revealBtn) revealBtn.setAttribute('aria-pressed', 'false');
-      if (revealBtnText) revealBtnText.textContent = 'Show ground-truth roles (SEC cases vs peers)';
+      if (revealBtnText) revealBtnText.textContent = 'Reveal which had SEC cases';
     }
 
     // Render Table Rows
@@ -227,7 +229,7 @@
     const ordered=[...data.cases].sort((a,b)=>a.id==='1336917_2015-12-31'?-1:b.id==='1336917_2015-12-31'?1:a.company.localeCompare(b.company)||a.fyEnd.localeCompare(b.fyEnd));
     tbody.innerHTML = ordered.map(c => {
       const splitBadge = c.split === 'development'
-        ? '<span class="badge badge-split-dev">Development</span>'
+        ? '<span class="badge badge-split-dev">Tuning</span>'
         : '<span class="badge badge-split-blind">Blind</span>';
 
       let roleCell = '';
@@ -319,10 +321,10 @@
     // Header title and metadata
     const heading = document.getElementById('case-heading');
     if (heading) heading.textContent = (data.filing ? data.filing.company : run.company) + ' · FY' + (data.filing ? data.filing.fyEnd.slice(0, 4) : '');
-    document.getElementById('mode-badge').textContent = data.mode === 'live' ? 'Live enabled' : 'Recorded samples';
+    document.getElementById('mode-badge').textContent = data.mode === 'live' ? 'Live enabled' : 'Recorded runs';
     document.getElementById('datamode-badge').textContent = data.dataMode.toUpperCase();
     const question=(run.samples||[]).flatMap(s=>s.investigator.questions_for_management||[]);
-    const leadQuestion=question.find(q=>/pull.forward|Q1 2016/i.test(q))||question[0]||'';
+    const leadQuestion=question[0]||'';
     document.getElementById('case-key-question').innerHTML='<strong>Question for management:</strong> '+linkEvidence(leadQuestion);
 
     const metaRow = document.getElementById('case-meta-row');
@@ -341,11 +343,11 @@
     const badgesContainer = document.getElementById('case-header-badges');
     if (badgesContainer) {
       const splitBadge = data.split === 'development'
-        ? '<span class="badge badge-split-dev">Development Split</span>'
-        : '<span class="badge badge-split-blind">Blind Benchmark Split</span>';
+        ? '<span class="badge badge-split-dev">Used for prompt tuning</span>'
+        : '<span class="badge badge-split-blind">Blind</span>';
       const modeBadge = data.resultMode === 'live'
         ? '<span class="badge badge-mode">Live samples</span>'
-        : '<span class="badge badge-mode">Sample Recorded</span>';
+        : '<span class="badge badge-mode">Recorded</span>';
       const dataModeBadge = '<span class="badge badge-datamode">' + escapeHtml((data.dataMode || 'csv').toUpperCase()) + '</span>';
       badgesContainer.innerHTML = splitBadge + ' ' + modeBadge + ' ' + dataModeBadge;
     }
@@ -362,7 +364,7 @@
       } else if(liveJob) {
         liveHint.textContent='A live case is running. Its progress survives navigation and reload.';
       } else {
-        liveHint.textContent = 'Triggers 3 independent samples (9 stages) via NVIDIA Nemotron';
+        liveHint.textContent = 'Runs the debate 3 times (9 Nemotron calls)';
       }
     }
     const progressCard=document.getElementById('live-progress-card');
@@ -412,12 +414,18 @@
       return;
     }
 
-    // Hero Under Armour FY2015 prompt note
+    // Divergence note: the quarter where receivables outgrew revenue the most (15+ points),
+    // with each sample's first question that names that quarter.
     if (heroNote) {
-      if (data.id === '1336917_2015-12-31' && quarters.find(q=>q.quarter===4)) {
+      const gap = q => q.receivablesGrowth - q.revenueGrowth;
+      const top = quarters.reduce((a, q) => (gap(q) > gap(a) ? q : a));
+      if (gap(top) >= 15) {
+        const samples = (data.run && data.run.samples) || [];
+        const named = new RegExp('\\bQ' + top.quarter + '\\b');
+        const asked = samples.map((s, i) => [i + 1, (s.investigator.questions_for_management || []).find(q => named.test(q))]).filter(([, q]) => q);
         heroNote.classList.remove('hidden');
-        const q4=quarters.find(q=>q.quarter===4);
-        heroNote.innerHTML = '<strong>A question behind the Q4 pattern:</strong> Receivables grew ' + q4.receivablesGrowth.toFixed(1) + '% while revenue grew ' + q4.revenueGrowth.toFixed(1) + '%. DSO moved from ' + Math.round(q4.dsoPrior) + ' to ' + Math.round(q4.dsoCurrent) + ' days. ' + linkEvidence(q4.evidenceId) + '<br>How much Q4 2015 revenue came from shipments pulled forward from Q1 2016?';
+        heroNote.innerHTML = '<strong>Where receivables outran revenue:</strong> in Q' + top.quarter + ' receivables grew ' + top.receivablesGrowth.toFixed(1) + '% while revenue grew ' + top.revenueGrowth.toFixed(1) + '%. DSO moved from ' + Math.round(top.dsoPrior) + ' to ' + Math.round(top.dsoCurrent) + ' days. ' + linkEvidence(top.evidenceId) +
+          (asked.length ? '<br>' + asked.length + ' of ' + samples.length + ' runs asked about Q' + top.quarter + ':<ul>' + asked.map(([n, q]) => '<li>Run ' + n + ': ' + linkEvidence(q) + '</li>').join('') + '</ul>' : '');
       } else {
         heroNote.classList.add('hidden');
       }
@@ -498,7 +506,7 @@
     tabsContainer.innerHTML = samples.map((s, idx) => {
       const activeClass = idx === state.selectedSampleIndex ? 'active' : '';
       const selected = idx === state.selectedSampleIndex ? 'true' : 'false';
-      return '<button type="button" class="tab-btn ' + activeClass + '" role="tab" aria-selected="' + selected + '" id="tab-sample-' + idx + '" data-sample="' + idx + '">Sample ' + (idx + 1) + '</button>';
+      return '<button type="button" class="tab-btn ' + activeClass + '" role="tab" aria-selected="' + selected + '" id="tab-sample-' + idx + '" data-sample="' + idx + '">Run ' + (idx + 1) + '</button>';
     }).join('');
 
     tabsContainer.querySelectorAll('.tab-btn').forEach(btn => {
@@ -527,7 +535,7 @@
 
     if (!container) return;
     if (!sample) {
-      container.innerHTML = '<div class="empty-state">No data for Sample ' + (sampleIndex + 1) + '</div>';
+      container.innerHTML = '<div class="empty-state">No data for Run ' + (sampleIndex + 1) + '</div>';
       return;
     }
 
@@ -567,7 +575,7 @@
           const confText = cached && cached.confidence !== undefined ? '<span class="confidence-tag">Memory trust: ' + cached.confidence.toFixed(2) + '</span>' : '';
 
           feedbackHtml = '<div class="finding-feedback-bar">' +
-            '<span>Scorecard Memory Feedback (H-MEM):</span>' +
+            '<span>Useful finding? Your answer is saved to H-MEM.</span>' +
             '<div class="feedback-actions">' +
               confText +
               '<button type="button" class="btn-thumb ' + helpfulActive + '" data-feedback-id="' + escapeHtml(memId) + '" data-kind="helpful" title="Mark finding explanation as helpful">&#x1F44D; Helpful</button>' +
@@ -578,7 +586,7 @@
 
         // Rebuttal block
         let rebuttalHtml = '<div class="joined-panel panel-red-team">' +
-          '<div class="joined-panel-title"><span>Red-Team Innocent Explanation</span><span class="badge-mono">' + escapeHtml((rebuttal && rebuttal.support) ? ('support: ' + rebuttal.support) : '') + '</span></div>' +
+          '<div class="joined-panel-title"><span>Red-team: the innocent explanation</span><span class="badge-mono">' + escapeHtml((rebuttal && rebuttal.support) ? ('support: ' + rebuttal.support) : '') + '</span></div>' +
           '<p class="joined-panel-text">' + (rebuttal ? linkEvidence(rebuttal.innocent_explanation) : '<span class="text-muted">No rebuttal for finding #' + (findingIdx + 1) + '</span>') + '</p>' +
           (rebuttal && rebuttal.evidence ? ('<div class="finding-evidence-row"><span>Cites:</span> ' + rebuttal.evidence.map(e => '<button type="button" class="ev-badge" data-eid="' + escapeHtml(e) + '">' + escapeHtml(e) + '</button>').join(' ') + '</div>') : '') +
         '</div>';
@@ -593,7 +601,7 @@
         }
 
         let rulingHtml = '<div class="joined-panel panel-judge">' +
-          '<div class="joined-panel-title"><span>Judge Ruling</span> ' + rulingBadge + '</div>' +
+          '<div class="joined-panel-title"><span>Judge</span> ' + rulingBadge + '</div>' +
           '<p class="joined-panel-text">' + (ruling ? linkEvidence(ruling.reason) : '<span class="text-muted">No ruling for finding #' + (findingIdx + 1) + '</span>') + '</p>' +
           (ruling && ruling.evidence ? ('<div class="finding-evidence-row"><span>Cites:</span> ' + ruling.evidence.map(e => '<button type="button" class="ev-badge" data-eid="' + escapeHtml(e) + '">' + escapeHtml(e) + '</button>').join(' ') + '</div>') : '') +
         '</div>';
@@ -603,21 +611,20 @@
         return '<article class="finding-card">' +
           '<div class="finding-card-header">' +
             '<span class="finding-index-pill">Finding #' + (findingIdx + 1) + '</span>' +
-            '<span class="badge ' + fitClass + ' finding-fit-badge">Investigator Assessment: ' + escapeHtml(f.fit || 'unverified') + '</span>' +
+            '<span class="badge ' + fitClass + ' finding-fit-badge">Investigator: ' + escapeHtml(f.fit || 'unverified') + '</span>' +
           '</div>' +
           '<div class="finding-grid">' +
             '<div class="finding-box">' +
-              '<span class="finding-box-label">Management MD&amp;A Explanation</span>' +
+              '<span class="finding-box-label">Management says</span>' +
               '<p class="finding-box-text">' + linkEvidence(f.management_says) + '</p>' +
-              '<div class="finding-evidence-row"><span>Evidence cited:</span> ' + findingEvidenceChips + '</div>' +
             '</div>' +
             '<div class="finding-box">' +
-              '<span class="finding-box-label">As-First-Filed Numbers Show</span>' +
+              '<span class="finding-box-label">The numbers show</span>' +
               '<p class="finding-box-text">' + linkEvidence(f.numbers_show) + '</p>' +
-              '<div class="finding-evidence-row"><span>Evidence cited:</span> ' + findingEvidenceChips + '</div>' +
             '</div>' +
           '</div>' +
-          '<details class="finding-discussion"><summary>Defender and judge: '+escapeHtml(ruling?.ruling||'unverified')+'</summary><div class="joined-panels-row">' +
+          '<div class="finding-evidence-row"><span>Cites:</span> ' + findingEvidenceChips + '</div>' +
+          '<details class="finding-discussion"><summary>Red-team and judge: '+escapeHtml(ruling?.ruling||'unverified')+'</summary><div class="joined-panels-row">' +
             rebuttalHtml +
             rulingHtml +
           '</div></details>' +
@@ -646,7 +653,7 @@
     const decEl = document.getElementById('deciding-evidence-text');
     if (decEl) {
       decEl.innerHTML = judge.deciding_evidence
-        ? ('<strong>Deciding Evidence:</strong> ' + linkEvidence(judge.deciding_evidence))
+        ? ('<strong>Decided by:</strong> ' + linkEvidence(judge.deciding_evidence))
         : '<span class="text-muted">No deciding evidence synthesis recorded.</span>';
     }
 
@@ -679,7 +686,7 @@
 
     // Trace header & statistics
     const ruleEl = document.getElementById('trace-rule');
-    if (ruleEl) ruleEl.textContent = trace.rule || 'Prior-filed 10-K cases strictly before current case';
+    if (ruleEl) ruleEl.textContent = trace.rule || 'Only cases filed before this 10-K';
 
     const statsGrid = document.getElementById('trace-stats-grid');
     if (statsGrid) {
@@ -943,7 +950,7 @@
         relHtml += '<div style="margin-bottom: 0.65rem;"><strong style="font-size:0.78rem; text-transform:uppercase; color:var(--text-muted);">Findings citing this evidence (' + findings.length + '):</strong><ul class="inquiry-list" style="margin-top:0.3rem;">';
         findings.forEach(f => {
           const attrs = f.attrs || {};
-          relHtml += '<li><strong>Sample ' + ((attrs.sampleIndex || 0) + 1) + ', Finding #' + ((attrs.findingIndex || 0) + 1) + ':</strong> ' + linkEvidence(attrs.management_says || '',drawerCaseId) + '</li>';
+          relHtml += '<li><strong>Run ' + ((attrs.sampleIndex || 0) + 1) + ', Finding #' + ((attrs.findingIndex || 0) + 1) + ':</strong> ' + linkEvidence(attrs.management_says || '',drawerCaseId) + '</li>';
         });
         relHtml += '</ul></div>';
       }
@@ -951,7 +958,7 @@
         relHtml += '<div><strong style="font-size:0.78rem; color:var(--text-muted);">Related judge rulings (' + rulings.length + '):</strong><ul class="inquiry-list" style="margin-top:0.3rem;">';
         rulings.forEach(rl => {
           const attrs = rl.attrs || {};
-          relHtml += '<li><strong>Sample ' + ((attrs.sampleIndex || 0) + 1) + ', Ruling (' + escapeHtml(attrs.ruling || '') + '):</strong> ' + linkEvidence(attrs.reason || '',drawerCaseId) + '</li>';
+          relHtml += '<li><strong>Run ' + ((attrs.sampleIndex || 0) + 1) + ', Ruling (' + escapeHtml(attrs.ruling || '') + '):</strong> ' + linkEvidence(attrs.reason || '',drawerCaseId) + '</li>';
         });
         relHtml += '</ul></div>';
       }
@@ -996,7 +1003,7 @@
     if (card) card.classList.remove('hidden');
     if (counter) counter.textContent = 'Stage 0 of 9';
     if (fill) fill.style.width = '0%';
-    if (details) details.textContent = 'Contacting server to start live 3-sample run...';
+    if (details) details.textContent = 'Starting 3 live runs...';
 
     state.sseCompletedStages = 0;
     state.completedStageKeys=new Set();
@@ -1057,7 +1064,7 @@
           else if (stageLabel === 'red_team') stageLabel = 'Red-Team Innocent Defense';
           else if (stageLabel === 'judge') stageLabel = 'Judicial Ruling';
 
-          let statusMsg = 'Sample ' + payload.sample + ' &bull; ' + stageLabel + ' &bull; ' + payload.status;
+          let statusMsg = 'Run ' + payload.sample + ' &bull; ' + stageLabel + ' &bull; ' + payload.status;
           if (payload.elapsedMs) statusMsg += ' (' + Math.round(payload.elapsedMs / 1000) + 's)';
           if (payload.status==='retry') statusMsg += ' [retry after attempt ' + payload.attempt + ']';
           if (details) details.innerHTML = statusMsg;
@@ -1065,7 +1072,7 @@
           if (statusText) statusText.textContent = 'Live Run Completed!';
           if (fill) fill.style.width = '100%';
           if (counter) counter.textContent = 'Stage 9 of 9 (100%)';
-          if (details) details.textContent = 'All 3 independent samples successfully grounded and ingested into World Evidence Store. Refreshing...';
+          if (details) details.textContent = 'All 3 runs done, citations checked. Refreshing...';
           sse.close();
           state.activeSse = null;
           state.activeJobId=null;
@@ -1113,7 +1120,7 @@
     showView('view-not-found');
     const msgEl = document.getElementById('notfound-message');
     if (msgEl) {
-      msgEl.textContent = message || 'The requested case could not be located in the verification catalogue.';
+      msgEl.textContent = message || 'This case is not in the cohort.';
     }
   }
 

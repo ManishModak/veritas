@@ -134,6 +134,8 @@ Cursor was not used.
 
 ## Configuration
 
+All settings are environment variables; [`.env.example`](.env.example) lists them with placeholders.
+
 | Setting | Effect |
 | --- | --- |
 | `ZETARIS_BRIDGE_URL=http://localhost:8787` | Use Zetaris instead of the bundled CSVs |

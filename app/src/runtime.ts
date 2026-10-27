@@ -8,7 +8,7 @@ import { addedCompanies, caseId, cohortSplit, filingIdentity, recordedCases, typ
 import { evidencePack, type EvidencePack } from './agent/evidence.ts';
 import { assertRunGrounded, runCase, saveRun } from './agent/run.ts';
 import type { CaseRun } from './agent/types.ts';
-import type { Ask } from './agent/nim.ts';
+import { provider, type Ask } from './agent/nim.ts';
 import type { FactsSource } from './data/source.ts';
 import type { Row } from './data/csv.ts';
 import { configuredSource } from './data/index.ts';
@@ -84,8 +84,8 @@ export class AppRuntime {
     return runtime;
   }
 
-  get liveEnabled(){return !this.sampleMode && Boolean(this.options.ask||process.env.NVIDIA_API_KEY);}
-  get liveUnavailableReason(){return this.sampleMode?'Start the server with SAMPLE_MODE=false and NVIDIA_API_KEY to enable live runs.':this.liveEnabled?'':'Live mode requires NVIDIA_API_KEY on the server.';}
+  get liveEnabled(){return !this.sampleMode && Boolean(this.options.ask||process.env.METERLESS_RUNTIME_TOKEN&&process.env.METERLESS_BASE_URL||process.env.NVIDIA_API_KEY);}
+  get liveUnavailableReason(){return this.sampleMode?'Start the server with SAMPLE_MODE=false and Meterless Nightshift (METERLESS_BASE_URL, METERLESS_RUNTIME_TOKEN) to enable live runs.':this.liveEnabled?'':'Live mode requires Meterless Nightshift (METERLESS_BASE_URL + METERLESS_RUNTIME_TOKEN) or NVIDIA_API_KEY on the server.';}
   private mustEntry(id:string){const entry=this.entries.get(id);if(!entry)throw new HttpError(404,'Case not found. Return to the cohort to choose a recorded case.');return entry;}
 
   list(reveal=false){
@@ -111,7 +111,7 @@ export class AppRuntime {
     });
     const liveJob=this.activeJob?.status==='running'?{id:this.activeJob.id,caseId:this.activeJob.caseId,eventsUrl:`/api/runs/${this.activeJob.id}/events`}:null;
     return {id,cik:e.cik,company:e.company,fyEnd:e.fyEnd,added:e.added,evidenceCount:e.pack.evidence.length,run:e.run??null,filing:e.filing,split:e.added?'added':cohortSplit(id),mode:this.sampleMode?'sample':'live',resultMode:!e.run?'none':e.run===e.recorded?'recorded':'live',liveJob,dataMode:this.dataMode,liveEnabled:this.liveEnabled,
-      liveUnavailableReason:this.liveUnavailableReason,findingMemoryIds:this.memory.findingMemoryIds(id),memory:this.memory.recall(id),quarterComparison};
+      liveUnavailableReason:this.liveUnavailableReason,liveVia:this.options.ask?'test':provider().name,findingMemoryIds:this.memory.findingMemoryIds(id),memory:this.memory.recall(id),quarterComparison};
   }
 
   provenance(id:string,eid:string,revision?:string){

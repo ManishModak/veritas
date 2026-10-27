@@ -1,0 +1,1 @@
+{"memories":[],"context":"","trace":{"retrievalReason":"hybrid ranking for \"receivables revenue cash flow\" (domain: general)","strategy":"minimal","scores":{},"cutoff":"2013-03-15","rule":"10-K filed strictly before current case; current case excluded","eligible":0,"excluded":119,"threshold":0.15,"embedder":"Meterless deterministic hash reference"}}

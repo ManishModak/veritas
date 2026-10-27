@@ -47,17 +47,18 @@ test('NIM sends frozen call settings, retries transient errors and reads content
 });
 
 test('Nightshift is the primary provider: Meterless endpoint, token and headers; inline reasoning dropped; routed model reported', async () => {
-  let url = '', init: any = null; const seen: any[] = [];
-  const mock = (async (u: any, i: any) => { url = String(u); init = i;
-    return Response.json({model:MODEL,meterless:{routed_model:MODEL,receipt_id:'rcpt_1'},choices:[{finish_reason:'stop',message:{content:`{"verdict":"DO NOT PARSE"}</think>${JSON.stringify(sample.investigator)}`}}]});
+  let url = '', init: any = null, n = 0; const seen: any[] = [];
+  const mock = (async (u: any, i: any) => { url = String(u); init = i; n++;
+    const content = n === 1 ? 'no answer here' : `{"verdict":"DO NOT PARSE"}</think>${JSON.stringify(sample.investigator)}`;
+    return Response.json({model:MODEL,meterless:{routed_model:MODEL,receipt_id:`rcpt_${n}`},choices:[{finish_reason:'stop',message:{content}}]});
   }) as typeof fetch;
   const env = {METERLESS_BASE_URL:'http://127.0.0.1:8088/v1/',METERLESS_RUNTIME_TOKEN:'runtime-secret',NVIDIA_API_KEY:'unused'};
-  const result = await nimClient({env,fetch:mock,onResponse:c=>seen.push(c)})('system','user');
+  const result = await nimClient({env,fetch:mock,backoffMs:1,onResponse:c=>seen.push(c)})('system','user');
   assert.deepEqual(result,sample.investigator);
   assert.equal(url,'http://127.0.0.1:8088/v1/chat/completions');
   assert.equal(init.headers.Authorization,'Bearer runtime-secret'); assert.equal(init.headers['meterless-app'],'veritas'); assert.equal(init.headers['meterless-scope'],'user');
   assert.equal(JSON.parse(init.body).model,MODEL);
-  assert.equal(seen.length,1); assert.equal(seen[0].provider,'meterless-nightshift'); assert.equal(seen[0].model,MODEL); assert.equal(seen[0].receipt,'rcpt_1');
+  assert.deepEqual(seen.map(c=>[c.status,c.receipt]),[['invalid_answer','rcpt_1'],['ok','rcpt_2']]); assert.equal(seen[1].provider,'meterless-nightshift'); assert.equal(seen[1].model,MODEL);
   assert.throws(()=>nimClient({env:{METERLESS_BASE_URL:'http://127.0.0.1:8088/v1'}}),/METERLESS_RUNTIME_TOKEN/);
 });
 

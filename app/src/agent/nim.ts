@@ -34,7 +34,7 @@ export interface NimOptions {
   env?: Record<string, string | undefined>;
 }
 // One answered model request: which provider served it, which model actually handled it, and how long it took.
-export interface Call { provider: Provider['name']; model: string; ms: number; receipt?: string }
+export interface Call { provider: Provider['name']; model: string; ms: number; status: 'ok' | 'invalid_answer'; receipt?: string }
 
 export interface Provider { name: 'meterless-nightshift' | 'nvidia-nim'; label: string; endpoint: string; token?: string; model: string; headers: Record<string, string> }
 
@@ -100,11 +100,14 @@ export function nimClient(options: NimOptions = {}): Ask {
       if (choice?.finish_reason === 'length') throw new Error(`${label} answer truncated at max_tokens; no result saved`);
       const content = choice?.message?.content;
       if (typeof content !== 'string') throw new Error(`${label} response has no answer content`);
+      // Every answered request is recorded, including answers rejected below and retried.
+      const call = { provider: via.name, model: String(payload.meterless?.routed_model ?? payload.model ?? via.model), ms: Date.now() - started, ...(payload.meterless?.receipt_id ? { receipt: String(payload.meterless.receipt_id) } : {}) };
       try {
         const answer = parseAnswer(answerText(content));
-        options.onResponse?.({ provider: via.name, model: String(payload.meterless?.routed_model ?? payload.model ?? via.model), ms: Date.now() - started, ...(payload.meterless?.receipt_id ? { receipt: String(payload.meterless.receipt_id) } : {}) });
+        options.onResponse?.({ ...call, status: 'ok' });
         return answer;
       } catch (error) {
+        options.onResponse?.({ ...call, status: 'invalid_answer' });
         if (attempt === attempts) throw error;
         options.onRetry?.(attempt);
         await delay((options.backoffMs ?? 1000) * 2 ** (attempt - 1), undefined, { signal: effectiveSignal });

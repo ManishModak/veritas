@@ -67,7 +67,7 @@ export const TRACE = resolve(ROOT, 'logs/agent-trace.jsonl');
 // Append one JSONL trace line per answered model request (stdout too), so the log shows which model did each agent's work.
 async function trace(company: string, fyEnd: string, call: CallRecord): Promise<void> {
   const line = JSON.stringify({ timestamp: new Date().toISOString(), agent_name: call.stage, sample: call.sample, company, fy_end: fyEnd,
-    provider: call.provider, model: call.model, latency_ms: call.ms, receipt: call.receipt, status: 'success' });
+    provider: call.provider, model: call.model, latency_ms: call.ms, receipt: call.receipt, status: call.status });
   console.log(line);
   try { await mkdir(dirname(TRACE), { recursive: true }); await appendFile(TRACE, line + '\n'); } catch { /* tracing never fails a run */ }
 }

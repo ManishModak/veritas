@@ -15,5 +15,5 @@ export interface CaseRun {
   provider?: string; calls?: CallRecord[];
 }
 // One model request inside a run: which agent asked, and which provider and model answered (logged for judges).
-export interface CallRecord { sample: number; stage: Stage; provider: string; model: string; ms: number; receipt?: string }
+export interface CallRecord { sample: number; stage: Stage; provider: string; model: string; ms: number; status: string; receipt?: string }
 export interface Progress { sample: number; total: number; stage: Stage; status: 'started' | 'completed' | 'retry'; attempt?: number; elapsedMs?: number }

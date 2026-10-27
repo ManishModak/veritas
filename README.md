@@ -24,7 +24,7 @@ npm start
 
 Open http://localhost:8788. You get 11 recorded cases, each run 3 times. The header has a light/dark theme toggle.
 
-To publish a read-only copy of the recorded demo (GitHub Pages or any static host), run `npm run export:static`: it writes `site/` (about 5 MB), and live runs, feedback and search show a "run it locally" note there.
+**No install:** a read-only copy of the recorded demo is at https://manishmodak.github.io/veritas/. Live runs, feedback and search show a "run it locally" note there. To build your own copy for any static host, run `npm run export:static`: it writes `site/` (about 5 MB), from Zetaris when `ZETARIS_BRIDGE_URL` is set, otherwise from the CSVs.
 
 ## Check any 10-K filer
 

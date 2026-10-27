@@ -44,9 +44,7 @@ try {
   await mkdir(outDir, { recursive: true });
 
   console.log(`Starting python http.server on port ${port}...`);
-  serverProc = spawn('python3', ['-m', 'http.server', String(port), '--directory', ROOT], {
-    stdio: 'ignore'
-  });
+  serverProc = spawn('python3', ['-m', 'http.server', String(port), '--directory', ROOT], { stdio: 'ignore' });
 
   const serverReady = await waitForUrl(`${baseUrl}api/cases.json`);
   if (!serverReady) throw new Error(`HTTP server did not become ready at ${baseUrl}`);
@@ -243,12 +241,16 @@ try {
   console.log(`Blocked memory search correctly showed: "${memBannerText}"`);
   await evaluate("document.getElementById('btn-memory-reset').click()");
 
-  // Test blocked Live Run
+  // Test blocked Live Run (via direct API fetch call if button is disabled in sample mode)
   console.log('Testing blocked live run...');
-  await evaluate("document.getElementById('btn-run-live').click()");
-  await delay(100);
-  const liveBannerText = await evaluate("document.getElementById('banner-message').textContent");
-  console.log(`Blocked live run message: "${liveBannerText}"`);
+  const liveRunResult = await evaluate(`
+    fetch('/api/cases/1336917_2015-12-31/runs', { method: 'POST' })
+      .then(async r => ({ status: r.status, data: await r.json() }))
+  `) as { status: number; data: { error: string } };
+  if (liveRunResult.status !== 400 || !liveRunResult.data?.error?.includes('This is the static demo.')) {
+    throw new Error(`Unexpected live run response: ${JSON.stringify(liveRunResult)}`);
+  }
+  console.log(`Blocked live run correctly returned HTTP 400: "${liveRunResult.data.error}"`);
 
   console.log('\n--- Pass 3: Crawling all 11 cases and every evidence drawer ---');
   const casesData = await (await fetch(`${baseUrl}api/cases.json`)).json() as { cases: { id: string; company: string }[] };
